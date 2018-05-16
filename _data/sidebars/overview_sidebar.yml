@@ -51,31 +51,28 @@ entries:
         output: web
         subfolderitems:
         - title: RARecord-Flag-1
-          url: /explore_resources_api_flag.html
+          url: /explore_resources_api.html#RARecord-Flag-1
           output: web
         - title: RARecord-Consent-1
-          url: /explore_resources_api_consent.html
+          url: /explore_resources_api.html#RARecord-Consent-1
           output: web
         - title: RARecord-Provenance-1
-          url: /explore_resources_api_provenance.html
-          output: web
-        - title: RARecord-RelatedPerson-1
-          url: /explore_resources_api_relatedperson.html
+          url: /explore_resources_api.html#RARecord-Provenance-1
           output: web
         - title: CareConnect-RARecord-Condition-1
-          url: /explore_resources_api_condition.html
+          url: /explore_resources_api.html#CareConnect-RARecord-Condition-1
           output: web
         - title: CareConnect-RARecord-Organization-1
-          url: /explore_resources_api_organization.html
+          url: /explore_resources_api.html#CareConnect-RARecord-Organization-1
           output: web
         - title: CareConnect-RARecord-Practitioner-1
-          url: /explore_resources_api_practitioner.html
+          url: /explore_resources_api.html#CareConnect-RARecord-Practitioner-1
           output: web
         - title: CareConnect-RARecord-PractitionerRole-1
-          url: /explore_resources_api_practitionerrole.html
+          url: /explore_resources_api.html#CareConnect-RARecord-PractitionerRole-1
           output: web
         - title: CareConnect-RARecord-List-1
-          url: /explore_resources_api_list.html
+          url: /explore_resources_api.html#CareConnect-RARecord-List-1
           output: web
       - title: Extensions
         output: web
@@ -166,7 +163,6 @@ entries:
           output: web
         - title: CodeSystem-RARecord-SupportAdjustments-1
           url: /explore_codesystem.html
-          output: web
 
   - title: Interactions
     output: web

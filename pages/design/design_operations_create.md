@@ -10,7 +10,7 @@ summary: Create operation describes interaction required to record a new Reasona
 
 ## 1. Create Operation ##
 
-<img src="images/design/RAFlag-Create-Productionised.png" style="width:700px;">
+<img src="images/sequenceDiagrams/RAFlag-Create-Productionised.png" style="width:700px;">
 
 ## 2. Request - Response ##
 

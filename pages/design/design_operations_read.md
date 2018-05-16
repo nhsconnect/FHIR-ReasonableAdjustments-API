@@ -11,7 +11,7 @@ summary: Read operation describes interaction required to retrieve and view Reas
 ## 1. Read Operation ##
 
 
-<img src="images/design/RAFlag-Read-Productionised.png" style="width:700px;">
+<img src="images/sequenceDiagrams/RAFlag-Read-Productionised.png" style="width:700px;">
 
 ## 2. Request - Response ##
 

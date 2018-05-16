@@ -1,27 +1,28 @@
 ---
-title: Identification | profile_name
-keywords: usecase, profile_name
-tags: [rest, fhir, identification,development]
+title: RARecord Profiles
+keywords: usecase, profile
+tags: [rest, fhir, identification, development]
 sidebar: accessrecord_rest_sidebar
-permalink: restfulapis_identification_organization.html
-summary: A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc.
+permalink: explore_resources_api.html
+summary: This page describes Resource and Profile StructureDefinitions required to support data transmission within the FHIR&reg; Reasonable Adjustments API.
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.referencemin.html resource="[profile_name](https://fhir.nhs.uk/STU3/StructureDefinition/profile_name)" page="" fhirlink="[Organization](https://www.hl7.org/fhir/stu3/base_template)" content="User Stories" userlink="engage_case_studies.html" %}
+{% include custom/fhir.resourcegrid.html
+resourcename="RARecord-Flag-1"
+resource="[RARecord-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1)"
+ccresource="N/A Yet"
+fhirresource="[Flag](https://www.hl7.org/fhir/flag.html)" %}
 
-## 1. Resource ##
+<div id="ImageAsset"><img src="images/resourceImages/FlagResource.png" style="width:350px;"></div>
+<div id="ImageAsset"><img src="images/resourceImages/FlagExtensions1.png" style="width:350px;"></div>
+<div id="ImageAsset"><img src="images/resourceImages/FlagExtensions2.png" style="width:350px;"></div>
 
-<div markdown="span" class="alert alert-success" role="alert">
-Resource</div>
+{% include custom/fhir.extensiongrid.html
+extensionname="Extension-RARecord-ProxyRole-1" %}
 
-{% include custom/read.response.html resource="Organization" content="" %}
+{% include custom/fhir.valuesetgrid.html
+valuesetname="ValueSet-RARecord-ProxyRole-1" %}
 
-<script src="https://gist.github.com/IOPS-DEV/aa574228008b504d3df3d0902a6ae694.js"></script>
-
-## 2. Example ##
-
-<div markdown="span" class="alert alert-success" role="alert">
-Example</div>
-
-
+{% include custom/fhir.codesystemgrid.html
+codesystemname="CodeSystem-RARecord-ProxyRole-1" %}

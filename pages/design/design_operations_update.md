@@ -14,7 +14,7 @@ Note: the only update allowed to any part of a Reasonable Adjustment record is a
 Any corrections to an already committed Reasonable Adjustment element therefore requires update of the existing item, then creation of a new Flag, Adjustment or Impairment resource.
 
 
-<img src="images/design/RAFlag-Update-Productionised.png" style="width:700px;">
+<img src="images/sequenceDiagrams/RAFlag-Update-Productionised.png" style="width:700px;">
 
 ## 2. Request - Response ##
 
