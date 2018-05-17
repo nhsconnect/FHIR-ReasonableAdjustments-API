@@ -1,2 +1,2 @@
-# FHIR-ReasonableAdjustments-API-
+# FHIR-ReasonableAdjustments-API
 FHIR Reasonable Adjustments API 
