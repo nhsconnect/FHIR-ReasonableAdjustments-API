@@ -176,6 +176,9 @@ entries:
     - title: Update
       url: /design_operations_update.html
       output: web
+    - title: Caching and Managing Updates
+      url: /design_resource_contention.html
+      output: web
 
 #  - title: Design & Build
 #    output: web
