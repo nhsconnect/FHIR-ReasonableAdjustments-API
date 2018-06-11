@@ -1,7 +1,7 @@
 entries:
 - title: FHIR&reg; Reasonable Adjustments API
   product: FHIR&reg; Reasonable Adjustments API
-  version: 0.1-alpha
+  version: 0.0.2-alpha
   levels: one
   folders:
 
@@ -56,11 +56,14 @@ entries:
         - title: RARecord-Consent-1
           url: /explore_profile.html#RARecord-Consent-1
           output: web
-        - title: RARecord-Provenance-1
-          url: /explore_profile.html#RARecord-Provenance-1
-          output: web
         - title: CareConnect-RARecord-Condition-1
           url: /explore_profile.html#CareConnect-RARecord-Condition-1
+          output: web
+        - title: CareConnect-RARecord-List-1
+          url: /explore_profile.html#CareConnect-RARecord-List-1
+          output: web
+        - title: RARecord-Provenance-1
+          url: /explore_profile.html#RARecord-Provenance-1
           output: web
         - title: CareConnect-RARecord-Organization-1
           url: /explore_profile.html#CareConnect-RARecord-Organization-1
@@ -70,9 +73,6 @@ entries:
           output: web
         - title: CareConnect-RARecord-PractitionerRole-1
           url: /explore_profile.html#CareConnect-RARecord-PractitionerRole-1
-          output: web
-        - title: CareConnect-RARecord-List-1
-          url: /explore_profile.html#CareConnect-RARecord-List-1
           output: web
       - title: Extensions
         output: web
@@ -175,6 +175,20 @@ entries:
       output: web
     - title: Update
       url: /design_operations_update.html
+      output: web
+
+      
+  - title: Use Cases & Examples
+    output: web
+    folderitems:
+    - title: Create an RA Flag
+      url: /design_usecases_create.html
+      output: web
+    - title: Add an Adjustment
+      url: /design_usecases_add.html
+      output: web
+    - title: Update
+      url: /design_usecases_update.html
       output: web
 
 #  - title: Design & Build
