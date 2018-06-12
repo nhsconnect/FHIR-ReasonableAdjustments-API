@@ -20,11 +20,15 @@ fhirresource="[Flag](https://www.hl7.org/fhir/flag.html)" %}
 
 #### XML Example ####
 {% include custom/fhir.codegridmd.html
-relfilepath="resourceexamples/RARecord-Flag-1-example-1.xml" %}
+relfilepath="resourceexamples/RARecord-Flag-1-example-1.xml"
+title="RARecord-Flag-1"
+type="xml" %}
 
 #### JSON Example ####
 {% include custom/fhir.codegridmd.html
-relfilepath="resourceexamples/RARecord-Flag-1-example-1.json" %}
+relfilepath="resourceexamples/RARecord-Flag-1-example-1.json"
+title="RARecord-Flag-1-example-1"
+type="json" %}
 
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Consent-1"

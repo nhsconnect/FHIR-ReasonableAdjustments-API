@@ -184,10 +184,10 @@ entries:
     - title: Create an RA Flag
       url: /design_usecases_create.html
       output: web
-    - title: Add an Adjustment
-      url: /design_usecases_add.html
+    - title: Read an RA Flag
+      url: /design_usecases_read.html
       output: web
-    - title: Update
+    - title: Update an RA Flag
       url: /design_usecases_update.html
       output: web
 
