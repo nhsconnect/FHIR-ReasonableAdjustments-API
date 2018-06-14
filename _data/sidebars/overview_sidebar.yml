@@ -1,7 +1,7 @@
 entries:
 - title: FHIR&reg; Reasonable Adjustments API
   product: FHIR&reg; Reasonable Adjustments API
-  version: 0.0.2-alpha
+  version: 0.0.3-alpha
   levels: one
   folders:
 
@@ -64,15 +64,6 @@ entries:
           output: web
         - title: RARecord-Provenance-1
           url: /explore_profile.html#RARecord-Provenance-1
-          output: web
-        - title: CareConnect-RARecord-Organization-1
-          url: /explore_profile.html#CareConnect-RARecord-Organization-1
-          output: web
-        - title: CareConnect-RARecord-Practitioner-1
-          url: /explore_profile.html#CareConnect-RARecord-Practitioner-1
-          output: web
-        - title: CareConnect-RARecord-PractitionerRole-1
-          url: /explore_profile.html#CareConnect-RARecord-PractitionerRole-1
           output: web
       - title: Extensions
         output: web
@@ -176,8 +167,13 @@ entries:
     - title: Update
       url: /design_operations_update.html
       output: web
+    - title: Remove Flag
+      url: /design_operations_removeflag.html
+      output: web
+    - title: Provenance
+      url: /design_operations_provenance.html
+      output: web
 
-      
   - title: Use Cases & Examples
     output: web
     folderitems:

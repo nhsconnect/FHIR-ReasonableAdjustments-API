@@ -118,37 +118,7 @@ resource="[RARecord-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecor
 ccresource="N/A Yet"
 fhirresource="[Provenance](https://www.hl7.org/fhir/provenance.html)" %}
 
-Placeholder text: Provenance is a contained resource in Flag, Condition, Consent resources (and shows in the Contained section of the examples).
-Provenance has been reconsidered during detailed design work, and will be modified in v0.0.3
+Provenance is a contained resource in Flag, Condition, Consent resources (and shows in the Contained section of the examples above).
 
-{% comment %}
-
-    ** Graveyard Section **
-    =======================
-
-{% endcomment %
-
-Placeholder text: PractitionerRole, Practitioner and Organization are no longer required, following detailed design on Provenance solution. No examples have been added in v0.0.2 and the profiles will be removed from v0.0.3
-
-{% include custom/fhir.resourcegrid.html
-resourcename="CareConnect-RARecord-PractitionerRole-1"
-resource="[CareConnect-RARecord-PractitionerRole-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-PractitionerRole-1)"
-ccresource="[CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)"
-fhirresource="[PractitionerRole](https://www.hl7.org/fhir/practitionerrole.html)" %}
-
-{% include custom/fhir.resourcegrid.html
-resourcename="CareConnect-RARecord-Organization-1"
-resource="[CareConnect-RARecord-Organization-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Organization-1)"
-ccresource="[CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)"
-fhirresource="[Organization](https://www.hl7.org/fhir/organization.html)" %}
-
-{% include custom/fhir.resourcegrid.html
-resourcename="CareConnect-RARecord-Practitioner-1"
-resource="[CareConnect-RARecord-Practitioner-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Practitioner-1)"
-ccresource="[CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)"
-fhirresource="[Practitioner](https://www.hl7.org/fhir/practitioner.html)" %}
-
-
-
-
+---
 
