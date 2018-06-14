@@ -8,12 +8,12 @@ summary: Read operation describes interaction required to retrieve and view Reas
 ---
 {% include custom/search.warnbanner.html %}
 
-## 1. Read Operation ##
+##1. Read Operation ##
 
 
 <img src="images/sequenceDiagrams/RAFlag-Read-Productionised.png" style="width:700px;">
 
-## 2. Request - Response ##
+##2. Request - Response ##
 
 ### Read Requests ###
 

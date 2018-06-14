@@ -1,7 +1,4 @@
-<div class="highlighter-rouge">
-    <div class="highlight">
-        <pre class="highlight"><code><p>Filepath={{include.relfilepath}}</p><p>Filetype={{include.filetype}}</p>{% if {{include.filetype}} == 'xml' %}<p>XML</p>
-        {% include_relative {{include.relfilepath}} | xml_escape %}<p>{{xmlstring}}</p>
-        {% else %}<p>ELSE</p>{% include_relative {{include.relfilepath}} %}{% endif %}</code></pre>
-    </div>
-</div>
+#### {{include.title}} {{include.type | upcase}} Example ####
+```
+{% include_relative {{include.relfilepath}} %}
+```

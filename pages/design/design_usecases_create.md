@@ -9,16 +9,16 @@ summary: Create operation describes interaction required to record a new Reasona
 {% include custom/search.warnbanner.html %}
 
 ## 1 Create RARecord Use Case ##
-### Trigger: ###
+#### 1.1 Trigger: ####
 GP initiates Reasonable Adjustment Flag discussion at annual health check
-### Pre-requisites: ###
+#### 1.2 Pre-requisites: ####
 Practioner Dr D. logged on w SmartCard/National Identity giving URPId (as SDS OrgPersonRole Identifier)  
 Patient Mrs M. PDS Trace > verified NHS#, Name, DoB, demographic data  
 ClientSystem searched and failed to find existing RARecord  
-### System Scope: ###
+#### 1.3 System Scope: ####
 ClientSystem includes GPSystem client, SCRa, 1-click etc.  
 ServerSystem includes Spine, PDS, SDS, FlagServer etc.  
-### Summary: ###
+#### 1.4 Summary: ####
 Practitioner creates RARecord, recording Consent from Patient and that Impairment is 'Learning Disability'.  
 Patient declines to record a specific Adjustment at this time.  
 #### Pre ####
@@ -45,22 +45,64 @@ Patient declines to record a specific Adjustment at this time.
         * ServerSystem submits Create List transaction response  
 
 ## 2 Create RARecord Examples ##
-### Create Consent Request ###
+#### 2.1 Create Consent Request ####
 #### http request ####
+```
+POST https://clinicals.spineservices.nhs.uk/STU3/flagserver/Consent HTTP/1.1
+```
 #### body ####
+Newly created RARecord-Consent-1 resource:
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-CreateConsentRequestBody-example.xml"
+title="RARecord-CreateConsentRequestBody-example"
+type="xml" %}
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-CreateConsentRequestBody-example.json"
+title="RARecord-CreateConsentRequestBody-example"
+type="json" %}
 #### headers ####
 
-### Create Consent Response ###
+#### 2.2 Create Consent Response ####
 #### http response ####
+TBD but 201 Created on successful create etc.
 #### body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-CreateConsentResponseBody-example.xml"
+title="RARecord-CreateConsentResponseBody-example"
+type="xml" %}
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-CreateConsentResponseBody-example.json"
+title="RARecord-CreateConsentResponseBody-example"
+type="json" %}
 #### headers ####
 
-### Create List Transaction Request ###
+#### 2.3 Create List Transaction Request ####
 #### http request ####
+Transaction handler is at the flagserver base URL
+```
+POST https://clinicals.spineservices.nhs.uk/STU3/flagserver HTTP/1.1
+```
 #### body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-CreateListTransactionRequestBody-example.xml"
+title="RARecord-CreateListTransactionRequestBody-example"
+type="xml" %}
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-CreateListTransactionRequestBody-example.json"
+title="RARecord-CreateListTransactionRequestBody-example"
+type="json" %}
 #### headers ####
 
-### Create List Transaction Response ###
+#### 2.4 Create List Transaction Response ####
 #### http response ####
+TBD but 200 OK on successful transaction processing etc.
 #### body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-CreateListTransactionResponseBody-example.xml"
+title="RARecord-CreateListTransactionResponseBody-example"
+type="xml" %}
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-CreateListTransactionResponseBody-example.json"
+title="RARecord-CreateListTransactionResponseBody-example"
+type="json" %}
 #### headers ####

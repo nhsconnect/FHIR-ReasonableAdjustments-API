@@ -18,8 +18,6 @@ summary: Create operation describes interaction required to record a new Reasona
 
 Given pre-requisites:
 - authenticated, authorized RBACed Spine-User
-  - SMSP: asid, partykey
-  - DIP: IDToken, AccessToken
 - validated NHSNumber
 
 #### Create Requests ####

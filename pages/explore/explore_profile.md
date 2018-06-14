@@ -8,6 +8,13 @@ summary: This page describes Resource and Profile StructureDefinitions required 
 ---
 {% include custom/search.warnbanner.html %}
 
+{% comment %}
+
+    ** RARecord-Flag-1 Section **
+    =============================
+
+    {% endcomment %}
+
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Flag-1"
 resource="[RARecord-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1)"
@@ -18,17 +25,22 @@ fhirresource="[Flag](https://www.hl7.org/fhir/flag.html)" %}
 <div id="ImageAsset"><img src="images/resourceImages/FlagExtensions1.png" style="width:350px;"></div>
 <div id="ImageAsset"><img src="images/resourceImages/FlagExtensions2.png" style="width:350px;"></div>
 
-#### XML Example ####
-{% include custom/fhir.codegridmd.html
+{% include custom/fhir.codegrid.html
 relfilepath="resourceexamples/RARecord-Flag-1-example-1.xml"
 title="RARecord-Flag-1"
 type="xml" %}
 
-#### JSON Example ####
-{% include custom/fhir.codegridmd.html
+{% include custom/fhir.codegrid.html
 relfilepath="resourceexamples/RARecord-Flag-1-example-1.json"
-title="RARecord-Flag-1-example-1"
+title="RARecord-Flag-1"
 type="json" %}
+
+{% comment %}
+
+    ** RARecord-Consent-1 Section **
+    ================================
+
+    {% endcomment %}
 
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Consent-1"
@@ -39,14 +51,22 @@ fhirresource="[Consent](https://www.hl7.org/fhir/consent.html)" %}
 <div id="ImageAsset"><img src="images/resourceImages/ConsentResource.png" style="width:350px;"></div>
 <div id="ImageAsset"><img src="images/resourceImages/ConsentExtensions.png" style="width:350px;"></div>
 
-#### XML Example ####
-{% include custom/fhir.codegridmd.html
-relfilepath="resourceexamples/RARecord-Consent-1-example-1.xml" %}
+{% include custom/fhir.codegrid.html
+relfilepath="resourceexamples/RARecord-Consent-1-example-1.xml"
+title="RARecord-Consent-1"
+type="xml" %}
 
-#### JSON Example ####
-{% include custom/fhir.codegridmd.html
-relfilepath="resourceexamples/RARecord-Consent-1-example-1.json" %}
+{% include custom/fhir.codegrid.html
+relfilepath="resourceexamples/RARecord-Consent-1-example-1.json"
+title="RARecord-Consent-1"
+type="json" %}
 
+{% comment %}
+
+    ** CareConnect-RARecord-Condition-1 Section **
+    ==============================================
+
+{% endcomment %}
 
 {% include custom/fhir.resourcegrid.html
 resourcename="CareConnect-RARecord-Condition-1"
@@ -57,13 +77,22 @@ fhirresource="[Condition](https://www.hl7.org/fhir/condition.html)" %}
 <div id="ImageAsset"><img src="images/resourceImages/ConditionResource.png" style="width:350px;"></div>
 <div id="ImageAsset"><img src="images/resourceImages/ConditionExtensions.png" style="width:350px;"></div>
 
-#### XML Example ####
-{% include custom/fhir.codegridmd.html
-relfilepath="resourceexamples/CareConnect-RARecord-Condition-1-example1.xml" %}
+{% include custom/fhir.codegrid.html
+relfilepath="resourceexamples/CareConnect-RARecord-Condition-1-example1.xml"
+title="CareConnect-RARecord-Condition-1"
+type="xml" %}
 
-#### JSON Example ####
-{% include custom/fhir.codegridmd.html
-relfilepath="resourceexamples/CareConnect-RARecord-Condition-1-example1.json" %}
+{% include custom/fhir.codegrid.html
+relfilepath="resourceexamples/CareConnect-RARecord-Condition-1-example1.json"
+title="CareConnect-RARecord-Condition-1"
+type="json" %}
+
+{% comment %}
+
+    ** CareConnect-RARecord-List-1 Section **
+    =========================================
+
+{% endcomment %}
 
 {% include custom/fhir.resourcegrid.html
 resourcename="CareConnect-RARecord-List-1"
@@ -73,13 +102,15 @@ fhirresource="[List](https://www.hl7.org/fhir/list.html)" %}
 
 <div id="ImageAsset"><img src="images/resourceImages/ListResource.png" style="width:350px;"></div>
 
-#### XML Example ####
-{% include custom/fhir.codegridmd.html
-relfilepath="resourceexamples/CareConnect-RARecord-List-1-example.xml" %}
+{% include custom/fhir.codegrid.html
+relfilepath="resourceexamples/CareConnect-RARecord-List-1-example.xml"
+title="CareConnect-RARecord-List-1"
+type="xml" %}
 
-#### JSON Example ####
-{% include custom/fhir.codegridmd.html
-relfilepath="resourceexamples/CareConnect-RARecord-List-1-example.json" %}
+{% include custom/fhir.codegrid.html
+relfilepath="resourceexamples/CareConnect-RARecord-List-1-example.json"
+title="CareConnect-RARecord-List-1"
+type="json" %}
 
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Provenance-1"
@@ -89,6 +120,13 @@ fhirresource="[Provenance](https://www.hl7.org/fhir/provenance.html)" %}
 
 Placeholder text: Provenance is a contained resource in Flag, Condition, Consent resources (and shows in the Contained section of the examples).
 Provenance has been reconsidered during detailed design work, and will be modified in v0.0.3
+
+{% comment %}
+
+    ** Graveyard Section **
+    =======================
+
+{% endcomment %
 
 Placeholder text: PractitionerRole, Practitioner and Organization are no longer required, following detailed design on Provenance solution. No examples have been added in v0.0.2 and the profiles will be removed from v0.0.3
 
