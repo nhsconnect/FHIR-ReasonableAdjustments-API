@@ -58,10 +58,10 @@ type="xml" %}
 relfilepath="usecaseexamples/RARecord-UpdateFlagRequestBody-example.json"
 title="RARecord-UpdateFlagRequestBody-example"
 type="json" %}
-#### headers ####
+{% include custom/fhir.header.html %}
 
 ### 2.2 Update Flag Response ####
-#### http response ####
+{% include custom/fhir.response.html %}
 TBD but 200 OK on successful update etc.
 #### body ####
 {% include custom/fhir.codegrid.html
@@ -72,4 +72,4 @@ type="xml" %}
 relfilepath="usecaseexamples/RARecord-UpdateFlagResponseBody-example.json"
 title="RARecord-UpdateFlagResponseBody-example"
 type="json" %}
-#### headers ####
+{% include custom/fhir.header.html %}

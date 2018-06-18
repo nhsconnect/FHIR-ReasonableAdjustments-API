@@ -71,6 +71,6 @@ PUT https://[spineservices.nhs.uk]/flagserver/List /[ListId]
 
 failResponse()
 
-  40x or 50x http response code and operation outcome describing failure
+  4xx or 5xx http response code and operation outcome describing failure
 
 

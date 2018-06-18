@@ -104,6 +104,9 @@ entries:
         - title: ValueSet-RARecord-FlagCode-1
           url: /explore_valueset.html#ValueSet-RARecord-FlagCode-1
           output: web
+        - title: ValueSet-RARecord-ProvenanceRole-1
+          url: /explore_valueset.html#ValueSet-RARecord-ProvenanceRole-1
+          output: web
         - title: ValueSet-RARecord-ProxyRole-1
           url: /explore_valueset.html#ValueSet-RARecord-ProxyRole-1
           output: web

@@ -19,6 +19,8 @@ valuesetname="ValueSet-RARecord-FlagCategory-1" %}
 {% include custom/fhir.valuesetgrid.html
 valuesetname="ValueSet-RARecord-FlagCode-1" %}
 {% include custom/fhir.valuesetgrid.html
+valuesetname="ValueSet-RARecord-ProvenanceRole-1" %}
+{% include custom/fhir.valuesetgrid.html
 valuesetname="ValueSet-RARecord-ProxyRole-1" %}
 {% include custom/fhir.valuesetgrid.html
 valuesetname="ValueSet-RARecord-RemovalReason-1" %}

@@ -22,8 +22,14 @@ To illustrate, on Create of a resource e.g. a Flag resource (i.e. an Adjustment)
 * Create response issued to ClientSystem - usually with the created resource as body
 
 [To be clear, on Create, a RARecord Resource will contin no Provenance information.  
-The provenance resource is generated, populated, contained, cross-referenced and persisted server-side as part of the Create operation for the parent resource.
-Similarly, on Update, Provenance information regarding the updater is produced as part ofg the Update operation.]
+The provenance resource is:  
+* generated,
+* populated,
+* contained,
+* cross-referenced
+* persisted  
+server-side as part of the Create operation for the parent resource.  
+Similarly, on Update, Provenance information regarding the updater is produced etc. as part of the Update operation.]
 
   ```
 [seq ]

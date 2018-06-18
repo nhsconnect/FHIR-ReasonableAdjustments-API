@@ -60,11 +60,15 @@ type="xml" %}
 relfilepath="usecaseexamples/RARecord-CreateConsentRequestBody-example.json"
 title="RARecord-CreateConsentRequestBody-example"
 type="json" %}
-#### headers ####
+
+{% include custom/fhir.header.html %}
+
+Client systems SHALL carry an Access token in the HTTP authorisation header (as an oAuth Bearer Token). Details of Spine Core API's approach are found on their [Access Tokens and Audit pages](https://nhsconnect.github.io/FHIR-SpineCore/security_jwt.html#jwt-payload)
 
 #### 2.2 Create Consent Response ####
-#### http response ####
-TBD but 201 Created on successful create etc.
+
+{% include custom/fhir.response.html %}
+
 #### body ####
 {% include custom/fhir.codegrid.html
 relfilepath="usecaseexamples/RARecord-CreateConsentResponseBody-example.xml"
@@ -74,7 +78,7 @@ type="xml" %}
 relfilepath="usecaseexamples/RARecord-CreateConsentResponseBody-example.json"
 title="RARecord-CreateConsentResponseBody-example"
 type="json" %}
-#### headers ####
+{% include custom/fhir.header.html %}
 
 #### 2.3 Create List Transaction Request ####
 #### http request ####
@@ -91,10 +95,10 @@ type="xml" %}
 relfilepath="usecaseexamples/RARecord-CreateListTransactionRequestBody-example.json"
 title="RARecord-CreateListTransactionRequestBody-example"
 type="json" %}
-#### headers ####
+{% include custom/fhir.header.html %}
 
 #### 2.4 Create List Transaction Response ####
-#### http response ####
+{% include custom/fhir.response.html %}
 TBD but 200 OK on successful transaction processing etc.
 #### body ####
 {% include custom/fhir.codegrid.html
@@ -105,4 +109,4 @@ type="xml" %}
 relfilepath="usecaseexamples/RARecord-CreateListTransactionResponseBody-example.json"
 title="RARecord-CreateListTransactionResponseBody-example"
 type="json" %}
-#### headers ####
+{% include custom/fhir.header.html %}

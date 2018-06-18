@@ -46,10 +46,10 @@ GET https://clinicals.spineservices.nhs.uk/STU3/flagserver/Consent?
 ```
 #### body ####
 N/A
-#### headers ####
+{% include custom/fhir.header.html %}
 
 #### 2.2 Read Consent Response ####
-#### http response ####
+{% include custom/fhir.response.html %}
 TBD but 200 OK on successful read etc.
 #### body ####
 {% include custom/fhir.codegrid.html
@@ -60,7 +60,7 @@ type="xml" %}
 relfilepath="usecaseexamples/RARecord-ReadConsentResponseBody-example.json"
 title="RARecord-ReadConsentResponseBody-example"
 type="json" %}
-#### headers ####
+{% include custom/fhir.header.html %}
 
 #### 2.3 Read Flag Request ####
 #### http request ####
@@ -70,10 +70,10 @@ GET https://clinicals.spineservices.nhs.uk/STU3/flagserver/Flag?
 ```
 #### body ####
 N/A
-#### headers ####
+{% include custom/fhir.header.html %}
 
 #### 2.4 Read Flag Response ####
-#### http response ####
+{% include custom/fhir.response.html %}
 TBD but 200 OK on successful read etc.
 #### body ####
 {% include custom/fhir.codegrid.html
@@ -84,7 +84,7 @@ type="xml" %}
 relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody-example.json"
 title="RARecord-ReadFlagResponseBody-example"
 type="json" %}
-#### headers ####
+{% include custom/fhir.header.html %}
 
 #### 2.5 Read List Request ####
 #### http request ####
@@ -95,10 +95,10 @@ GET https://clinicals.spineservices.nhs.uk/STU3/flagserver/List?
 ```
 #### body ####
 N/A
-#### headers ####
+{% include custom/fhir.header.html %}
 
 #### 2.6 Read List Response ####
-#### http response ####
+{% include custom/fhir.response.html %}
 TBD but 200 OK on successful read etc.
 #### body ####
 {% include custom/fhir.codegrid.html
@@ -109,4 +109,4 @@ type="xml" %}
 relfilepath="usecaseexamples/RARecord-ReadListResponseBody-example.json"
 title="RARecord-ReadListResponseBody-example"
 type="json" %}
-#### headers ####
+{% include custom/fhir.header.html %}
