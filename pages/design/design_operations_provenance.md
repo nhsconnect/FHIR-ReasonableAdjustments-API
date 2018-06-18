@@ -17,30 +17,35 @@ To illustrate, on Create of a resource e.g. a Flag resource (i.e. an Adjustment)
 * Spine looks up the URPId
   * If available, returns cached Practitioner, Organization details
   * Else, retrieves Practitioner, Organization details and caches
-* Resource's contained Provenance is populated with a display representation of the Practitioner, Organization details
+* Resource's Provenance is populated with a display representation of the Practitioner, Organization details
 * Resource is persisted
 * Create response issued to ClientSystem - usually with the created resource as body
+
+[To be clear, on Create, a RARecord Resource will contin no Provenance information.  
+The provenance resource is generated, populated, contained, cross-referenced and persisted server-side as part of the Create operation for the parent resource.
+Similarly, on Update, Provenance information regarding the updater is produced as part ofg the Update operation.]
+
   ```
 [seq ]
 Client               Spine                   Redis              SDS
    |                   |                       |                |
-   | ->Create Rqst     |                       |                |
-   |   {JWT & URPId}                           |                |
+   | - Create Rqst ->  |                       |                |
+   |   {JWT & URPId}   |                       |                |
    |   (i.e. SDS OrgPersonRoleId)              |                |
    |                   |                       |                |
    |                   |                       |                |
    |                   |                       |                |
-   |                   | -> SDS Redis lookup   |                |
+   |                   | - SDS Redis lookup -> |                |
    |                   |                       |                |
 -----------------------------------------------------
-Alt                  |                       |
-   |[URPId cached]     |                       | -> Get cached
-   |                   |                       |    Practitioner,
+[Alt]                |                       |
+   |[URPId cached      |                       | -> Get cached
+   | in Redis    ]     |                       |    Practitioner,
    |                   |                       | <- Organization details
    |                   |                       |
 -----------------------------------------------------
    |                   |                       |                |
-   |[URPId not cached] |                       | -> Get         |
+   |[URPId not cached] |                       | -  Get    ---> |
    |                   |                       |    Practitioner,
    |                   |                       | <- Organization details
    |                   |                       |                |
