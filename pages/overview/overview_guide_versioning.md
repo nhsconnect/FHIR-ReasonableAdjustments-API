@@ -29,5 +29,5 @@ For examples: 1.0.0-alpha.1 is a valid pre-release version.
 
 ### 1.2.0 Pre-release Labels ###
 
-When FHIR API implementation guides are published, they MUST have an associated maturity label. These labels are based on the GDS development process stages and MUST conform to one of the labels defined in the [FHIR-PUB-04: FHIR API Maturity](https://nhsconnect.github.io/fhir-policy/publication.html) ‘Publication Requirements’ section of the [NHS FHIR Policy](https://nhsconnect.github.io/fhir-policy/index.html).
+When FHIR API implementation guides are published, they MUST have an associated maturity label. These labels are based on the GDS development process stages and MUST conform to one of the labels defined in the [FHIR-PUB-04: FHIR API Maturity](https://developer.nhs.uk/apis/fhir-policy/publication.html) ‘Publication Requirements’ section of the [NHS FHIR Policy](https://developer.nhs.uk/apis/fhir-policy/index.html).
 

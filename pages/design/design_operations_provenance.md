@@ -77,4 +77,4 @@ Client               Spine                   Redis              SDS
    |   {Flag}          |                       |
 ```
 Each Reasonable Adjustment resource contains its Provenance information.
-Fine detail of the content is on the Profile page under [RARecord-Provenance-1](https://nhsconnect.github.io/FHIR-ReasonableAdjustments-API/explore_profile.html#RARecord-Provenance-1)
+Fine detail of the content is on the Profile page under [RARecord-Provenance-1](explore_profile.html#RARecord-Provenance-1)

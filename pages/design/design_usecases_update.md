@@ -13,9 +13,9 @@ summary: Update operation describes interaction required to update a Reasonable 
 Post-op appt with GP. Patient requests change of 'Easy Read' Adjustment to 'Large Print'
 ### 1.2 Pre-requisites: ####
 (This scenario assumes someone has created an 'Easy Read' Reasonable Adjustment between the Read and Update examples)  
-Practioner Dr D. logged on w SmartCard/National Identity > URPId  
-Patient Mrs M. PDS Trace > verified NHS#, Name, DoB demographic data  
-ClientSystem has Patient's existing RArecord available - see ['Read an RA Flag'](https://nhsconnect.github.io/FHIR-ReasonableAdjustments-API/~)
+Practioner Dr D. logged on w SmartCard/National Identity > URPId - see [API Security](design_security.html)  
+Patient Mrs M. PDS Trace > verified NHS#, Name, DoB demographic data - see [Patient Demographics](design_demographics.html)  
+ClientSystem has Patient's existing RArecord available - see ['Read an RA Flag'](design_operations_read.html)  
 ### 1.3 System Scope: ####
 ClientSystem includes GPSystem client, SCRa, 1-click etc.  
 ServerSystem includes Spine, PDS, SDS, FlagServer etc.  
@@ -41,7 +41,7 @@ Practitioner opens Patient's RARecord
 * _Practitioner records new 'Large Print' Adjustment_
   * _ClientSystem captures and structures Adjustment information as new RARecord-Flag-1 resource_
   * _..._
-  * _[not shown cf. Create Consent request & response](https://nhsconnect.github.io/FHIR-ReasonableAdjustments-API/~) as a directly analogous operation etc..._
+  * _[not shown cf. Create Consent request & response](design_operations_create.html#create-consent-or-flag-resource) as a directly analogous operation etc..._
 
 ##2 Update RA Record Examples ##
 ### 2.1 Update Flag Request ####
