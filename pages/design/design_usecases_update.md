@@ -48,6 +48,7 @@ Practitioner opens Patient's RARecord
 #### http request ####
 ```
 PUT https://clinicals.spineservices.nhs.uk/STU3/flagserver/Flag/744eec7d-8951-4722-ad74-dc34e86d4e1a HTTP/1.1
+If-Match: W/"25777f7d-27bc"
 ```
 #### body ####
 {% include custom/fhir.codegrid.html
@@ -59,6 +60,7 @@ relfilepath="usecaseexamples/RARecord-UpdateFlagRequestBody-example.json"
 title="RARecord-UpdateFlagRequestBody-example"
 type="json" %}
 {% include custom/fhir.header.html %}
+In addition, updates MUST include the If-Match header specifying the version of the resource they are updating.
 
 ### 2.2 Update Flag Response ####
 {% include custom/fhir.response.html %}

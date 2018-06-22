@@ -3,6 +3,8 @@
     <id value="744eec7d-8951-4722-ad74-dc34e86d4e1a"/>
     <meta>
         <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1"/>
+        <versionId value="35337a5b-110a"/>
+        <lastUpdated value="2016-03-01T12:02:47+00:00"/>
     </meta>
     <contained>
         <Provenance xmlns="http://hl7.org/fhir">
