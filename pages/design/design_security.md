@@ -18,7 +18,7 @@ After completing this assurance process, the supplier of the calling system will
 
 All health and care professionals using systems that access Spine are required to use national identities, and adhere to national Role Based Access Controls (RBAC) to ensure patient data is only accessed by individuals in an appropriate role for the data being accessed.
 
-Currently, this is controlled through the use of Smartcards and the Care Identity Service (CIS), although in future new NHS Identity services will provide other mechanisms for users to authenticate themselves for access to services. For the moment however, all clients MUST implement the CIS smartcard services, and apply appropriate RBAC controls before calling the Reasonable Adjustments API. There is an overview of how this can be done in the "legact messaging" section of the [Spine Core API spec](https://developer.nhs.uk/apis/spine-core/smartcards.html)
+Currently, this is controlled through the use of Smartcards and the Care Identity Service (CIS), although in future new NHS Identity services will provide other mechanisms for users to authenticate themselves for access to services. For the moment however, all clients MUST implement the CIS smartcard services, and apply appropriate RBAC controls before calling the Reasonable Adjustments API. There is an overview of how this can be done in the "legacy messaging" section of the [Spine Core API spec](https://developer.nhs.uk/apis/spine-core/smartcards.html)
 
 ## Passing System and User Context into API calls ##
 
