@@ -1,5 +1,6 @@
 {
   "resourceType": "Bundle",
+  "id": "e96acfdc-daf9-4a2e-9e4e-93dc26d935e9",
   "fhir_comments": [
     " CreateListTransactionResponseBody-example.xml "
   ],
@@ -12,7 +13,7 @@
       "fhir_comments": [
         "    now, each entry is an action to take in the transaction    "
       ],
-      "fullUrl": "https://clinicals.spineservices.nhs.uk/STU3/flagserver/List/e00c5a85-d34f-4075-96ac-b787deb484b1",
+      "fullUrl": "https://clinicals.spineservices.nhs.uk/STU3/List/e00c5a85-d34f-4075-96ac-b787deb484b1",
       "resource": {
         "resourceType": "List",
         "id": "e00c5a85-d34f-4075-96ac-b787deb484b1",
@@ -50,7 +51,7 @@
             "deleted": false,
             "date": "2018-05-25T00:00:00Z",
             "item": {
-              "reference": "https://clinicals.spineservices.nhs.uk/STU3/flagserver/Condition/cba81f41-e57d-4b91-b59f-b5efc479faf9",
+              "reference": "https://clinicals.spineservices.nhs.uk/STU3/Condition/cba81f41-e57d-4b91-b59f-b5efc479faf9",
               "_reference": {
                 "fhir_comments": [
                   " reference to a successfully written Condition available at referred endpoint.  "
@@ -76,7 +77,7 @@
       }
     },
     {
-      "fullUrl": "https://clinicals.spineservices.nhs.uk/STU3/flagserver/Condition/cba81f41-e57d-4b91-b59f-b5efc479faf9",
+      "fullUrl": "https://clinicals.spineservices.nhs.uk/STU3/Condition/cba81f41-e57d-4b91-b59f-b5efc479faf9",
       "resource": {
         "resourceType": "Condition",
         "id": "cba81f41-e57d-4b91-b59f-b5efc479faf9",
@@ -89,6 +90,46 @@
             "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1"
           ]
         },
+        "contained": [
+          {
+            "resourceType": "Provenance",
+            "id": "8ce7de6b-1307-432d-8e96-ae6a613ca3e4",
+            "meta": {
+              "profile": [
+                "https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"
+              ]
+            },
+            "target": [
+              {
+                "reference": "57f04652-6dd0-4135-a560-f9091b1b26fa"
+              }
+            ],
+            "recorded": "2016-03-01T10:05:33+00:00",
+            "agent": [
+              {
+                "role": [
+                  {
+                    "coding": [
+                      {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+                        "code": "R0260",
+                        "display": "General Medical Practitioner"
+                      }
+                    ]
+                  }
+                ],
+                "whoReference": {
+                  "reference": "https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9",
+                  "display": "Dr.D"
+                },
+                "onBehalfOfReference": {
+                  "reference": "https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7",
+                  "display": "Some GP Clinic"
+                }
+              }
+            ]
+          }
+        ],
         "extension": [
           {
             "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1",
@@ -96,7 +137,7 @@
               {
                 "url": "created",
                 "valueReference": {
-                  "reference": "#7c342c40-2471-498d-a937-d25dbae0dc7c"
+                  "reference": "#8ce7de6b-1307-432d-8e96-ae6a613ca3e4"
                 }
               }
             ]

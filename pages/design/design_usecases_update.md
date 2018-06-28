@@ -8,7 +8,7 @@ summary: Update operation describes interaction required to update a Reasonable 
 ---
 {% include custom/search.warnbanner.html %}
 
-##1 Update RA Record Use Case ##
+## 1 Update RA Record Use Case ##
 ### 1.1 Trigger: ####
 Post-op appt with GP. Patient requests change of 'Easy Read' Adjustment to 'Large Print'
 ### 1.2 Pre-requisites: ####
@@ -43,11 +43,11 @@ Practitioner opens Patient's RARecord
   * _..._
   * _[not shown cf. Create Consent request & response](design_operations_create.html#create-consent-or-flag-resource) as a directly analogous operation etc..._
 
-##2 Update RA Record Examples ##
+## 2 Update RA Record Examples ##
 ### 2.1 Update Flag Request ####
 #### http request ####
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/flagserver/Flag/744eec7d-8951-4722-ad74-dc34e86d4e1a HTTP/1.1
+PUT https://clinicals.spineservices.nhs.uk/STU3/Flag/744eec7d-8951-4722-ad74-dc34e86d4e1a HTTP/1.1
 If-Match: W/"25777f7d-27bc"
 ```
 #### body ####
@@ -63,8 +63,8 @@ type="json" %}
 In addition, updates MUST include the If-Match header specifying the version of the resource they are updating.
 
 ### 2.2 Update Flag Response ####
-{% include custom/fhir.response.html %}
-TBD but 200 OK on successful update etc.
+{% include custom/fhir.response.html %}  
+Edge cases TBD and detailed during development
 #### body ####
 {% include custom/fhir.codegrid.html
 relfilepath="usecaseexamples/RARecord-UpdateFlagResponseBody-example.xml"

@@ -33,48 +33,48 @@ Similarly, on Update, Provenance information regarding the updater is produced e
 
   ```
 [seq ]
-Client               Spine                   Redis              SDS
-   |                   |                       |                |
-   | - Create Rqst ->  |                       |                |
-   |   {JWT & URPId}   |                       |                |
-   |   (i.e. SDS OrgPersonRoleId)              |                |
-   |                   |                       |                |
-   |                   |                       |                |
-   |                   |                       |                |
-   |                   | - SDS Redis lookup -> |                |
-   |                   |                       |                |
------------------------------------------------------
-[Alt]                |                       |
-   |[URPId cached      |                       | -> Get cached
-   | in Redis    ]     |                       |    Practitioner,
-   |                   |                       | <- Organization details
-   |                   |                       |
------------------------------------------------------
-   |                   |                       |                |
-   |[URPId not cached] |                       | -  Get    ---> |
-   |                   |                       |    Practitioner,
-   |                   |                       | <- Organization details
-   |                   |                       |                |
-   |                   |                       | -> Cache
-   |                   |                       |    Practitioner,
-   |                   |                       | <- Organization details
-   |                   |                       |
------------------------------------------------------
-   |                   |                       |
-   |                   | <- SDS Redis response |
-   |                   |                       |
-   |                   | ->Provenance refs     |
-   |                   | <-filled Practnr, Org |
-   |                   |                       |
-   |                   | ->Persist Flag        |
-   |                   | <-with contained      |
-   |                   | <-Provenance          |
-   |                   |                       |
-   |                   | ->Fill display text   |
-   |                   | <-for Practnr, Org    |
-   |                   |                       |
-   | <-Create Response |                       |
-   |   {Flag}          |                       |
+Client                 Spine                    Redis              SDS
+   |                     |                        |                |
+   | -- Create Rqst ->   |                        |                |
+   |    {JWT & URPId}    |                        |                |
+   |    (i.e. SDS OrgPersonRoleId)                |                |
+   |                     |                        |                |
+   |                     |                        |                |
+   |                     |                        |                |
+   |                     | -- SDS Redis lookup -> |                |
+   |                     |                        |                |
+--------------------------------------------------------
+[Alt]                  |                        |
+   |[URPId cached        |                        | -> Get cached
+   | in Redis    ]       |                        |    Practitioner,
+   |                     |                        | <- Organization details
+   |                     |                        |
+--------------------------------------------------------
+   |                     |                        |                |
+   |[URPId not cached]   |                        | -- Get    ---> |
+   |                     |                        |    Practitioner,
+   |                     |                        | <- Organization details
+   |                     |                        |                |
+   |                     |                        | -> Cache
+   |                     |                        |    Practitioner,
+   |                     |                        | <- Organization details
+   |                     |                        |
+--------------------------------------------------------
+   |                     |                        |
+   |                     | <- SDS Redis response- |
+   |                     |                        |
+   |                     | ->Provenance refs      |
+   |                     | <-filled Practnr, Org  |
+   |                     |                        |
+   |                     | ->Persist Flag         |
+   |                     | <-with contained       |
+   |                     | <-Provenance           |
+   |                     |                        |
+   |                     | ->Fill display text    |
+   |                     | <-for Practnr, Org     |
+   |                     |                        |
+   | <-Create Response-- |                        |
+   |   {Flag}            |                        |
 ```
 Each Reasonable Adjustment resource contains its Provenance information.
 Fine detail of the content is on the Profile page under [RARecord-Provenance-1](explore_profile.html#RARecord-Provenance-1)

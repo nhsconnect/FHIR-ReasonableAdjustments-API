@@ -27,7 +27,7 @@ Here:
 
 ### http request ###
 ```
-POST https://clinicals.spineservices.nhs.uk/STU3/flagserver/$removeflag /HTTP1.1
+POST https://clinicals.spineservices.nhs.uk/STU3/$removeflag /HTTP1.1
 ```
 ### body ###
 The operation request body is a multi-part Parameter resource, containing the NHS Number of the Patient requiring their Reasonable Adjustment Flag removed, and optionally a RemovalReason where given
@@ -97,35 +97,35 @@ Interaction diagram outlining:
 ```
 Client                    Server
   |                         |
-  | -> removeflag [NHS#,    |
+  | -- removeflag [NHS#, -> |
   |          RemovalReason] |
   |                         |
-  |                         | removeflag 
-  |                         | (In pseudocode:)
-  |                         | ================
-  |                         | GET Flags WHERE
-  |                         | 	subject=[NHS#]
-  |                         | 	status=active
-  |                         | 	category=RAFlag
+  |                         | -> removeflag 
+  |                         |    (In pseudocode:)
+  |                         |    ================
+  |                         |    GET Flags WHERE
+  |                         |      subject=[NHS#]
+  |                         |      status=active
+  |                         |      category=RAFlag
+  |                         |  
+  |                         |    Foreach Flag in searchset, Update status=>inactive & removalReason=>[RemovalReason] 
+  |                         |    
+  |                         |    GET Consent WHERE
+  |                         |      subject=[NHS#]
+  |                         |      status=active
+  |                         |      category=RAFlag
   |                         | 
-  |                         | Foreach Flag in searchset, Update status=>inactive & removalReason=>[RemovalReason] 
+  |                         |    Foreach Consent in searchset, Update status=>inactive & removalReason=>[RemovalReason] 
   |                         | 
-  |                         | GET Consent WHERE
-  |                         | 	subject=[NHS#]
-  |                         | 	status=active
-  |                         | 	category=RAFlag
+  |                         |    GET List WHERE
+  |                         |      subject=[NHS#]
+  |                         |      status=current
+  |                         |      category=[RAFlagCode]
   |                         | 
-  |                         | Foreach Consent in searchset, Update status=>inactive & removalReason=>[RemovalReason] 
+  |                         |    Foreach Condition on List, Update Condition.clinicalstatus=>inactive 
+  |                         | <- & Update List.entry.deleted=>true 
   |                         | 
-  |                         | GET List WHERE
-  |                         | 	subject=[NHS#]
-  |                         | 	status=current
-  |                         | 	category=[RAFlagCode]
-  |                         | 
-  |                         | Foreach Condition on List, Update Condition.clinicalstatus=>inactive 
-  |                         | & Update List.entry.deleted=>true 
-  |                         | 
-  | <- http response &      |
+  | <- http response &  --  |
   |    operation outcome    |   
 ```
 

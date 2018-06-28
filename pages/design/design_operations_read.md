@@ -20,15 +20,15 @@ summary: Read operation describes interaction required to retrieve and view Reas
 #### For Consent and Flags ####
 
 ```
-GET https://[spineservices.nhs.uk]/flagserver/Consent?
+GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
   patient=[nhs#]&status=active&category=RAFlag
-GET https://[spineservices.nhs.uk]/flagserver/Flag?
+GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
   patient=[nhs#]&status=active&category=RAFlag
 ```
 #### For Conditions ####
 Get List and include all item references
 ```
-GET https://[spineservices.nhs.uk]/flagserver/List?
+GET https://clinicals.spineservices.nhs.uk/STU3/List?
   subject=[nhs#]&clinicalStatus=current&code=[RAFlagCode]
   &_include=List:item.clinicalStatus=active
 ```
@@ -51,7 +51,7 @@ searchset bundle containing 0..1 list and 0..* condition resource
 When a client does a READ operation to access a specific resource by ID, it may choose to include an ```If-None-Match``` header to specify the version ID of the latest version they have of that resource (see the [versioning page](explore_versioning.html) for details of version IDs) - for example:
 
 ```
-GET https://[spineservices.nhs.uk]/flagserver/Flag/744eec7d-8951-4722-ad74-dc34e86d4e1a
+GET https://clinicals.spineservices.nhs.uk/STU3/Flag/744eec7d-8951-4722-ad74-dc34e86d4e1a
 If-None-Match: W/"25777f7d-27bc"
 ```
 
@@ -67,7 +67,7 @@ If a newer version of the resource does exist, it will be returned as normal, wi
 Similarly, a client can query for updates that have a Last-Modified data newer than the last time they queried, by specifying a date in an [If-Modified-Since](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since) HTTP header:
 
 ```
-GET https://[spineservices.nhs.uk]/flagserver/Flag/744eec7d-8951-4722-ad74-dc34e86d4e1a
+GET https://clinicals.spineservices.nhs.uk/STU3/Flag/744eec7d-8951-4722-ad74-dc34e86d4e1a
 If-Modified-Since: Wed, 21 Oct 2015 07:28:00 GMT
 ```
 

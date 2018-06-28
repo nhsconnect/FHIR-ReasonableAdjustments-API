@@ -192,6 +192,9 @@ entries:
     - title: Update an RA Flag
       url: /design_usecases_update.html
       output: web
+    - title: Additional Examples
+      url: /design_usecases_additional.html
+      output: web
 
   - title: Design & Build
     output: web

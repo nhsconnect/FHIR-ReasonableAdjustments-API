@@ -25,7 +25,7 @@ Any corrections to an already committed Reasonable Adjustment element therefore 
 For each updated resource of type Consent or Flag (only 'status = active' > 'status = inactive' allowed)
 ##### update Resource() #####
 ```
-PUT [spineservices.nhs.uk]/flagserver/[resource]/[id]
+PUT https://clinicals.spineservices.nhs.uk/STU3/[resource]/[id]
 ```
 #### Update Responses ####
 
@@ -43,7 +43,7 @@ PUT [spineservices.nhs.uk]/flagserver/[resource]/[id]
 
 ##### sendTransaction() #####
 ```
-  POST https://[spineservives.nhs.uk]/flagserver
+  POST https://clinicals.spineservices.nhs.uk/STU3
 ```
 Transaction bundle demarshalled at POST endpoint and each Bundle.entry.request then performed separately, as per FHIR specification below
 
@@ -51,11 +51,11 @@ Within the Transaction i.e. at Bundle.entry.request, http requests are:
 
 ###### update Condition() ######
 ```
-PUT https://[spineservices.nhs.uk]/flagserver/Condition/[Id]
+PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/[Id]
 ```
 ###### update List() ######
 ```
-PUT https://[spineservices.nhs.uk]/flagserver/List /[Id]
+PUT https://clinicals.spineservices.nhs.uk/STU3/List/[Id]
 ```
 
 
@@ -78,7 +78,7 @@ There is a risk in some cases that two clients will try to update the same resou
 Updates would include the versionID in the HTTP header as follows:
 
 ```
-PUT /Flag/744eec7d-8951-4722-ad74-dc34e86d4e1a
+PUT https://clinicals.spineservices.nhs.uk/STU3/Flag/744eec7d-8951-4722-ad74-dc34e86d4e1a
 If-Match: W/"25777f7d-27bc"
 ```
 

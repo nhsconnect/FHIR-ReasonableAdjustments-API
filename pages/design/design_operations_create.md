@@ -24,7 +24,7 @@ Given pre-requisites:
 
 For each new resource i.e. new Consent|Flag
 ```
-POST https://[spineservices.nhs.uk]/flagserver/[resource]
+POST https://clinicals.spineservices.nhs.uk/STU3/[resource]
 ```
 
 #### Create Response ####
@@ -41,7 +41,7 @@ List is created or updated with new entry element, with temporary intra-bundle r
 
 ##### sendTransaction() #####
 ```
-  POST https://[spineservives.nhs.uk]/flagserver
+  POST https://clinicals.spineservices.nhs.uk/STU3
 ```
 Transaction bundle is demarshalled at the POST endpoint and each Bundle.entry.request is then performed separately, as per [FHIR specification](http://hl7.org/fhir/http.html#transaction)
 
@@ -49,16 +49,16 @@ Within the Transaction i.e. values at Bundle.entry.request, http requests are:
 
 ##### create Condition() #####
 ```
-POST https://[spineservices.nhs.uk]/flagserver/Condition
+POST https://clinicals.spineservices.nhs.uk/STU3/Condition
 ```
 ##### create List() #####
 ```
-POST https://[spineservices.nhs.uk]/flagserver/List
+POST https://clinicals.spineservices.nhs.uk/STU3/List
 ```
 
 #####  update List() #####
 ```
-PUT https://[spineservices.nhs.uk]/flagserver/List /[ListId]
+PUT https://clinicals.spineservices.nhs.uk/STU3/List /[ListId]
 ```
 
 

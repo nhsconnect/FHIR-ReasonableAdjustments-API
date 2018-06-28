@@ -48,7 +48,7 @@ Patient declines to record a specific Adjustment at this time.
 #### 2.1 Create Consent Request ####
 #### http request ####
 ```
-POST https://clinicals.spineservices.nhs.uk/STU3/flagserver/Consent HTTP/1.1
+POST https://clinicals.spineservices.nhs.uk/STU3/Consent HTTP/1.1
 ```
 #### body ####
 Newly created RARecord-Consent-1 resource:
@@ -84,7 +84,7 @@ type="json" %}
 #### http request ####
 Transaction handler is at the flagserver base URL
 ```
-POST https://clinicals.spineservices.nhs.uk/STU3/flagserver HTTP/1.1
+POST https://clinicals.spineservices.nhs.uk/STU3 HTTP/1.1
 ```
 #### body ####
 {% include custom/fhir.codegrid.html
@@ -98,8 +98,8 @@ type="json" %}
 {% include custom/fhir.header.html %}
 
 #### 2.4 Create List Transaction Response ####
-{% include custom/fhir.response.html %}
-TBD but 200 OK on successful transaction processing etc.
+{% include custom/fhir.response.html %}  
+Edge cases TBD and detailed during development
 #### body ####
 {% include custom/fhir.codegrid.html
 relfilepath="usecaseexamples/RARecord-CreateListTransactionResponseBody-example.xml"

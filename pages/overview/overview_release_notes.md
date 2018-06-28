@@ -13,6 +13,8 @@ summary: Summary release notes of the FHIR&reg; Reasonable Adjustments API Imple
 
 - Updates to cover resource versioning, caching and managing conflicting updates
 - Added Design section with information about tracing patients and API security
+- Additional examples covering multi-resource searchset bundle Read example, Adjustments (Flag resources) with coded data, unstructured (freetext) data, and with both.
+- Corrected Flag Server endpoint to https://clinicals.spineservices.nhs.uk/STU3 
 
 ## 0.0.3-alpha ##
 
