@@ -58,7 +58,7 @@ POST https://clinicals.spineservices.nhs.uk/STU3/List
 
 #####  update List() #####
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/List /[ListId]
+PUT https://clinicals.spineservices.nhs.uk/STU3/List/[ListId]
 ```
 
 
