@@ -22,22 +22,22 @@ entries:
       url: /overview_glossary.html
       output: web
 
-  - title: Case Studies
-    output: web
-    folderitems:
-
-    - title: Overview
-      url: /engage_case_studies.html
-      output: web, pdf
-      type: homepage
-
-      subfolders:
-      - title: Case Studies
-        output: web
-        subfolderitems:
-        - title: "Placeholder for case study"
-          url: /engage_case_studies.html
-          output: web
+# - title: Case Studies
+#   output: web
+#   folderitems:
+#
+#   - title: Overview
+#     url: /engage_case_studies.html
+#     output: web, pdf
+#     type: homepage
+#
+#     subfolders:
+#     - title: Case Studies
+#       output: web
+#       subfolderitems:
+#       - title: "Placeholder for case study"
+#         url: /engage_case_studies.html
+#         output: web
 
   - title: Resources
     output: web
@@ -164,14 +164,17 @@ entries:
   - title: Interactions
     output: web
     folderitems:
+    - title: Overview
+      url: /design.html
+      output: web
     - title: Create
-      url: /design_operations_create.html
+      url: /design_interactions_create.html
       output: web
     - title: Read
-      url: /design_operations_read.html
+      url: /design_interactions_read.html
       output: web
     - title: Update
-      url: /design_operations_update.html
+      url: /design_interactions_update.html
       output: web
     - title: Remove Flag
       url: /design_operations_removeflag.html

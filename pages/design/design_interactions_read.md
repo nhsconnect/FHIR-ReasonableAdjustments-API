@@ -3,7 +3,7 @@ title: Interaction | Read
 keywords: usecase, interaction, operation
 tags: [rest, fhir, identification, development]
 sidebar: accessrecord_rest_sidebar
-permalink: design_operations_read.html
+permalink: design_interactions_read.html
 summary: Read operation describes interaction required to retrieve and view Reasonable Adjustment Flag, Adjustment or Impairment details from Spine via the FHIR&reg; Reasonable Adjustments API
 ---
 {% include custom/search.warnbanner.html %}

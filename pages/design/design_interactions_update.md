@@ -3,7 +3,7 @@ title: Interaction | Update
 keywords: usecase, CareConnect-RARecord-Condition-1
 tags: [rest, fhir, identification,development]
 sidebar: accessrecord_rest_sidebar
-permalink: design_operations_update.html
+permalink: design_interactions_update.html
 summary: Update operation describes interaction required to update a new Reasonable Adjustment Flag, an Adjustment or an Impairment on Spine via the FHIR&reg; Reasonable Adjustments API
 ---
 {% include custom/search.warnbanner.html %}

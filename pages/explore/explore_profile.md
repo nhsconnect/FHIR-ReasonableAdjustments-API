@@ -18,7 +18,7 @@ summary: This page describes Resource and Profile StructureDefinitions required 
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Flag-1"
 resource="[RARecord-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1)"
-ccresource="N/A Yet"
+ccresource="Not Available"
 fhirresource="[Flag](https://www.hl7.org/fhir/flag.html)" %}
 
 <div id="ImageAsset"><img src="images/resourceImages/FlagResource.png" style="width:350px;"></div>
@@ -45,7 +45,7 @@ type="json" %}
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Consent-1"
 resource="[RARecord-Consent-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Consent-1"
-ccresource="N/A Yet"
+ccresource="Not Available"
 fhirresource="[Consent](https://www.hl7.org/fhir/consent.html)" %}
 
 <div id="ImageAsset"><img src="images/resourceImages/ConsentResource.png" style="width:350px;"></div>
@@ -122,7 +122,7 @@ type="json" %}
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Provenance-1"
 resource="[RARecord-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1)"
-ccresource="N/A Yet"
+ccresource="Not Available"
 fhirresource="[Provenance](https://www.hl7.org/fhir/provenance.html)" %}
 
 <div id="ImageAsset"><img src="images/resourceImages/Provenance.png" style="width:350px;"></div>

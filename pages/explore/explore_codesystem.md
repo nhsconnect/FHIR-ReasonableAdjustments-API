@@ -8,6 +8,8 @@ summary: This page describes CodeSystems used within the FHIR&reg; Reasonable Ad
 ---
 {% include custom/search.warnbanner.html %}
 
+{% include important.html content="Final valuesets for Reasonable Adjustments terminology and codings are not yet available. These valuesets are representative, but _will_ be up-versioned as stable valuesets and codings are established." %}
+
 {% include custom/fhir.codesystemgrid.html
 codesystemname="CodeSystem-RARecord-AccessibleInformationAdjustments-1" %}
 {% include custom/fhir.codesystemgrid.html

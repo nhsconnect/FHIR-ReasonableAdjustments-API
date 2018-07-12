@@ -9,12 +9,11 @@ summary: "Overview of the Resources section: resources used within the FHIR&reg;
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/api_overview.svg %}
-
 ## Resources ##
 
-This section lists the resources used in the Reasonable Adjustments API covered within this Implementation Guide.
-It is subdivided into 
+This section lists the resources used in the Reasonable Adjustments API covered within this Implementation Guide.  
+The Resources describe the FHIR data modelling that represent the data requirements of the FHIR-ReasonableAdjustments-API.  
+It is subdivided into sections for:  
 
 
 <table style="min-width:100%;width:100%">
