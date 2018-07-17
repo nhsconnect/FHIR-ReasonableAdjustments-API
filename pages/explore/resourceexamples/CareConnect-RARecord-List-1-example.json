@@ -5,6 +5,8 @@
     " CareConnect-RARecord-List-1 example "
   ],
   "meta": {
+    "versionId": "145399fa-1622-4c3c-aba3-19312d5df3c3",
+    "lastUpdated": "2016-03-01T10:04:33+00:00",
     "profile": [
       "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-List-1"
     ]
@@ -20,12 +22,6 @@
         "display": "Reasonable adjustments for health and care access"
       }
     ]
-  },
-  "subject": {
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "999999998"
-    }
   },
   "date": "2016-03-01T10:08:00+00:00",
   "entry": [

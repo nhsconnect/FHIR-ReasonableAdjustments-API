@@ -20,6 +20,8 @@ Reasonable Adjustment 2: Adjust for use of communication book / aid
 <Flag xmlns="http://hl7.org/fhir">
     <id value="7e437dcf-2e3f-45ad-9cab-5e4176c11e41"/>
     <meta>
+        <versionId value="7585efde-6df2-4ade-a221-9b1489c904ee"/>
+        <lastUpdated value="2016-03-01T10:04:33+00:00"/>
         <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1"/>
     </meta>
     <contained>
@@ -29,7 +31,7 @@ Reasonable Adjustment 2: Adjust for use of communication book / aid
                     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"/>
                 </meta>
                 <target>
-                    <reference value="7e437dcf-2e3f-45ad-9cab-5e4176c11e41"/>
+                    <reference value="Flag/7e437dcf-2e3f-45ad-9cab-5e4176c11e41"/>
                 </target>
                 <recorded value="2016-03-01T10:05:33+00:00"/>
                 <agent>
@@ -84,8 +86,7 @@ Reasonable Adjustment 2: Adjust for use of communication book / aid
     </code>
     <subject>
         <identifier>
-            <system value="https://fhir.nhs.uk/Id/nhs-number"/>
-            <value value="999999998"/>
+            <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
         </identifier>
     </subject>
 </Flag>

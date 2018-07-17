@@ -2,6 +2,8 @@
 <Condition xmlns="http://hl7.org/fhir">
     <id value="6c959805-7af1-445d-9d3e-087e3c2bc107"/>
     <meta>
+        <versionId value="10a59590-9533-4d13-9909-7f7d073d0045"/>
+        <lastUpdated value="2016-03-01T10:04:33+00:00"/>
         <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1" />
     </meta>
     <contained>
@@ -11,7 +13,7 @@
                     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"/>
                 </meta>
                 <target>
-                    <reference value="6c959805-7af1-445d-9d3e-087e3c2bc107"/>
+                    <reference value="Condition/6c959805-7af1-445d-9d3e-087e3c2bc107"/>
                 </target>
                 <recorded value="2016-03-01T10:05:33+00:00"/>
                 <agent>
@@ -57,8 +59,7 @@
     </code>
     <subject>
         <identifier>
-            <system value="https://fhir.nhs.uk/Id/nhs-number"/>
-            <value value="999999998"/>
+            <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
         </identifier>
     </subject>
 </Condition>
