@@ -8,69 +8,49 @@ summary: Create operation describes interaction required to record a new Reasona
 ---
 {% include custom/search.warnbanner.html %}
 
-## 1. Create Operation ##
+There are 2 common patterns when working with the various Reasonable Adjustment resources within the Interactions:
+* Consent and Flag resource - single, independent resources
+* Condition resource - which entails maintaining its associated List
 
-<img src="images/sequenceDiagrams/RAFlag-Create-Productionised.png" style="width:700px;">
 
-## 2. Request - Response ##
+## 1 Create Resource ##
 
-### Create Consent or Flag resource ###
+This pattern applies to creation of a single resource.
+* Consent, Flag, Condition and List always use this pattern for creation.
+* Create Condition triggers Create List if there is no existing List
+* Create Condition triggers Update List if there is an existing List
+
+<img src="images/sequenceDiagrams/CreateResource.png">
+
+### Create Resource request - response ###
 
 Given pre-requisites:
 - authenticated, authorized RBACed Spine-User
 - validated NHSNumber
 
-#### Create Requests ####
+#### Create Resource Request ####
 
-For each new resource i.e. new Consent|Flag
+For each new resource 
 ```
-POST https://clinicals.spineservices.nhs.uk/STU3/[resource]
+POST https://clinicals.spineservices.nhs.uk/STU3/[resourceType] /HTTP1.1
 ```
 
-#### Create Response ####
+#### Create Resource Response ####
 
-201 http response code and Location header (and mirror POSTed payload)
+201 Created http response code and Location header (and mirror POSTed payload)  
 (or operation outcome if failure to find or process)
 
-### Create List and Condition resources ###
+## 2 Create Condition resources ##
 
-#### Create Requests ####
-
-For each new 'Disability Type' line item bundled as Condition in Transaction bundle, 
-List is created or updated with new entry element, with temporary intra-bundle referencing to temp Condition.id
-
-##### sendTransaction() #####
-```
-  POST https://clinicals.spineservices.nhs.uk/STU3
-```
-Transaction bundle is demarshalled at the POST endpoint and each Bundle.entry.request is then performed separately, as per [FHIR specification](http://hl7.org/fhir/http.html#transaction)
-
-Within the Transaction i.e. values at Bundle.entry.request, http requests are:
-
-##### create Condition() #####
-```
-POST https://clinicals.spineservices.nhs.uk/STU3/Condition
-```
-##### create List() #####
-```
-POST https://clinicals.spineservices.nhs.uk/STU3/List
-```
-
-#####  update List() #####
-```
-PUT https://clinicals.spineservices.nhs.uk/STU3/List/[ListId]
-```
+The Condition resource is pointed to by a List.  
+After successful creation of the Condition resource (see the Create Consent and Flag pattern above), the Client must either:
+* create a new List instance
+* update the existing List instance
 
 
-#### Create Response ####
+<img src="images/sequenceDiagrams/CreateConditionList.png">
 
-##### successResponse() #####
-
-  200 http response code and transaction-response bundle 
-(or operation outcome if failure to find or process any of the transaction bundle requests)
-
-failResponse()
-
-  4xx or 5xx http response code and operation outcome describing failure
+There is no specific http request here.  
+The pattern consists of sequenced _Create Condition_ and _Create List_ or _Update List_ interactions.
 
 

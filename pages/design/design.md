@@ -10,9 +10,9 @@ summary: Interaction describes ReSTful interactions and operations required to e
 
 ## 1 Operations ##
 
-Operations are the set of activities (i.e. functional requirements) needed to exchange Reasonable Adjustment information across the FHIR-ReasonableAdjustments-API (so it can be nationally stored and available).  
+Operations are the set of business activities a user needs to collect, consider and curate Reasonable Adjustments information on behalf of a patient. Users access this functionality through a Reasonable Adjustments client system.  
 
-These aren't technically part of the API. Strictly, they are Client system functional requirements, describing functionality required by the end-user. Here they are used to illustrate/assure that the Interactions (which are part of the API) cover the functional scope of the Reasonable Adjustments system.  
+These aren't technically part of the API. Strictly, they are Client system functional requirements. Here they are used to illustrate/assure that the Interactions (which are part of the API) cover the functional scope of the Reasonable Adjustments system.  
 
 Reasonable Adjustments requires the ability to:
 
@@ -30,70 +30,43 @@ Reasonable Adjustments requires the ability to:
 <br>
 * _Remove Flag_
 * _Determine Provenance_  
-    (Need to demonstrate how the solution design produces the Provenance resource/information in the created/persisted resource. Basically, we feed it the URPId as part of the http request, server uses this to generate a Provenance resource, this is contained in the parent/container resource and persisted.)
+<br>
 
 ## 2 Interactions ##
 
-Interactions are the http request response exchanges between client and server which fulfil the operations above.  
+Interactions are the http request-response exchanges between client and server which are used to fulfil the operations above.  
 
-There isn't a 1 to 1 correspondence to the operations, as for example, 'Add an Impairment' requires 'Create Condition' and either 'Create List' or 'Update List' Interactions, and 'Determine Provenance' isn't an http interaction at all.
+There isn't a 1 to 1 correspondence to the operations, as for example, 'Add an Impairment' requires 'Create Condition' and either 'Create List' or 'Update List' Interactions, 'Determine Provenance' isn't an http interaction at all.
 
-
-To do:
-    rewrite pages with better UCs
-
-
-Create Consent
-    Create Consent request
-        POST https://clinicals.spineservices.nhs.uk/STU3/Consent HTTP/1.1
-        Example OK
-    Create Consent response
-
-Create Flag
-    Create Flag request
-
-    Create Flag response
-
-Create Condition
-    Create Condition request
-    Create Condition response
-
-Create List
-    Create List request
-    Create List response
-
-Read Consent
-    Read Consent request
-    Read Consent response
-
-Read Adjustments
-    Read Adjustments request
-    Read Adjustments response
-
-Read Conditions
-    Read Conditions request
-    Read Conditions response
-
-Read List
-    Read List request
-    Read List response
-
-Update List
-    Update List request
-    Update List response
-
-Delete Consent
-    Delete Consent request
-    Delete Consent response
-
-Delete Flag
-    Delete Flag request
-    Delete Flag response
-
-Delete Condition
-    Delete Condition request
-    Delete Condition response
-
-Delete List
-    Delete List request
-    Delete List response
+* _Create Consent_
+* _Create Flag_
+* _Create Condition_
+* _Create List_  
+<br>
+All use the _Create Resource_ pattern  
+Condition and List must also consider the _Create Condition_ resources pattern
+<br><br>
+* _Read Consent_
+* _Read Adjustments_
+* _Read Conditions_
+* _Read List_  
+<br>
+Consent and Adjustments use the _Read Resource_ pattern  
+List and then Condition use _Read List_ followed by _Read Conditions_ pattern
+<br><br>
+* _Update List_  
+<br>
+_Update List_ is used when Creating or Deleting Conditions from an existing List
+<br><br>
+* _Delete Consent_
+* _Delete Flag_
+* _Delete Condition_
+* _Delete List_  
+<br>
+All use the _Delete Resource_ pattern  
+Condition and List must also consider the _Delete Condition_ resources pattern
+<br><br>
+Interactions are described using Sequence Diagrams in the sections below.  
+The Remove Flag and Determine Provenance Operations are also discussed.  
+<br>
+Interactions and Operations are further illustrated in the _Use Cases & Examples_ section.

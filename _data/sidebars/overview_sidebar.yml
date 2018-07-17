@@ -176,6 +176,9 @@ entries:
     - title: Update
       url: /design_interactions_update.html
       output: web
+    - title: Delete
+      url: /design_interactions_delete.html
+      output: web
     - title: Remove Flag
       url: /design_operations_removeflag.html
       output: web

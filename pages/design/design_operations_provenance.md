@@ -1,10 +1,10 @@
 ---
-title: Interaction | Provenance
+title: Interaction | Determine Provenance
 keywords: usecase
 tags: [rest, fhir, identification, development]
 sidebar: accessrecord_rest_sidebar
 permalink: design_interactions_provenance.html
-summary: Provenance operation describes server-side operations required to populate, cache and return Provenance information (Practitioner and Organisation information) for all Reasonable Adjustment Flag components on Spine via the FHIR&reg; Reasonable Adjustments API
+summary: Provenance operation describes the server-side operations required to populate, cache and return Provenance information (Practitioner and Organisation information) for all Reasonable Adjustment Flag components on Spine via the FHIR&reg; Reasonable Adjustments API
 ---
 {% include custom/search.warnbanner.html %}
 

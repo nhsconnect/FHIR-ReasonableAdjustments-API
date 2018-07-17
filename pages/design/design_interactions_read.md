@@ -8,43 +8,78 @@ summary: Read operation describes interaction required to retrieve and view Reas
 ---
 {% include custom/search.warnbanner.html %}
 
-## 1. Read Operation ##
+There are 2 common patterns when working with the various Reasonable Adjustment resources within the Interactions:
+* Consent and Flag resource - single, independent resources
+* Condition resource - which are referenced using their associated List
+
+When reading resources
+* Consent and Flag use the _Read Resource_ pattern
+* Condition resources use _Read Conditions_
+
+## 1. Read Resource ##
 
 
-<img src="images/sequenceDiagrams/RAFlag-Read-Productionised.png" style="width:700px;">
+<img src="images/sequenceDiagrams/ReadResource.png">
 
-## 2. Request - Response ##
+### Read Resource request - response ###
 
-### Read Requests ###
+Given pre-requisites:
+- authenticated, authorized RBACed Spine-User
+- validated NHSNumber
 
-#### For Consent and Flags ####
+#### Read Resource Request ####
 
+For each resource type
 ```
-GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
-  patient=[nhs#]&status=active&category=RAFlag
-GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
-  patient=[nhs#]&status=active&category=RAFlag
+GET https://clinicals.spineservices.nhs.uk/STU3/[resourceType]?
+  patient=[nhs#]&status=active&category=RAFlag /HTTP1.1
 ```
-#### For Conditions ####
-Get List and include all item references
-```
-GET https://clinicals.spineservices.nhs.uk/STU3/List?
-  subject=[nhs#]&clinicalStatus=current&code=[RAFlagCode]
-  &_include=List:item.clinicalStatus=active
-```
-[chained List:item.clinicalStatus=active not required if we don't keep deleted items on list - non deleted items makes the list more a current snapshot]
 
-### Read Responses ###
+#### Read Resource Responses ####
 
-#### consent() ####
-  searchset bundle containing 0..1 consent resource 
+##### Consent resources #####
+  searchset bundle containing 0..1 consent resource  
+  (or operation outcome if failure to find or process)  
+
+##### Flag resources #####
+  searchset of 0..* active RAFlag adjustments for patient  
   (or operation outcome if failure to find or process)
 
-#### flags() ####
-searchset of 0..* active RAFlag adjustments for patient
+## 2. Read Conditions ##
+The _Read Conditions_ interaction is a sequenced pair of interactions to read the Patient's Reasonable Adjustments List, then to Read only those active Conditions it lists.
 
-#### conditionListIncludes() ####
-searchset bundle containing 0..1 list and 0..* condition resource
+<img src="images/sequenceDiagrams/ReadConditionList.png">
+
+### Read Conditions request - response ###
+
+Given pre-requisites:
+- authenticated, authorized RBACed Spine-User
+- validated NHSNumber
+
+#### Read Conditions Request ####
+
+First reading the List:
+```
+GET https://clinicals.spineservices.nhs.uk/STU3/List?
+  patient=[nhs#]&status=active&category=RAFlag /HTTP1.1
+```
+On successful read of the List, read the Conditions:
+```
+GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
+  _list&clinical-status=active /HTTP1.1
+```
+Implementations of _Read Conditions_ MUST implement the Search Parameters \_list and clinical-status for the Condition resource.
+
+#### Read Conditions Responses ####
+
+##### List resource #####
+  searchset bundle containing 0..1 list resource  
+  (or operation outcome if failure to find or process)  
+
+##### Condition resources #####
+  searchset of 0..* active Conditions for patient  
+  (or operation outcome if failure to find or process)
+
 
 ## 3. Caching READs ##
 
