@@ -1,9 +1,9 @@
 ---
-title: Interaction | Remove Flag
+title: Operation | Remove Flag
 keywords: usecase
 tags: [rest, fhir, identification, development]
 sidebar: accessrecord_rest_sidebar
-permalink: design_interactions_removeflag.html
+permalink: design_operations_removeflag.html
 summary: Remove Flag operation describes the operation required to remove (soft delete) a Reasonable Adjustment Flag entirely, including all Adjustments, Impairments and Consents on the Spine via the FHIR&reg; Reasonable Adjustments API
 ---
 {% include custom/search.warnbanner.html %}
@@ -94,39 +94,38 @@ Interaction diagram outlining:
 * pseudocode description of server-side actions (happy-path) 
 * operation response
 
+<img src="images/sequenceDiagrams/RemoveFlag.png">
+
 ```
-Client                    Server
-  |                         |
-  | -- removeflag [NHS#, -> |
-  |          RemovalReason] |
-  |                         |
-  |                         | -> removeflag 
-  |                         |    (In pseudocode:)
-  |                         |    ================
-  |                         |    GET Flags WHERE
-  |                         |      subject=[NHS#]
-  |                         |      status=active
-  |                         |      category=RAFlag
-  |                         |  
-  |                         |    Foreach Flag in searchset, Update status=>inactive & removalReason=>[RemovalReason] 
-  |                         |    
-  |                         |    GET Consent WHERE
-  |                         |      subject=[NHS#]
-  |                         |      status=active
-  |                         |      category=RAFlag
-  |                         | 
-  |                         |    Foreach Consent in searchset, Update status=>inactive & removalReason=>[RemovalReason] 
-  |                         | 
-  |                         |    GET List WHERE
-  |                         |      subject=[NHS#]
-  |                         |      status=current
-  |                         |      category=[RAFlagCode]
-  |                         | 
-  |                         |    Foreach Condition on List, Update Condition.clinicalstatus=>inactive 
-  |                         | <- & Update List.entry.deleted=>true 
-  |                         | 
-  | <- http response &  --  |
-  |    operation outcome    |   
+$removeflag
+(In pseudocode:)
+
+GET Flags WHERE
+  subject=[NHS#]
+  status=active
+  category=RAFlag
+
+Foreach Flag in searchset, 
+    Update status=>inactive & removalReason=>[RemovalReason]
+
+GET Consent WHERE
+  subject=[NHS#]
+  status=active
+  category=RAFlag
+
+Foreach Consent in searchset, 
+    Update status=>inactive & removalReason=>[RemovalReason]
+
+GET List WHERE
+  subject=[NHS#]
+  status=current
+  category=[RAFlagCode]
+
+Foreach Condition on List, 
+    Update Condition.clinicalstatus=>inactive &
+    Update List.entry.deleted=>true
 ```
 
+## 4 OperationDefinition ##
 
+{% include important.html content="**Placeholder:** An OperationDefinition instance _will_ be provided for the $removeflag operation." %}

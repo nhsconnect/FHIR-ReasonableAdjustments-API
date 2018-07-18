@@ -17,7 +17,7 @@ summary: This page describes Resource and Profile StructureDefinitions required 
 
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Flag-1"
-resource="[RARecord-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1)"
+resource="[RARecord-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1/_history/0.0.5)"
 ccresource="Not Available"
 fhirresource="[Flag](https://www.hl7.org/fhir/flag.html)" %}
 
@@ -44,7 +44,7 @@ type="json" %}
 
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Consent-1"
-resource="[RARecord-Consent-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Consent-1"
+resource="[RARecord-Consent-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Consent-1/_history/0.0.5)"
 ccresource="Not Available"
 fhirresource="[Consent](https://www.hl7.org/fhir/consent.html)" %}
 
@@ -70,7 +70,7 @@ type="json" %}
 
 {% include custom/fhir.resourcegrid.html
 resourcename="CareConnect-RARecord-Condition-1"
-resource="[CareConnect-RARecord-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1)"
+resource="[CareConnect-RARecord-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1/_history/0.0.5)"
 ccresource="[CareConnect-Condition-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1)"
 fhirresource="[Condition](https://www.hl7.org/fhir/condition.html)" %}
 
@@ -96,7 +96,7 @@ type="json" %}
 
 {% include custom/fhir.resourcegrid.html
 resourcename="CareConnect-RARecord-List-1"
-resource="[CareConnect-RARecord-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-List-1)"
+resource="[CareConnect-RARecord-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-List-1/_history/0.0.5)"
 ccresource="[CareConnect-List-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-List-1)"
 fhirresource="[List](https://www.hl7.org/fhir/list.html)" %}
 
@@ -121,7 +121,7 @@ type="json" %}
 
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Provenance-1"
-resource="[RARecord-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1)"
+resource="[RARecord-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1/_history/0.0.5)"
 ccresource="Not Available"
 fhirresource="[Provenance](https://www.hl7.org/fhir/provenance.html)" %}
 

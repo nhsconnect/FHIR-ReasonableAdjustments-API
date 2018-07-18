@@ -160,6 +160,9 @@ entries:
     - title: Resource Versioning
       url: /explore_versioning.html
       output: web
+    - title: CapabilityStatement
+      url: /explore_capability.html
+      output: web
 
   - title: Interactions
     output: web
