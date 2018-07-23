@@ -205,6 +205,13 @@ entries:
       url: /design_usecases_additional.html
       output: web
 
+  - title: Use Cases Remix
+    output: web
+    folderitems:
+    - title: Use Cases Remix
+      url: /design_usecases_remix.html
+      output: web
+
   - title: Design & Build
     output: web
     folderitems:

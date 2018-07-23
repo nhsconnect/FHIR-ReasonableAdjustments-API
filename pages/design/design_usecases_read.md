@@ -31,11 +31,11 @@ Patient has a RA Flag; Practitioner requests record
 #### Main ####
 * Patient arrives for appointment; Practitioner retrieves Patient's RARecord.  
   * ClientSystem queries ServerSystem to retrieve RARecord
-    * ClientSystem submits Read Consent query request (for Patient, Active, etc.)
+    * ClientSystem submits Read Consent request (for Patient, Active, etc.)
       * ServerSystem submits Read Consent response
-    * ClientSystem submits Read Flag query request (for Patient, Active, etc.)
+    * ClientSystem submits Read Flag request (for Patient, Active, etc.)
       * ServerSystem submits Read Flag response
-    * ClientSystem submits Read List query request with _included_Conditions_ (for Patient, Active, etc.)
+    * ClientSystem submits Read List request with _included_Conditions_ (for Patient, Active, etc.)
       * ServerSystem submits Read List response
 
 ## 2 Read RA Record Use Case Examples ##

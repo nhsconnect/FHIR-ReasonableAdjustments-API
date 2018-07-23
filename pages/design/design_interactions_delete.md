@@ -16,8 +16,7 @@ Any corrections to an already committed Reasonable Adjustment element therefore 
 
 This pattern applies to deletion of a single resource.
 * Consent, Flag, Condition and List always use this pattern for deletion.
-* Delete Condition triggers Delete List if there is no existing List
-* Delete Condition triggers Update List if there is an existing List
+* Delete Condition triggers Update List if there is an existing List - if there is a Condition to delete, there should _always_ be a List
 
 <img src="images/sequenceDiagrams/UpdateResource.png">
 
