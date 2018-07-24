@@ -208,6 +208,18 @@ entries:
   - title: Use Cases Remix
     output: web
     folderitems:
+    - title: Create an RA Flag
+      url: /design_usecases_create_remix.html
+      output: web
+    - title: Read an RA Flag
+      url: /design_usecases_read_remix.html
+      output: web
+    - title: Update an RA Flag
+      url: /design_usecases_update_remix.html
+      output: web
+    - title: Additional Examples
+      url: /design_usecases_additional_remix.html
+      output: web
     - title: Use Cases Remix
       url: /design_usecases_remix.html
       output: web
@@ -220,6 +232,12 @@ entries:
       output: web
     - title: Security
       url: /design_security.html
+      output: web
+    - title: Headers
+      url: /design_headers.html
+      output: web
+    - title: JWT
+      url: /design_jwt.html
       output: web
 
 #    - title: Open Source

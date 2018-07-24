@@ -1,5 +1,5 @@
 ---
-title: Interaction
+title: Interaction | Use Case Examples Remix
 keywords: usecase
 tags: [rest, fhir, identification,development]
 sidebar: accessrecord_rest_sidebar
@@ -29,9 +29,9 @@ Use Case Remix
 
 ```
 GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
- patient=[nhs#]&
+ patient=999999998&
  status=active&
- category=[RAFlag]&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
  _format=xml HTTP/1.1
 Authorization:Bearer [jwt_token_string]
 InteractionID:urn:nhs:names:services:flagserver
@@ -43,10 +43,10 @@ InteractionID:urn:nhs:names:services:flagserver
 
 ```
 GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
- patient=[nhs#]&
+ patient=999999998&
  status=active&
- category=[RAFlag]&
- _format=xml HTTP/1.1
+ category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
+ _format=json HTTP/1.1
 Authorization:Bearer [jwt_token_string]
 InteractionID:urn:nhs:names:services:flagserver
 
@@ -59,15 +59,15 @@ InteractionID:urn:nhs:names:services:flagserver
 
 #### http response & headers ####
 ```
-HTTP/1.1 404 PATIENT NOT FOUND
-Date:
-ETag:
-Location:
-Last-Modified:
-Content-Type:application/xml+fhir
+HTTP/1.1 404 NOT FOUND
+Date:Tue, 24 Jul 2018 10:00:00 GMT
 
 ```
-**DQ:** Would you slap the full header & meta shebang in an OpOutcome?
+**DQ:** Would you use full header & metadata in a failure OperationOutcome response?  
+**DN:** Can't see why you would.  
+From FHIR spec, 'The resource is not designed to be persisted or referenced from other parts of the workflow.'  
+Therefore it won't have a versionId/ETag, lastModified would only ever be the same as Date, no Location as not persisted.
+Failure response therefore drops to minimal Date, Content-Type headers.
 #### http body ####
 ```
 <!-- Spine-operationOutcome-1 instance -->
@@ -94,11 +94,8 @@ Content-Type:application/xml+fhir
 #### http response & headers ####
 ```
 HTTP/1.1 404 PATIENT NOT FOUND
-Date:
-ETag:
-Location:
-Last-Modified:
-Content-Type:
+Date:Tue, 24 Jul 2018 10:00:00 GMT
+Content-Type:application/json+fhir
 
 ```
 **DQ:** Would you slap the full header & meta shebang in an OpOutcome?
@@ -136,23 +133,74 @@ _[Read Consdent and Read Flag not illustrated_ - these are identical to existing
 ### 2.1 Read List request ###
 
 #### http request & headers ####
+```
+GET https://clinicals.spineservices.nhs.uk/STU3/List?
+ patient=999999998&
+ status=current&
+ code=http://snomed.info/sct|1094391000000102&
+ _format=xml HTTP/1.1
+Authorization:Bearer [jwt_token_string]
+InteractionID:urn:nhs:names:services:flagserver
+
+```
+
 #### http body ####
+**None**
 
 ### 2.2 Read List response ###
 
 #### http response & headers ####
+```
+HTTP/1.1 200 OK
+Date:Tue, 24 Jul 2018 10:00:00 GMT
+Last-Modified:2018-07-24T10:00:00+00:00
+ETag: W/"9b8509a6-2330-448c-aefc-1d6f723f3e5e”
+Content-Type:application/xml+fhir
+
+```
+
 #### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/SearchSetListBundleResponse.xml"
+title="Read List response bundle"
+type="xml" %}
 
 ### 2.3 Read Conditions request ###
 
 #### http request & headers ####
+```
+GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
+ _list=4c8d19af-7755-4954-93df-93c964ddf349&
+ clinical-status=active&
+ _format=xml HTTP/1.1
+Authorization:Bearer [jwt_token_string]
+InteractionID:urn:nhs:names:services:flagserver
+
+```
+
+Idiomatically this is 'Get all Conditions on List 4c8d19af-7755-4954-93df-93c964ddf349, whose clinicalStatus is active'.  
+**NB.**Spelling of search parameter 'clinical-status' versus element Condition.clinicalStatus  
+
 #### http body ####
+**None**
 
 ### 2.4 Read Conditions response ###
 
 #### http response & headers ####
-#### http body ####
+```
+HTTP/1.1 200 OK
+Date:Tue, 24 Jul 2018 10:00:01 GMT
+Last-Modified:2018-07-24T10:00:01+00:00
+ETag: W/"ded2da33-64c9-4c8d-8e3a-6a037823d0c6”
+Content-Type:application/xml+fhir
 
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/SearchSetConditionBundleResponse.xml"
+title="Read Conditions response bundle"
+type="xml" %}
 
 ## 3 Update Contention failure ##
 
@@ -177,29 +225,97 @@ Although unlikely, Update Contention is possible. This scenario illustrates the 
 ### 3.1 Delete Condition (A) request ###
 
 #### http request & headers ####
+```
+PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777
+ Authorization:Bearer [jwt_token_string]
+ InteractionID:urn:nhs:names:services:flagserver
+ If-Match:W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
+
+```
+
 #### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/DeleteConditionInstance2Request.xml"
+title="Delete Condition request example"
+type="xml" %}
+
 
 ### 3.2 Delete Condition (A) response ###
 
 #### http response & headers ####
+```
+HTTP/1.1 200 OK
+Date:Tue, 24 Jul 2018 10:00:01 GMT
+Last-Modified:2018-07-24T10:00:01+00:00
+ETag: W/"0bf0b49c-9dfb-4587-9931-0b4a00819229”
+Content-Type:application/xml+fhir
+
+```
+
 #### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/DeleteConditionInstance2Response.xml"
+title="Delete Condition request example"
+type="xml" %}
 
 ### 3.3 Update List request ###
 
 #### http request & headers ####
+```
+PUT https://clinicals.spineservices.nhs.uk/STU3/List/4c8d19af-7755-4954-93df-93c964ddf349
+ Authorization:Bearer [jwt_token_string]
+ InteractionID:urn:nhs:names:services:flagserver
+ If-Match:W/"bb325b55-e8a0-41df-84bd-3ac2b026ab5b"
+
+```
+
 #### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/ListInstanceUpdateRequest.xml"
+title="Update List request example"
+type="xml" %}
 
 ### 3.4 Update List response ###
 
 #### http response & headers ####
+```
+HTTP/1.1 200 OK
+Date:Tue, 24 Jul 2018 10:00:02 GMT
+Last-Modified:2018-07-24T10:00:02+00:00
+ETag: W/"3de1a085-95f3-43d2-be3c-aa60b6b3da85”
+Content-Type:application/xml+fhir
+
+```
+
 #### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/ListInstanceUpdateResponse.xml"
+title="Update List response example"
+type="xml" %}
 
 ### 3.5 Delete Condition (B) request ###
 
 #### http request & headers ####
+```
+PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777
+ Authorization:Bearer [jwt_token_string]
+ InteractionID:urn:nhs:names:services:flagserver
+ If-Match:W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
+
+```
+The only material difference between this request and Delete Condition (A) request will be time/order of receipt, and in the JWT payload.  
+
 #### http body ####
+As example above
 
 ### 3.6 Delete Condition (B) response ###
 
 #### http response & headers ####
+```
+HTTP/1.1 409 CONFLICT
+Date:Tue, 24 Jul 2018 10:10:02 GMT
+
+```
+
 #### http body ####
+**None**
