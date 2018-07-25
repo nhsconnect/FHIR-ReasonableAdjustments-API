@@ -61,6 +61,7 @@ InteractionID:urn:nhs:names:services:flagserver
 ```
 HTTP/1.1 404 NOT FOUND
 Date:Tue, 24 Jul 2018 10:00:00 GMT
+Content-Type:application/xml+fhir
 
 ```
 **DQ:** Would you use full header & metadata in a failure OperationOutcome response?  
@@ -98,7 +99,7 @@ Date:Tue, 24 Jul 2018 10:00:00 GMT
 Content-Type:application/json+fhir
 
 ```
-**DQ:** Would you slap the full header & meta shebang in an OpOutcome?
+
 #### http body ####
 ```
 { "OperationOutcome" : 
@@ -314,8 +315,29 @@ As example above
 ```
 HTTP/1.1 409 CONFLICT
 Date:Tue, 24 Jul 2018 10:10:02 GMT
+Content-Type:application/xml+fhir
 
 ```
 
 #### http body ####
-**None**
+```
+<!-- Spine-operationOutcome-1 instance -->
+<OperationOutcome xmlns="http://hl7.org/fhir">
+    <id value="3ca2a2cb-b663-4ae9-b650-7cf4a23487ec"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/Spine-OperationOutcome-1"/>
+    </meta>
+    <issue>
+        <severity value="error"/>
+        <code value="forbidden"/>
+        <details>
+            <coding>
+                <system value="https://fhir.nhs.uk/STU3/ValueSet/Spine-ErrorOrWarningCode-1"/>
+                <code value="CONFLICT"/>
+                <display value="Conflict"/>
+            </coding>
+        </details>
+    </issue>
+</OperationOutcome>
+
+```
