@@ -1,0 +1,24 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "3ca2a2cb-b663-4ae9-b650-7cf4a23487ec",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/Spine-OperationOutcome-1"
+    ]
+  },
+  "issue": [
+    {
+      "severity": "error",
+      "code": "forbidden",
+      "details": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/ValueSet/Spine-ErrorOrWarningCode-1",
+            "code": "CONFLICT",
+            "display": "Conflict"
+          }
+        ]
+      }
+    }
+  ]
+}
