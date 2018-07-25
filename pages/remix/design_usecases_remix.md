@@ -20,8 +20,8 @@ Use Case Remix
 #### Main ####
 * Practitioner searches for Patient's RARecord
   * ClientSystem searched and failed to find existing RARecord
-    * ClientSystem submits Read Consent request (for Patient, Active, etc.) [(xml)](/design_usecases_remix.html#11-read-consent-request---xml-example) [(json)](/design_usecases_remix.html#12-read-consent-request---json-example)
-    * ServerSystem submits Read Consent response [(xml)](/design_usecases_remix.html#13-read-consent-response---xml-example) [(json)](/design_usecases_remix.html#14-read-consent-response---json-example)
+    * ClientSystem submits Read Consent request (for Patient, Active, etc.) [(xml)](design_usecases_remix.html#11-read-consent-request---xml-example) [(json)](design_usecases_remix.html#12-read-consent-request---json-example)
+    * ServerSystem submits Read Consent response [(xml)](design_usecases_remix.html#13-read-consent-response---xml-example) [(json)](design_usecases_remix.html#14-read-consent-response---json-example)
 
 ### 1.1 Read Consent request - xml example  ###
 
