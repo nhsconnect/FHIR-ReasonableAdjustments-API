@@ -16,7 +16,9 @@ Headers listed are cumulative.
 
 #### All requests ####
 * Authorization: Bearer [jwt_token_string]
-* InteractionID: urn:nhs:names:services:flagserver
+* InteractionID: [serviceName]
+
+[InteractionID](/design_headers.html#interactionid) varies by resource and interaction undertaken.
 
 #### Update requests ####
 * If-Match: [versionIdETag]
@@ -25,6 +27,7 @@ Headers listed are cumulative.
 
 #### All failure responses ####
 * Date: [servedNowDate]
+* Content-type: application/json+fhir or application/xml+fhir
 
 #### All success responses ####
 * Date: [servedNowDate]
@@ -34,3 +37,55 @@ Headers listed are cumulative.
 
 #### Create responses ####
 * Location: https://clinicals.spineservices.nhs.uk/STU3/[type]/[id]/_history/[vid]
+
+## InteractionID ##
+
+
+<table>
+
+    <thead>
+        <tr>
+            <th>Interaction</th>
+            <th>Resource</th>
+            <th>InteractionID</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="4">Read</td>
+            <td>Consent</td>
+            <td>urn:nhs:names:services:flagserver:consent:read</td>
+        </tr>
+        <tr>
+            <td>Flag</td>
+            <td>urn:nhs:names:services:flagserver:flag:read</td>
+        </tr>
+        <tr>
+            <td>Condition</td>
+            <td>urn:nhs:names:services:flagserver:condition:read</td>
+        </tr>
+        <tr>
+            <td>List</td>
+            <td>urn:nhs:names:services:flagserver:list:read</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Create, Update,<br>Delete</td>
+            <td>Consent</td>
+            <td>urn:nhs:names:services:flagserver:consent:update</td>
+        </tr>
+        <tr>
+            <td>Flag</td>
+            <td>urn:nhs:names:services:flagserver:flag:update</td>
+        </tr>
+        <tr>
+            <td>Condition</td>
+            <td>urn:nhs:names:services:flagserver:condition:update</td>
+        </tr>
+        <tr>
+            <td>List</td>
+            <td>urn:nhs:names:services:flagserver:list:update</td>
+        </tr>
+    </tbody>
+
+</table>
+
