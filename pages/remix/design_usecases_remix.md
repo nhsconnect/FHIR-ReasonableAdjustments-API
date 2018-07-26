@@ -20,8 +20,8 @@ Use Case Remix
 #### Main ####
 * Practitioner searches for Patient's RARecord
   * ClientSystem searched and failed to find existing RARecord
-    * ClientSystem submits Read Consent request (for Patient, Active, etc.) [(xml)](/design_usecases_remix.html#11-read-consent-request---xml-example) [(json)](/design_usecases_remix.html#12-read-consent-request---json-example)
-    * ServerSystem submits Read Consent response [(xml)](/design_usecases_remix.html#13-read-consent-response---xml-example) [(json)](/design_usecases_remix.html#14-read-consent-response---json-example)
+    * ClientSystem submits Read Consent request (for Patient, Active, etc.) [(xml)](design_usecases_remix.html#11-read-consent-request---xml-example) [(json)](design_usecases_remix.html#12-read-consent-request---json-example)
+    * ServerSystem submits Read Consent response [(xml)](design_usecases_remix.html#13-read-consent-response---xml-example) [(json)](design_usecases_remix.html#14-read-consent-response---json-example)
 
 ### 1.1 Read Consent request - xml example  ###
 
@@ -111,12 +111,12 @@ see [Create RARecord Use Case](/design_usecases_create.html#1-create-rarecord-us
     * _ClientSystem submits Read Flag request (for Patient, Active, etc.)_
       * _ServerSystem submits Read Flag response_  
 <br>
-_[Read Consdent and Read Flag not illustrated_ - these are identical to existing [Read RA Record Use Case](/design_usecases_read.html#2-read-ra-record-use-case-examples)]  
+_[Read Consent and Read Flag not illustrated_ - these are identical to existing [Read RA Record Use Case](/design_usecases_read.html#2-read-ra-record-use-case-examples)]  
 <br>
-    * ClientSystem submits Read List request (for Patient, Active, etc.) [(xml)](/design_usecases_remix.html#21-read-list-request---xml-example) [(json)](/design_usecases_remix.html#22-read-list-request---json-example)
-      * ServerSystem submits Read List response [(xml)](/design_usecases_remix.html#23-read-list-response---xml-example) [(json)](/design_usecases_remix.html#24-read-list-response---json-example)
-    * ClientSystem submits Read Conditions request [(xml)](/design_usecases_remix.html#25-read-conditions-request---xml-example) [(json)](/design_usecases_remix.html#26-read-conditions-request---json-example)
-      * ServerSystem submits Read Conditions response [(xml)](/design_usecases_remix.html#27-read-conditions-response---xml-example) [(json)](/design_usecases_remix.html#28-read-conditions-response---json-example)
+    * ClientSystem submits Read List request (for Patient, Active, etc.) [(xml)](design_usecases_remix.html#21-read-list-request---xml-example) [(json)](design_usecases_remix.html#22-read-list-request---json-example)
+      * ServerSystem submits Read List response [(xml)](design_usecases_remix.html#23-read-list-response---xml-example) [(json)](design_usecases_remix.html#24-read-list-response---json-example)
+    * ClientSystem submits Read Conditions request [(xml)](design_usecases_remix.html#25-read-conditions-request---xml-example) [(json)](design_usecases_remix.html#26-read-conditions-request---json-example)
+      * ServerSystem submits Read Conditions response [(xml)](design_usecases_remix.html#27-read-conditions-response---xml-example) [(json)](design_usecases_remix.html#28-read-conditions-response---json-example)
 
 ### 2.1 Read List request - xml example  ###
 
@@ -262,7 +262,7 @@ relfilepath="usecaseexamples/SearchSetConditionBundleResponse.json"
 title="Read Conditions response bundle"
 type="json" %}
 
-## 3 Update Contention failure ##
+## 3 Update Contention Failure ##
 
 Although unlikely, Update Contention is possible. This scenario illustrates the case where Practitioners A and B try to update a resource 'at the same time'. 'Optimistic locking' is used, so A, who writes first 'wins'.
 #### Pre ####
@@ -272,14 +272,14 @@ Although unlikely, Update Contention is possible. This scenario illustrates the 
 #### Main ####
 * Practitioner A updates Patient's RARecord, Remove an Impairment 'Mental Health Condition' operation
   * Practitioner A commits update
-    * ClientSystem submits Delete Condition (A) request [(xml)](/design_usecases_remix.html#31-delete-condition-a-request---xml-example) [(json)](/design_usecases_remix.html#32-delete-condition-a-request---json-example)
-      * ServerSystem submits Delete Condition (A) response [(xml)](/design_usecases_remix.html#33-delete-condition-a-response---xml-example) [(json)](/design_usecases_remix.html#34-delete-condition-a-response---json-example)
-    * ClientSystem submits Update List request [(xml)](/design_usecases_remix.html#35-update-list-request---xml-example) [(json)](/design_usecases_remix.html#36-update-list-request---json-example)
-      * ServerSystem submits Update List response [(xml)](/design_usecases_remix.html#37-update-list-response---xml-example) [(json)](/design_usecases_remix.html#38-update-list-response---json-example)
+    * ClientSystem submits Delete Condition (A) request [(xml)](design_usecases_remix.html#31-delete-condition-a-request---xml-example) [(json)](design_usecases_remix.html#32-delete-condition-a-request---json-example)
+      * ServerSystem submits Delete Condition (A) response [(xml)](design_usecases_remix.html#33-delete-condition-a-response---xml-example) [(json)](design_usecases_remix.html#34-delete-condition-a-response---json-example)
+    * ClientSystem submits Update List request [(xml)](design_usecases_remix.html#35-update-list-request---xml-example) [(json)](design_usecases_remix.html#36-update-list-request---json-example)
+      * ServerSystem submits Update List response [(xml)](design_usecases_remix.html#37-update-list-response---xml-example) [(json)](design_usecases_remix.html#38-update-list-response---json-example)
 * Practitioner B updates Patient's RARecord, Remove an Impairment 'Mental Health Condition' operation
   * Practitioner B commits update
-    * ClientSystem submits Delete Condition (B) request [(xml)](/design_usecases_remix.html#39-delete-condition-b-request---xml-example) [(json)](/design_usecases_remix.html#310-delete-condition-b-request---json-example)
-      * ServerSystem submits Delete Condition (B) response (failure) [(xml)](/design_usecases_remix.html#311-delete-condition-b-response---xml-example) [(json)](/design_usecases_remix.html#312-delete-condition-b-response---json-example)
+    * ClientSystem submits Delete Condition (B) request [(xml)](design_usecases_remix.html#39-delete-condition-b-request---xml-example) [(json)](design_usecases_remix.html#310-delete-condition-b-request---json-example)
+      * ServerSystem submits Delete Condition (B) response (failure) [(xml)](design_usecases_remix.html#311-delete-condition-b-response---xml-example) [(json)](design_usecases_remix.html#312-delete-condition-b-response---json-example)
     * ClientSystem reports failure, aborts.
 
 ### 3.1 Delete Condition (A) request - xml example ###
