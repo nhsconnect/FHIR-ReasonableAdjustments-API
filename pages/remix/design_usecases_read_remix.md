@@ -8,38 +8,273 @@ summary: Read operation describes interaction required to request and retrieve (
 ---
 {% include custom/search.warnbanner.html %}
 
-## 1 Read RA Record Use Case ##
-#### 1.1 Trigger: ####
-Mrs M has referral to inpatient procedure. RA Flag triggers pre-op appointment with Learning Disability Nurse N. Nurse N retrieves Mrs M's RA Record to inform discussion of her situation.
+## 1 Read RA Record ##
 
-#### 1.2 Pre-requisites: ####
-Practitioner Nrs N. logged on w SmartCard/National Identity > URPId  
-Patient Mrs M. PDS Trace > verified NHS#, Name, DoB demographic data  
+#### Trigger: ####
+* Mrs M has referral to an inpatient procedure.  
+* Presence of RA Flag triggers pre-operation appointment with Learning Disability Nurse N.  
+* Nurse N retrieves Mrs M's RA Record to inform discussion of her situation.  
 
-#### 1.3 System Scope: ####
-ClientSystem includes Acute/DepartmentalSystem client, SCRa, 1-click etc.  
-ServerSystem includes Spine, PDS, SDS, FlagServer etc.  
+#### System Scope: ####
+* ClientSystem includes Acute/DepartmentalSystem client, SCRa, 1-click etc.  
+* ServerSystem includes Spine, PDS, SDS, FlagServer etc.  
 
-#### 1.4 Summary: ####
-Patient has a RA Flag; Practitioner requests record
+#### Summary: ####
+Patient has a RA Flag; Practitioner requests record.
+
 #### Pre ####
-* Patient arrives at pre-op appt  
-* Practitioner opens AcuteSystem, traces & verifies demographic info (internal call to PDS)  
-* Practitioner opens Patient's RARecord  
-  * System retrieves and displays RARecord for Patient's NHS
+* Patient arrives at pre-operation appointment  
+* Practitioner Nrs N. is logged on with SmartCard/National Identity  
+  * > URPId  
+* Patient Mrs M. has been PDS Traced  
+  * > verified NHS#, Name, DoB demographic data  
 
 #### Main ####
-* Patient arrives for appointment; Practitioner retrieves Patient's RARecord.  
+* Practitioner retrieves Patient's RARecord.  
   * ClientSystem queries ServerSystem to retrieve RARecord
-    * ClientSystem submits Read Consent request (for Patient, Active, etc.)
-      * ServerSystem submits Read Consent response
-    * ClientSystem submits Read Flag request (for Patient, Active, etc.)
-      * ServerSystem submits Read Flag response
-    * ClientSystem submits Read List request with _included_Conditions_ (for Patient, Active, etc.)
-      * ServerSystem submits Read List response
+    * ClientSystem submits Read Consent request [(xml)](design_usecases_read_remix.html#21-read-consent-request---xml-example) [(json)](design_usecases_remix.html#22-read-consent-request---json-example)
+      * ServerSystem submits Read Consent response[(xml)](design_usecases_read_remix.html#23-read-consent-response---xml-example) [(json)](design_usecases_remix.html#24-read-consent-response---json-example)
+    * ClientSystem submits Read Flag request [(xml)](design_usecases_read_remix.html#25-read-flag-request---xml-example) [(json)](design_usecases_remix.html#26-read-flag-request---json-example)
+      * ServerSystem submits Read Flag response [(xml)](design_usecases_read_remix.html#27-read-flag-response---xml-example) [(json)](design_usecases_remix.html#28-read-flag-response---json-example)
+    * ClientSystem submits Read List request [(xml)](design_usecases_read_remix.html#29-read-list-request---xml-example) [(json)](design_usecases_remix.html#210-read-list-request---json-example)
+      * ServerSystem submits Read List response [(xml)](design_usecases_read_remix.html#211-read-list-response---xml-example) [(json)](design_usecases_read_remix.html#212-read-list-response---json-example)
+    * ClientSystem submits Read Conditions request [(xml)](design_usecases_read_remix.html#213-read-conditions-request---xml-example) [(json)](design_usecases_read_remix.html#214-read-conditions-request---json-example)
+      * ServerSystem submits Read Conditions response [(xml)](design_usecases_read_remix.html#215-read-conditions-response---xml-example) [(json)](design_usecases_read_remix.html#216-read-conditions-response---json-example)
 
+---
+### 2.1 Read Consent request - xml example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/xmlExampleFile.xml"
+title="Read Consent request"
+type="xml" %}
+
+### 2.2 Read Consent request - json example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+```
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/jsonExampleFile.json"
+title="Read Consent request"
+type="json" %}
+
+### 2.3 Read Consent response - xml example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/xmlExampleFile.xml"
+title="Read Consent response"
+type="xml" %}
+
+### 2.4 Read Consent response - json example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/jsonExampleFile.json"
+title="Read Consent response"
+type="json" %}
+
+### 2.5 Read Flag request - xml example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/xmlExampleFile.xml"
+title="Read Flag request"
+type="xml" %}
+
+### 2.6 Read Flag request - json example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/jsonExampleFile.json"
+title="Read Flag request"
+type="json" %}
+
+### 2.7 Read Flag response - xml example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/xmlExampleFile.xml"
+title="Read Flag response"
+type="xml" %}
+
+### 2.8 Read Flag response - json example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/jsonExampleFile.json"
+title="Read Flag response"
+type="json" %}
+
+### 2.9 Read List request - xml example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/xmlExampleFile.xml"
+title="Read List request"
+type="xml" %}
+
+### 2.10 Read List request - json example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/jsonExampleFile.json"
+title="Read List request"
+type="json" %}
+
+### 2.11 Read List response - xml example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/xmlExampleFile.xml"
+title="Read List response"
+type="xml" %}
+
+### 2.12 Read List response - json example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/jsonExampleFile.json"
+title="Read List response"
+type="json" %}
+
+### 2.13 Read Conditions request - xml example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/xmlExampleFile.xml"
+title="Read Conditions request"
+type="xml" %}
+
+### 2.14 Read Conditions request - json example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/jsonExampleFile.json"
+title="Read Conditions request"
+type="json" %}
+
+### 2.15 Read Conditions response - xml example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/xmlExampleFile.xml"
+title="Read Conditions response"
+type="xml" %}
+
+### 2.16 Read Conditions response - json example ###
+#### http request & headers ####
+```
+HTTP STRING
+ HEADERS
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/jsonExampleFile.json"
+title="Read Conditions response"
+type="json" %}
+
+
+      
+---
+      
 ## 2 Read RA Record Use Case Examples ##
-## 2.1 Read Consent Request ##
+
+### 2.1 Read Consent Request ###
 #### http request ####
 ```
 GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
@@ -49,7 +284,7 @@ GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
 N/A
 {% include custom/fhir.header.html %}
 
-## 2.2 Read Consent Response ##
+### 2.2 Read Consent Response ###
 {% include custom/fhir.response.html %}  
 Edge cases TBD and detailed during development
 #### body ####
@@ -63,7 +298,7 @@ title="RARecord-ReadConsentResponseBody-example"
 type="json" %}
 {% include custom/fhir.header.html %}
 
-## 2.3 Read Flag Request ##
+### 2.3 Read Flag Request ###
 
 #### http request ####
 ```
@@ -74,7 +309,7 @@ GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
 N/A
 {% include custom/fhir.header.html %}
 
-## 2.4 Read Flag Response ##
+### 2.4 Read Flag Response ###
 
 Two variants are presented
 - 1. Where no Adjustments have been recorded
@@ -82,7 +317,7 @@ Two variants are presented
 
 The Requests remain the same, Responses differ.
 
-## 2.4.1 Empty Searchset ##
+### 2.4.1 Empty Searchset ###
 
 Assumes direct follow on from the scenario presented in 'Create an RA Flag' i.e. no specific Adjustments are recorded yet, and default Considertion banners will be displayed.
 
@@ -99,7 +334,7 @@ title="RARecord-ReadFlagResponseBody-example-2"
 type="json" %}
 {% include custom/fhir.header.html %}
 
-## 2.4.2 Multiple result Searchset ##
+### 2.4.2 Multiple result Searchset ###
 
 Assumes that prior to this scenario 2 Adjustments have been recorded on behalf of the Patient.  
 Here, the Adjustments are:
@@ -119,7 +354,7 @@ title="RARecord-ReadFlagResponseBody-example"
 type="json" %}
 {% include custom/fhir.header.html %}
 
-## 2.5 Read List Request ##
+### 2.5 Read List Request ###
 #### http request ####
 ```
 GET https://clinicals.spineservices.nhs.uk/STU3/List?
@@ -130,7 +365,7 @@ GET https://clinicals.spineservices.nhs.uk/STU3/List?
 N/A
 {% include custom/fhir.header.html %}
 
-## 2.6 Read List Response ##
+### 2.6 Read List Response ###
 {% include custom/fhir.response.html %}  
 Edge cases TBD and detailed during development
 #### body ####
