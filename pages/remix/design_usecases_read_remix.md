@@ -25,15 +25,15 @@ Patient has a RA Flag; Practitioner requests record.
 #### Pre ####
 * Patient arrives at pre-operation appointment  
 * Practitioner Nrs N. is logged on with SmartCard/National Identity  
-  * > URPId  
+  * => URPId  
 * Patient Mrs M. has been PDS Traced  
-  * > verified NHS#, Name, DoB demographic data  
+  * => verified NHS#, Name, DoB demographic data  
 
 #### Main ####
 * Practitioner retrieves Patient's RARecord.  
   * ClientSystem queries ServerSystem to retrieve RARecord
     * ClientSystem submits Read Consent request [(xml)](design_usecases_read_remix.html#21-read-consent-request---xml-example) [(json)](design_usecases_remix.html#22-read-consent-request---json-example)
-      * ServerSystem submits Read Consent response[(xml)](design_usecases_read_remix.html#23-read-consent-response---xml-example) [(json)](design_usecases_remix.html#24-read-consent-response---json-example)
+      * ServerSystem submits Read Consent response [(xml)](design_usecases_read_remix.html#23-read-consent-response---xml-example) [(json)](design_usecases_remix.html#24-read-consent-response---json-example)
     * ClientSystem submits Read Flag request [(xml)](design_usecases_read_remix.html#25-read-flag-request---xml-example) [(json)](design_usecases_remix.html#26-read-flag-request---json-example)
       * ServerSystem submits Read Flag response [(xml)](design_usecases_read_remix.html#27-read-flag-response---xml-example) [(json)](design_usecases_remix.html#28-read-flag-response---json-example)
     * ClientSystem submits Read List request [(xml)](design_usecases_read_remix.html#29-read-list-request---xml-example) [(json)](design_usecases_remix.html#210-read-list-request---json-example)
@@ -45,38 +45,43 @@ Patient has a RA Flag; Practitioner requests record.
 ### 2.1 Read Consent request - xml example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
+ patient=999999998&
+ status=active&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
+ _format=xml HTTP/1.1
+Authorization:Bearer [jwt_token_string]
+InteractionID:urn:nhs:names:services:flagserver:consent:read
 
 ```
 
 #### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/xmlExampleFile.xml"
-title="Read Consent request"
-type="xml" %}
+**None**
 
 ### 2.2 Read Consent request - json example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
+ patient=999999998&
+ status=active&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
+ _format=json HTTP/1.1
+Authorization:Bearer [jwt_token_string]
+InteractionID:urn:nhs:names:services:flagserver:consent:read
 
-```
-```
 ```
 
 #### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
-title="Read Consent request"
-type="json" %}
+**None**
 
 ### 2.3 Read Consent response - xml example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+HTTP/1.1 200 OK
+Date:Tue, 24 Jul 2018 11:00:00 GMT
+Last-Modified:2018-07-24T11:00:00+00:00
+ETag: W/"bundleUUID”
+Content-Type:application/xml+fhir
 
 ```
 
@@ -89,8 +94,11 @@ type="xml" %}
 ### 2.4 Read Consent response - json example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+HTTP/1.1 200 OK
+Date:Tue, 24 Jul 2018 11:00:00 GMT
+Last-Modified:2018-07-24T10:00:00+00:00
+ETag: W/"bundleUUID”
+Content-Type:application/json+fhir
 
 ```
 
@@ -103,36 +111,43 @@ type="json" %}
 ### 2.5 Read Flag request - xml example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
+ patient=999999998&
+ status=active&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
+ _format=xml HTTP/1.1
+Authorization:Bearer [jwt_token_string]
+InteractionID:urn:nhs:names:services:flagserver:flag:read
 
 ```
 
 #### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/xmlExampleFile.xml"
-title="Read Flag request"
-type="xml" %}
+**None**
 
 ### 2.6 Read Flag request - json example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
+ patient=999999998&
+ status=active&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
+ _format=json HTTP/1.1
+Authorization:Bearer [jwt_token_string]
+InteractionID:urn:nhs:names:services:flagserver:flag:read
 
 ```
 
 #### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
-title="Read Flag request"
-type="json" %}
+**None**
 
 ### 2.7 Read Flag response - xml example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+HTTP/1.1 200 OK
+Date:Tue, 24 Jul 2018 11:00:01 GMT
+Last-Modified:2018-07-24T11:00:01+00:00
+ETag: W/"bundleUUID”
+Content-Type:application/xml+fhir
 
 ```
 
@@ -145,8 +160,11 @@ type="xml" %}
 ### 2.8 Read Flag response - json example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+HTTP/1.1 200 OK
+Date:Tue, 24 Jul 2018 11:00:01 GMT
+Last-Modified:2018-07-24T11:00:01+00:00
+ETag: W/"bundleUUID”
+Content-Type:application/json+fhir
 
 ```
 
@@ -159,36 +177,43 @@ type="json" %}
 ### 2.9 Read List request - xml example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+GET https://clinicals.spineservices.nhs.uk/STU3/List?
+ patient=999999998&
+ status=current&
+ code=http://snomed.info/sct|1094391000000102&
+ _format=xml HTTP/1.1
+Authorization:Bearer [jwt_token_string]
+InteractionID:urn:nhs:names:services:flagserver:list:read
 
 ```
 
 #### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/xmlExampleFile.xml"
-title="Read List request"
-type="xml" %}
+**None**
 
 ### 2.10 Read List request - json example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+GET https://clinicals.spineservices.nhs.uk/STU3/List?
+ patient=999999998&
+ status=current&
+ code=http://snomed.info/sct|1094391000000102&
+ _format=json HTTP/1.1
+Authorization:Bearer [jwt_token_string]
+InteractionID:urn:nhs:names:services:flagserver:list:read
 
 ```
 
 #### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
-title="Read List request"
-type="json" %}
+**None**
 
 ### 2.11 Read List response - xml example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+HTTP/1.1 200 OK
+Date:Tue, 24 Jul 2018 11:00:01 GMT
+Last-Modified:2018-07-24T11:00:02+00:00
+ETag: W/"bundleUUID”
+Content-Type:application/xml+fhir
 
 ```
 
@@ -201,8 +226,11 @@ type="xml" %}
 ### 2.12 Read List response - json example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+HTTP/1.1 200 OK
+Date:Tue, 24 Jul 2018 11:00:01 GMT
+Last-Modified:2018-07-24T11:00:02+00:00
+ETag: W/"bundleUUID”
+Content-Type:application/json+fhir
 
 ```
 
@@ -215,36 +243,41 @@ type="json" %}
 ### 2.13 Read Conditions request - xml example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
+ _list=4c8d19af-7755-4954-93df-93c964ddf349&
+ clinical-status=active&
+ _format=xml HTTP/1.1
+Authorization:Bearer [jwt_token_string]
+InteractionID:urn:nhs:names:services:flagserver:condition:read
 
 ```
 
 #### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/xmlExampleFile.xml"
-title="Read Conditions request"
-type="xml" %}
+**None**
 
 ### 2.14 Read Conditions request - json example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
+ _list=4c8d19af-7755-4954-93df-93c964ddf349&
+ clinical-status=active&
+ _format=json HTTP/1.1
+Authorization:Bearer [jwt_token_string]
+InteractionID:urn:nhs:names:services:flagserver:condition:read
 
 ```
 
 #### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
-title="Read Conditions request"
-type="json" %}
+**None**
 
 ### 2.15 Read Conditions response - xml example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+HTTP/1.1 200 OK
+Date:Tue, 24 Jul 2018 11:00:01 GMT
+Last-Modified:2018-07-24T11:00:03+00:00
+ETag: W/"bundleUUID”
+Content-Type:application/xml+fhir
 
 ```
 
@@ -257,8 +290,11 @@ type="xml" %}
 ### 2.16 Read Conditions response - json example ###
 #### http request & headers ####
 ```
-HTTP STRING
- HEADERS
+HTTP/1.1 200 OK
+Date:Tue, 24 Jul 2018 11:00:01 GMT
+Last-Modified:2018-07-24T11:00:01+00:00
+ETag: W/"bundleUUID”
+Content-Type:application/json+fhir
 
 ```
 

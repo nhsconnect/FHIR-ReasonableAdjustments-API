@@ -9,6 +9,13 @@ summary: Summary release notes of the FHIR&reg; Reasonable Adjustments API Imple
 
 {% include important.html content="This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop applications using the FHIR&reg; Reasonable Adjustments API. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." %}
 
+## 0.1.0-alpha ##
+
+- clarification of headers and jwt payload
+- clarification of profile metadata in examples
+- rewrite and reordering of use cases and examples  
+  (to clarify and to reflect the above)
+
 ## 0.0.5-alpha ##
 
 - updates and clarifications from DDC Spine Core design review
