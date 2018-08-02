@@ -87,7 +87,7 @@ Content-Type:application/xml+fhir
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/xmlExampleFile.xml"
+relfilepath="usecaseexamples/RARecord-ReadConsentResponseBody-example.xml"
 title="Read Consent response"
 type="xml" %}
 
@@ -104,7 +104,7 @@ Content-Type:application/json+fhir
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
+relfilepath="usecaseexamples/RARecord-ReadConsentResponseBody-example.json"
 title="Read Consent response"
 type="json" %}
 
@@ -153,7 +153,7 @@ Content-Type:application/xml+fhir
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/xmlExampleFile.xml"
+relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody-example.xml"
 title="Read Flag response"
 type="xml" %}
 
@@ -170,7 +170,7 @@ Content-Type:application/json+fhir
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
+relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody-example.json"
 title="Read Flag response"
 type="json" %}
 
@@ -219,7 +219,7 @@ Content-Type:application/xml+fhir
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/xmlExampleFile.xml"
+relfilepath="usecaseexamples/RARecord-ReadListResponseBody-example.xml"
 title="Read List response"
 type="xml" %}
 
@@ -236,7 +236,7 @@ Content-Type:application/json+fhir
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
+relfilepath="usecaseexamples/RARecord-ReadListResponseBody-example.json"
 title="Read List response"
 type="json" %}
 
@@ -283,7 +283,7 @@ Content-Type:application/xml+fhir
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/xmlExampleFile.xml"
+relfilepath="usecaseexamples/RARecord-ReadConditionsResponseBody-example.xml"
 title="Read Conditions response"
 type="xml" %}
 
@@ -300,7 +300,7 @@ Content-Type:application/json+fhir
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
+relfilepath="usecaseexamples/RARecord-ReadConditionsResponseBody-example.json"
 title="Read Conditions response"
 type="json" %}
 

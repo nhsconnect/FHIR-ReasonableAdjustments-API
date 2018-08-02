@@ -25,18 +25,23 @@ Headers listed are cumulative.
 
 ### Responses ###
 
-#### All failure responses ####
+#### All Read & failure responses ####
 * Date: [servedNowDate]
 * Content-type: application/json+fhir or application/xml+fhir
 
-#### All success responses ####
+#### All successful Create responses ####
+* Date: [servedNowDate]
+* Last-Modified: [lastModDate]
+* Location: https://clinicals.spineservices.nhs.uk/STU3/[type]/[id]/_history/[vid]
+* ETag: W/"[versionId]"
+* Content-type: application/json+fhir or application/xml+fhir
+
+#### All successful Update responses ####
 * Date: [servedNowDate]
 * Last-Modified: [lastModDate]
 * ETag: W/"[versionId]"
 * Content-type: application/json+fhir or application/xml+fhir
 
-#### Create responses ####
-* Location: https://clinicals.spineservices.nhs.uk/STU3/[type]/[id]/_history/[vid]
 
 ## InteractionID ##
 

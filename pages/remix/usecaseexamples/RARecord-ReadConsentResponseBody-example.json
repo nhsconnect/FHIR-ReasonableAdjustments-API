@@ -15,7 +15,7 @@
         "    all search sets include the self link - the statement of the query string searched on. "
       ],
       "relation": "self",
-      "url": "https://clinicals.spineservices.nhs.uk/STU3/Consent?patient=999999998&status=active&category=RAFlag",
+      "url": "https://clinicals.spineservices.nhs.uk/STU3/Consent?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&_format=json",
       "_url": {
         "fhir_comments": [
           " note entity encoding in url "
@@ -37,6 +37,8 @@
           " found payload resource or operationOutcome in here "
         ],
         "meta": {
+          "versionId": "1fc6e241-89f5-4ba4-b957-f025f21854c3",
+          "lastUpdated": "2018-03-01T10:00:00+00:00",
           "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Consent-1"
           ]
@@ -52,7 +54,7 @@
             },
             "target": [
               {
-                "reference": "f1dc0ac6-45ff-4d2b-bf91-793971e3e286"
+                "reference": "Consent/f1dc0ac6-45ff-4d2b-bf91-793971e3e286"
               }
             ],
             "recorded": "2016-03-01T10:05:33+00:00",
@@ -119,10 +121,7 @@
           }
         ],
         "patient": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/nhs-number",
-            "value": "999999998"
-          }
+          "reference": "demographics.spineservices.nhs.uk/STU3/Patient/999999998"
         },
         "policy": [
           {

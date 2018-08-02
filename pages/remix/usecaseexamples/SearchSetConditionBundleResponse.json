@@ -13,7 +13,7 @@
   "link": [
     {
       "relation": "self",
-      "url": "https://clinicals.spineservices.nhs.uk/STU3/Condition?_list=4c8d19af-7755-4954-93df-93c964ddf349&clinical-status=active&_format=xml"
+      "url": "https://clinicals.spineservices.nhs.uk/STU3/Condition?_list=4c8d19af-7755-4954-93df-93c964ddf349&clinical-status=active&_format=json"
     }
   ],
   "entry": [

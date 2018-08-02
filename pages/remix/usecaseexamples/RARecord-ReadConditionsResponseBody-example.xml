@@ -1,0 +1,85 @@
+<!-- ReadConditionResponseBody-example.xml -->
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="384824fc-62df-45bf-ac55-aab7cc0e4ffe"/> 
+  <meta> 
+    <lastUpdated value="2018-05-25T00:00:00Z"/> 
+  </meta> 
+  <type value="searchset"/>
+  <total value="1"/>
+  <!--    all search sets include the self link - the statement of the query string searched on. -->
+  <link> 
+    <relation value="self"/> 
+    <url value="https://clinicals.spineservices.nhs.uk/STU3/Condition?_list=4c8d19af-7755-4954-93df-93c964ddf349&amp;clinical-status=active&amp;_format=xml"/> 
+  </link>
+  <entry> 
+    <fullUrl value="https://clinicals.spineservices.nhs.uk/STU3/cba81f41-e57d-4b91-b59f-b5efc479faf9"/> 
+    <resource>
+        <!-- found payload resource or operationOutcome in here -->
+        <Condition>
+            <id value="6c1ccd3f-765e-41d8-b5c0-2a0317908502"/>
+            <meta>
+                <versionId value="e36bfb0d-1cb9-47d0-bd44-15c56b0c11b4"/>
+                <lastUpdated value="2018-03-01T10:00:00+00:00"/>
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1" />
+            </meta>
+            <contained>
+                <Provenance>
+                    <id value="8ce7de6b-1307-432d-8e96-ae6a613ca3e4"/>
+                    <meta>
+                        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"/>
+                    </meta>
+                    <target>
+                        <reference value="Condition/6c1ccd3f-765e-41d8-b5c0-2a0317908502"/>
+                    </target>
+                <recorded value="2016-03-01T10:05:33+00:00"/>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"/>
+                            <code value="R0260"/>
+                            <display value="General Medical Practitioner"/>
+                        </coding>
+                    </role>
+                    <whoReference>
+                        <reference value="https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9"/>
+                        <display value="Dr.D"/>
+                    </whoReference>
+                    <onBehalfOfReference>
+                        <reference value="https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7"/>
+                        <display value="Some GP Clinic"/>
+                    </onBehalfOfReference>
+                </agent>
+            </Provenance>
+            </contained>
+            <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1">
+                <extension url="created">
+                    <valueReference>
+                        <reference value="#8ce7de6b-1307-432d-8e96-ae6a613ca3e4"/>
+                    </valueReference>
+                </extension>
+            </extension>
+            <clinicalStatus value="active"/>
+            <category>
+                <coding>
+                    <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1"/>
+                    <code value="issue"/>
+                    <display value="Issue"/>
+                </coding>
+            </category>
+            <code>
+                <coding>
+                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
+                    <code value="1855002"/>
+                    <display value="Learning Disability(s)"/>
+                </coding>
+            </code>
+            <subject>
+                <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
+            </subject>
+        </Condition>
+    </resource>
+    <search>
+      <mode value="match"/>
+    </search>
+  </entry>
+</Bundle>

@@ -13,7 +13,7 @@
   "link": [
     {
       "relation": "self",
-      "url": "https://clinicals.spineservices.nhs.uk/STU3/List?patient=999999998&status=active&code=http://snomed.info/sct|1094391000000102&_format=xml"
+      "url": "https://clinicals.spineservices.nhs.uk/STU3/List?patient=999999998&status=active&code=http://snomed.info/sct|1094391000000102&_format=json"
     }
   ],
   "entry": [

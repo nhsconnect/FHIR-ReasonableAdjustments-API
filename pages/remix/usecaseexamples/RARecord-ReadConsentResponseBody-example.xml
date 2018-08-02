@@ -10,7 +10,7 @@
   <link>
     <relation value="self"/>
     <!-- note entity encoding in url -->
-    <url value="https://clinicals.spineservices.nhs.uk/STU3/Consent?patient=999999998&amp;status=active&amp;category=RAFlag"/>
+    <url value="https://clinicals.spineservices.nhs.uk/STU3/Consent?patient=999999998&amp;status=active&amp;category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&amp;_format=xml"/>
   </link>
   <!-- search pagination is also represented as a link set here if required -->
   <!--    now, each entry is an action to take in the transaction    -->
@@ -21,7 +21,9 @@
         <Consent>
             <id value="f1dc0ac6-45ff-4d2b-bf91-793971e3e286"/>
             <meta>
-                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Consent-1"/>
+                <versionId value="1fc6e241-89f5-4ba4-b957-f025f21854c3"/>
+                <lastUpdated value="2018-03-01T10:00:00+00:00"/>
+                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Consent-1" />
             </meta>
             <contained>
                 <Provenance>
@@ -77,9 +79,7 @@
                 </coding>
             </category>
             <patient>
-                <identifier>
-                    <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
-                </identifier>
+                <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
             </patient>
             <!-- these are directly lifted from National Data Opt Out. Will need either a general set or specific values for Reasonable Adjustments -->
             <policy>
