@@ -4,14 +4,14 @@ keywords: usecase
 tags: [rest, fhir, identification, development]
 sidebar: accessrecord_rest_sidebar
 permalink: design_usecases_read_remix.html
-summary: Read operation describes interaction required to request and retrieve (and display) a Reasonable Adjustment Flag on Spine via the FHIR&reg; Reasonable Adjustments API
+summary: Read describes the interaction required to request and retrieve (and display) a Reasonable Adjustment Flag on Spine via the FHIR&reg; Reasonable Adjustments API
 ---
 {% include custom/search.warnbanner.html %}
 
 ## 1 Read RA Record ##
 
 #### Trigger: ####
-* Mrs M has referral to an inpatient procedure.  
+* Mrs M is referred to an inpatient procedure.  
 * Presence of RA Flag triggers pre-operation appointment with Learning Disability Nurse N.  
 * Nurse N retrieves Mrs M's RA Record to inform discussion of her situation.  
 
@@ -20,14 +20,14 @@ summary: Read operation describes interaction required to request and retrieve (
 * ServerSystem includes Spine, PDS, SDS, FlagServer etc.  
 
 #### Summary: ####
-Patient has a RA Flag; Practitioner requests record.
+Patient has an RA Flag; Practitioner requests record.
 
 #### Pre ####
 * Patient arrives at pre-operation appointment  
 * Practitioner Nrs N. is logged on with SmartCard/National Identity  
-  * => URPId  
+  * Gives User Role Profile Identifier [URPId}  
 * Patient Mrs M. has been PDS Traced  
-  * => verified NHS#, Name, DoB demographic data  
+  * Gives verified NHS#, Name, DoB demographic data  
 
 #### Main ####
 * Practitioner retrieves Patient's RARecord.  
