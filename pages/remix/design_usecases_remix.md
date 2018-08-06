@@ -15,7 +15,7 @@ Use Case Remix
 ## 1 Initial Read Failure - No RA Record ##
 
 #### Pre ####
-* None
+* Practitioner logged into ClientSystem, traces & verifies demographic info - see [API Security](design_security.html)
 
 #### Main ####
 * Practitioner searches for Patient's RARecord

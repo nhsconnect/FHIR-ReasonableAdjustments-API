@@ -45,7 +45,7 @@ Patient declines to record a specific Adjustment at this time.
       * ServerSystem submits Create Consent response [(xml)](design_usecases_create_remix.html#33-create-consent-response---xml-example) [(json)](design_usecases_create_remix.html#34-create-consent-response---json-example)
     * ClientSystem submits Create Condition request [(xml)](design_usecases_create_remix.html#35-create-condition-request---xml-example) [(json)](design_usecases_create_remix.html#36-create-condition-request---json-example)
       * ServerSystem submits Create Condition response [(xml)](design_usecases_create_remix.html#37-create-condition-response---xml-example) [(json)](design_usecases_create_remix.html#38-create-condition-response---json-example)
-        * ClientSystem creates new CareConnect-RARecord-List-1 to reference / identify Impairment resources [(xml)](design_usecases_create_remix.html#25-new-list-resource---xml-example) [(json)](design_usecases_create_remix.html#26-new-list-resource---json-example)
+        * ClientSystem creates new CareConnect-RARecord-List-1 to reference / identify Impairment resource  [(xml)](design_usecases_create_remix.html#25-new-list-resource---xml-example) [(json)](design_usecases_create_remix.html#26-new-list-resource---json-example)
     * ClientSystem submits Create List request [(xml)](design_usecases_create_remix.html#39-create-list-request---xml-example) [(json)](design_usecases_create_remix.html#310-create-list-request---json-example)
       * ServerSystem submits Create List response [(xml)](design_usecases_create_remix.html#311-create-list-response---xml-example) [(json)](design_usecases_create_remix.html#312-create-list-response---json-example)
 
