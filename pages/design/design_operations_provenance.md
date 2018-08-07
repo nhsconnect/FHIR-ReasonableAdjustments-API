@@ -21,7 +21,7 @@ To illustrate, on Create of a resource e.g. a Flag resource (i.e. an Adjustment)
 * Resource is persisted
 * Create response issued to ClientSystem - usually with the created resource as body
 
-[To be clear, on Create, a RARecord Resource will contin no Provenance information.  
+[To be clear, on Create, a RARecord Resource will contain no Provenance information.  
 The provenance resource is:  
 * generated,
 * populated,

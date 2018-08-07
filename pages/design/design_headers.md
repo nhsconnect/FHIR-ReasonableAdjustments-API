@@ -20,8 +20,12 @@ Headers listed are cumulative.
 
 [InteractionID](/design_headers.html#interactionid) varies by resource and interaction undertaken.
 
+#### Create requests ####
+* Prefer: return=representation
+
 #### Update requests ####
 * If-Match: [versionIdETag]
+* Prefer: return=representation
 
 ### Responses ###
 
