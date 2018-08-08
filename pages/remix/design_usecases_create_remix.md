@@ -52,11 +52,35 @@ Patient declines to record a specific Adjustment at this time.
 ---
 
 ### 2.1 New Consent Resource - xml example ###
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/xmlExampleFile.xml"
+title="New Consent Resource"
+type="xml" %}
 ### 2.2 New Consent Resource - json example ###
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/jsonExampleFile.json"
+title="New Consent Resource"
+type="json" %}
 ### 2.3 New Impairment Resource - xml example ###
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/xmlExampleFile.xml"
+title="New Impairment Resource"
+type="xml" %}
 ### 2.4 New Impairment Resource - json example ###
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/jsonExampleFile.json"
+title="New Impairment Resource"
+type="json" %}
 ### 2.5 New List Resource - xml example ###
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/xmlExampleFile.xml"
+title="New List Resource"
+type="xml" %}
 ### 2.6 New List Resource - json example ###
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/jsonExampleFile.json"
+title="New List Resource"
+type="json" %}
 
 
 ### 3.1 Create Consent Request - xml example ###

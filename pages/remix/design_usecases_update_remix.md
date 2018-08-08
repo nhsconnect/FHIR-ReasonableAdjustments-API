@@ -35,41 +35,269 @@ During appointment Nurse discusses RA Record, Patient requests recording of 'Eas
 
 * Patient agrees to add Adjustment 'Easy Read'
   * Practitioner adds Adjustment from coded picklist
-    * ClientSystem captures and structures as new RARecord-Flag-1 resource 
+    * ClientSystem captures and structures as new RARecord-Flag-1 resource [(xml)](design_usecases_update_remix.html#21-new-adjustment-resource---xml-example) [(json)](design_usecases_update_remix.html#22-new-adjustment-resource---json-example)
 
 * Patient agrees to add Impairment 'Mental Health Disability' with supporting text
   * Practitioner adds Impairment from coded picklist (elaborates w separate freetext)  
-    * ClientSystem captures and structures Impairment information as new Impairment (CareConnect-RARecord-Condition-1) resource  
+    * ClientSystem captures and structures Impairment information as new Impairment (CareConnect-RARecord-Condition-1) resource [(xml)](design_usecases_update_remix.html#23-new-impairment-resource---xml-example) [(json)](design_usecases_update_remix.html#24-new-impairment-resource---json-example)
 
 * Practitioner commits RARecord
-  * ClientSystem submits Create Flag request
-    * ServerSystem submits Create Flag response
-    * ClientSystem submits Create Condition request
-      * ServerSystem submits Create Condition response
-        * ClientSystem updates existing CareConnect-RARecord-List-1 to reference / identify new Impairment resource
-    * ClientSystem submits Update List request
-      * ServerSystem submits Update List response
+  * ClientSystem submits Create Flag request [(xml)](design_usecases_update_remix.html#31-create-flag-request---xml-example) [(json)](design_usecases_update_remix.html#32-create-flag-request---json-example)
+    * ServerSystem submits Create Flag response [(xml)](design_usecases_update_remix.html#33-create-flag-response---xml-example) [(json)](design_usecases_update_remix.html#34-create-flag-response---json-example)
+    * ClientSystem submits Create Condition request [(xml)](design_usecases_update_remix.html#35-create-condition-request---xml-example) [(json)](design_usecases_update_remix.html#36-create-condition-request---json-example)
+      * ServerSystem submits Create Condition response [(xml)](design_usecases_update_remix.html#37-create-condition-response---xml-example) [(json)](design_usecases_update_remix.html#38-create-condition-response---json-example)
+        * ClientSystem updates existing CareConnect-RARecord-List-1 to reference / identify new Impairment resource [(xml)](design_usecases_update_remix.html#25-updated-list-resource---xml-example) [(json)](design_usecases_update_remix.html#26-updated-list-resource---json-example)
+    * ClientSystem submits Update List request [(xml)](design_usecases_update_remix.html#39-update-list-request---xml-example) [(json)](design_usecases_update_remix.html#310-update-list-request---json-example)
+      * ServerSystem submits Update List response [(xml)](design_usecases_update_remix.html#311-update-list-response---xml-example) [(json)](design_usecases_update_remix.html#312-update-list-response---json-example)
+
 
 ### 2.1 New Adjustment Resource - xml example ###
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-NewAdjustmentResource.xml"
+title="New Adjustment Resource"
+type="xml" %}
+
 ### 2.2 New Adjustment Resource - json example ###
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-NewAdjustmentResource.json"
+title="New Adjustment Resource"
+type="json" %}
+
 ### 2.3 New Impairment Resource - xml example ###
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-NewImpairmentResource.xml"
+title="New Impairment Resource"
+type="xml" %}
+
 ### 2.4 New Impairment Resource - json example ###
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-NewImpairmentResource.json"
+title="New Impairment Resource"
+type="json" %}
+
 ### 2.5 Updated List Resource - xml example ###
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-UpdatedListResource.xml"
+title="Updated List Resource"
+type="xml" %}
+
 ### 2.6 Updated List Resource - json example ###
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-UpdatedListResource.json"
+title="Updated List Resource"
+type="json" %}
+
 
 
 ### 3.1 Create Flag Request - xml example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-CreateFlagRequest.xml"
+title="Create Flag Request"
+type="xml" %}
+
 ### 3.2 Create Flag Request - json example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-CreateFlagRequest.json"
+title="Create Flag Request"
+type="json" %}
+
 ### 3.3 Create Flag Response - xml example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-CreateFlagResponse.xml"
+title="Create Flag Response"
+type="xml" %}
+
 ### 3.4 Create Flag Response - json example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-CreateFlagResponse.json"
+title="Create Flag Response"
+type="json" %}
+
 ### 3.5 Create Condition Request - xml example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-CreateConditionRequest.xml"
+title="Create Condition Request"
+type="xml" %}
+
 ### 3.6 Create Condition Request - json example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-CreateConditionRequest.json"
+title="Create Condition Request"
+type="json" %}
+
 ### 3.7 Create Condition Response - xml example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-CreateConditionResponse.xml"
+title="Create Condition Response"
+type="xml" %}
+
 ### 3.8 Create Condition Response - json example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-CreateConditionResponse.json"
+title="Create Condition Response"
+type="json" %}
+
 ### 3.9 Update List Request - xml example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-UpdateListRequest.xml"
+title="Update List Request"
+type="xml" %}
+
 ### 3.10 Update List Request - json example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-UpdateListRequest.json"
+title="Update List Request"
+type="json" %}
+
 ### 3.11 Update List Response - xml example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-UpdateListResponse.xml"
+title="Update List Response"
+type="xml" %}
+
 ### 3.12 Update List Response - json example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-UpdateListResponse.json"
+title="Update List Response"
+type="json" %}
 
 ## 4 Update Adjustment ##
 
@@ -97,34 +325,186 @@ Practitioner updates (soft deletes) existing 'Easy Read' Adjustment, records Rem
 #### Main ####
 
 * Practitioner removes (soft deletes) existing 'Easy Read' Adjustment, records Removal reason 'Entered in error';
-  * ClientSystem updates client-side Flag resource
+  * ClientSystem updates client-side Flag resource [(xml)](design_usecases_update_remix.html#51-updated-flag-resource---xml-example) [(json)](design_usecases_update_remix.html#52-updated-flag-resource---json-example)
 
 * Practitioner commits RARecord
-  * ClientSystem submits Update Flag request
-    * ServerSystem submits Update Flag response
+  * ClientSystem submits Update Flag request [(xml)](design_usecases_update_remix.html#61-update-flag-request---xml-example) [(json)](design_usecases_update_remix.html#62-update-flag-request---json-example)
+    * ServerSystem submits Update Flag response [(xml)](design_usecases_update_remix.html#63-update-flag-response---xml-example) [(json)](design_usecases_update_remix.html#64-update-flag-response---json-example)
 
 * Practitioner records new 'Large Print' Adjustment
-  * ClientSystem captures and structures Adjustmentinformation as new RARecord-Flag-1 resource
+  * ClientSystem captures and structures Adjustment information as new RARecord-Flag-1 resource [(xml)](design_usecases_update_remix.html#53-new-flag-resource---xml-example) [(json)](design_usecases_update_remix.html#54-new-flag-resource---json-example)
 
 * Practitioner commits RARecord
-  * ClientSystem submits Create Flag request
-    * ServerSystem submits Create Flag response
+  * ClientSystem submits Create Flag request [(xml)](design_usecases_update_remix.html#65-create-flag-request---xml-example) [(json)](design_usecases_update_remix.html#66-create-flag-request---json-example)
+    * ServerSystem submits Create Flag response [(xml)](design_usecases_update_remix.html#67-create-flag-response---xml-example) [(json)](design_usecases_update_remix.html#68-create-flag-response---json-example)
+
 
 
 ### 5.1 Updated Flag Resource - xml example ###
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/UpdateExample-UpdatedFlagResource.xml"
+title="Updated Flag Resource"
+type="xml" %}
+
 ### 5.2 Updated Flag Resource - json example ###
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/UpdateExample-UpdatedFlagResource.json"
+title="Updated Flag Resource"
+type="json" %}
+
 ### 5.3 New Flag Resource - xml example ###
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/UpdateExample-NewFlagResource.xml"
+title="New Flag Resource"
+type="xml" %}
+
 ### 5.4 New Flag Resource - json example ###
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/UpdateExample-NewFlagResource.json"
+title="New Flag Resource"
+type="json" %}
+
 
 
 ### 6.1 Update Flag Request - xml example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/UpdateExample-UpdateFlagRequest.xml"
+title="UpdateFlagRequest.xml"
+type="xml" %}
+
 ### 6.2 Update Flag Request - json example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/UpdateExample-UpdateFlagRequest.json"
+title="Update Flag Request"
+type="json" %}
+
 ### 6.3 Update Flag Response - xml example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/UpdateExample-UpdateFlagResponse.xml"
+title="Update Flag Response"
+type="xml" %}
+
 ### 6.4 Update Flag Response - json example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/UpdateExample-UpdateFlagResponse.json"
+title="Update Flag Response"
+type="json" %}
+
 ### 6.5 Create Flag Request - xml example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/UpdateExample-CreateFlagRequest.xml"
+title="Create Flag Request"
+type="xml" %}
+
 ### 6.6 Create Flag Request - json example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/UpdateExample-CreateFlagRequest.json"
+title="Create Flag Request"
+type="json" %}
+
 ### 6.7 Create Flag Response - xml example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/UpdateExample-CreateFlagResponse.xml"
+title="Create Flag Response"
+type="xml" %}
+
 ### 6.8 Create Flag Response - json example ###
+
+#### http request & headers ####
+```
+BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource]
+  HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/UpdateExample-CreateFlagResponse.json"
+title="Create Flag Response"
+type="json" %}
 
 ---
 
@@ -132,16 +512,20 @@ Practitioner updates (soft deletes) existing 'Easy Read' Adjustment, records Rem
 ---
 
 ## 1 Update RA Record Use Case ##
+
 ### 1.1 Trigger: ####
 Post-op appt with GP. Patient requests change of 'Easy Read' Adjustment to 'Large Print'
+
 ### 1.2 Pre-requisites: ####
 (This scenario assumes someone has created an 'Easy Read' Reasonable Adjustment between the Read and Update examples)  
 Practioner Dr D. logged on w SmartCard/National Identity > URPId - see [API Security](design_security.html)  
 Patient Mrs M. PDS Trace > verified NHS#, Name, DoB demographic data - see [Patient Demographics](design_demographics.html)  
 ClientSystem has Patient's existing RArecord available - see ['Read an RA Flag'](design_operations_read.html)  
+
 ### 1.3 System Scope: ####
 ClientSystem includes GPSystem client, SCRa, 1-click etc.  
 ServerSystem includes Spine, PDS, SDS, FlagServer etc.  
+
 ### 1.4 Summary: 
 During appt GP discusses RA Record. Patient requests change of Reasonable Adjustment 'Easy Read' to 'Large Print'.  
 Practitioner updates (soft deletes) existing 'Easy Read' Adjustment, records Removal reason 'Entered in error'  
@@ -167,6 +551,7 @@ Practitioner opens Patient's RARecord
   * _[not shown cf. Create Consent request & response](design_operations_create.html#create-consent-or-flag-resource) as a directly analogous operation etc..._
 
 ## 2 Update RA Record Examples ##
+
 ### 2.1 Update Flag Request ####
 #### http request ####
 ```
@@ -184,6 +569,7 @@ title="RARecord-UpdateFlagRequestBody-example"
 type="json" %}
 {% include custom/fhir.header.html %}
 In addition, updates MUST include the If-Match header specifying the version of the resource they are updating.
+
 
 ### 2.2 Update Flag Response ####
 {% include custom/fhir.response.html %}  

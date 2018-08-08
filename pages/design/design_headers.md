@@ -16,9 +16,12 @@ Headers listed are cumulative.
 
 #### All requests ####
 * Authorization: Bearer [jwt_token_string]
+* FromASID: [clientASID]
+* ToASID: [serverASID]
 * InteractionID: [serviceName]
 
-[InteractionID](/design_headers.html#interactionid) varies by resource and interaction undertaken.
+[InteractionID](/design_headers.html#interactionid) varies by resource and interaction undertaken.  
+FromASID and ToASID headers, and Accredited System IDs are specified in the [Spine Core FHIR API Framework](https://developer.nhs.uk/apis/spine-core/resources_headers.html#other-headers)  
 
 #### Create requests ####
 * Prefer: return=representation
