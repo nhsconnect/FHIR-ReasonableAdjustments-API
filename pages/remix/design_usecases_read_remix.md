@@ -42,6 +42,10 @@ Patient has an RA Flag; Practitioner requests record.
       * ServerSystem submits Read Conditions response [(xml)](design_usecases_read_remix.html#215-read-conditions-response---xml-example) [(json)](design_usecases_read_remix.html#216-read-conditions-response---json-example)
 
 ---
+## 2 Interaction Examples ##
+
+Examples of http requests, responses and payloads
+
 ### 2.1 Read Consent request - xml example ###
 #### http request & headers ####
 ```
@@ -50,8 +54,11 @@ GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  status=active&
  category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
  _format=xml HTTP/1.1
-Authorization:Bearer [jwt_token_string]
-InteractionID:urn:nhs:names:services:flagserver:consent:read
+Authorization: Bearer [jwt_token_string]
+FromASID: 654321123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:flagserver:consent:read
 
 ```
 
@@ -66,8 +73,11 @@ GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  status=active&
  category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
  _format=json HTTP/1.1
-Authorization:Bearer [jwt_token_string]
-InteractionID:urn:nhs:names:services:flagserver:consent:read
+Authorization: Bearer [jwt_token_string]
+FromASID: 654321123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:flagserver:consent:read
 
 ```
 
@@ -75,13 +85,11 @@ InteractionID:urn:nhs:names:services:flagserver:consent:read
 **None**
 
 ### 2.3 Read Consent response - xml example ###
-#### http request & headers ####
+#### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 11:00:00 GMT
-Last-Modified:2018-07-24T11:00:00+00:00
-ETag: W/"bundleUUID”
-Content-Type:application/xml+fhir
+Date: Tue, 24 Jul 2018 11:00:00 GMT
+Content-Type: application/fhir+xml
 
 ```
 
@@ -92,13 +100,11 @@ title="Read Consent response"
 type="xml" %}
 
 ### 2.4 Read Consent response - json example ###
-#### http request & headers ####
+#### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 11:00:00 GMT
-Last-Modified:2018-07-24T10:00:00+00:00
-ETag: W/"bundleUUID”
-Content-Type:application/json+fhir
+Date: Tue, 24 Jul 2018 11:00:00 GMT
+Content-Type: application/fhir+json
 
 ```
 
@@ -116,8 +122,11 @@ GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
  status=active&
  category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
  _format=xml HTTP/1.1
-Authorization:Bearer [jwt_token_string]
-InteractionID:urn:nhs:names:services:flagserver:flag:read
+Authorization: Bearer [jwt_token_string]
+FromASID: 654321123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:flagserver:flag:read
 
 ```
 
@@ -132,8 +141,11 @@ GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
  status=active&
  category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
  _format=json HTTP/1.1
-Authorization:Bearer [jwt_token_string]
-InteractionID:urn:nhs:names:services:flagserver:flag:read
+Authorization: Bearer [jwt_token_string]
+FromASID: 654321123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:flagserver:flag:read
 
 ```
 
@@ -141,13 +153,11 @@ InteractionID:urn:nhs:names:services:flagserver:flag:read
 **None**
 
 ### 2.7 Read Flag response - xml example ###
-#### http request & headers ####
+#### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 11:00:01 GMT
-Last-Modified:2018-07-24T11:00:01+00:00
-ETag: W/"bundleUUID”
-Content-Type:application/xml+fhir
+Date: Tue, 24 Jul 2018 11:00:01 GMT
+Content-Type: application/fhir+xml
 
 ```
 
@@ -158,13 +168,11 @@ title="Read Flag response"
 type="xml" %}
 
 ### 2.8 Read Flag response - json example ###
-#### http request & headers ####
+#### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 11:00:01 GMT
-Last-Modified:2018-07-24T11:00:01+00:00
-ETag: W/"bundleUUID”
-Content-Type:application/json+fhir
+Date: Tue, 24 Jul 2018 11:00:01 GMT
+Content-Type: application/fhir+json
 
 ```
 
@@ -182,8 +190,11 @@ GET https://clinicals.spineservices.nhs.uk/STU3/List?
  status=current&
  code=http://snomed.info/sct|1094391000000102&
  _format=xml HTTP/1.1
-Authorization:Bearer [jwt_token_string]
-InteractionID:urn:nhs:names:services:flagserver:list:read
+Authorization: Bearer [jwt_token_string]
+FromASID: 654321123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:flagserver:list:read
 
 ```
 
@@ -198,8 +209,11 @@ GET https://clinicals.spineservices.nhs.uk/STU3/List?
  status=current&
  code=http://snomed.info/sct|1094391000000102&
  _format=json HTTP/1.1
-Authorization:Bearer [jwt_token_string]
-InteractionID:urn:nhs:names:services:flagserver:list:read
+Authorization: Bearer [jwt_token_string]
+FromASID: 654321123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:flagserver:list:read
 
 ```
 
@@ -207,13 +221,11 @@ InteractionID:urn:nhs:names:services:flagserver:list:read
 **None**
 
 ### 2.11 Read List response - xml example ###
-#### http request & headers ####
+#### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 11:00:01 GMT
-Last-Modified:2018-07-24T11:00:02+00:00
-ETag: W/"bundleUUID”
-Content-Type:application/xml+fhir
+Date: Tue, 24 Jul 2018 11:00:01 GMT
+Content-Type: application/fhir+xml
 
 ```
 
@@ -224,13 +236,11 @@ title="Read List response"
 type="xml" %}
 
 ### 2.12 Read List response - json example ###
-#### http request & headers ####
+#### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 11:00:01 GMT
-Last-Modified:2018-07-24T11:00:02+00:00
-ETag: W/"bundleUUID”
-Content-Type:application/json+fhir
+Date: Tue, 24 Jul 2018 11:00:01 GMT
+Content-Type: application/fhir+json
 
 ```
 
@@ -247,8 +257,11 @@ GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
  _list=4c8d19af-7755-4954-93df-93c964ddf349&
  clinical-status=active&
  _format=xml HTTP/1.1
-Authorization:Bearer [jwt_token_string]
-InteractionID:urn:nhs:names:services:flagserver:condition:read
+Authorization: Bearer [jwt_token_string]
+FromASID: 654321123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:flagserver:condition:read
 
 ```
 
@@ -262,8 +275,11 @@ GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
  _list=4c8d19af-7755-4954-93df-93c964ddf349&
  clinical-status=active&
  _format=json HTTP/1.1
-Authorization:Bearer [jwt_token_string]
-InteractionID:urn:nhs:names:services:flagserver:condition:read
+Authorization: Bearer [jwt_token_string]
+FromASID: 654321123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:flagserver:condition:read
 
 ```
 
@@ -271,13 +287,11 @@ InteractionID:urn:nhs:names:services:flagserver:condition:read
 **None**
 
 ### 2.15 Read Conditions response - xml example ###
-#### http request & headers ####
+#### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 11:00:01 GMT
-Last-Modified:2018-07-24T11:00:03+00:00
-ETag: W/"bundleUUID”
-Content-Type:application/xml+fhir
+Date: Tue, 24 Jul 2018 11:00:01 GMT
+Content-Type: application/fhir+xml
 
 ```
 
@@ -288,13 +302,11 @@ title="Read Conditions response"
 type="xml" %}
 
 ### 2.16 Read Conditions response - json example ###
-#### http request & headers ####
+#### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 11:00:01 GMT
-Last-Modified:2018-07-24T11:00:01+00:00
-ETag: W/"bundleUUID”
-Content-Type:application/json+fhir
+Date: Tue, 24 Jul 2018 11:00:01 GMT
+Content-Type: application/fhir+json
 
 ```
 
@@ -307,110 +319,4 @@ type="json" %}
 
       
 ---
-      
-## 2 Read RA Record Use Case Examples ##
-
-### 2.1 Read Consent Request ###
-#### http request ####
-```
-GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
-  patient=999999998&status=active&category=RAFlag HTTP/1.1
-```
-#### body ####
-N/A
-{% include custom/fhir.header.html %}
-
-### 2.2 Read Consent Response ###
-{% include custom/fhir.response.html %}  
-Edge cases TBD and detailed during development
-#### body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/RARecord-ReadConsentResponseBody-example.xml"
-title="RARecord-ReadConsentResponseBody-example"
-type="xml" %}
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/RARecord-ReadConsentResponseBody-example.json"
-title="RARecord-ReadConsentResponseBody-example"
-type="json" %}
-{% include custom/fhir.header.html %}
-
-### 2.3 Read Flag Request ###
-
-#### http request ####
-```
-GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
-  patient=999999998&status=active&category=RAFlag HTTP/1.1
-```
-#### body ####
-N/A
-{% include custom/fhir.header.html %}
-
-### 2.4 Read Flag Response ###
-
-Two variants are presented
-- 1. Where no Adjustments have been recorded
-- 2. Where 2 Adjustments have been recorded
-
-The Requests remain the same, Responses differ.
-
-### 2.4.1 Empty Searchset ###
-
-Assumes direct follow on from the scenario presented in 'Create an RA Flag' i.e. no specific Adjustments are recorded yet, and default Considertion banners will be displayed.
-
-{% include custom/fhir.response.html %}  
-Edge cases TBD and detailed during development
-#### body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody-example.xml"
-title="RARecord-ReadFlagResponseBody-example-2"
-type="xml" %}
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody-example.json"
-title="RARecord-ReadFlagResponseBody-example-2"
-type="json" %}
-{% include custom/fhir.header.html %}
-
-### 2.4.2 Multiple result Searchset ###
-
-Assumes that prior to this scenario 2 Adjustments have been recorded on behalf of the Patient.  
-Here, the Adjustments are:
-- Communication adjustment: Provide written reminders and advice
-- Communication adjustment: Adjust for use of communication book / aid
-
-{% include custom/fhir.response.html %}  
-Edge cases TBD and detailed during development
-#### body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody-example-2.xml"
-title="RARecord-ReadFlagResponseBody-example"
-type="xml" %}
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody-example-2.json"
-title="RARecord-ReadFlagResponseBody-example"
-type="json" %}
-{% include custom/fhir.header.html %}
-
-### 2.5 Read List Request ###
-#### http request ####
-```
-GET https://clinicals.spineservices.nhs.uk/STU3/List?
-  subject=999999998&clinicalStatus=current&code=1094391000000102
-  &_include=List:item.clinicalStatus=active
-```
-#### body ####
-N/A
-{% include custom/fhir.header.html %}
-
-### 2.6 Read List Response ###
-{% include custom/fhir.response.html %}  
-Edge cases TBD and detailed during development
-#### body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/RARecord-ReadListResponseBody-example.xml"
-title="RARecord-ReadListResponseBody-example"
-type="xml" %}
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/RARecord-ReadListResponseBody-example.json"
-title="RARecord-ReadListResponseBody-example"
-type="json" %}
-{% include custom/fhir.header.html %}
+---      

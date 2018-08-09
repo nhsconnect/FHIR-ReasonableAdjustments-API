@@ -34,20 +34,20 @@ FromASID and ToASID headers, and Accredited System IDs are specified in the [Spi
 
 #### All Read & failure responses ####
 * Date: [servedNowDate]
-* Content-type: application/json+fhir or application/xml+fhir
+* Content-type: application/fhir+json or application/fhir+xml
 
 #### All successful Create responses ####
 * Date: [servedNowDate]
 * Last-Modified: [lastModDate]
 * Location: https://clinicals.spineservices.nhs.uk/STU3/[type]/[id]/_history/[vid]
 * ETag: W/"[versionId]"
-* Content-type: application/json+fhir or application/xml+fhir
+* Content-type: application/fhir+json or application/fhir+xml
 
 #### All successful Update responses ####
 * Date: [servedNowDate]
 * Last-Modified: [lastModDate]
 * ETag: W/"[versionId]"
-* Content-type: application/json+fhir or application/xml+fhir
+* Content-type: application/fhir+json or application/fhir+xml
 
 
 ## InteractionID ##
@@ -83,19 +83,19 @@ FromASID and ToASID headers, and Accredited System IDs are specified in the [Spi
         <tr>
             <td rowspan="4">Create, Update,<br>Delete</td>
             <td>Consent</td>
-            <td>urn:nhs:names:services:flagserver:consent:update</td>
+            <td>urn:nhs:names:services:flagserver:consent:write</td>
         </tr>
         <tr>
             <td>Flag</td>
-            <td>urn:nhs:names:services:flagserver:flag:update</td>
+            <td>urn:nhs:names:services:flagserver:flag:write</td>
         </tr>
         <tr>
             <td>Condition</td>
-            <td>urn:nhs:names:services:flagserver:condition:update</td>
+            <td>urn:nhs:names:services:flagserver:condition:write</td>
         </tr>
         <tr>
             <td>List</td>
-            <td>urn:nhs:names:services:flagserver:list:update</td>
+            <td>urn:nhs:names:services:flagserver:list:write</td>
         </tr>
     </tbody>
 
