@@ -1,5 +1,5 @@
 <!-- CreateExample-CreateConditionResponse.xml -->
-<Condition>
+<Condition  xmlns="http://hl7.org/fhir">
     <id value="57f04652-6dd0-4135-a560-f9091b1b26fa"/>
     <meta>
         <versionId value="557ccfc3-0c78-48bf-aedd-70cc08af2ba1"/>

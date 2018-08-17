@@ -1,5 +1,5 @@
 <!-- CreateExample-CreateListResponse.xml -->
-<List>
+<List xmlns="http://hl7.org/fhir">
     <id value="e00c5a85-d34f-4075-96ac-b787deb484b1"/>
     <meta>
         <versionId value="5b703b55-cedc-4c19-b2aa-0666384eab1a"/>

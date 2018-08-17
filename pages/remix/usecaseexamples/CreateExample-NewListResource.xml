@@ -1,5 +1,5 @@
 <!-- CreateExample-NewListResource.xml -->
-<List>
+<List xmlns="http://hl7.org/fhir">
     <meta>
         <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-List-1"/>
     </meta>

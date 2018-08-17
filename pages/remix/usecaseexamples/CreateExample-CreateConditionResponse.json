@@ -1,9 +1,12 @@
 {
   "resourceType": "Condition",
-  "id": "13aec731-02c5-42a2-b863-de889479e777",
+  "id": "57f04652-6dd0-4135-a560-f9091b1b26fa",
+  "fhir_comments": [
+    " CreateExample-CreateConditionResponse.xml "
+  ],
   "meta": {
-    "versionId": "0bf0b49c-9dfb-4587-9931-0b4a00819229",
-    "lastUpdated": "2018-07-24T10:00:02+00:00",
+    "versionId": "557ccfc3-0c78-48bf-aedd-70cc08af2ba1",
+    "lastUpdated": "2018-07-23T11:00:00+00:00",
     "profile": [
       "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1"
     ]
@@ -19,10 +22,10 @@
       },
       "target": [
         {
-          "reference": "Condition/13aec731-02c5-42a2-b863-de889479e777"
+          "reference": "Condition/57f04652-6dd0-4135-a560-f9091b1b26fa"
         }
       ],
-      "recorded": "2018-07-24T10:05:33+00:00",
+      "recorded": "2018-07-23T11:00:00+00:00",
       "agent": [
         {
           "role": [
@@ -30,19 +33,19 @@
               "coding": [
                 {
                   "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
-                  "code": "R1974",
-                  "display": "Community Learning Disabilities Nurse"
+                  "code": "R0260",
+                  "display": "General Medical Practitioner"
                 }
               ]
             }
           ],
           "whoReference": {
-            "reference": "https://sds.spineservices.nhs.uk/STU3/Practitioner/4tr6ee6a9",
-            "display": "Nurse N"
+            "reference": "https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9",
+            "display": "Dr.D"
           },
           "onBehalfOfReference": {
             "reference": "https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7",
-            "display": "Some Hospital Learning Disability Support Department"
+            "display": "Some GP Clinic"
           }
         }
       ]
@@ -61,7 +64,7 @@
       ]
     }
   ],
-  "clinicalStatus": "inactive",
+  "clinicalStatus": "active",
   "category": [
     {
       "coding": [
@@ -77,11 +80,10 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1",
-        "code": "720821000000105",
-        "display": "Mental health condition(s)"
+        "code": "1855002",
+        "display": "Learning Disability(s)"
       }
-    ],
-    "text": "Patient diagnosed with Stranger anxiety (disorder). Consider home-visit"
+    ]
   },
   "subject": {
     "reference": "demographics.spineservices.nhs.uk/STU3/Patient/999999998"

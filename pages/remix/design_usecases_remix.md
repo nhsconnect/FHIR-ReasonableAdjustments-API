@@ -340,7 +340,7 @@ type="json" %}
 ```
 HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 10:00:01 GMT
-Last-Modified:2018-07-24T10:00:01+00:00
+Last-Modified:2018-07-24T10:00:02+00:00
 ETag: W/"0bf0b49c-9dfb-4587-9931-0b4a00819229”
 Content-Type: application/fhir+xml
 
@@ -358,7 +358,7 @@ type="xml" %}
 ```
 HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 10:00:01 GMT
-Last-Modified:2018-07-24T10:00:01+00:00
+Last-Modified:2018-07-24T10:00:02+00:00
 ETag: W/"0bf0b49c-9dfb-4587-9931-0b4a00819229”
 Content-Type: application/fhir+json
 
