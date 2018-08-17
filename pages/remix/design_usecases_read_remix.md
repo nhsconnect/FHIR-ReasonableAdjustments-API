@@ -58,7 +58,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:consent:read
+InteractionID: urn:nhs:names:services:raflagserver:Consent.read:1
 
 ```
 
@@ -77,7 +77,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:consent:read
+InteractionID: urn:nhs:names:services:raflagserver:Consent.read:1
 
 ```
 
@@ -126,7 +126,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:flag:read
+InteractionID: urn:nhs:names:services:raflagserver:Flag.read:1
 
 ```
 
@@ -145,7 +145,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:flag:read
+InteractionID: urn:nhs:names:services:raflagserver:Flag.read:1
 
 ```
 
@@ -194,7 +194,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:list:read
+InteractionID: urn:nhs:names:services:raflagserver:List.read:1
 
 ```
 
@@ -213,7 +213,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:list:read
+InteractionID: urn:nhs:names:services:raflagserver:List.read:1
 
 ```
 
@@ -261,7 +261,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:condition:read
+InteractionID: urn:nhs:names:services:raflagserver:Condition.read:1
 
 ```
 
@@ -279,7 +279,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:condition:read
+InteractionID: urn:nhs:names:services:raflagserver:Condition.read:1
 
 ```
 

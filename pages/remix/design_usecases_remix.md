@@ -37,7 +37,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:consent:read
+InteractionID: urn:nhs:names:services:raflagserver:Consent.read:1
 
 ```
 
@@ -58,7 +58,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:consent:read
+InteractionID: urn:nhs:names:services:raflagserver:Consent.read:1
 
 ```
 
@@ -137,7 +137,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:list:read
+InteractionID: urn:nhs:names:services:raflagserver:List.read:1
 
 ```
 
@@ -157,7 +157,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:list:read
+InteractionID: urn:nhs:names:services:raflagserver:List.read:1
 
 ```
 
@@ -208,7 +208,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:condition:read
+InteractionID: urn:nhs:names:services:raflagserver:Condition.read:1
 
 ```
 
@@ -230,7 +230,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:condition:read
+InteractionID: urn:nhs:names:services:raflagserver:Condition.read:1
 
 ```
 
@@ -301,7 +301,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:condition:write
+InteractionID: urn:nhs:names:services:raflagserver:Condition.write:1
 If-Match: W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
 
 ```
@@ -322,7 +322,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:condition:write
+InteractionID: urn:nhs:names:services:raflagserver:Condition.write:1
 If-Match: W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
 
 ```
@@ -376,7 +376,7 @@ type="json" %}
 ```
 PUT https://clinicals.spineservices.nhs.uk/STU3/List/4c8d19af-7755-4954-93df-93c964ddf349 HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:list:write
+InteractionID: urn:nhs:names:services:raflagserver:List.write:1
 If-Match: W/"bb325b55-e8a0-41df-84bd-3ac2b026ab5b"
 
 ```
@@ -393,7 +393,7 @@ type="xml" %}
 ```
 PUT https://clinicals.spineservices.nhs.uk/STU3/List/4c8d19af-7755-4954-93df-93c964ddf349 HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:list:write
+InteractionID: urn:nhs:names:services:raflagserver:List.write:1
 If-Match: W/"bb325b55-e8a0-41df-84bd-3ac2b026ab5b"
 
 ```
@@ -449,7 +449,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 6543212123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:condition:write
+InteractionID: urn:nhs:names:services:raflagserver:Condition.write:1
 If-Match: W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
 
 ```
@@ -467,7 +467,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 6543212123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:condition:write
+InteractionID: urn:nhs:names:services:raflagserver:Condition.write:1
 If-Match: W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
 
 ```

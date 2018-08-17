@@ -98,7 +98,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:consent:write
+InteractionID: urn:nhs:names:services:raflagserver:Consent.write:1
 
 ```
 
@@ -117,7 +117,7 @@ Authorization:Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:consent:write
+InteractionID: urn:nhs:names:services:raflagserver:Consent.write:1
 
 ```
 
@@ -174,7 +174,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:condition:write
+InteractionID: urn:nhs:names:services:raflagserver:Condition.write:1
 
 ```
 
@@ -193,7 +193,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:condition:write
+InteractionID: urn:nhs:names:services:raflagserver:Condition.write:1
 
 ```
 
@@ -250,7 +250,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:list:write
+InteractionID: urn:nhs:names:services:raflagserver:List.write:1
 
 ```
 
@@ -269,7 +269,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:flagserver:list:write
+InteractionID: urn:nhs:names:services:raflagserver:List.write:1
 
 ```
 
