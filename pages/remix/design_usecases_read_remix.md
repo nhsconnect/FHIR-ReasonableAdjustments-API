@@ -32,11 +32,11 @@ Patient has an RA Flag; Practitioner requests record.
 #### Main ####
 * Practitioner retrieves Patient's RARecord.  
   * ClientSystem queries ServerSystem to retrieve RARecord
-    * ClientSystem submits Read Consent request [(xml)](design_usecases_read_remix.html#21-read-consent-request---xml-example) [(json)](design_usecases_remix.html#22-read-consent-request---json-example)
-      * ServerSystem submits Read Consent response [(xml)](design_usecases_read_remix.html#23-read-consent-response---xml-example) [(json)](design_usecases_remix.html#24-read-consent-response---json-example)
-    * ClientSystem submits Read Flag request [(xml)](design_usecases_read_remix.html#25-read-flag-request---xml-example) [(json)](design_usecases_remix.html#26-read-flag-request---json-example)
-      * ServerSystem submits Read Flag response [(xml)](design_usecases_read_remix.html#27-read-flag-response---xml-example) [(json)](design_usecases_remix.html#28-read-flag-response---json-example)
-    * ClientSystem submits Read List request [(xml)](design_usecases_read_remix.html#29-read-list-request---xml-example) [(json)](design_usecases_remix.html#210-read-list-request---json-example)
+    * ClientSystem submits Read Consent request [(xml)](design_usecases_read_remix.html#21-read-consent-request---xml-example) [(json)](design_usecases_read_remix.html#22-read-consent-request---json-example)
+      * ServerSystem submits Read Consent response [(xml)](design_usecases_read_remix.html#23-read-consent-response---xml-example) [(json)](design_usecases_read_remix.html#24-read-consent-response---json-example)
+    * ClientSystem submits Read Flag request [(xml)](design_usecases_read_remix.html#25-read-flag-request---xml-example) [(json)](design_usecases_read_remix.html#26-read-flag-request---json-example)
+      * ServerSystem submits Read Flag response [(xml)](design_usecases_read_remix.html#27-read-flag-response---xml-example) [(json)](design_usecases_read_remix.html#28-read-flag-response---json-example)
+    * ClientSystem submits Read List request [(xml)](design_usecases_read_remix.html#29-read-list-request---xml-example) [(json)](design_usecases_read_remix.html#210-read-list-request---json-example)
       * ServerSystem submits Read List response [(xml)](design_usecases_read_remix.html#211-read-list-response---xml-example) [(json)](design_usecases_read_remix.html#212-read-list-response---json-example)
     * ClientSystem submits Read Conditions request [(xml)](design_usecases_read_remix.html#213-read-conditions-request---xml-example) [(json)](design_usecases_read_remix.html#214-read-conditions-request---json-example)
       * ServerSystem submits Read Conditions response [(xml)](design_usecases_read_remix.html#215-read-conditions-response---xml-example) [(json)](design_usecases_read_remix.html#216-read-conditions-response---json-example)

@@ -62,7 +62,7 @@ title="New Consent Resource"
 type="xml" %}
 ### 2.2 New Consent Resource - json example ###
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
+relfilepath="usecaseexamples/CreateExample-NewConsentResource.json"
 title="New Consent Resource"
 type="json" %}
 ### 2.3 New Impairment Resource - xml example ###
@@ -72,7 +72,7 @@ title="New Impairment Resource"
 type="xml" %}
 ### 2.4 New Impairment Resource - json example ###
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
+relfilepath="usecaseexamples/CreateExample-NewImpairmentResource.json"
 title="New Impairment Resource"
 type="json" %}
 ### 2.5 New List Resource - xml example ###
@@ -82,7 +82,7 @@ title="New List Resource"
 type="xml" %}
 ### 2.6 New List Resource - json example ###
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
+relfilepath="usecaseexamples/CreateExample-NewListResource.json"
 title="New List Resource"
 type="json" %}
 
@@ -123,7 +123,7 @@ InteractionID: urn:nhs:names:services:flagserver:consent:write
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
+relfilepath="usecaseexamples/CreateExample-CreateConsentRequest.json"
 title="Create Consent Request"
 type="json" %}
 
@@ -161,7 +161,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
+relfilepath="usecaseexamples/CreateExample-CreateConsentResponse.json"
 title="Create Consent Response"
 type="json" %}
 
@@ -199,7 +199,7 @@ InteractionID: urn:nhs:names:services:flagserver:condition:write
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
+relfilepath="usecaseexamples/CreateExample-CreateConditionRequest.json"
 title="Create Condition Request"
 type="json" %}
 
@@ -237,7 +237,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
+relfilepath="usecaseexamples/CreateExample-CreateConditionResponse.json"
 title="Create Condition Response"
 type="json" %}
 
@@ -275,7 +275,7 @@ InteractionID: urn:nhs:names:services:flagserver:list:write
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
+relfilepath="usecaseexamples/CreateExample-CreateListRequest.json"
 title="Create List Request"
 type="json" %}
 
@@ -313,7 +313,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/jsonExampleFile.json"
+relfilepath="usecaseexamples/CreateExample-CreateListResponse.json"
 title="Create List Response"
 type="json" %}
 

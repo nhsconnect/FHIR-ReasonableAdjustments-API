@@ -5,7 +5,9 @@
     " ReadConditionResponseBody-example.xml "
   ],
   "meta": {
-    "lastUpdated": "2018-05-25T00:00:00Z"
+    "profile": [
+      "http://hl7.org/fhir/bundle"
+    ]
   },
   "type": "searchset",
   "total": 1,
