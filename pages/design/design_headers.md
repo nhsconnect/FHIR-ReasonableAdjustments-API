@@ -66,40 +66,40 @@ FromASID and ToASID headers, and Accredited System IDs are specified in the [Spi
         <tr>
             <td rowspan="4">Read</td>
             <td>Consent</td>
-            <td>urn:nhs:names:services:raflagserver:Consent.read:1</td>
+            <td>urn:nhs:names:services:raflags:Consent.read:1</td>
         </tr>
         <tr>
             <td>Flag</td>
-            <td>urn:nhs:names:services:raflagserver:Flag.read:1</td>
+            <td>urn:nhs:names:services:raflags:Flag.read:1</td>
         </tr>
         <tr>
             <td>Condition</td>
-            <td>urn:nhs:names:services:raflagserver:Condition.read:1</td>
+            <td>urn:nhs:names:services:raflags:Condition.read:1</td>
         </tr>
         <tr>
             <td>List</td>
-            <td>urn:nhs:names:services:raflagserver:List.read:1</td>
+            <td>urn:nhs:names:services:raflags:List.read:1</td>
         </tr>
         <tr>
             <td rowspan="5">Create, Update,<br>Delete</td>
             <td>Consent</td>
-            <td>urn:nhs:names:services:raflagserver:Consent.write:1</td>
+            <td>urn:nhs:names:services:raflags:Consent.write:1</td>
         </tr>
         <tr>
             <td>Flag</td>
-            <td>urn:nhs:names:services:raflagserver:Flag.write:1</td>
+            <td>urn:nhs:names:services:raflags:Flag.write:1</td>
         </tr>
         <tr>
             <td>Condition</td>
-            <td>urn:nhs:names:services:raflagserver:Condition.write:1</td>
+            <td>urn:nhs:names:services:raflags:Condition.write:1</td>
         </tr>
         <tr>
             <td>List</td>
-            <td>urn:nhs:names:services:raflagserver:List.write:1</td>
+            <td>urn:nhs:names:services:raflags:List.write:1</td>
         </tr>
         <tr>
             <td>$removeflag</td>
-            <td>urn:nhs:names:services:raflagserver:$removeflag.write:1</td>
+            <td>urn:nhs:names:services:raflags:$removeflag.write:1</td>
         </tr>
     </tbody>
 
