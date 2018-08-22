@@ -1,7 +1,7 @@
 entries:
 - title: FHIR&reg; Reasonable Adjustments API
   product: FHIR&reg; Reasonable Adjustments API
-  version: 0.0.5-alpha
+  version: 0.1.0-alpha
   levels: one
   folders:
 
@@ -208,10 +208,10 @@ entries:
   - title: Use Cases Remix
     output: web
     folderitems:
-    - title: Create an RA Flag
+    - title: Create an RA Flag *New*
       url: /design_usecases_create_remix.html
       output: web
-    - title: Read an RA Flag
+    - title: Read an RA Flag *New*
       url: /design_usecases_read_remix.html
       output: web
     - title: Update an RA Flag
@@ -220,7 +220,7 @@ entries:
     - title: Additional Examples
       url: /design_usecases_additional_remix.html
       output: web
-    - title: Use Cases Remix
+    - title: Use Cases Remix *New*
       url: /design_usecases_remix.html
       output: web
 

@@ -5,7 +5,9 @@
     " RARecord-ReadFlagResponseBody-example-2.xml "
   ],
   "meta": {
-    "lastUpdated": "2018-06-22T00:00:00Z"
+    "profile": [
+      "http://hl7.org/fhir/bundle"
+    ]
   },
   "type": "searchset",
   "total": 2,

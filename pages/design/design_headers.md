@@ -16,27 +16,39 @@ Headers listed are cumulative.
 
 #### All requests ####
 * Authorization: Bearer [jwt_token_string]
+* FromASID: [clientASID]
+* ToASID: [serverASID]
 * InteractionID: [serviceName]
 
-[InteractionID](/design_headers.html#interactionid) varies by resource and interaction undertaken.
+[InteractionID](/design_headers.html#interactionid) varies by resource and interaction undertaken.  
+FromASID and ToASID headers, and Accredited System IDs are specified in the [Spine Core FHIR API Framework](https://developer.nhs.uk/apis/spine-core/resources_headers.html#other-headers)  
+
+#### Create requests ####
+* Prefer: return=representation
 
 #### Update requests ####
 * If-Match: [versionIdETag]
+* Prefer: return=representation
 
 ### Responses ###
 
-#### All failure responses ####
+#### All Read & failure responses ####
 * Date: [servedNowDate]
-* Content-type: application/json+fhir or application/xml+fhir
+* Content-type: application/fhir+json or application/fhir+xml
 
-#### All success responses ####
+#### All successful Create responses ####
+* Date: [servedNowDate]
+* Last-Modified: [lastModDate]
+* Location: https://clinicals.spineservices.nhs.uk/STU3/[type]/[id]/_history/[vid]
+* ETag: W/"[versionId]"
+* Content-type: application/fhir+json or application/fhir+xml
+
+#### All successful Update responses ####
 * Date: [servedNowDate]
 * Last-Modified: [lastModDate]
 * ETag: W/"[versionId]"
-* Content-type: application/json+fhir or application/xml+fhir
+* Content-type: application/fhir+json or application/fhir+xml
 
-#### Create responses ####
-* Location: https://clinicals.spineservices.nhs.uk/STU3/[type]/[id]/_history/[vid]
 
 ## InteractionID ##
 
@@ -54,36 +66,40 @@ Headers listed are cumulative.
         <tr>
             <td rowspan="4">Read</td>
             <td>Consent</td>
-            <td>urn:nhs:names:services:flagserver:consent:read</td>
+            <td>urn:nhs:names:services:raflags:Consent.read:1</td>
         </tr>
         <tr>
             <td>Flag</td>
-            <td>urn:nhs:names:services:flagserver:flag:read</td>
+            <td>urn:nhs:names:services:raflags:Flag.read:1</td>
         </tr>
         <tr>
             <td>Condition</td>
-            <td>urn:nhs:names:services:flagserver:condition:read</td>
+            <td>urn:nhs:names:services:raflags:Condition.read:1</td>
         </tr>
         <tr>
             <td>List</td>
-            <td>urn:nhs:names:services:flagserver:list:read</td>
+            <td>urn:nhs:names:services:raflags:List.read:1</td>
         </tr>
         <tr>
-            <td rowspan="4">Create, Update,<br>Delete</td>
+            <td rowspan="5">Create, Update,<br>Delete</td>
             <td>Consent</td>
-            <td>urn:nhs:names:services:flagserver:consent:update</td>
+            <td>urn:nhs:names:services:raflags:Consent.write:1</td>
         </tr>
         <tr>
             <td>Flag</td>
-            <td>urn:nhs:names:services:flagserver:flag:update</td>
+            <td>urn:nhs:names:services:raflags:Flag.write:1</td>
         </tr>
         <tr>
             <td>Condition</td>
-            <td>urn:nhs:names:services:flagserver:condition:update</td>
+            <td>urn:nhs:names:services:raflags:Condition.write:1</td>
         </tr>
         <tr>
             <td>List</td>
-            <td>urn:nhs:names:services:flagserver:list:update</td>
+            <td>urn:nhs:names:services:raflags:List.write:1</td>
+        </tr>
+        <tr>
+            <td>$removeflag</td>
+            <td>urn:nhs:names:services:raflags:$removeflag.write:1</td>
         </tr>
     </tbody>
 

@@ -1,0 +1,28 @@
+<!-- xml example file
+CreateExample-CreateListRequest.xml -->
+<List xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-List-1"/>
+    </meta>
+    <status value="current"/>
+    <mode value="changes"/>
+    <title value="Reasonable Adjustment List"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1094391000000102"/>
+            <display value="Reasonable adjustments for health and care access"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
+    </subject>
+    <date value="2018-07-23T11:00:00+00:00"/>
+    <entry>
+        <deleted value="false"/>
+        <date value="2018-07-23T11:00:00+00:00"/>
+        <item>
+            <reference value="https://clinicals.spineservices.nhs.uk/STU3/Condition/57f04652-6dd0-4135-a560-f9091b1b26fa"/>
+        </item>
+    </entry>
+</List>

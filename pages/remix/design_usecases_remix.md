@@ -15,7 +15,7 @@ Use Case Remix
 ## 1 Initial Read Failure - No RA Record ##
 
 #### Pre ####
-* None
+* Practitioner logged into ClientSystem, traces & verifies demographic info - see [API Security](design_security.html)
 
 #### Main ####
 * Practitioner searches for Patient's RARecord
@@ -33,8 +33,11 @@ GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  status=active&
  category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
  _format=xml HTTP/1.1
-Authorization:Bearer [jwt_token_string]
-InteractionID:urn:nhs:names:services:flagserver:consent:read
+Authorization: Bearer [jwt_token_string]
+FromASID: 123456123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Consent.read:1
 
 ```
 
@@ -51,8 +54,11 @@ GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  status=active&
  category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
  _format=json HTTP/1.1
-Authorization:Bearer [jwt_token_string]
-InteractionID:urn:nhs:names:services:flagserver:consent:read
+Authorization: Bearer [jwt_token_string]
+FromASID: 123456123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Consent.read:1
 
 ```
 
@@ -64,8 +70,8 @@ InteractionID:urn:nhs:names:services:flagserver:consent:read
 #### http response & headers ####
 ```
 HTTP/1.1 404 NOT FOUND
-Date:Tue, 24 Jul 2018 10:00:00 GMT
-Content-Type:application/xml+fhir
+Date: Tue, 24 Jul 2018 10:00:00 GMT
+Content-Type: application/fhir+xml
 
 ```
 **DQ:** Would you use full header & metadata in a failure OperationOutcome response?  
@@ -84,8 +90,8 @@ type="xml" %}
 #### http response & headers ####
 ```
 HTTP/1.1 404 PATIENT NOT FOUND
-Date:Tue, 24 Jul 2018 10:00:00 GMT
-Content-Type:application/json+fhir
+Date: Tue, 24 Jul 2018 10:00:00 GMT
+Content-Type: application/fhir+json
 
 ```
 
@@ -127,8 +133,11 @@ GET https://clinicals.spineservices.nhs.uk/STU3/List?
  status=current&
  code=http://snomed.info/sct|1094391000000102&
  _format=xml HTTP/1.1
-Authorization:Bearer [jwt_token_string]
-InteractionID:urn:nhs:names:services:flagserver:list:read
+Authorization: Bearer [jwt_token_string]
+FromASID: 123456123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:List.read:1
 
 ```
 
@@ -144,8 +153,11 @@ GET https://clinicals.spineservices.nhs.uk/STU3/List?
  status=current&
  code=http://snomed.info/sct|1094391000000102&
  _format=json HTTP/1.1
-Authorization:Bearer [jwt_token_string]
-InteractionID:urn:nhs:names:services:flagserver:list:read
+Authorization: Bearer [jwt_token_string]
+FromASID: 123456123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:List.read:1
 
 ```
 
@@ -157,10 +169,8 @@ InteractionID:urn:nhs:names:services:flagserver:list:read
 #### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 10:00:00 GMT
-Last-Modified:2018-07-24T10:00:00+00:00
-ETag: W/"9b8509a6-2330-448c-aefc-1d6f723f3e5e”
-Content-Type:application/xml+fhir
+Date: Tue, 24 Jul 2018 12:00:00 GMT
+Content-Type: application/fhir+xml
 
 ```
 
@@ -175,10 +185,8 @@ type="xml" %}
 #### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 10:00:00 GMT
-Last-Modified:2018-07-24T10:00:00+00:00
-ETag: W/"9b8509a6-2330-448c-aefc-1d6f723f3e5e”
-Content-Type:application/json+fhir
+Date: Tue, 24 Jul 2018 12:00:00 GMT
+Content-Type: application/fhir+json
 
 ```
 
@@ -193,15 +201,18 @@ type="json" %}
 #### http request & headers ####
 ```
 GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
- _list=4c8d19af-7755-4954-93df-93c964ddf349&
+ _list=e00c5a85-d34f-4075-96ac-b787deb484b1&
  clinical-status=active&
  _format=xml HTTP/1.1
-Authorization:Bearer [jwt_token_string]
-InteractionID:urn:nhs:names:services:flagserver:condition:read
+Authorization: Bearer [jwt_token_string]
+FromASID: 123456123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Condition.read:1
 
 ```
 
-Idiomatically this is 'Get all Conditions on List 4c8d19af-7755-4954-93df-93c964ddf349, whose clinicalStatus is active'.  
+Idiomatically this is 'Get all Conditions on List e00c5a85-d34f-4075-96ac-b787deb484b1, whose clinicalStatus is active'.  
 **NB.**Spelling of search parameter 'clinical-status' versus element Condition.clinicalStatus  
 
 #### http body ####
@@ -212,15 +223,18 @@ Idiomatically this is 'Get all Conditions on List 4c8d19af-7755-4954-93df-93c964
 #### http request & headers ####
 ```
 GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
- _list=4c8d19af-7755-4954-93df-93c964ddf349&
+ _list=e00c5a85-d34f-4075-96ac-b787deb484b1&
  clinical-status=active&
  _format=json HTTP/1.1
-Authorization:Bearer [jwt_token_string]
-InteractionID:urn:nhs:names:services:flagserver:condition:read
+Authorization: Bearer [jwt_token_string]
+FromASID: 123456123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Condition.read:1
 
 ```
 
-Idiomatically this is 'Get all Conditions on List 4c8d19af-7755-4954-93df-93c964ddf349, whose clinicalStatus is active'.  
+Idiomatically this is 'Get all Conditions on List e00c5a85-d34f-4075-96ac-b787deb484b1, whose clinicalStatus is active'.  
 **NB.**Spelling of search parameter 'clinical-status' versus element Condition.clinicalStatus  
 
 #### http body ####
@@ -231,10 +245,8 @@ Idiomatically this is 'Get all Conditions on List 4c8d19af-7755-4954-93df-93c964
 #### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 10:00:01 GMT
-Last-Modified:2018-07-24T10:00:01+00:00
-ETag: W/"ded2da33-64c9-4c8d-8e3a-6a037823d0c6”
-Content-Type:application/xml+fhir
+Date: Tue, 24 Jul 2018 12:00:01 GMT
+Content-Type: application/fhir+xml
 
 ```
 
@@ -249,10 +261,8 @@ type="xml" %}
 #### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 10:00:01 GMT
-Last-Modified:2018-07-24T10:00:01+00:00
-ETag: W/"ded2da33-64c9-4c8d-8e3a-6a037823d0c6”
-Content-Type:application/json+fhir
+Date: Tue, 24 Jul 2018 12:00:01 GMT
+Content-Type: application/fhir+json
 
 ```
 
@@ -286,10 +296,13 @@ Although unlikely, Update Contention is possible. This scenario illustrates the 
 
 #### http request & headers ####
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777
- Authorization:Bearer [jwt_token_string]
- InteractionID:urn:nhs:names:services:flagserver:condition:update
- If-Match:W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
+PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777 HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+FromASID: 123456123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Condition.write:1
+If-Match: W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
 
 ```
 
@@ -304,10 +317,13 @@ type="xml" %}
 
 #### http request & headers ####
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777
- Authorization:Bearer [jwt_token_string]
- InteractionID:urn:nhs:names:services:flagserver:condition:update
- If-Match:W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
+PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777 HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+FromASID: 123456123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Condition.write:1
+If-Match: W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
 
 ```
 
@@ -323,10 +339,10 @@ type="json" %}
 #### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 10:00:01 GMT
-Last-Modified:2018-07-24T10:00:01+00:00
+Date: Tue, 24 Jul 2018 10:00:01 GMT
+Last-Modified:2018-07-24T10:00:02+00:00
 ETag: W/"0bf0b49c-9dfb-4587-9931-0b4a00819229”
-Content-Type:application/xml+fhir
+Content-Type: application/fhir+xml
 
 ```
 
@@ -341,10 +357,10 @@ type="xml" %}
 #### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 10:00:01 GMT
-Last-Modified:2018-07-24T10:00:01+00:00
+Date: Tue, 24 Jul 2018 10:00:01 GMT
+Last-Modified:2018-07-24T10:00:02+00:00
 ETag: W/"0bf0b49c-9dfb-4587-9931-0b4a00819229”
-Content-Type:application/json+fhir
+Content-Type: application/fhir+json
 
 ```
 
@@ -358,10 +374,10 @@ type="json" %}
 
 #### http request & headers ####
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/List/4c8d19af-7755-4954-93df-93c964ddf349
- Authorization:Bearer [jwt_token_string]
- InteractionID:urn:nhs:names:services:flagserver:list:update
- If-Match:W/"bb325b55-e8a0-41df-84bd-3ac2b026ab5b"
+PUT https://clinicals.spineservices.nhs.uk/STU3/List/4c8d19af-7755-4954-93df-93c964ddf349 HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:raflags:List.write:1
+If-Match: W/"bb325b55-e8a0-41df-84bd-3ac2b026ab5b"
 
 ```
 
@@ -375,10 +391,10 @@ type="xml" %}
 
 #### http request & headers ####
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/List/4c8d19af-7755-4954-93df-93c964ddf349
- Authorization:Bearer [jwt_token_string]
- InteractionID:urn:nhs:names:services:flagserver:list:update
- If-Match:W/"bb325b55-e8a0-41df-84bd-3ac2b026ab5b"
+PUT https://clinicals.spineservices.nhs.uk/STU3/List/4c8d19af-7755-4954-93df-93c964ddf349 HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+InteractionID: urn:nhs:names:services:raflags:List.write:1
+If-Match: W/"bb325b55-e8a0-41df-84bd-3ac2b026ab5b"
 
 ```
 
@@ -393,10 +409,10 @@ type="json" %}
 #### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 10:00:02 GMT
+Date: Tue, 24 Jul 2018 10:00:02 GMT
 Last-Modified:2018-07-24T10:00:02+00:00
 ETag: W/"3de1a085-95f3-43d2-be3c-aa60b6b3da85”
-Content-Type:application/xml+fhir
+Content-Type: application/fhir+xml
 
 ```
 
@@ -411,10 +427,10 @@ type="xml" %}
 #### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date:Tue, 24 Jul 2018 10:00:02 GMT
+Date: Tue, 24 Jul 2018 10:00:02 GMT
 Last-Modified:2018-07-24T10:00:02+00:00
 ETag: W/"3de1a085-95f3-43d2-be3c-aa60b6b3da85”
-Content-Type:application/json+fhir
+Content-Type: application/fhir+json
 
 ```
 
@@ -428,10 +444,13 @@ type="json" %}
 
 #### http request & headers ####
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777
- Authorization:Bearer [jwt_token_string]
- InteractionID:urn:nhs:names:services:flagserver:condition:update
- If-Match:W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
+PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777 HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+FromASID: 6543212123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Condition.write:1
+If-Match: W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
 
 ```
 The only material difference between this request and Delete Condition (A) request will be time/order of receipt, and in the JWT payload.  
@@ -443,10 +462,13 @@ The only material difference between this request and Delete Condition (A) reque
 
 #### http request & headers ####
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777
- Authorization:Bearer [jwt_token_string]
- InteractionID:urn:nhs:names:services:flagserver:condition:update
- If-Match:W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
+PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777 HTTP/1.1
+Authorization: Bearer [jwt_token_string]
+FromASID: 6543212123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Condition.write:1
+If-Match: W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
 
 ```
 The only material difference between this request and Delete Condition (A) request will be time/order of receipt, and in the JWT payload.  
@@ -459,8 +481,8 @@ The only material difference between this request and Delete Condition (A) reque
 #### http response & headers ####
 ```
 HTTP/1.1 409 CONFLICT
-Date:Tue, 24 Jul 2018 10:10:02 GMT
-Content-Type:application/xml+fhir
+Date: Tue, 24 Jul 2018 10:10:02 GMT
+Content-Type: application/fhir+xml
 
 ```
 
@@ -475,8 +497,8 @@ type="xml" %}
 #### http response & headers ####
 ```
 HTTP/1.1 409 CONFLICT
-Date:Tue, 24 Jul 2018 10:10:02 GMT
-Content-Type:application/json+fhir
+Date: Tue, 24 Jul 2018 10:10:02 GMT
+Content-Type: application/fhir+json
 
 ```
 

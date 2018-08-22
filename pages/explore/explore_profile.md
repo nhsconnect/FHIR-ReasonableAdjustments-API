@@ -121,7 +121,7 @@ type="json" %}
 
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Provenance-1"
-resource="[RARecord-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1/_history/0.0.5)"
+resource="[RARecord-Provenance-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1/_history/0.0.5)"
 ccresource="Not Available"
 fhirresource="[Provenance](https://www.hl7.org/fhir/provenance.html)" %}
 

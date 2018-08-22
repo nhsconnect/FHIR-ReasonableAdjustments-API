@@ -23,12 +23,15 @@ Within this security framework, FHIR&reg; Reasonable Adjustments API calls shoul
 |Claim               |Mandatory     |Description                       |Fixed Value     |Dynamic Value           |Value                                   |DataType         |
 |--------------------|--------------|----------------------------------|----------------|------------------------|----------------------------------------|-----------------|
 |iss                 |Y             |issuer                            |No              |Yes                     |[Requesting systems issuer URI]         |URI              |
-|sub                 |Y             |submitter                         |No              |Yes                     |[requesting_user URPId]                 |Id               |
+|sub                 |Y             |subject                           |No              |Yes                     |[User Identifier<br>URPId]                |Id               |
 |aud                 |Y             |API endpoint URL                  |No              |Yes                     |[API endpoint URL]                      |URI <br> i.e. URI w/o query string|
 |exp                 |Y             |expires                           |No              |Yes                     |[now + 5 minutes]                       |UTC Date         |
 |iat                 |Y             |issued at                         |No              |Yes                     |[now]                                   |UTC Date         |
 |reason_for_request  |Y             |purpose                           |directcare      |No                      |directcare                              |string           |
 |scope               |Y             |Data requested                    |No              |Yes                     |[byInteraction] <br> see JWT scope      |string           |
+|requesting_system             |Y             |Identifier for the system or device making the request      |No              |Yes                     |[System or Device Identifier]    |string           |
+|requesting_organization       |Y             |Organisation making the request                             |No              |Yes                     |[Organisation Identifier]        |string           |
+|requesting_user               |Y             |Health or Social Care professional making the request       |No              |Yes                     |[User Identifier<br>URPId]       |string           |
 
 ### JWT Scope ###
 

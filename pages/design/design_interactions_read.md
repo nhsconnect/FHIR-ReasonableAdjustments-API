@@ -66,7 +66,7 @@ GET https://clinicals.spineservices.nhs.uk/STU3/List?
 On successful read of the List, read the Conditions:
 ```
 GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
-  _list&clinical-status=active /HTTP1.1
+  _list=[ListId]&clinical-status=active /HTTP1.1
 ```
 Implementations of _Read Conditions_ MUST implement the Search Parameters \_list and clinical-status for the Condition resource.
 

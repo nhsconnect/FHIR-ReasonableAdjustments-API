@@ -3,7 +3,7 @@ title: Interaction | Read
 keywords: usecase
 tags: [rest, fhir, identification,development]
 sidebar: accessrecord_rest_sidebar
-permalink: design_usecases_additional_remix.html
+permalink: design_usecases_additional.html
 summary: Describes additional examples of resource instances to illustrate acceptable implementation of the Resource Profile StructureDefinitions.
 ---
 {% include custom/search.warnbanner.html %}
