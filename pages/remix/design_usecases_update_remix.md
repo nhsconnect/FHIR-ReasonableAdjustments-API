@@ -44,11 +44,11 @@ During appointment Nurse discusses RA Record, Patient requests recording of 'Eas
 * Practitioner commits RARecord
   * ClientSystem submits Create Flag request [(xml)](design_usecases_update_remix.html#31-create-flag-request---xml-example) [(json)](design_usecases_update_remix.html#32-create-flag-request---json-example)
     * ServerSystem submits Create Flag response [(xml)](design_usecases_update_remix.html#33-create-flag-response---xml-example) [(json)](design_usecases_update_remix.html#34-create-flag-response---json-example)
-    * ClientSystem submits Create Condition request [(xml)](design_usecases_update_remix.html#35-create-condition-request---xml-example) [(json)](design_usecases_update_remix.html#36-create-condition-request---json-example)
-      * ServerSystem submits Create Condition response [(xml)](design_usecases_update_remix.html#37-create-condition-response---xml-example) [(json)](design_usecases_update_remix.html#38-create-condition-response---json-example)
-        * ClientSystem updates existing CareConnect-RARecord-List-1 to reference / identify new Impairment resource [(xml)](design_usecases_update_remix.html#25-updated-list-resource---xml-example) [(json)](design_usecases_update_remix.html#26-updated-list-resource---json-example)
-    * ClientSystem submits Update List request [(xml)](design_usecases_update_remix.html#39-update-list-request---xml-example) [(json)](design_usecases_update_remix.html#310-update-list-request---json-example)
-      * ServerSystem submits Update List response [(xml)](design_usecases_update_remix.html#311-update-list-response---xml-example) [(json)](design_usecases_update_remix.html#312-update-list-response---json-example)
+  * ClientSystem submits Create Condition request [(xml)](design_usecases_update_remix.html#35-create-condition-request---xml-example) [(json)](design_usecases_update_remix.html#36-create-condition-request---json-example)
+    * ServerSystem submits Create Condition response [(xml)](design_usecases_update_remix.html#37-create-condition-response---xml-example) [(json)](design_usecases_update_remix.html#38-create-condition-response---json-example)
+  * ClientSystem updates existing CareConnect-RARecord-List-1 to reference / identify new Impairment resource [(xml)](design_usecases_update_remix.html#25-updated-list-resource---xml-example) [(json)](design_usecases_update_remix.html#26-updated-list-resource---json-example)
+  * ClientSystem submits Update List request [(xml)](design_usecases_update_remix.html#39-update-list-request---xml-example) [(json)](design_usecases_update_remix.html#310-update-list-request---json-example)
+    * ServerSystem submits Update List response [(xml)](design_usecases_update_remix.html#311-update-list-response---xml-example) [(json)](design_usecases_update_remix.html#312-update-list-response---json-example)
 
 
 ## 2 New Resource Examples ##
@@ -105,9 +105,12 @@ Examples of http requests, responses and payloads
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
+POST https://clinicals.spineservices.nhs.uk/STU3/Flag HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+FromASID: 654321123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Flag.write:1
 
 ```
 
@@ -121,9 +124,12 @@ type="xml" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
+POST https://clinicals.spineservices.nhs.uk/STU3/Flag HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+FromASID: 654321123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Flag.write:1
 
 ```
 
@@ -137,9 +143,12 @@ type="json" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+HTTP/1.1 201 Created
+Date: Wed, 24 Jul 2018 10:01:00 GMT
+Last-Modified:2018-07-24T10:01:00+00:00
+Location: https://clinicals.spineservices.nhs.uk/STU3/Flag/2acb0536-0a8f-48c9-8a2f-6ee82860f186/_history/aa755bd6-2be9-4971-972a-6724879c5cb1
+ETag: W/"aa755bd6-2be9-4971-972a-6724879c5cb1”
+Content-Type: application/fhir+xml
 
 ```
 
@@ -153,9 +162,12 @@ type="xml" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+HTTP/1.1 201 Created
+Date: Wed, 24 Jul 2018 10:01:00 GMT
+Last-Modified:2018-07-24T10:01:00+00:00
+Location: https://clinicals.spineservices.nhs.uk/STU3/Flag/2acb0536-0a8f-48c9-8a2f-6ee82860f186/_history/aa755bd6-2be9-4971-972a-6724879c5cb1
+ETag: W/"aa755bd6-2be9-4971-972a-6724879c5cb1”
+Content-Type: application/fhir+json
 
 ```
 
@@ -169,9 +181,12 @@ type="json" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
+POST https://clinicals.spineservices.nhs.uk/STU3/Condition HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+FromASID: 654321123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Condition.write:1
 
 ```
 
@@ -185,9 +200,12 @@ type="xml" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
+POST https://clinicals.spineservices.nhs.uk/STU3/Condition HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+FromASID: 654321123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Condition.write:1
 
 ```
 
@@ -201,9 +219,12 @@ type="json" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+HTTP/1.1 201 Created
+Date: Wed, 24 Jul 2018 10:01:00 GMT
+Last-Modified: 2018-07-24T10:01:00+00:00
+Location: https://clinicals.spineservices.nhs.uk/STU3/Condition/6be8bee9-e727-4564-a904-49507576f8be/_history/a9b91e41-30ad-43a4-a2da-79b9be622169
+ETag: W/"a9b91e41-30ad-43a4-a2da-79b9be622169”
+Content-Type: application/fhir+xml
 
 ```
 
@@ -217,9 +238,12 @@ type="xml" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+HTTP/1.1 201 Created
+Date: Wed, 24 Jul 2018 10:01:00 GMT
+Last-Modified: 2018-07-24T10:01:00+00:00
+Location: https://clinicals.spineservices.nhs.uk/STU3/Condition/6be8bee9-e727-4564-a904-49507576f8be/_history/a9b91e41-30ad-43a4-a2da-79b9be622169
+ETag: W/"a9b91e41-30ad-43a4-a2da-79b9be622169”
+Content-Type: application/fhir+json
 
 ```
 
@@ -233,9 +257,14 @@ type="json" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
+PUT https://clinicals.spineservices.nhs.uk/STU3/List/e00c5a85-d34f-4075-96ac-b787deb484b1 HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+FromASID: 654321123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:List.write:1
+If-Match: W/"5b703b55-cedc-4c19-b2aa-0666384eab1a"
+
 
 ```
 
@@ -249,9 +278,13 @@ type="xml" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
+PUT https://clinicals.spineservices.nhs.uk/STU3/List/e00c5a85-d34f-4075-96ac-b787deb484b1 HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+FromASID: 654321123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:List.write:1
+If-Match: W/"5b703b55-cedc-4c19-b2aa-0666384eab1a"
 
 ```
 
@@ -265,9 +298,11 @@ type="json" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+HTTP/1.1 200 OK
+Date: Tue, 24 Jul 2018 10:02:00 GMT
+Last-Modified:2018-07-24T10:02:00+00:00
+ETag: W/"a8cbe427-7195-482e-81ff-b5809db6d08c”
+Content-Type: application/fhir+xml
 
 ```
 
@@ -281,9 +316,11 @@ type="xml" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+HTTP/1.1 200 OK
+Date: Tue, 24 Jul 2018 10:02:00 GMT
+Last-Modified:2018-07-24T10:02:00+00:00
+ETag: W/"a8cbe427-7195-482e-81ff-b5809db6d08c”
+Content-Type: application/fhir+json
 
 ```
 
@@ -305,7 +342,7 @@ ServerSystem includes Spine, PDS, SDS, FlagServer etc.
 ####  Summary: ####
 During appointment GP discusses RA Record, Patient requests change of Reasonable Adjustment 'Easy Read' to 'Large Print'.  
 Practitioner updates (soft deletes) existing 'Easy Read' Adjustment, records Removal reason 'Entered in error'  
-[then creates new 'Large Print' Adjustment - not shown cf. Create Consent response].  
+Practitioner creates new 'Large Print' Adjustment.  
 
 #### Pre ####
 
@@ -373,9 +410,14 @@ Examples of http requests, responses and payloads
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
+PUT https://clinicals.spineservices.nhs.uk/STU3/Flag/2acb0536-0a8f-48c9-8a2f-6ee82860f186 HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+FromASID: 123456123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Flag.write:1
+If-Match: W/"aa755bd6-2be9-4971-972a-6724879c5cb1"
+
 
 ```
 
@@ -389,9 +431,13 @@ type="xml" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
+PUT https://clinicals.spineservices.nhs.uk/STU3/Flag/2acb0536-0a8f-48c9-8a2f-6ee82860f186 HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+FromASID: 123456123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Flag.write:1
+If-Match: W/"aa755bd6-2be9-4971-972a-6724879c5cb1"
 
 ```
 
@@ -405,9 +451,11 @@ type="json" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+HTTP/1.1 200 OK
+Date: Thur, 25 Jul 2018 11:00:00 GMT
+Last-Modified: 2018-07-25T11:00:00+00:00
+ETag: W/"b0c4bd5f-6133-4ac4-af48-82570ad15007”
+Content-Type: application/fhir+xml
 
 ```
 
@@ -421,9 +469,11 @@ type="xml" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+HTTP/1.1 200 OK
+Date: Thur, 25 Jul 2018 11:00:00 GMT
+Last-Modified: 2018-07-25T11:00:00+00:00
+ETag: W/"b0c4bd5f-6133-4ac4-af48-82570ad15007”
+Content-Type: application/fhir+json
 
 ```
 
@@ -437,9 +487,12 @@ type="json" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
+POST https://clinicals.spineservices.nhs.uk/STU3/Flag HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+FromASID: 123456123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Flag.write:1
 
 ```
 
@@ -453,9 +506,12 @@ type="xml" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
+POST https://clinicals.spineservices.nhs.uk/STU3/Flag HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+FromASID: 123456123456
+ToASID: 987654456789
+Prefer: return=representation
+InteractionID: urn:nhs:names:services:raflags:Flag.write:1
 
 ```
 
@@ -469,9 +525,12 @@ type="json" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+HTTP/1.1 201 Created
+Date: Thu, 25 Jul 2018 11:03:00 GMT
+Last-Modified:2018-07-25T11:03:00+00:00
+Location: https://clinicals.spineservices.nhs.uk/STU3/Flag/d82888a3-1584-4e7f-99f1-3e578a1c9d37/_history/5b293b55-5ca5-4670-91e2-adb905001b96
+ETag: W/"5b293b55-5ca5-4670-91e2-adb905001b96”
+Content-Type: application/fhir+xml
 
 ```
 
@@ -485,9 +544,12 @@ type="xml" %}
 
 #### http request & headers ####
 ```
-BLAH https://clinicals.spineservices.nhs.uk/STU3/[resource] HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-InteractionID: urn:nhs:names:services:flagserver:[resource]:write
+HTTP/1.1 201 Created
+Date: Thu, 25 Jul 2018 11:03:00 GMT
+Last-Modified:2018-07-25T11:03:00+00:00
+Location: https://clinicals.spineservices.nhs.uk/STU3/Flag/d82888a3-1584-4e7f-99f1-3e578a1c9d37/_history/5b293b55-5ca5-4670-91e2-adb905001b96
+ETag: W/"5b293b55-5ca5-4670-91e2-adb905001b96”
+Content-Type: application/fhir+json
 
 ```
 
