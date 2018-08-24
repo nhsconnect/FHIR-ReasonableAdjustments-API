@@ -99,7 +99,7 @@ FromASID and ToASID headers, and Accredited System IDs are specified in the [Spi
         </tr>
         <tr>
             <td>$removeflag</td>
-            <td>urn:nhs:names:services:raflags:$removeflag.write:1</td>
+            <td>urn:nhs:names:services:raflags:removeflag.write:1</td>
         </tr>
     </tbody>
 

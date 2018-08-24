@@ -1,5 +1,26 @@
 <!-- xml example file 
 AddExample-NewImpairmentResource.xml-->
-<Resource>
-    <element value="xml example file placeholder"/>
-</Resource>
+<Condition xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1" />
+    </meta>
+    <clinicalStatus value="active"/>
+    <category>
+        <coding>
+            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1"/>
+            <code value="issue"/>
+            <display value="Issue"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
+            <code value="720821000000105"/>
+            <display value="Mental health condition(s)"/>
+        </coding>
+        <text value="Patient diagnosed with Stranger anxiety (disorder). Consider home-visit"/>
+    </code>
+    <subject>
+        <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
+    </subject>
+</Condition>

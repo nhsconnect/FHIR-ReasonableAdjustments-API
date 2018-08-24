@@ -214,7 +214,7 @@ entries:
     - title: Read an RA Flag *New*
       url: /design_usecases_read_remix.html
       output: web
-    - title: Update an RA Flag
+    - title: Update an RA Flag *New*
       url: /design_usecases_update_remix.html
       output: web
     - title: Additional Examples

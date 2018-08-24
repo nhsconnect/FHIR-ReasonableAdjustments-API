@@ -446,7 +446,7 @@ type="json" %}
 ```
 PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777 HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-FromASID: 6543212123456
+FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
 InteractionID: urn:nhs:names:services:raflags:Condition.write:1
@@ -464,7 +464,7 @@ The only material difference between this request and Delete Condition (A) reque
 ```
 PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777 HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-FromASID: 6543212123456
+FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
 InteractionID: urn:nhs:names:services:raflags:Condition.write:1
