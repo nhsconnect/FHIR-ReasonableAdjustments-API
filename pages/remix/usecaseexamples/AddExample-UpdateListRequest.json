@@ -1,5 +1,46 @@
 {
-  "resourceType": "Resource",
-  "comment": "AddExample-UpdateListRequest.json",
-  "element": "json example file placeholder"
+  "resourceType": "List",
+  "id": "e00c5a85-d34f-4075-96ac-b787deb484b1",
+  "fhir_comments": [
+    " xml example fileAddExample-UpdateListRequest.xml "
+  ],
+  "meta": {
+    "versionId": "5b703b55-cedc-4c19-b2aa-0666384eab1a",
+    "lastUpdated": "2018-07-23T11:00:01+00:00",
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-List-1"
+    ]
+  },
+  "status": "current",
+  "mode": "changes",
+  "title": "Reasonable Adjustment List",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1094391000000102",
+        "display": "Reasonable adjustments for health and care access"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "demographics.spineservices.nhs.uk/STU3/Patient/999999998"
+  },
+  "date": "2018-07-23T11:00:00+00:00",
+  "entry": [
+    {
+      "deleted": false,
+      "date": "2018-07-23T11:00:00+00:00",
+      "item": {
+        "reference": "https://clinicals.spineservices.nhs.uk/STU3/Condition/57f04652-6dd0-4135-a560-f9091b1b26fa"
+      }
+    },
+    {
+      "deleted": false,
+      "date": "2018-07-24T11:00:00+00:00",
+      "item": {
+        "reference": "https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777"
+      }
+    }
+  ]
 }
