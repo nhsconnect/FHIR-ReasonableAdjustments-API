@@ -1,6 +1,6 @@
 <!-- xml example file 
 AddExample-CreateConditionResponse.xml -->
-<Condition>
+<Condition xmlns="http://hl7.org/fhir">
     <id value="6be8bee9-e727-4564-a904-49507576f8be"/>
     <meta>
         <versionId value="a9b91e41-30ad-43a4-a2da-79b9be622169"/>

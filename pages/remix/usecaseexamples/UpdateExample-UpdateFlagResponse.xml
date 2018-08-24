@@ -5,7 +5,7 @@ UpdateExample-UpdateFlagResponse.xml -->
     <meta>
         <versionId value="b0c4bd5f-6133-4ac4-af48-82570ad15007"/>
         <lastUpdated value="2018-07-25T11:00:00+00:00"/>
-        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1" />
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1"/>
     </meta>
     <contained>
         <Provenance>

@@ -1,6 +1,6 @@
 <!-- xml example file 
 AddExample-UpdateListResponse.xml -->
-<List>
+<List xmlns="http://hl7.org/fhir">
     <id value="e00c5a85-d34f-4075-96ac-b787deb484b1"/>
     <meta>
         <versionId value="a8cbe427-7195-482e-81ff-b5809db6d08c"/>

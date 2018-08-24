@@ -5,7 +5,7 @@ UpdateExample-CreateFlagResponse.xml -->
     <meta>
         <versionId value="5b293b55-5ca5-4670-91e2-adb905001b96"/>
         <lastUpdated value="2018-07-25T11:03:00+00:00"/>
-        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1" />
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1"/>
     </meta>
     <contained>
         <Provenance>
@@ -63,7 +63,7 @@ UpdateExample-CreateFlagResponse.xml -->
     <code>
         <coding>
             <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
-            <code value=" 	requireswritteninformationinatleast28pointsansseriffont"/>
+            <code value="requireswritteninformationinatleast28pointsansseriffont"/>
             <display value="Requires written information in at least 28 point sans serif font"/>
         </coding>
     </code>

@@ -1,6 +1,6 @@
 <!-- xml example file 
 AddExample-NewImpairmentResource.xml-->
-<Condition>
+<Condition xmlns="http://hl7.org/fhir">
     <meta>
         <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1" />
     </meta>

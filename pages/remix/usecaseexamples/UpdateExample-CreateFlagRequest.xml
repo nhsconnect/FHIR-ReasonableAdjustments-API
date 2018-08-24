@@ -2,14 +2,14 @@
 UpdateExample-CreateFlagRequest.xml -->
 <Flag xmlns="http://hl7.org/fhir">
     <meta>
-        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1" />
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1"/>
     </meta>
     <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1">
         <valueCodeableConcept>
             <coding>
                 <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1"/>
                 <code value="other"/>
-                <display value="Other reasonable adjustment context and/ or considerations"/>
+                <display value="Other reasonable adjustment context  and/ or considerations"/>
             </coding>
         </valueCodeableConcept>
     </extension>
@@ -24,7 +24,7 @@ UpdateExample-CreateFlagRequest.xml -->
     <code>
         <coding>
             <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
-            <code value=" 	requireswritteninformationinatleast28pointsansseriffont"/>
+            <code value="requireswritteninformationinatleast28pointsansseriffont"/>
             <display value="Requires written information in at least 28 point sans serif font"/>
         </coding>
     </code>
