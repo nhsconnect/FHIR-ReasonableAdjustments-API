@@ -1,0 +1,20 @@
+<!-- RemoveFlag-OperationRequest.xml -->
+<Parameters>
+    <parameter>
+        <name value="removeflag"/>
+        <part>
+            <name value="nhsNumber"/>
+            <valueString value="999999998"/>
+        </part>
+        <part>
+            <name value="removalReason"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1"/>
+                        <code value="DoesntApply"/>
+                        <display value="The Reasonable Adjustment Flag no longer applies to the patient"/>
+                    </coding>
+                </valueCodeableConcept>
+            </part>
+    </parameter>
+</Parameters>

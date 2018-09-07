@@ -4,12 +4,12 @@ keywords: usecase, CareConnect-RARecord-Condition-1
 tags: [rest, fhir, identification,development]
 sidebar: accessrecord_rest_sidebar
 permalink: design_interactions_delete.html
-summary: Delete describes the interaction required to close or (soft) delete an Adjustment or an Impairment on Spine via the FHIR&reg; Reasonable Adjustments API. [To remove the whole Reasonable Adjustment Flag, the Remove Flag operation can be used.]
+summary: Delete describes the interaction required to close or delete an Adjustment or an Impairment on Spine via the FHIR&reg; Reasonable Adjustments API. [To remove the whole Reasonable Adjustment Flag, the Remove Flag operation can be used.]
 ---
 {% include custom/search.warnbanner.html %}
 
-Note: the only update allowed to any part of a Reasonable Adjustment record is an update to status (essentially a soft delete, as status = active > inactive).
-Any corrections to an already committed Reasonable Adjustment element therefore requires update/delete of the existing item, then creation of a new Flag, Adjustment or Impairment resource.
+Note: the only update allowed to any part of a Reasonable Adjustment record is an update to status (of status = active > inactive).
+Any corrections to an already committed Reasonable Adjustment element therefore requires delete of the existing item, then creation of a new Flag, Adjustment or Impairment resource.
 
 
 ## 1 Delete Resource ##
@@ -30,7 +30,7 @@ Given pre-requisites:
 
 For each resource 
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/[resourceType] /HTTP1.1
+PUT https://clinicals.spineservices.nhs.uk/STU3/[resourceType]/[id] /HTTP1.1
 ```
 
 #### Delete Resource Response ####

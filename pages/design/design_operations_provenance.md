@@ -10,25 +10,16 @@ summary: Provenance operation describes the server-side operations required to p
 
 ## 1 Provenance ##
 
-All Reasonable Adjustment resources (Consent, Flag, Condition) are populated with Provenance details on Creation to support clinical safety and audit recording. **NB:** List resources do **NOT** record Provenance.
+All Reasonable Adjustment resources (Consent, Flag, Condition) are populated server-side with Provenance details on creation to support clinical safety and audit recording. **NB:** List resources do **NOT** record Provenance.
 
 To illustrate, on Create of a resource e.g. a Flag resource (i.e. an Adjustment)
-* ClientSystem submits the practitioner's URPId as part of the Create request
-* Spine looks up the URPId
-  * If available, returns cached Practitioner, Organization details
-  * Else, retrieves Practitioner, Organization details and caches
+* ClientSystem submits the practitioner's URPId as part of the Create request JWT token
+* Spine determines Practitioner, Organization details based on the URPId
 * Resource's Provenance is populated with a display representation of the Practitioner, Organization details
 * Resource is persisted
 * Create response issued to ClientSystem - usually with the created resource as body
 
-[To be clear, on Create, a RARecord Resource will contain no Provenance information.  
-The provenance resource is:  
-* generated,
-* populated,
-* contained,
-* cross-referenced
-* persisted  
-server-side as part of the Create operation for the parent resource.  
+[To be clear, on Create, client-side a RARecord Resource will contain no Provenance information.  
 Similarly, on Update, Provenance information regarding the updater is produced etc. as part of the Update operation.]
 
 <img src="images/sequenceDiagrams/Provenance.png">
