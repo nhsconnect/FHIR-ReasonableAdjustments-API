@@ -1,0 +1,36 @@
+<List xmlns="http://hl7.org/fhir">
+    <id value="e00c5a85-d34f-4075-96ac-b787deb484b1"/>
+    <meta>
+        <versionId value="5b703b55-cedc-4c19-b2aa-0666384eab1a"/>
+        <lastUpdated value="2018-07-23T11:00:01+00:00"/>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-List-1"/>
+    </meta>
+    <status value="current"/>
+    <mode value="changes"/>
+    <title value="Reasonable Adjustment List"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1094391000000102"/>
+            <display value="Reasonable adjustments for health and care access"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
+    </subject>
+    <date value="2018-07-23T11:00:00+00:00"/>
+    <entry>
+        <deleted value="false"/>
+        <date value="2018-05-25T00:00:00Z"/>
+        <item>
+            <reference value="https://clinicals.spineservices.nhs.uk/STU3/Condition/6c1ccd3f-765e-41d8-b5c0-2a0317908502"/>
+        </item>
+    </entry>
+    <entry>
+        <deleted value="true"/>
+        <date value="2018-06-02T00:00:00Z"/>
+        <item>
+            <reference value="https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777"/>
+        </item>
+    </entry>
+</List>

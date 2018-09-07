@@ -1,0 +1,101 @@
+{
+  "resourceType": "Flag",
+  "id": "d82888a3-1584-4e7f-99f1-3e578a1c9d37",
+  "fhir_comments": [
+    " xml example fileUpdateExample-CreateFlagResponse.xml "
+  ],
+  "meta": {
+    "versionId": "5b293b55-5ca5-4670-91e2-adb905001b96",
+    "lastUpdated": "2018-07-25T11:03:00+00:00",
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1"
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "Provenance",
+      "id": "9e6fb1d3-4f10-4087-8782-bff20bf2a07f",
+      "meta": {
+        "profile": [
+          "https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"
+        ]
+      },
+      "target": [
+        {
+          "reference": "Flag/d82888a3-1584-4e7f-99f1-3e578a1c9d37"
+        }
+      ],
+      "recorded": "2018-07-25T11:03:00+00:00",
+      "agent": [
+        {
+          "role": [
+            {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+                  "code": "R0260",
+                  "display": "General Medical Practitioner"
+                }
+              ]
+            }
+          ],
+          "whoReference": {
+            "reference": "https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9",
+            "display": "Dr.D"
+          },
+          "onBehalfOfReference": {
+            "reference": "https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7",
+            "display": "Some GP Clinic"
+          }
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1",
+      "extension": [
+        {
+          "url": "created",
+          "valueReference": {
+            "reference": "#9e6fb1d3-4f10-4087-8782-bff20bf2a07f"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1",
+            "code": "other",
+            "display": "Other reasonable adjustment context and/ or considerations"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "active",
+  "category": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+        "code": "reasonable adjustments flag",
+        "display": "Reasonable Adjustments Flag"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1",
+        "code": "requireswritteninformationinatleast28pointsansseriffont",
+        "display": "Requires written information in at least 28 point sans serif font"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "demographics.spineservices.nhs.uk/STU3/Patient/999999998"
+  }
+}

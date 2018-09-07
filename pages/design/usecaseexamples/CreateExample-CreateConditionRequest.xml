@@ -1,0 +1,24 @@
+<!-- CreateExample-CreateConditionRequest.xml -->
+<Condition xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1" />
+    </meta>
+    <clinicalStatus value="active"/>
+    <category>
+        <coding>
+            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1"/>
+            <code value="issue"/>
+            <display value="Issue"/>
+        </coding>
+    </category>
+        <code>
+            <coding>
+                <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
+                <code value="1855002"/>
+                <display value="Learning Disability(s)"/>
+            </coding>
+        </code>
+    <subject>
+        <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
+    </subject>
+</Condition>

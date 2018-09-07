@@ -1,0 +1,122 @@
+{
+  "resourceType": "Bundle",
+  "id": "384824fc-62df-45bf-ac55-aab7cc0e4ffe",
+  "fhir_comments": [
+    " ReadConditionResponseBody-example.xml "
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/bundle"
+    ]
+  },
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "fhir_comments": [
+        "    all search sets include the self link - the statement of the query string searched on. "
+      ],
+      "relation": "self",
+      "url": "https://clinicals.spineservices.nhs.uk/STU3/Condition?_list=4c8d19af-7755-4954-93df-93c964ddf349&clinical-status=active&_format=json"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://clinicals.spineservices.nhs.uk/STU3/cba81f41-e57d-4b91-b59f-b5efc479faf9",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cba81f41-e57d-4b91-b59f-b5efc479faf9",
+        "fhir_comments": [
+          " found payload resource or operationOutcome in here "
+        ],
+        "meta": {
+          "versionId": "e36bfb0d-1cb9-47d0-bd44-15c56b0c11b4",
+          "lastUpdated": "2018-03-01T10:00:00+00:00",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1"
+          ]
+        },
+        "contained": [
+          {
+            "resourceType": "Provenance",
+            "id": "8ce7de6b-1307-432d-8e96-ae6a613ca3e4",
+            "meta": {
+              "profile": [
+                "https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"
+              ]
+            },
+            "target": [
+              {
+                "reference": "Condition/6c1ccd3f-765e-41d8-b5c0-2a0317908502"
+              }
+            ],
+            "recorded": "2016-03-01T10:05:33+00:00",
+            "agent": [
+              {
+                "role": [
+                  {
+                    "coding": [
+                      {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+                        "code": "R0260",
+                        "display": "General Medical Practitioner"
+                      }
+                    ]
+                  }
+                ],
+                "whoReference": {
+                  "reference": "https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9",
+                  "display": "Dr.D"
+                },
+                "onBehalfOfReference": {
+                  "reference": "https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7",
+                  "display": "Some GP Clinic"
+                }
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1",
+            "extension": [
+              {
+                "url": "created",
+                "valueReference": {
+                  "reference": "#8ce7de6b-1307-432d-8e96-ae6a613ca3e4"
+                }
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": "active",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "issue",
+                "display": "Issue"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1",
+              "code": "1855002",
+              "display": "Learning Disability(s)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "demographics.spineservices.nhs.uk/STU3/Patient/999999998"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    }
+  ]
+}

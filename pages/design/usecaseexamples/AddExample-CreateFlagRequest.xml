@@ -1,0 +1,34 @@
+<!-- xml example file 
+AddExample-CreateFlagRequest.xml -->
+<Flag xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1"/>
+    </meta>
+    <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1">
+        <valueCodeableConcept>
+            <coding>
+                <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1"/>
+                <code value="comms"/>
+                <display value="Communication"/>
+            </coding>
+        </valueCodeableConcept>
+    </extension>
+    <status value="active"/>
+    <category>
+        <coding>
+            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
+            <code value="reasonable adjustments flag"/>
+            <display value="Reasonable Adjustments Flag"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
+            <code value="requiresinformationineasyread"/>
+            <display value="Requires information in Easyread"/>
+        </coding>
+    </code>
+    <subject>
+            <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
+    </subject>
+</Flag>

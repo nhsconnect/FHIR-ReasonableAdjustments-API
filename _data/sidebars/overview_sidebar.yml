@@ -189,39 +189,67 @@ entries:
       url: /design_operations_provenance.html
       output: web
 
+#  - title: Use Cases & Examples
+#    output: web
+#    folderitems:
+#    - title: Create an RA Flag
+#      url: /design_usecases_create.html
+#      output: web
+#    - title: Read an RA Flag
+#      url: /design_usecases_read.html
+#      output: web
+#    - title: Update an RA Flag
+#      url: /design_usecases_update.html
+#      output: web
+#    - title: Additional Examples
+#      url: /design_usecases_additional.html
+#      output: web
+
+#  - title: Use Cases Remix
+#    output: web
+#    folderitems:
+#    - title: Create an RA Flag *New*
+#      url: /design_usecases_create_remix.html
+#      output: web
+#    - title: Read an RA Flag *New*
+#      url: /design_usecases_read_remix.html
+#      output: web
+#    - title: Update an RA Flag *New*
+#      url: /design_usecases_update_remix.html
+#      output: web
+#    - title: Additional Examples
+#      url: /design_usecases_additional_remix.html
+#      output: web
+#    - title: Use Cases Remix *New*
+#      url: /design_usecases_remix.html
+#      output: web
+
   - title: Use Cases & Examples
     output: web
     folderitems:
-    - title: Create an RA Flag
-      url: /design_usecases_create.html
+    - title: No RA Record
+      url: /design_usecases_NoRARecord.html
       output: web
-    - title: Read an RA Flag
-      url: /design_usecases_read.html
+    - title: Create RA Record
+      url: /design_usecases_CreateRARecord.html
       output: web
-    - title: Update an RA Flag
-      url: /design_usecases_update.html
+    - title: Read RA Record
+      url: /design_usecases_ReadRARecord.html
       output: web
-    - title: Additional Examples
-      url: /design_usecases_additional.html
+    - title: Add Adjustment, Add Impairment
+      url: /design_usecases_AddAdjustmentAddImpairment.html
       output: web
-
-  - title: Use Cases Remix
-    output: web
-    folderitems:
-    - title: Create an RA Flag *New*
-      url: /design_usecases_create_remix.html
+    - title: Multiple Conditions Read
+      url: /design_usecases_MultipleConditionsRead.html
       output: web
-    - title: Read an RA Flag *New*
-      url: /design_usecases_read_remix.html
+    - title: Update Adjustment
+      url: /design_usecases_UpdateAdjustment.html
       output: web
-    - title: Update an RA Flag *New*
-      url: /design_usecases_update_remix.html
+    - title: Remove Impairment
+      url: /design_usecases_RemoveImpairment.html
       output: web
-    - title: Additional Examples
-      url: /design_usecases_additional_remix.html
-      output: web
-    - title: Use Cases Remix *New*
-      url: /design_usecases_remix.html
+    - title: Remove RA Record
+      url: /design_usecases_RemoveRARecord.html
       output: web
 
   - title: Design & Build
