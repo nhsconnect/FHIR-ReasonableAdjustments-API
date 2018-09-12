@@ -46,9 +46,9 @@ Patient has an RA Flag; Practitioner requests record.
 
 Examples of http requests, responses and payloads
 
-### 2.1 Read Consent request - xml example ###
+### 2.1 Read Consent request ###
 #### http request & headers ####
-```
+{% include codetags.html xml="
 GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  patient=999999998&
  status=active&
@@ -59,15 +59,7 @@ FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
 InteractionID: urn:nhs:names:services:raflags:Consent.read:1
-
-```
-
-#### http body ####
-**None**
-
-### 2.2 Read Consent request - json example ###
-#### http request & headers ####
-```
+" json="
 GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  patient=999999998&
  status=active&
@@ -78,41 +70,21 @@ FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
 InteractionID: urn:nhs:names:services:raflags:Consent.read:1
-
-```
+" %}
 
 #### http body ####
 **None**
 
-### 2.3 Read Consent response - xml example ###
+### 2.2 Read Consent response ###
 #### http response & headers ####
-```
-HTTP/1.1 200 OK
+{% include codetags.html xml="HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 11:00:00 GMT
-Content-Type: application/fhir+xml
-
-```
+Content-Type: application/fhir+xml" json="HTTP/1.1 200 OK
+Date: Tue, 24 Jul 2018 11:00:00 GMT
+Content-Type: application/fhir+json" %}
 
 #### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/RARecord-ReadConsentResponseBody-example.xml"
-title="Read Consent response"
-type="xml" %}
-
-### 2.4 Read Consent response - json example ###
-#### http response & headers ####
-```
-HTTP/1.1 200 OK
-Date: Tue, 24 Jul 2018 11:00:00 GMT
-Content-Type: application/fhir+json
-
-```
-
-#### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/RARecord-ReadConsentResponseBody-example.json"
-title="Read Consent response"
-type="json" %}
+{% include codetags.html xmlpath="usecaseexamples/RARecord-ReadConsentResponseBody-example.xml" jsonpath="usecaseexamples/RARecord-ReadConsentResponseBody-example.json" title="Read Consent Response" %}
 
 ### 2.5 Read Flag request - xml example ###
 #### http request & headers ####

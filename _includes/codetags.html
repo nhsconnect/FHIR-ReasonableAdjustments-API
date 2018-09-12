@@ -1,0 +1,31 @@
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active code-tags"><a data-target=".json" data-toggle="tab">json</a></li>
+    <li class="code-tags"><a data-target=".xml" data-toggle="tab">xml</a></li>
+</ul>
+<div class="tab-content" markdown="block">
+<div class="tab-pane active json" markdown="block">
+{{ context.registers[:page]["path"] }}
+{% if include.json %}
+```
+{{ include.json }}
+```
+{% else %}
+#### {{ include.title }} JSON Example
+```
+{% include_relative {{ include.jsonpath }} %}
+```
+{% endif %}
+</div>
+<div class="tab-pane xml" markdown="block">
+{% if include.xml %}
+```
+{{ include.xml }}
+```
+{% else %}
+#### {{ include.title }} XML Example
+```
+{% include_relative {{ include.xmlpath }} %}
+```
+{% endif %}
+</div>
+</div>

@@ -52,4 +52,11 @@ $(function() {
             return $this.find("a[data-toggle=tab]:first, a[data-toggle=pill]:first").tab("show");
         }
     });
+
+    // link all the code tabs on a page
+    $("ul.nav li.code-tags a").click(function() {
+        var target = $(this).data("target");
+        $("ul.nav li.code-tags").removeClass("active");
+        $("ul.nav li.code-tags a[data-target='" + target + "']").tab("show")
+    });
 });
