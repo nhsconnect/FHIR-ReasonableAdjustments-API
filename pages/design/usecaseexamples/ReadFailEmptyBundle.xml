@@ -1,0 +1,13 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="885dda30-e403-470f-956a-366c01d7eace"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/bundle"/>
+    </meta>
+    <type value="searchset"/>
+    <total value="0"/>
+    <link>
+        <relation value="self"/>
+        <!-- note entity encoding in url -->
+        <url value="https://clinicals.spineservices.nhs.uk/STU3/Consent?patient=999999998&amp;status=active&amp;category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&amp;_format=xml"/>
+    </link>
+</Bundle>

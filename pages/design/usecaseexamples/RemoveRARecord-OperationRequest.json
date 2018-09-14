@@ -2,7 +2,7 @@
   "resourceType": "Parameters",
   "parameter": [
     {
-      "name": "removeflag",
+      "name": "removerarecord",
       "part": [
         {
           "name": "nhsNumber",

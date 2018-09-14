@@ -1,33 +1,35 @@
 ---
-title: Operation | Remove Flag
+title: Operation | Remove RA Record
 keywords: usecase
 tags: [rest, fhir, identification, development]
 sidebar: accessrecord_rest_sidebar
-permalink: design_operations_removeflag.html
-summary: Remove Flag operation describes the operation required to remove (soft delete) a Reasonable Adjustment Flag entirely, including all Adjustments, Impairments and Consents on the Spine via the FHIR&reg; Reasonable Adjustments API
+permalink: design_operations_removerarecord.html
+summary: Remove RA Record operation describes the operation required to remove (soft delete) a Reasonable Adjustment Flag entirely, including all Adjustments, Impairments and Consents on the Spine via the FHIR&reg; Reasonable Adjustments API
 ---
 {% include custom/search.warnbanner.html %}
 
-## 1 Remove Flag ##
+## 1 Remove RA Record ##
 
-'Remove Flag' is an extended operation to efficiently close all active Reasonable Adjustment resources for a Patient.
+'Remove RA Record' is an extended operation to efficiently close all active Reasonable Adjustment resources for a Patient.
 
 In FHIR, the extended operations paradigm is defined at [Operations](http://hl7.org/fhir/operations.html). Each operation is specified via an instance of an operationDefinion resource.
 
 Here:
 
 |---------------:|-----------:|
-| operation name | removeflag |
+| operation name | removerarecord |
 | context        | server     |
 | parameters     | NHSNumber, RemovalReason |
 
 'server' context entails operation execution is invoked at the FHIR Server baseURL. Invocation syntax, in this case, specifies POST to the baseURL, the operation called by name with $ suffix
 
-## 2 Remove Flag Invocation ##
+## 2 Remove RA Record Invocation ##
+
+Remove RA Record operation can be invoked directly or can be triggered by removal of Consent (to record Reasonable Adjustment information).
 
 ### http request ###
 ```
-POST https://clinicals.spineservices.nhs.uk/STU3/$removeflag /HTTP1.1
+POST https://clinicals.spineservices.nhs.uk/STU3/$removerarecord /HTTP1.1
 ```
 ### body ###
 The operation request body is a multi-part Parameter resource, containing the NHS Number of the Patient requiring their Reasonable Adjustment Flag removed, and optionally a RemovalReason where given
@@ -36,7 +38,7 @@ The operation request body is a multi-part Parameter resource, containing the NH
 ```
 <Parameters>
     <parameter>
-        <name value="removeflag"/>
+        <name value="removerarecord"/>
         <part>
             <name value="nhsNumber"/>
             <valueString value="999999998"/>
@@ -63,7 +65,7 @@ or
   "resourceType": "Parameters",
   "parameter": [
     {
-      "name": "removeflag",
+      "name": "removerarecord",
       "part": [
         {
           "name": "nhsNumber",
@@ -87,7 +89,7 @@ or
 }
 ```
 
-## 3 Remove Flag Interaction ##
+## 3 Remove RA Record Interaction ##
 
 Interaction diagram outlining:
 * operation request and 'in' parameters.
@@ -97,7 +99,7 @@ Interaction diagram outlining:
 <img src="images/sequenceDiagrams/RemoveFlag.png">
 
 ```
-$removeflag
+$removerarecord
 (In pseudocode:)
 
 GET Flags WHERE
@@ -128,4 +130,4 @@ Foreach Condition on List,
 
 ## 4 OperationDefinition ##
 
-{% include important.html content="**Placeholder:** An OperationDefinition instance _will_ be provided for the $removeflag operation." %}
+{% include important.html content="**Placeholder:** An OperationDefinition instance _will_ be provided for the $removerarecord operation." %}

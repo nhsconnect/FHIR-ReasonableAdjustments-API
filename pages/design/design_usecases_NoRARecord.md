@@ -68,27 +68,23 @@ InteractionID: urn:nhs:names:services:raflags:Consent.read:1
 
 #### http response & headers ####
 ```
-HTTP/1.1 404 NOT FOUND
+HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 10:00:00 GMT
 Content-Type: application/fhir+xml
 
 ```
-**DQ:** Would you use full header & metadata in a failure OperationOutcome response?  
-**DN:** Can't see why you would.  
-From FHIR spec, 'The resource is not designed to be persisted or referenced from other parts of the workflow.'  
-Therefore it won't have a versionId/ETag, lastModified would only ever be the same as Date, no Location as not persisted.
-Failure response therefore drops to minimal Date, Content-Type headers.
+
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/ReadFailOperationOutcome.xml"
-title="Read Fail Operation Outcome"
+relfilepath="usecaseexamples/ReadFailEmptyBundle.xml"
+title="Read Fail Empty Bundle"
 type="xml" %}
 
 ### 2.4 Read Consent response - json example ###
 
 #### http response & headers ####
 ```
-HTTP/1.1 404 PATIENT NOT FOUND
+HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 10:00:00 GMT
 Content-Type: application/fhir+json
 
@@ -96,6 +92,6 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/ReadFailOperationOutcome.json"
-title="Read Fail Operation Outcome"
+relfilepath="usecaseexamples/ReadFailEmptyBundle.json"
+title="Read Fail Empty Bundle"
 type="json" %}

@@ -15,6 +15,12 @@ summary: Summary release notes of the FHIR&reg; Reasonable Adjustments API Imple
 - clarification of profile metadata in examples
 - rewrite and reordering of use cases and examples  
   (to clarify and to reflect the above)
+- No RA Record updated examples to show empty bundle response
+- Create Interaction 1 Consent per NHS Number business rule added
+- removeflag operation renamed as removerarecord
+- Remove RA Record use cases and examples aligned with rename
+- Removal of Consent triggers Remove RA Record operation noted on Remove RA Record interaction page, use case page
+- Refreshed Read an RA Record and Add Adjustmen, Add Impairment Response JSON examples to align with XML examples
 
 ## 0.0.5-alpha ##
 
