@@ -254,7 +254,7 @@ type="json" %}
 #### http request & headers ####
 ```
 GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
- _list=4c8d19af-7755-4954-93df-93c964ddf349&
+ _list=e00c5a85-d34f-4075-96ac-b787deb484b1&
  clinical-status=active&
  _format=xml HTTP/1.1
 Authorization: Bearer [jwt_token_string]
@@ -272,7 +272,7 @@ InteractionID: urn:nhs:names:services:raflags:Condition.read:1
 #### http request & headers ####
 ```
 GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
- _list=4c8d19af-7755-4954-93df-93c964ddf349&
+ _list=e00c5a85-d34f-4075-96ac-b787deb484b1&
  clinical-status=active&
  _format=json HTTP/1.1
 Authorization: Bearer [jwt_token_string]
