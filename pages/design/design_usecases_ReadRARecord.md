@@ -167,6 +167,17 @@ relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody-example.xml"
 title="Read Flag response"
 type="xml" %}
 
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody1Flag.xml"
+title="Read Flag response (1 Flag)"
+type="xml" %}
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody2Flags.xml"
+title="Read Flag response (2 Flags)"
+type="xml" %}
+
+
 ### 2.8 Read Flag response - json example ###
 #### http response & headers ####
 ```
@@ -180,6 +191,16 @@ Content-Type: application/fhir+json
 {% include custom/fhir.codegrid.html
 relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody-example.json"
 title="Read Flag response"
+type="json" %}
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody1Flag.json"
+title="Read Flag response (1 Flag)"
+type="json" %}
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody2Flags.json"
+title="Read Flag response (2 Flags)"
 type="json" %}
 
 ### 2.9 Read List request - xml example ###
