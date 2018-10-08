@@ -17,7 +17,7 @@
         "    all search sets include the self link - the statement of the query string searched on. "
       ],
       "relation": "self",
-      "url": "https://clinicals.spineservices.nhs.uk/STU3/List?patient=999999998&status=current&code=http://snomed.info/sct|1094391000000102&_format=json"
+      "url": "https://clinicals.spineservices.nhs.uk/STU3/List?patient=999999998&status=current&code=http://snomed.info/sct|1094391000000102&_format=xml"
     }
   ],
   "entry": [
@@ -34,8 +34,8 @@
           " found payload resource or operationOutcome in here "
         ],
         "meta": {
-          "versionId": "0862dfb7-8806-4979-8fd2-8dc887a85ce7",
-          "lastUpdated": "2018-03-01T10:00:00+00:00",
+          "versionId": "5b703b55-cedc-4c19-b2aa-0666384eab1a",
+          "lastUpdated": "2018-07-23T11:00:01+00:00",
           "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-List-1"
           ]
@@ -55,18 +55,13 @@
         "subject": {
           "reference": "demographics.spineservices.nhs.uk/STU3/Patient/999999998"
         },
-        "date": "2018-05-25T00:00:00Z",
+        "date": "2018-07-23T11:00:00+00:00",
         "entry": [
           {
             "deleted": false,
-            "date": "2018-05-25T00:00:00Z",
+            "date": "2018-07-23T11:00:00+00:00",
             "item": {
-              "reference": "https://clinicals.spineservices.nhs.uk/STU3/Condition/cba81f41-e57d-4b91-b59f-b5efc479faf9",
-              "_reference": {
-                "fhir_comments": [
-                  " reference to a successfully written Condition available at referred endpoint.  "
-                ]
-              }
+              "reference": "https://clinicals.spineservices.nhs.uk/STU3/Condition/57f04652-6dd0-4135-a560-f9091b1b26fa"
             }
           }
         ]

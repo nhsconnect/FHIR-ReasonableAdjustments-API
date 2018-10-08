@@ -53,6 +53,7 @@ InteractionID: urn:nhs:names:services:raflags:Consent.read:1" %}
 ### 2.2 Read Consent response ###
 
 #### http response & headers ####
+
 {% include codetags.html xml="
 HTTP/1.1 404 NOT FOUND
 Date: Tue, 24 Jul 2018 10:00:00 GMT
@@ -63,6 +64,7 @@ Date: Tue, 24 Jul 2018 10:00:00 GMT
 Content-Type: application/fhir+json
 " %}
 
+
 **DQ:** Would you use full header & metadata in a failure OperationOutcome response?  
 **DN:** Can't see why you would.  
 From FHIR spec, 'The resource is not designed to be persisted or referenced from other parts of the workflow.'  
@@ -71,3 +73,4 @@ Failure response therefore drops to minimal Date, Content-Type headers.
 
 #### http body ####
 {% include codetags.html xmlpath="usecaseexamples/ReadFailOperationOutcome.xml" title="Read Fail Operation Outcome" jsonpath="usecaseexamples/ReadFailOperationOutcome.json" %}
+

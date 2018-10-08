@@ -139,6 +139,17 @@ relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody-example.xml"
 title="Read Flag response"
 type="xml" %}
 
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody1Flag.xml"
+title="Read Flag response (1 Flag)"
+type="xml" %}
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody2Flags.xml"
+title="Read Flag response (2 Flags)"
+type="xml" %}
+
+
 ### 2.8 Read Flag response - json example ###
 #### http response & headers ####
 ```
@@ -152,6 +163,16 @@ Content-Type: application/fhir+json
 {% include custom/fhir.codegrid.html
 relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody-example.json"
 title="Read Flag response"
+type="json" %}
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody1Flag.json"
+title="Read Flag response (1 Flag)"
+type="json" %}
+
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody2Flags.json"
+title="Read Flag response (2 Flags)"
 type="json" %}
 
 ### 2.9 Read List request - xml example ###
@@ -226,7 +247,7 @@ type="json" %}
 #### http request & headers ####
 ```
 GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
- _list=4c8d19af-7755-4954-93df-93c964ddf349&
+ _list=e00c5a85-d34f-4075-96ac-b787deb484b1&
  clinical-status=active&
  _format=xml HTTP/1.1
 Authorization: Bearer [jwt_token_string]
@@ -244,7 +265,7 @@ InteractionID: urn:nhs:names:services:raflags:Condition.read:1
 #### http request & headers ####
 ```
 GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
- _list=4c8d19af-7755-4954-93df-93c964ddf349&
+ _list=e00c5a85-d34f-4075-96ac-b787deb484b1&
  clinical-status=active&
  _format=json HTTP/1.1
 Authorization: Bearer [jwt_token_string]

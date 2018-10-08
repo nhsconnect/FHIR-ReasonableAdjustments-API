@@ -53,4 +53,8 @@ After successful creation of the Condition resource (see the Create Consent and 
 There is no specific http request here.  
 The pattern consists of sequenced _Create Condition_ and _Create List_ or _Update List_ interactions.
 
+## 3 Create Consent resources ##
 
+Business Rule: Spine Clinicals SHALL NOT allow more than 1 Consent resource to be active for a given NHS Number.
+
+Error response: Spine Clinicals SHALL respond with response code 422 DUPLICATE_REJECTED and an OperationOutcome resource on creation of a duplicate, active Consent resource for an NHS Number.

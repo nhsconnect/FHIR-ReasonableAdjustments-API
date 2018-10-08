@@ -1,4 +1,4 @@
-<!-- RemoveFlag-OperationOutcome.xml -->
+<!-- RemoveRARecord-OperationOutcome.xml -->
 <OperationOutcome xmlns="http://hl7.org/fhir">
     <id value="89842084-66c6-4b3c-9eb2-63d43e5ab074"/>
     <meta>

@@ -1,7 +1,7 @@
-<!-- RemoveFlag-OperationRequest.xml -->
+<!-- RemoveRARecord-OperationRequest.xml -->
 <Parameters>
     <parameter>
-        <name value="removeflag"/>
+        <name value="removeRARecord"/>
         <part>
             <name value="nhsNumber"/>
             <valueString value="999999998"/>

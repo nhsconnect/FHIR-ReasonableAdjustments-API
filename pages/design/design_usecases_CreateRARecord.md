@@ -233,8 +233,8 @@ type="xml" %}
 HTTP/1.1 201 Created
 Date: Tue, 23 Jul 2018 11:00:00 GMT
 Last-Modified:2018-07-23T11:00:00+00:00
-Location: [resourceURL]
-ETag: W/"resourceVID”
+Location: https://clinicals.spineservices.nhs.uk/STU3/Condition/57f04652-6dd0-4135-a560-f9091b1b26fa/_history/557ccfc3-0c78-48bf-aedd-70cc08af2ba1
+ETag: W/"557ccfc3-0c78-48bf-aedd-70cc08af2ba1”
 Content-Type: application/fhir+json
 
 ```
@@ -311,8 +311,8 @@ type="xml" %}
 HTTP/1.1 201 Created
 Date: Tue, 23 Jul 2018 11:00:01 GMT
 Last-Modified:2018-07-23T11:00:01+00:00
-Location: [resourceURL]
-ETag: W/"resourceVID”
+Location: https://clinicals.spineservices.nhs.uk/STU3/List/e00c5a85-d34f-4075-96ac-b787deb484b1/_history/5b703b55-cedc-4c19-b2aa-0666384eab1a
+ETag: W/"5b703b55-cedc-4c19-b2aa-0666384eab1a”
 Content-Type: application/fhir+json
 
 ```

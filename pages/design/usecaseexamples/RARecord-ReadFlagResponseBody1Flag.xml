@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ReadFlagResponseBody-example1Flag.xml -->
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="30e9a5d5-c037-42ed-9ee4-476add4d6b43"/>
+    <type value="searchset"/>
+    <total value="1"/>
+    <!--  all search sets include the self link - the statement of the query string searched on. -->
+    <link>
+        <relation value="self"/>
+        <url value="https://clinicals.spineservices.nhs.uk/STU3/Flag?patient=999999998&amp;status=active&amp;category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&amp;_format=xml"/>
+    </link>
+	<!--this exmaple has 1 Flag (adjustment) included-->
+    <entry>
+		<fullUrl value="https://clinicals.spineservices.nhs.uk/STU3/Flag/9e63f370-ba72-11e8-96f8-529269fb1459"/>
+        <resource>
+			<!-- found payload resource or operationOutcome in here -->
+			<Flag>
+				<id value="9e63f370-ba72-11e8-96f8-529269fb1459"/>
+				<meta>
+					<versionId value="2042385c-ba73-11e8-96f8-529269fb1459"/>
+					<lastUpdated value="2018-07-24T10:01:00+00:00"/>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1"/>
+				</meta>
+				<contained>
+					<!-- Provenance constructed and persisted -->
+					<Provenance>
+						<id value="2042526a-ba73-11e8-96f8-529269fb1459"/>
+						<meta>
+							<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"/>
+						</meta>
+						<target>
+							<reference value="Flag/9e63f370-ba72-11e8-96f8-529269fb1459"/>
+						</target>
+						<recorded value="2018-07-24T10:01:00+00:00"/>
+						<agent>
+							<role>
+								<coding>
+									<system value="https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"/>
+									<code value="R1974"/>
+									<display value="Community Learning Disabilities Nurse"/>
+								</coding>
+							</role>
+							<whoReference>
+								<reference value="https://sds.spineservices.nhs.uk/STU3/Practitioner/4tr6ee6a9"/>
+								<display value="Nurse N"/>
+							</whoReference>
+							<onBehalfOfReference>
+								<reference value="https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7"/>
+								<display value="Some Hospital Learning Disability Support Department"/>
+							</onBehalfOfReference>
+						</agent>
+					</Provenance>
+				</contained>
+				<extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1">
+					<extension url="created">
+						<valueReference>
+							<reference value="#2042526a-ba73-11e8-96f8-529269fb1459"/>
+						</valueReference>
+					</extension>
+				</extension>
+				<extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1">
+					<valueCodeableConcept>
+						<coding>
+							<system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1"/>
+							<code value="comms"/>
+							<display value="Communication"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<status value="active"/>
+				<category>
+					<coding>
+						<system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
+						<code value="reasonable adjustments flag"/>
+						<display value="Reasonable Adjustments Flag"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
+						<code value="requiresinformationineasyread"/>
+						<display value="Requires information in Easyread"/>
+					</coding>
+				</code>
+				<subject>
+						<reference value="https://demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
+				</subject>
+			</Flag>
+		</resource>
+    </entry>
+</Bundle>

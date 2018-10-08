@@ -182,8 +182,8 @@ entries:
     - title: Delete
       url: /design_interactions_delete.html
       output: web
-    - title: Remove Flag
-      url: /design_operations_removeflag.html
+    - title: Remove RA Record
+      url: /design_operations_removerarecord.html
       output: web
     - title: Provenance
       url: /design_operations_provenance.html
