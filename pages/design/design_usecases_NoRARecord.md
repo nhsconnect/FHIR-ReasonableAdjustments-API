@@ -25,8 +25,7 @@ summary: Description of use case on Spine via the FHIR&reg; Reasonable Adjustmen
 ### 2.1 Read Consent request ###
 
 #### http request & headers ####
-{% include codetags.html xml="
-GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
+{% include codetags.html xml="GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  patient=999999998&
  status=active&
  category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
@@ -35,8 +34,8 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Consent.read:1" json="
-GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
+InteractionID: urn:nhs:names:services:raflags:Consent.read:1"
+json="GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  patient=999999998&
  status=active&
  category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
@@ -54,23 +53,14 @@ InteractionID: urn:nhs:names:services:raflags:Consent.read:1" %}
 
 #### http response & headers ####
 
-{% include codetags.html xml="
-HTTP/1.1 404 NOT FOUND
+{% include codetags.html xml="HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 10:00:00 GMT
 Content-Type: application/fhir+xml
-" json="
-HTTP/1.1 404 PATIENT NOT FOUND
+"
+json="HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 10:00:00 GMT
-Content-Type: application/fhir+json
-" %}
-
-
-**DQ:** Would you use full header & metadata in a failure OperationOutcome response?  
-**DN:** Can't see why you would.  
-From FHIR spec, 'The resource is not designed to be persisted or referenced from other parts of the workflow.'  
-Therefore it won't have a versionId/ETag, lastModified would only ever be the same as Date, no Location as not persisted.
-Failure response therefore drops to minimal Date, Content-Type headers.
+Content-Type: application/fhir+json" %}
 
 #### http body ####
-{% include codetags.html xmlpath="usecaseexamples/ReadFailOperationOutcome.xml" title="Read Fail Operation Outcome" jsonpath="usecaseexamples/ReadFailOperationOutcome.json" %}
+{% include codetags.html title="Read Fail Empty Bundle" xmlpath="usecaseexamples/ReadFailEmptyBundle.xml" jsonpath="usecaseexamples/ReadFailEmptyBundle.json" %}
 
