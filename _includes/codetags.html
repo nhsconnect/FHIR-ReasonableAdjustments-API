@@ -1,0 +1,41 @@
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active code-tags"><a data-target=".json" data-toggle="tab">json</a></li>
+    <li class="code-tags"><a data-target=".xml" data-toggle="tab">xml</a></li>
+</ul>
+<div class="tab-content" markdown="block">
+<div class="tab-pane active json" markdown="block">
+{% if include.json %}
+```
+{{ include.json }}
+```
+{% elsif include.jsonpath %}
+#### {{ include.title }} JSON Example
+```
+{% include_relative {{ include.jsonpath }} %}
+```
+{% elsif include.jsonsrc %}
+#### {{ include.title }} JSON Example
+<script src="{{ include.jsonsrc }}"></script>
+{% else %}
+JSON Placeholder
+{% endif %}
+</div>
+<div class="tab-pane xml" markdown="block">
+{% if include.xml %}
+```
+{{ include.xml }}
+```
+{% elsif include.xmlpath %}
+#### {{ include.title }} XML Example
+```
+{% include_relative {{ include.xmlpath }} %}
+```
+{% elsif include.xmlsrc %}
+#### {{ include.title }} XML Example
+<script src="{{ include.xmlsrc }}"></script>
+{% else %}
+XML Placeholder
+{% endif %}
+</div>
+</div>
+
