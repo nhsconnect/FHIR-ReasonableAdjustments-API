@@ -1,0 +1,113 @@
+{
+  "category": "Additional communications support"
+  "concepts": [
+    {
+      "conceptId": "719758004",
+      "descriptionId": "3317721010",
+      "preferred": "Preferred",
+      "description": "Requires healthcare information recording on personal audio recording device"
+    },
+    {
+      "conceptId": "936581000000101",
+      "descriptionId": "2398681000000115",
+      "preferred": "Preferred",
+      "description": "Requires information by email"
+    },
+    {
+      "conceptId": "936661000000109",
+      "descriptionId": "2398841000000110",
+      "preferred": "Preferred",
+      "description": "Requires information in contracted (Grade 2) Braille"
+    },
+    {
+      "conceptId": "936601000000105",
+      "descriptionId": "2398721000000110",
+      "preferred": "Preferred",
+      "description": "Requires information in electronic audio format"
+    },
+    {
+      "conceptId": "945751000000106",
+      "descriptionId": "2418681000000113",
+      "preferred": "Preferred",
+      "description": "Requires information in electronic downloadable format"
+    },
+    {
+      "conceptId": "936641000000108",
+      "descriptionId": "2398801000000112",
+      "preferred": "Preferred",
+      "description": "Requires information in Makaton"
+    },
+    {
+      "conceptId": "936621000000101",
+      "descriptionId": "2398761000000119",
+      "preferred": "Preferred",
+      "description": "Requires information in Moon alphabet"
+    },
+    {
+      "conceptId": "936681000000100",
+      "descriptionId": "2398901000000116",
+      "preferred": "Preferred",
+      "description": "Requires information in uncontracted (Grade 1) Braille"
+    },
+    {
+      "conceptId": "795801000000104",
+      "descriptionId": "1779041000000118",
+      "preferred": "Preferred",
+      "description": "Requires information on audio cassette tape"
+    },
+    {
+      "conceptId": "795731000000104",
+      "descriptionId": "1778891000000110",
+      "preferred": "Preferred",
+      "description": "Requires information on compact disc"
+    },
+    {
+      "conceptId": "795731000000104",
+      "descriptionId": "1778921000000119",
+      "preferred": "Synonym",
+      "description": "Requires information on CD (compact disc)"
+    },
+    {
+      "conceptId": "795691000000105",
+      "descriptionId": "1778801000000115",
+      "preferred": "Preferred",
+      "description": "Requires information on digital versatile disc"
+    },
+    {
+      "conceptId": "795691000000105",
+      "descriptionId": "1778831000000114",
+      "preferred": "Synonym",
+      "description": "Requires information on DVD (digital versatile disc)"
+    },
+    {
+      "conceptId": "367741000000102",
+      "descriptionId": "700031000000111",
+      "preferred": "Preferred",
+      "description": "Requires information verbally"
+    },
+    {
+      "conceptId": "985021000000106",
+      "descriptionId": "2504911000000111",
+      "preferred": "Preferred",
+      "description": "Requires third party to read out written information"
+    },
+    {
+      "conceptId": "957331000000109",
+      "descriptionId": "2440761000000118",
+      "preferred": "Preferred",
+      "description": "Requires written information in at least 20 point sans serif font"
+    },
+    {
+      "conceptId": "957351000000102",
+      "descriptionId": "2440801000000111",
+      "preferred": "Preferred",
+      "description": "Requires written information in at least 24 point sans serif font"
+    },
+    {
+      "conceptId": "957371000000106",
+      "descriptionId": "2440841000000114",
+      "preferred": "Preferred",
+      "description": "Requires written information in at least 28 point sans serif font"
+    }
+  ]
+}

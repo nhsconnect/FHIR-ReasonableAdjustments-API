@@ -1,0 +1,59 @@
+{
+  "category": "Accessible Information - requires specific contact method"
+  "concepts": [
+    {
+      "conceptId": "945931000000101",
+      "descriptionId": "2419111000000119",
+      "preferred": "Preferred",
+      "description": "Requires audible alert"
+    },
+    {
+      "conceptId": "936741000000100",
+      "descriptionId": "2399051000000112",
+      "preferred": "Preferred",
+      "description": "Requires contact by email"
+    },
+    {
+      "conceptId": "936721000000107",
+      "descriptionId": "2399011000000113",
+      "preferred": "Preferred",
+      "description": "Requires contact by letter"
+    },
+    {
+      "conceptId": "936701000000103",
+      "descriptionId": "2398961000000117",
+      "preferred": "Preferred",
+      "description": "Requires contact by short message service text message"
+    },
+    {
+      "conceptId": "936701000000103",
+      "descriptionId": "2398991000000111",
+      "preferred": "Synonym",
+      "description": "Requires contact by SMS (short message service) text message"
+    },
+    {
+      "conceptId": "795661000000104",
+      "descriptionId": "1778641000000116",
+      "preferred": "Preferred",
+      "description": "Requires contact by telephone"
+    },
+    {
+      "conceptId": "796081000000106",
+      "descriptionId": "1779641000000112",
+      "preferred": "Preferred",
+      "description": "Requires contact by text relay"
+    },
+    {
+      "conceptId": "945971000000104",
+      "descriptionId": "2419191000000111",
+      "preferred": "Preferred",
+      "description": "Requires tactile alert"
+    },
+    {
+      "conceptId": "945951000000108",
+      "descriptionId": "2419151000000115",
+      "preferred": "Preferred",
+      "description": "Requires visual alert"
+    }
+  ]
+}

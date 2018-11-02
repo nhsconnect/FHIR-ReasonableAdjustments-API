@@ -1,0 +1,35 @@
+{
+  "category": "Additional Support"
+  "concepts": [
+    {
+      "conceptId": "816361000000101",
+      "descriptionId": "2127361000000117",
+      "preferred": "Preferred",
+      "description": "Has appointed person with personal welfare lasting power of attorney (Mental Capacity Act 2005)"
+    },
+    {
+      "conceptId": "816361000000101",
+      "descriptionId": "2132711000000119",
+      "preferred": "Synonym",
+      "description": "Has appointed person with health and welfare lasting power of attorney"
+    },
+    {
+      "conceptId": "816361000000101",
+      "descriptionId": "2127391000000111",
+      "preferred": "Synonym",
+      "description": "Has appointed person with personal welfare LPA (lasting power of attorney) (Mental Capacity Act 2005)"
+    },
+    {
+      "conceptId": "829101000000101",
+      "descriptionId": "2155381000000118",
+      "preferred": "Preferred",
+      "description": "Needs assistance with medication regimen adherence"
+    },
+    {
+      "conceptId": "240451000000106",
+      "descriptionId": "390621000000117",
+      "preferred": "Preferred",
+      "description": "Requires constant supervision"
+    }
+  ]
+}

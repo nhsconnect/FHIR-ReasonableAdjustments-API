@@ -1,0 +1,41 @@
+{
+  "category": "Individual Care Requirements"
+  "concepts": [
+    {
+      "conceptId": "792871000000101",
+      "descriptionId": "1772571000000111",
+      "preferred": "Preferred",
+      "description": "Has anticipatory care plan"
+    },
+    {
+      "conceptId": "231501003",
+      "descriptionId": "346974017",
+      "preferred": "Preferred",
+      "description": "Needle phobia"
+    },
+    {
+      "conceptId": "314434008",
+      "descriptionId": "458795017",
+      "preferred": "Preferred",
+      "description": "Preference for female healthcare professional"
+    },
+    {
+      "conceptId": "314435009",
+      "descriptionId": "458796016",
+      "preferred": "Preferred",
+      "description": "Preference for male healthcare professional"
+    },
+    {
+      "conceptId": "865301000000107",
+      "descriptionId": "2236791000000114",
+      "preferred": "Preferred",
+      "description": "Uses dispensed monitored dosage system"
+    },
+    {
+      "conceptId": "865301000000107",
+      "descriptionId": "2242701000000119",
+      "preferred": "Synonym",
+      "description": "Uses dispensed dosette box"
+    }
+  ]
+}
