@@ -50,118 +50,29 @@ entries:
       - title: Profiles
         output: web
         subfolderitems:
-        - title: RARecord-Flag-1
-          url: /explore_profile.html#RARecord-Flag-1
-          output: web
         - title: RARecord-Consent-1
-          url: /explore_profile.html#RARecord-Consent-1
+          url: /explore_consent.html
+          output: web
+        - title: RARecord-Flag-1
+          url: /explore_flag.html
           output: web
         - title: CareConnect-RARecord-Condition-1
-          url: /explore_profile.html#CareConnect-RARecord-Condition-1
+          url: /explore_condition.html
           output: web
         - title: CareConnect-RARecord-List-1
-          url: /explore_profile.html#CareConnect-RARecord-List-1
+          url: /explore_list.html
           output: web
         - title: RARecord-Provenance-1
-          url: /explore_profile.html#RARecord-Provenance-1
+          url: /explore_provenance.html
           output: web
-      - title: Extensions
-        output: web
-        subfolderitems:
-        - title: Extension-RARecord-AdjustmentCategory-1
-          url: /explore_extension.html#Extension-RARecord-AdjustmentCategory-1
-          output: web
-        - title: Extension-RARecord-AdjustmentNotes-1
-          url: /explore_extension.html#Extension-RARecord-AdjustmentNotes-1
-          output: web
-        - title: Extension-RARecord-BestInterestSummary-1
-          url: /explore_extension.html#Extension-RARecord-BestInterestSummary-1
-          output: web
-        - title: Extension-RARecord-Provenance-1
-          url: /explore_extension.html#Extension-RARecord-Provenance-1
-          output: web
-        - title: Extension-RARecord-ProxyRole-1
-          url: /explore_extension.html#Extension-RARecord-ProxyRole-1
-          output: web
-        - title: Extension-RARecord-RemovalReason-1
-          url: /explore_extension.html#Extension-RARecord-RemovalReason-1
-          output: web
-      - title: ValueSet
-        output: web
-        subfolderitems:
-        - title: ValueSet-RARecord-AdjustmentCategories-1
-          url: /explore_valueset.html#ValueSet-RARecord-AdjustmentCategories-1
-          output: web
-        - title: ValueSet-RARecord-ConditionCode-1
-          url: /explore_valueset.html#ValueSet-RARecord-ConditionCode-1
-          output: web
-        - title: ValueSet-RARecord-ConsentPurpose-1
-          url: /explore_valueset.html#ValueSet-RARecord-ConsentPurpose-1
-          output: web
-        - title: ValueSet-RARecord-FlagCategory-1
-          url: /explore_valueset.html#ValueSet-RARecord-FlagCategory-1
-          output: web
-        - title: ValueSet-RARecord-FlagCode-1
-          url: /explore_valueset.html#ValueSet-RARecord-FlagCode-1
-          output: web
-        - title: ValueSet-RARecord-ProvenanceRole-1
-          url: /explore_valueset.html#ValueSet-RARecord-ProvenanceRole-1
-          output: web
-        - title: ValueSet-RARecord-ProxyRole-1
-          url: /explore_valueset.html#ValueSet-RARecord-ProxyRole-1
-          output: web
-        - title: ValueSet-RARecord-RemovalReason-1
-          url: /explore_valueset.html#ValueSet-RARecord-RemovalReason-1
-          output: web
-      - title: CodeSystem
-        output: web
-        subfolderitems:
-        - title: CodeSystem-RARecord-AccessibleInformationAdjustments-1
-          url: /explore_codesystem.html#CodeSystem-RARecord-AccessibleInformationAdjustments-1
-          output: web
-        - title: CodeSystem-RARecord-AdjustmentCategories-1
-          url: /explore_codesystem.html#CodeSystem-RARecord-AdjustmentCategories-1
-          output: web
-        - title: CodeSystem-RARecord-CommunicationAdjustments-1
-          url: /explore_codesystem.html#CodeSystem-RARecord-CommunicationAdjustments-1
-          output: web
-        - title: CodeSystem-RARecord-ConditionCode-1
-          url: /explore_codesystem.html#CodeSystem-RARecord-ConditionCode-1
-          output: web
-        - title: CodeSystem-RARecord-ConsentPurpose-1
-          url: /explore_codesystem.html#CodeSystem-RARecord-ConsentPurpose-1
-          output: web
-        - title: CodeSystem-RARecord-EnvironmentAdjustments-1
-          url: /explore_codesystem.html#CodeSystem-RARecord-EnvironmentAdjustments-1
-          output: web
-        - title: CodeSystem-RARecord-FlagCategory-1
-          url: /explore_codesystem.html#CodeSystem-RARecord-FlagCategory-1
-          output: web
-        - title: CodeSystem-RARecord-OtherAdjustments-1
-          url: /explore_codesystem.html#CodeSystem-RARecord-OtherAdjustments-1
-          output: web
-        - title: CodeSystem-RARecord-PersonalisationAdjustments-1
-          url: /explore_codesystem.html#CodeSystem-RARecord-PersonalisationAdjustments-1
-          output: web
-        - title: CodeSystem-RARecord-ProxyRole-1
-          url: /explore_codesystem.html#CodeSystem-RARecord-ProxyRole-1
-          output: web
-        - title: CodeSystem-RARecord-RemovalReason-1
-          url: /explore_codesystem.html#CodeSystem-RARecord-RemovalReason-1
-          output: web
-        - title: CodeSystem-RARecord-ServiceDeliveryAdjustments-1
-          url: /explore_codesystem.html#CodeSystem-RARecord-ServiceDeliveryAdjustments-1
-          output: web
-        - title: CodeSystem-RARecord-SpecificRisksAdjustments-1
-          url: /explore_codesystem.html#CodeSystem-RARecord-SpecificRisksAdjustments-1
-          output: web
-        - title: CodeSystem-RARecord-SupportAdjustments-1
-          url: /explore_codesystem.html#CodeSystem-RARecord-SupportAdjustments-1
-    - title: Resource Versioning
-      url: /explore_versioning.html
+    - title: Remove Flag Operation
+      url: /explore_removeflag_operation.html
       output: web
     - title: CapabilityStatement
       url: /explore_capability.html
+      output: web
+    - title: Resource Versioning
+      url: /explore_versioning.html
       output: web
 
   - title: Interactions
