@@ -15,15 +15,15 @@ summary: This page describes RARecord-Flag-1 resource. This resource records det
 
     {% endcomment %}
 
+## Reasonable Adjustments - Adjustments ##
+
+The Flag resource, profiled as RARecord-Flag-1, will record specific [Adjustments - as defined under the Equality Act (2010)](https://www.gov.uk/government/publications/reasonable-adjustments-a-legal-duty/reasonable-adjustments-a-legal-duty) - that are identified by the patient, or supporting healthcare professionals, to increase access to effective, informed and supportive health care.
+
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Flag-1"
 resource="[RARecord-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1/_history/0.0.5)"
 ccresource="Not Available"
 fhirresource="[Flag](https://www.hl7.org/fhir/flag.html)" %}
-
-<div id="ImageAsset"><img src="images/resourceImages/FlagResource.png" style="width:350px;"></div>
-<div id="ImageAsset"><img src="images/resourceImages/FlagExtensions1.png" style="width:350px;"></div>
-<div id="ImageAsset"><img src="images/resourceImages/FlagExtensions2.png" style="width:350px;"></div>
 
 {% include custom/fhir.codegrid.html
 relfilepath="resourceexamples/RARecord-Flag-1-example-1.xml"

@@ -15,15 +15,15 @@ summary: This page describes the CareConnect-RARecord-Condition-1 resource. This
 
     {% endcomment %}
 
+## Reasonable Adjustments - Impairments ##
+
+The Condition resource, profiled as CareConnect-RARecord-Condition-1, will record specific [Impairments - as defined under the Equality Act (2010)](https://www.gov.uk/definition-of-disability-under-equality-act-2010) - that are identified by the patient, or supporting healthcare professionals, to increase access to effective, informed and supportive health care.
 
 {% include custom/fhir.resourcegrid.html
 resourcename="CareConnect-RARecord-Condition-1"
 resource="[CareConnect-RARecord-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1/_history/0.0.5)"
 ccresource="[CareConnect-Condition-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1)"
 fhirresource="[Condition](https://www.hl7.org/fhir/condition.html)" %}
-
-<div id="ImageAsset"><img src="images/resourceImages/ConditionResource.png" style="width:350px;"></div>
-<div id="ImageAsset"><img src="images/resourceImages/ConditionExtensions.png" style="width:350px;"></div>
 
 {% include custom/fhir.codegrid.html
 relfilepath="resourceexamples/CareConnect-RARecord-Condition-1-example1.xml"

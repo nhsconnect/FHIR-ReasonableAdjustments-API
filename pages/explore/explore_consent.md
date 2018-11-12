@@ -15,14 +15,17 @@ summary: This page describes RARecord-Consent-1 resource. This resource records 
 
     {% endcomment %}
 
+    
+## Reasonable Adjustments - Consent ##
+
+The Consent resource, profiled as [RARecord-Consent-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Consent-1), records consent by a patient to record Reasonable Adjustment [Impairment](https://www.gov.uk/definition-of-disability-under-equality-act-2010) and [Adjustment](https://www.gov.uk/government/publications/reasonable-adjustments-a-legal-duty/reasonable-adjustments-a-legal-duty) information.  
+This information will be available to healthcare professionals and organisations providing direct care to the patient, and to screening services, to ensure that key Adjustment information (such as communication requirements) is shared consistently across the NHS.  
+
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Consent-1"
 resource="[RARecord-Consent-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Consent-1/_history/0.0.5)"
 ccresource="Not Available"
 fhirresource="[Consent](https://www.hl7.org/fhir/consent.html)" %}
-
-<div id="ImageAsset"><img src="images/resourceImages/ConsentResource.png" style="width:350px;"></div>
-<div id="ImageAsset"><img src="images/resourceImages/ConsentExtensions.png" style="width:350px;"></div>
 
 {% include custom/fhir.codegrid.html
 relfilepath="resourceexamples/RARecord-Consent-1-example-1.xml"

@@ -13,15 +13,17 @@ summary: This page describes the RARecord-Provenance-1 resource. This holds deta
     ** RARecord-Provenance-1 **
     ===========================
 
-    {% endcomment %}
+{% endcomment %}
 
-    {% include custom/fhir.resourcegrid.html
+## Reasonable Adjustments - Provenance ##
+
+The Provenance resource, profiled as RARecord-Provenance-1, records details of the healthcare professional recording the Reasonable Adjustment information, for audit and clinical attestation purposes.  
+
+{% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Provenance-1"
 resource="[RARecord-Provenance-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1/_history/0.0.5)"
 ccresource="Not Available"
 fhirresource="[Provenance](https://www.hl7.org/fhir/provenance.html)" %}
-
-<div id="ImageAsset"><img src="images/resourceImages/Provenance.png" style="width:350px;"></div>
 
 Provenance is a contained resource in the Flag, Condition, Consent resources (and shows in the Contained section of the examples above).
 

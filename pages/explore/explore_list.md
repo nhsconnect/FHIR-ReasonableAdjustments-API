@@ -15,6 +15,11 @@ summary: This page describes the CareConnect-RARecord-List-1 resource. This orga
 
     {% endcomment %}
 
+## Reasonable Adjustments - List ##
+
+The List resource, profiled as CareConnect-RARecord-List-1, is used to identify Impairment Condition resources for a particular patient.  
+This maintains a pattern for referencing Condition resources established in GPConnect and Transfer of Care programmes.
+
 {% include custom/fhir.resourcegrid.html
 resourcename="CareConnect-RARecord-List-1"
 resource="[CareConnect-RARecord-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-List-1/_history/0.0.5)"
