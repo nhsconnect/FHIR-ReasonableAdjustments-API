@@ -4,7 +4,7 @@ keywords: usecase, CareConnect-RARecord-Condition-1
 tags: [rest, fhir, versioning]
 sidebar: overview_sidebar
 permalink: explore_capability.html
-summary: How capabilities of FHIR&reg; Reasonable Adjustments API server implementations are recorded and served.
+summary: Specification of the capabilities of FHIR&reg; Reasonable Adjustments API server implementations.
 ---
 {% include custom/search.warnbanner.html %}
 

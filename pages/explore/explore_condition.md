@@ -4,7 +4,7 @@ keywords: usecase, profile
 tags: [rest, fhir, identification, development]
 sidebar: accessrecord_rest_sidebar
 permalink: explore_condition.html
-summary: This page describes the CareConnect-RARecord-Condition-1 resource. This resource records details of Impairments, under the Equality Act 2010 definition, recorded by or for a Patient within the FHIR&reg; Reasonable Adjustments API.
+summary: Specification of the CareConnect-RARecord-Condition-1 resource. This resource records details of Impairments, under the Equality Act 2010 definition, recorded by or for a Patient within the FHIR&reg; Reasonable Adjustments API.
 ---
 {% include custom/search.warnbanner.html %}
 

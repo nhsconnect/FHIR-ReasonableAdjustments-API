@@ -8,7 +8,7 @@ summary: Remove RA Record operation describes the operation required to remove (
 ---
 {% include custom/search.warnbanner.html %}
 
-## 1 Remove RA Record ##
+## Remove RA Record ##
 
 'Remove RA Record' is an extended operation to efficiently close all active Reasonable Adjustment resources for a Patient.
 
@@ -23,7 +23,7 @@ Here:
 
 'server' context entails operation execution is invoked at the FHIR Server baseURL. Invocation syntax, in this case, specifies POST to the baseURL, the operation called by name with $ suffix
 
-## 2 Remove RA Record Invocation ##
+## Remove RA Record Invocation ##
 
 Remove RA Record operation can be invoked directly or can be triggered by removal of Consent (to record Reasonable Adjustment information).
 
@@ -89,7 +89,7 @@ or
 }
 ```
 
-## 3 Remove RA Record Interaction ##
+## Remove RA Record Interaction ##
 
 Interaction diagram outlining:
 * operation request and 'in' parameters.
@@ -128,6 +128,6 @@ Foreach Condition on List,
     Update List.entry.deleted=>true
 ```
 
-## 4 OperationDefinition ##
+## OperationDefinition ##
 
 {% include important.html content="**Placeholder:** An OperationDefinition instance _will_ be provided for the $removerarecord operation." %}

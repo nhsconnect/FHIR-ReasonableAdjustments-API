@@ -12,7 +12,7 @@ Note: the only update allowed to any part of a Reasonable Adjustment record is a
 Any corrections to an already committed Reasonable Adjustment element therefore requires delete of the existing item, then creation of a new Flag, Adjustment or Impairment resource.
 
 
-## 1 Delete Resource ##
+## Delete Resource ##
 
 This pattern applies to deletion of a single resource.
 * Consent, Flag, Condition and List always use this pattern for deletion.
@@ -38,7 +38,7 @@ PUT https://clinicals.spineservices.nhs.uk/STU3/[resourceType]/[id] /HTTP1.1
 200 OK http response code (and mirror PUT payload)  
 (or operation outcome if failure to find or process)
 
-## 2 Delete Condition resources ##
+## Delete Condition resources ##
 
 The Condition resource is pointed to by a List.  
 After successful deletion of the Condition resource (see the Delete Resource pattern above), the Client must update the List instance 
@@ -54,7 +54,7 @@ and include an If-Match header containing the resource version id ETag (see belo
 
 
 
-## 3. Managing Conflicting Updates ##
+## Managing Conflicting Updates ##
 
 There is a risk in some cases that two clients will try to update the same resource. If both clients had the same version of that resource to begin with, there is a risk that the second overwrites the updates of the first. To prevent this happening, clients MUST submit update requests with an If-Match header that quotes the ETag from the server (see the [versioning page](explore_versioning.html) for details of version IDs). This specifies the version of the resource that their updates should be applied to, so a second attempt to update the same version with different changes can be detected as a conflict and rejected (this is also known as optimistic locking).
 

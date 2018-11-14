@@ -4,7 +4,7 @@ keywords: usecase, profile
 tags: [rest, fhir, identification, development]
 sidebar: accessrecord_rest_sidebar
 permalink: explore_consent.html
-summary: This page describes RARecord-Consent-1 resource. This resource records the consent to record and use Reasonable Adjustments information using the FHIR&reg; Reasonable Adjustments API.
+summary: Specification of the RARecord-Consent-1 resource. This resource records the consent to record and use Reasonable Adjustments information using the FHIR&reg; Reasonable Adjustments API.
 ---
 {% include custom/search.warnbanner.html %}
 

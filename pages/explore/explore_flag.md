@@ -4,7 +4,7 @@ keywords: usecase, profile
 tags: [rest, fhir, identification, development]
 sidebar: accessrecord_rest_sidebar
 permalink: explore_flag.html
-summary: This page describes RARecord-Flag-1 resource. This resource records details of each Reasonable Adjustment identified, by or for a patient, within the FHIR&reg; Reasonable Adjustments API.
+summary: Specification of the RARecord-Flag-1 resource. This resource records details of each Reasonable Adjustment identified, by or for a patient, within the FHIR&reg; Reasonable Adjustments API.
 ---
 {% include custom/search.warnbanner.html %}
 

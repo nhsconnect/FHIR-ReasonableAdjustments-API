@@ -4,7 +4,7 @@ keywords: usecase, profile
 tags: [rest, fhir, identification, development]
 sidebar: accessrecord_rest_sidebar
 permalink: explore_list.html
-summary: This page describes the CareConnect-RARecord-List-1 resource. This organises and identifies CareConnect-RARecord-Condition-1 resources recording Impairments within the FHIR&reg; Reasonable Adjustments API.
+summary: Specification of the CareConnect-RARecord-List-1 resource. This organises and identifies CareConnect-RARecord-Condition-1 resources recording Impairments within the FHIR&reg; Reasonable Adjustments API.
 ---
 {% include custom/search.warnbanner.html %}
 
