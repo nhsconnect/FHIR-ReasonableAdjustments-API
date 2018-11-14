@@ -3,25 +3,24 @@ title: API design principles
 keywords: development
 tags: [development,fhir]
 sidebar: overview_sidebar
-toc: false
 permalink: designprinciples_open_api_principles.html
 summary: "High-level design principles related to the API design"
 ---
 
 {% include custom/search.warnbanner.html %}
 
-## Open API
+## Open API ##
 
 Reasonable Adjustments has aligned with [NHS England's Open API Policy](open-api-policy.pdf) to support the ambition of moving to a position where significant business functionality, available within systems, is exposed through interfaces where the definition is open.
 
-## Architectural design principals
+## Architectural design principles ##
 
 NHS Digital has a number of architectural design principles, some of which have developed based on interaction with the suppliers, others are based on an understanding of the technological maturity of the NHS at the present time and the other principals are based on good practice and a vision for the future of the NHS.
 
 
-## Core API design principles
+## Core API design principles ##
 
-### FHIR
+### FHIR ###
 
 Reasonable Adjustments has adopted the [FHIR&reg; standard (STU3)](https://www.hl7.org/fhir/STU3/) and as such the FHIR API design principles will be followed unless a clear rationale exists to amend, in which case any deviation will be logged and the rationale clearly communicated.
 
@@ -34,6 +33,10 @@ Examples of FHIR principles that Reasonable Adjustments follows are:
 - ETags for [managing version-aware updates](https://www.hl7.org/fhir/STU3/http.html#concurrency){:target="_blank"}
 
 
-### Care Connect
+## FHIR Release STU3 ##
 
-GP Connect has worked to align as closely as possible with the Care Connect API, with an aim to maintain a wider interoperability. 
+This API Specification assumes both familiarity and compliance with the material presented in the [HL7 FHIR&reg; STU3 Documentation](http://hl7.org/fhir/STU3/documentation.html)
+
+## Spine Core ##
+
+This API Specification assumes and extends constraints and requirements presented in the [Spine Core API Framework](https://developer.nhs.uk/apis/spine-core/)

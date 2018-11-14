@@ -3,7 +3,6 @@ title: Reasonable Adjustments
 keywords: development
 tags: [development,fhir]
 sidebar: overview_sidebar
-toc: false
 permalink: overview_reasonable_adjustments.html
 summary: "High-level goals and benefits of the Reasonable Adjustments programme"
 ---
