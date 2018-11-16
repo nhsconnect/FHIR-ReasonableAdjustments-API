@@ -8,7 +8,7 @@ summary: Remove RA Record operation describes the operation required to remove (
 ---
 {% include custom/search.warnbanner.html %}
 
-## 1 Remove RA Record ##
+## Remove RA Record ##
 
 'Remove RA Record' is an extended operation to efficiently close all active Reasonable Adjustment resources for a Patient.
 
@@ -23,7 +23,7 @@ Here:
 
 'server' context entails operation execution is invoked at the FHIR Server baseURL. Invocation syntax, in this case, specifies POST to the baseURL, the operation called by name with $ suffix
 
-## 2 Remove RA Record Invocation ##
+## Remove RA Record Invocation ##
 
 Remove RA Record operation can be invoked directly or can be triggered by removal of Consent (to record Reasonable Adjustment information).
 
@@ -34,62 +34,9 @@ POST https://clinicals.spineservices.nhs.uk/STU3/$removerarecord /HTTP1.1
 ### body ###
 The operation request body is a multi-part Parameter resource, containing the NHS Number of the Patient requiring their Reasonable Adjustment Flag removed, and optionally a RemovalReason where given
 
-#### XML parameter example ####
-```
-<Parameters>
-    <parameter>
-        <name value="removerarecord"/>
-        <part>
-            <name value="nhsNumber"/>
-            <valueString value="999999998"/>
-        </part>
-        <part>
-            <name value="removalReason"/>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1"/>
-                        <code value="DoesntApply"/>
-                        <display value="The Reasonable Adjustment Flag no longer applies to the patient"/>
-                    </coding>
-                </valueCodeableConcept>
-            </part>
-    </parameter>
-</Parameters>
-```
-or 
+Examples of this operation interaction are available at [Remove RA Record](/design_usecases_RemoveRARecord.html)
 
-#### JSON parameter example ####
-
-```
-{
-  "resourceType": "Parameters",
-  "parameter": [
-    {
-      "name": "removerarecord",
-      "part": [
-        {
-          "name": "nhsNumber",
-          "valueString": "999999998"
-        },
-        {
-          "name": "removalReason",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1",
-                "code": "DoesntApply",
-                "display": "The Reasonable Adjustment Flag no longer applies to the patient"
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ]
-}
-```
-
-## 3 Remove RA Record Interaction ##
+## Remove RA Record Interaction ##
 
 Interaction diagram outlining:
 * operation request and 'in' parameters.
@@ -128,6 +75,6 @@ Foreach Condition on List,
     Update List.entry.deleted=>true
 ```
 
-## 4 OperationDefinition ##
+## OperationDefinition ##
 
-{% include important.html content="**Placeholder:** An OperationDefinition instance _will_ be provided for the $removerarecord operation." %}
+The OperationDefinition of [removerarecord](/explore_removeflag_operation.html) defines the in and out parameters for this operation and their structure and content.

@@ -4,11 +4,11 @@ keywords: usecase
 tags: [rest, fhir, identification, development]
 sidebar: accessrecord_rest_sidebar
 permalink: design.html
-summary: Interaction describes ReSTful interactions and operations required to exchange Reasonable Adjustment information via Spine using the FHIR&reg; Reasonable Adjustments API
+summary: Interaction describes the interactions and operations that exchange Reasonable Adjustment information via Spine using the FHIR&reg; Reasonable Adjustments API
 ---
 {% include custom/search.warnbanner.html %}
 
-## 1 Operations ##
+## Operations ##
 
 Operations are the set of business activities a user needs to collect, consider and curate Reasonable Adjustments information on behalf of a patient. Users access this functionality through a Reasonable Adjustments client system.  
 
@@ -32,7 +32,7 @@ Reasonable Adjustments requires the ability to:
 * _Determine Provenance_  
 <br>
 
-## 2 Interactions ##
+## Interactions ##
 
 Interactions are the http request-response exchanges between client and server which are used to fulfil the operations above.  
 

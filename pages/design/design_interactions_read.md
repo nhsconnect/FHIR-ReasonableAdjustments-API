@@ -16,7 +16,7 @@ When reading resources
 * Consent and Flag use the _Read Resource_ pattern
 * Condition resources use _Read Conditions_
 
-## 1. Read Resource ##
+## Read Resource ##
 
 
 <img src="images/sequenceDiagrams/ReadResource.png">
@@ -45,7 +45,7 @@ GET https://clinicals.spineservices.nhs.uk/STU3/[resourceType]?
   searchset of 0..* active RAFlag adjustments for patient  
   (or operation outcome if failure to find or process)
 
-## 2. Read Conditions ##
+## Read Conditions ##
 The _Read Conditions_ interaction is a sequenced pair of interactions to read the Patient's Reasonable Adjustments List, then to Read only those active Conditions it lists.
 
 <img src="images/sequenceDiagrams/ReadConditionList.png">
@@ -81,9 +81,9 @@ Implementations of _Read Conditions_ MUST implement the Search Parameters \_list
   (or operation outcome if failure to find or process)
 
 
-## 3. Caching READs ##
+##  Caching Reads ##
 
-When a client does a READ operation to access a specific resource by ID, it may choose to include an ```If-None-Match``` header to specify the version ID of the latest version they have of that resource (see the [versioning page](explore_versioning.html) for details of version IDs) - for example:
+When a client does a Read operation to access a specific resource by ID, it may choose to include an ```If-None-Match``` header to specify the version ID of the latest version they have of that resource (see the [versioning page](explore_versioning.html) for details of version IDs) - for example:
 
 ```
 GET https://clinicals.spineservices.nhs.uk/STU3/Flag/744eec7d-8951-4722-ad74-dc34e86d4e1a

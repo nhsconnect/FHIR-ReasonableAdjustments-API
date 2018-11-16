@@ -8,7 +8,7 @@ summary: Provenance operation describes the server-side operations required to p
 ---
 {% include custom/search.warnbanner.html %}
 
-## 1 Provenance ##
+## Provenance ##
 
 All Reasonable Adjustment resources (Consent, Flag, Condition) are populated server-side with Provenance details on creation to support clinical safety and audit recording. **NB:** List resources do **NOT** record Provenance.
 

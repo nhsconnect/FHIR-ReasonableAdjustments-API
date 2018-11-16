@@ -13,7 +13,7 @@ There are 2 common patterns when working with the various Reasonable Adjustment 
 * Condition resource - which entails maintaining its associated List
 
 
-## 1 Create Resource ##
+## Create Resource ##
 
 This pattern applies to creation of a single resource.
 * Consent, Flag, Condition and List always use this pattern for creation.
@@ -40,7 +40,7 @@ POST https://clinicals.spineservices.nhs.uk/STU3/[resourceType] /HTTP1.1
 201 Created http response code and Location header (and mirror POSTed payload)  
 (or operation outcome if failure to find or process)
 
-## 2 Create Condition resources ##
+## Create Condition resources ##
 
 The Condition resource is pointed to by a List.  
 After successful creation of the Condition resource (see the Create Consent and Flag pattern above), the Client must either:
@@ -53,7 +53,7 @@ After successful creation of the Condition resource (see the Create Consent and 
 There is no specific http request here.  
 The pattern consists of sequenced _Create Condition_ and _Create List_ or _Update List_ interactions.
 
-## 3 Create Consent resources ##
+## Create Consent resources ##
 
 Business Rule: Spine Clinicals SHALL NOT allow more than 1 Consent resource to be active for a given NHS Number.
 
