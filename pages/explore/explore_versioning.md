@@ -4,7 +4,7 @@ keywords: usecase, CareConnect-RARecord-Condition-1
 tags: [rest, fhir, versioning]
 sidebar: overview_sidebar
 permalink: explore_versioning.html
-summary: How resources are versioned to allow local caching, and to avoid contention when updating resources
+summary: Specification of resource versioning - to allow local caching, and to avoid contention when updating resources
 ---
 {% include custom/search.warnbanner.html %}
 

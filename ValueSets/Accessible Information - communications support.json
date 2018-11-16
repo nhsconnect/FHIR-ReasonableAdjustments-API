@@ -1,0 +1,173 @@
+{
+  "category": "Accessible Information - communications support"
+  "concepts": [
+    {
+      "conceptId": "441092009",
+      "descriptionId": "2794564011",
+      "preferred": "Preferred",
+      "description": "Does lip read"
+    },
+    {
+      "conceptId": "441092009",
+      "descriptionId": "2502921000000111",
+      "preferred": "Synonym",
+      "description": "Lip reads"
+    },
+    {
+      "conceptId": "719369003",
+      "descriptionId": "3316113018",
+      "preferred": "Preferred",
+      "description": "Uses communication device"
+    },
+    {
+      "conceptId": "719369003",
+      "descriptionId": "3316112011",
+      "preferred": "Synonym",
+      "description": "Does use communication device"
+    },
+    {
+      "conceptId": "285055002",
+      "descriptionId": "423945013",
+      "preferred": "Preferred",
+      "description": "Does use hearing aid"
+    },
+    {
+      "conceptId": "285055002",
+      "descriptionId": "423944012",
+      "preferred": "Synonym",
+      "description": "Uses hearing aid"
+    },
+    {
+      "conceptId": "520491000000109",
+      "descriptionId": "1162221000000110",
+      "preferred": "Preferred",
+      "description": "Preferred method of communication: written"
+    },
+    {
+      "conceptId": "225834007",
+      "descriptionId": "339335016",
+      "preferred": "Preferred",
+      "description": "Uses a citizen advocate"
+    },
+    {
+      "conceptId": "225833001",
+      "descriptionId": "339334017",
+      "preferred": "Preferred",
+      "description": "Uses a legal advocate"
+    },
+    {
+      "conceptId": "761541000000100",
+      "descriptionId": "1687181000000115",
+      "preferred": "Preferred",
+      "description": "Uses alternative communication skill"
+    },
+    {
+      "conceptId": "415803005",
+      "descriptionId": "2534978019",
+      "preferred": "Preferred",
+      "description": "Uses British sign language"
+    },
+    {
+      "conceptId": "415803005",
+      "descriptionId": "2502941000000116",
+      "preferred": "Synonym",
+      "description": "Uses BSL (British Sign Language)"
+    },
+    {
+      "conceptId": "445129003",
+      "descriptionId": "2872325019",
+      "preferred": "Preferred",
+      "description": "Uses cued speech transliterator"
+    },
+    {
+      "conceptId": "957031000000107",
+      "descriptionId": "2440051000000118",
+      "preferred": "Preferred",
+      "description": "Uses deafblind intervener"
+    },
+    {
+      "conceptId": "981781000000107",
+      "descriptionId": "2496941000000110",
+      "preferred": "Preferred",
+      "description": "Uses Deafblind Manual Alphabet"
+    },
+    {
+      "conceptId": "445121000",
+      "descriptionId": "2871681019",
+      "preferred": "Preferred",
+      "description": "Uses electronic note taker"
+    },
+    {
+      "conceptId": "445143008",
+      "descriptionId": "2871059013",
+      "preferred": "Preferred",
+      "description": "Uses lipspeaker"
+    },
+    {
+      "conceptId": "415805003",
+      "descriptionId": "2534979010",
+      "preferred": "Preferred",
+      "description": "Uses Makaton sign language"
+    },
+    {
+      "conceptId": "415805003",
+      "descriptionId": "2502931000000113",
+      "preferred": "Synonym",
+      "description": "Uses Makaton"
+    },
+    {
+      "conceptId": "445076009",
+      "descriptionId": "2872009018",
+      "preferred": "Preferred",
+      "description": "Uses manual note taker"
+    },
+    {
+      "conceptId": "720462004",
+      "descriptionId": "3320918017",
+      "preferred": "Preferred",
+      "description": "Uses personal audio recording device to record information"
+    },
+    {
+      "conceptId": "837341000000108",
+      "descriptionId": "2173841000000115",
+      "preferred": "Preferred",
+      "description": "Uses Personal Communication Passport"
+    },
+    {
+      "conceptId": "404903008",
+      "descriptionId": "2532745018",
+      "preferred": "Preferred",
+      "description": "Uses sign language"
+    },
+    {
+      "conceptId": "404903008",
+      "descriptionId": "2156779016",
+      "preferred": "Synonym",
+      "description": "Uses sign language, function"
+    },
+    {
+      "conceptId": "445123002",
+      "descriptionId": "2871683016",
+      "preferred": "Preferred",
+      "description": "Uses speech to text reporter"
+    },
+    {
+      "conceptId": "445123002",
+      "descriptionId": "2502911000000117",
+      "preferred": "Synonym",
+      "description": "Uses STTR (speech to text reporter)"
+    },
+    {
+      "conceptId": "445488003",
+      "descriptionId": "2872010011",
+      "preferred": "Preferred",
+      "description": "Uses telecommunications device for the deaf"
+    },
+    {
+      "conceptId": "445488003",
+      "descriptionId": "2872011010",
+      "preferred": "Synonym",
+      "description": "Uses textphone"
+    }
+  ]
+}

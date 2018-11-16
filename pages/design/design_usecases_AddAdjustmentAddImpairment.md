@@ -35,73 +35,24 @@ During appointment Nurse discusses RA Record, Patient requests recording of 'Eas
 
 * Patient agrees to add Adjustment 'Easy Read'
   * Practitioner adds Adjustment from coded picklist
-    * ClientSystem captures and structures as new RARecord-Flag-1 resource [(xml)](design_usecases_AddAdjustmentAddImpairment.html#21-new-adjustment-resource---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#22-new-adjustment-resource---json-example)
-
+    * ClientSystem captures and structures as new RARecord-Flag-1 resource
 * Patient agrees to add Impairment 'Mental Health Disability' with supporting text
   * Practitioner adds Impairment from coded picklist (elaborates w separate freetext)  
-    * ClientSystem captures and structures Impairment information as new Impairment (CareConnect-RARecord-Condition-1) resource [(xml)](design_usecases_AddAdjustmentAddImpairment.html#23-new-impairment-resource---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#24-new-impairment-resource---json-example)
-
+    * ClientSystem captures and structures Impairment information as new Impairment (CareConnect-RARecord-Condition-1) resource
 * Practitioner commits RARecord
-  * ClientSystem submits Create Flag request [(xml)](design_usecases_AddAdjustmentAddImpairment.html#31-create-flag-request---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#32-create-flag-request---json-example)
-    * ServerSystem submits Create Flag response [(xml)](design_usecases_AddAdjustmentAddImpairment.html#33-create-flag-response---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#34-create-flag-response---json-example)
-  * ClientSystem submits Create Condition request [(xml)](design_usecases_AddAdjustmentAddImpairment.html#35-create-condition-request---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#36-create-condition-request---json-example)
-    * ServerSystem submits Create Condition response [(xml)](design_usecases_AddAdjustmentAddImpairment.html#37-create-condition-response---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#38-create-condition-response---json-example)
-  * ClientSystem updates existing CareConnect-RARecord-List-1 to reference / identify new Impairment resource [(xml)](design_usecases_AddAdjustmentAddImpairment.html#25-updated-list-resource---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#26-updated-list-resource---json-example)
-  * ClientSystem submits Update List request [(xml)](design_usecases_AddAdjustmentAddImpairment.html#39-update-list-request---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#310-update-list-request---json-example)
-    * ServerSystem submits Update List response [(xml)](design_usecases_AddAdjustmentAddImpairment.html#311-update-list-response---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#312-update-list-response---json-example)
+  * ClientSystem submits Create Flag request [(xml)](design_usecases_AddAdjustmentAddImpairment.html#21-create-flag-request---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#22-create-flag-request---json-example)
+    * ServerSystem submits Create Flag response [(xml)](design_usecases_AddAdjustmentAddImpairment.html#23-create-flag-response---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#24-create-flag-response---json-example)
+  * ClientSystem submits Create Condition request [(xml)](design_usecases_AddAdjustmentAddImpairment.html#25-create-condition-request---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#26-create-condition-request---json-example)
+    * ServerSystem submits Create Condition response [(xml)](design_usecases_AddAdjustmentAddImpairment.html#27-create-condition-response---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#28-create-condition-response---json-example)
+  * ClientSystem updates existing CareConnect-RARecord-List-1 to reference / identify new Impairment resource
+  * ClientSystem submits Update List request [(xml)](design_usecases_AddAdjustmentAddImpairment.html#29-update-list-request---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#210-update-list-request---json-example)
+    * ServerSystem submits Update List response [(xml)](design_usecases_AddAdjustmentAddImpairment.html#211-update-list-response---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#212-update-list-response---json-example)
 
-
-## 2 New Resource Examples ##
-
-Examples of client-side resources as they are created. i.e. before they are written to Spine.
-
-### 2.1 New Adjustment Resource - xml example ###
-
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-NewAdjustmentResource.xml"
-title="New Adjustment Resource"
-type="xml" %}
-
-### 2.2 New Adjustment Resource - json example ###
-
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-NewAdjustmentResource.json"
-title="New Adjustment Resource"
-type="json" %}
-
-### 2.3 New Impairment Resource - xml example ###
-
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-NewImpairmentResource.xml"
-title="New Impairment Resource"
-type="xml" %}
-
-### 2.4 New Impairment Resource - json example ###
-
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-NewImpairmentResource.json"
-title="New Impairment Resource"
-type="json" %}
-
-### 2.5 Updated List Resource - xml example ###
-
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-UpdatedListResource.xml"
-title="Updated List Resource"
-type="xml" %}
-
-### 2.6 Updated List Resource - json example ###
-
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-UpdatedListResource.json"
-title="Updated List Resource"
-type="json" %}
-
-## 3 Interaction Examples ##
+## 2 Interaction Examples ##
 
 Examples of http requests, responses and payloads
 
-### 3.1 Create Flag Request - xml example ###
+### 2.1 Create Flag Request - xml example ###
 
 #### http request & headers ####
 ```
@@ -121,7 +72,7 @@ relfilepath="usecaseexamples/AddExample-CreateFlagRequest.xml"
 title="Create Flag Request"
 type="xml" %}
 
-### 3.2 Create Flag Request - json example ###
+### 2.2 Create Flag Request - json example ###
 
 #### http request & headers ####
 ```
@@ -141,7 +92,7 @@ relfilepath="usecaseexamples/AddExample-CreateFlagRequest.json"
 title="Create Flag Request"
 type="json" %}
 
-### 3.3 Create Flag Response - xml example ###
+### 2.3 Create Flag Response - xml example ###
 
 #### http request & headers ####
 ```
@@ -160,7 +111,7 @@ relfilepath="usecaseexamples/AddExample-CreateFlagResponse.xml"
 title="Create Flag Response"
 type="xml" %}
 
-### 3.4 Create Flag Response - json example ###
+### 2.4 Create Flag Response - json example ###
 
 #### http request & headers ####
 ```
@@ -179,7 +130,7 @@ relfilepath="usecaseexamples/AddExample-CreateFlagResponse.json"
 title="Create Flag Response"
 type="json" %}
 
-### 3.5 Create Condition Request - xml example ###
+### 2.5 Create Condition Request - xml example ###
 
 #### http request & headers ####
 ```
@@ -199,7 +150,7 @@ relfilepath="usecaseexamples/AddExample-CreateConditionRequest.xml"
 title="Create Condition Request"
 type="xml" %}
 
-### 3.6 Create Condition Request - json example ###
+### 2.6 Create Condition Request - json example ###
 
 #### http request & headers ####
 ```
@@ -219,7 +170,7 @@ relfilepath="usecaseexamples/AddExample-CreateConditionRequest.json"
 title="Create Condition Request"
 type="json" %}
 
-### 3.7 Create Condition Response - xml example ###
+### 2.7 Create Condition Response - xml example ###
 
 #### http request & headers ####
 ```
@@ -238,7 +189,7 @@ relfilepath="usecaseexamples/AddExample-CreateConditionResponse.xml"
 title="Create Condition Response"
 type="xml" %}
 
-### 3.8 Create Condition Response - json example ###
+### 2.8 Create Condition Response - json example ###
 
 #### http request & headers ####
 ```
@@ -257,7 +208,7 @@ relfilepath="usecaseexamples/AddExample-CreateConditionResponse.json"
 title="Create Condition Response"
 type="json" %}
 
-### 3.9 Update List Request - xml example ###
+### 2.9 Update List Request - xml example ###
 
 #### http request & headers ####
 ```
@@ -278,7 +229,7 @@ relfilepath="usecaseexamples/AddExample-UpdateListRequest.xml"
 title="Update List Request"
 type="xml" %}
 
-### 3.10 Update List Request - json example ###
+### 2.10 Update List Request - json example ###
 
 #### http request & headers ####
 ```
@@ -298,7 +249,7 @@ relfilepath="usecaseexamples/AddExample-UpdateListRequest.json"
 title="Update List Request"
 type="json" %}
 
-### 3.11 Update List Response - xml example ###
+### 2.11 Update List Response - xml example ###
 
 #### http request & headers ####
 ```
@@ -316,7 +267,7 @@ relfilepath="usecaseexamples/AddExample-UpdateListResponse.xml"
 title="Update List Response"
 type="xml" %}
 
-### 3.12 Update List Response - json example ###
+### 2.12 Update List Response - json example ###
 
 #### http request & headers ####
 ```

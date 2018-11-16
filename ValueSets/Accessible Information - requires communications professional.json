@@ -1,0 +1,107 @@
+{
+  "category": "Accessible Information - requires communications professional"
+  "concepts": [
+    {
+      "conceptId": "204331000000107",
+      "descriptionId": "644371000000116",
+      "preferred": "Preferred",
+      "description": "British Sign Language interpreter needed"
+    },
+    {
+      "conceptId": "204331000000107",
+      "descriptionId": "312701000000119",
+      "preferred": "Preferred",
+      "description": "Interpreter needed - British Sign Language"
+    },
+    {
+      "conceptId": "204331000000107",
+      "descriptionId": "312711000000117",
+      "preferred": "Synonym",
+      "description": "Intrprt need British Sign Lang"
+    },
+    {
+      "conceptId": "945731000000104",
+      "descriptionId": "2418641000000117",
+      "preferred": "Preferred",
+      "description": "Hands-on signing interpreter needed"
+    },
+    {
+      "conceptId": "204341000000103",
+      "descriptionId": "312731000000113",
+      "preferred": "Preferred",
+      "description": "Interpreter needed - Makaton Sign Language"
+    },
+    {
+      "conceptId": "204341000000103",
+      "descriptionId": "644831000000111",
+      "preferred": "Preferred",
+      "description": "Makaton Sign Language interpreter needed"
+    },
+    {
+      "conceptId": "204341000000103",
+      "descriptionId": "312741000000116",
+      "preferred": "Synonym",
+      "description": "Interpt need Makaton Sign Lang"
+    },
+    {
+      "conceptId": "225835008",
+      "descriptionId": "339336015",
+      "preferred": "Preferred",
+      "description": "Needs an advocate"
+    },
+    {
+      "conceptId": "957071000000109",
+      "descriptionId": "2440141000000115",
+      "preferred": "Preferred",
+      "description": "Requires deafblind block alphabet interpreter"
+    },
+    {
+      "conceptId": "796201000000109",
+      "descriptionId": "1779881000000115",
+      "preferred": "Preferred",
+      "description": "Requires deafblind communicator guide"
+    },
+    {
+      "conceptId": "957111000000103",
+      "descriptionId": "2440231000000116",
+      "preferred": "Preferred",
+      "description": "Requires deafblind haptic communication interpreter"
+    },
+    {
+      "conceptId": "957051000000100",
+      "descriptionId": "2440101000000118",
+      "preferred": "Preferred",
+      "description": "Requires deafblind manual alphabet interpreter"
+    },
+    {
+      "conceptId": "945891000000106",
+      "descriptionId": "2419031000000111",
+      "preferred": "Preferred",
+      "description": "Requires manual note taker"
+    },
+    {
+      "conceptId": "719563003",
+      "descriptionId": "3316945012",
+      "preferred": "Preferred",
+      "description": "Requires sighted guide"
+    },
+    {
+      "conceptId": "966401000000100",
+      "descriptionId": "2461161000000117",
+      "preferred": "Preferred",
+      "description": "Requires speech to text reporter"
+    },
+    {
+      "conceptId": "936761000000104",
+      "descriptionId": "2399091000000116",
+      "preferred": "Preferred",
+      "description": "Sign Supported English interpreter needed"
+    },
+    {
+      "conceptId": "945711000000107",
+      "descriptionId": "2418601000000115",
+      "preferred": "Preferred",
+      "description": "Visual frame sign language interpreter needed"
+    }
+  ]
+}

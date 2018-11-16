@@ -13,7 +13,7 @@ Any corrections to an already committed Reasonable Adjustment element therefore 
 <br>
 This section describes the _Update List_ interaction used when Creating or Deleting Conditions on an existing List
 
-## 1. Update List ##
+## Update List ##
 
 The _Update List_ interaction is required in 2 circumstances:
 * when a new Impairment (Condition resource) is added to a Reasonable Adjustments record (after the first Impairment)
@@ -44,7 +44,7 @@ and include an If-Match header containing the resource version id ETag (see belo
 
 
 
-## 2. Managing Conflicting Updates ##
+## Managing Conflicting Updates ##
 
 There is a risk in some cases that two clients will try to update the same resource. If both clients had the same version of that resource to begin with, there is a risk that the second overwrites the updates of the first. To prevent this happening, clients MUST submit update requests with an If-Match header that quotes the ETag from the server (see the [versioning page](explore_versioning.html) for details of version IDs). This specifies the version of the resource that their updates should be applied to, so a second attempt to update the same version with different changes can be detected as a conflict and rejected (this is also known as optimistic locking).
 
