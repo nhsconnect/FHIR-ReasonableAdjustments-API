@@ -14,3 +14,12 @@ summary: Specification of the Remove Flag operation, which streamlines removal o
     =============================
 
     {% endcomment %}
+    
+## removerarecord operation ##
+
+The OperationDefinition of removerarecord defines the in parameters for this operation and their structure and content.
+
+{% include custom/fhir.codegrid.html
+relfilepath="resourceexamples/RARecord-RemoveRARecord-Operation-1.xml"
+title="RARecord-RemoveRARecord-Operation-1"
+type="xml" %}

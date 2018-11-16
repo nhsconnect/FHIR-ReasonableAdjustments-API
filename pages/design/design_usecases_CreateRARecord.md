@@ -32,65 +32,30 @@ Patient declines to record a specific Adjustment at this time.
 * Patient consents to record RA Flag  
   * Practitioner creates new RARecord for Patient (by recording Consent)  
   * Practitioner records Patient consented to record RA info  
-    * ClientSystem captures and structures Consent information as new RARecord-Consent-1 resource [(xml)](design_usecases_CreateRARecord.html#21-new-consent-resource---xml-example) [(json)](design_usecases_CreateRARecord.html#22-new-consent-resource---json-example)
-
+    * ClientSystem captures and structures Consent information as new RARecord-Consent-1 resource
 * Patient agrees to record 'Learning Disability' as Impairment  
   * Practitioner adds Impairment from coded picklist (optionally elaborates w separate freetext)  
-    * ClientSystem captures and structures Impairment information as new Impairment (CareConnect-RARecord-Condition-1) resource [(xml)](design_usecases_CreateRARecord.html#23-new-impairment-resource---xml-example) [(json)](design_usecases_CreateRARecord.html#24-new-impairment-resource---json-example)
+    * ClientSystem captures and structures Impairment information as new Impairment (CareConnect-RARecord-Condition-1) resource
 
 * Patient declines to record any specific Adjustments at this time
 
 * Practitioner commits RARecord  
-    * ClientSystem submits Create Consent request [(xml)](design_usecases_CreateRARecord.html#31-create-consent-request---xml-example) [(json)](design_usecases_CreateRARecord.html#32-create-consent-request---json-example)
-      * ServerSystem submits Create Consent response [(xml)](design_usecases_CreateRARecord.html#33-create-consent-response---xml-example) [(json)](design_usecases_CreateRARecord.html#34-create-consent-response---json-example)
-    * ClientSystem submits Create Condition request [(xml)](design_usecases_CreateRARecord.html#35-create-condition-request---xml-example) [(json)](design_usecases_CreateRARecord.html#36-create-condition-request---json-example)
-      * ServerSystem submits Create Condition response [(xml)](design_usecases_CreateRARecord.html#37-create-condition-response---xml-example) [(json)](design_usecases_CreateRARecord.html#38-create-condition-response---json-example)
-        * ClientSystem creates new CareConnect-RARecord-List-1 to reference / identify Impairment resource  [(xml)](design_usecases_CreateRARecord.html#25-new-list-resource---xml-example) [(json)](design_usecases_CreateRARecord.html#26-new-list-resource---json-example)
-    * ClientSystem submits Create List request [(xml)](design_usecases_CreateRARecord.html#39-create-list-request---xml-example) [(json)](design_usecases_CreateRARecord.html#310-create-list-request---json-example)
-      * ServerSystem submits Create List response [(xml)](design_usecases_CreateRARecord.html#311-create-list-response---xml-example) [(json)](design_usecases_CreateRARecord.html#312-create-list-response---json-example)
+    * ClientSystem submits Create Consent request [(xml)](design_usecases_CreateRARecord.html#21-create-consent-request---xml-example) [(json)](design_usecases_CreateRARecord.html#22-create-consent-request---json-example)
+      * ServerSystem submits Create Consent response [(xml)](design_usecases_CreateRARecord.html#23-create-consent-response---xml-example) [(json)](design_usecases_CreateRARecord.html#24-create-consent-response---json-example)
+    * ClientSystem submits Create Condition request [(xml)](design_usecases_CreateRARecord.html#25-create-condition-request---xml-example) [(json)](design_usecases_CreateRARecord.html#26-create-condition-request---json-example)
+      * ServerSystem submits Create Condition response [(xml)](design_usecases_CreateRARecord.html#27-create-condition-response---xml-example) [(json)](design_usecases_CreateRARecord.html#28-create-condition-response---json-example)
+        * ClientSystem creates new CareConnect-RARecord-List-1 to reference / identify Impairment resource  
+    * ClientSystem submits Create List request [(xml)](design_usecases_CreateRARecord.html#29-create-list-request---xml-example) [(json)](design_usecases_CreateRARecord.html#210-create-list-request---json-example)
+      * ServerSystem submits Create List response [(xml)](design_usecases_CreateRARecord.html#211-create-list-response---xml-example) [(json)](design_usecases_CreateRARecord.html#212-create-list-response---json-example)
 
 ---
 
-## 2 New Resource Examples ##
 
-Examples of client-side resources as they are created. i.e. befoer they are written to Spine.
-
-### 2.1 New Consent Resource - xml example ###
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-NewConsentResource.xml"
-title="New Consent Resource"
-type="xml" %}
-### 2.2 New Consent Resource - json example ###
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-NewConsentResource.json"
-title="New Consent Resource"
-type="json" %}
-### 2.3 New Impairment Resource - xml example ###
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-NewImpairmentResource.xml"
-title="New Impairment Resource"
-type="xml" %}
-### 2.4 New Impairment Resource - json example ###
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-NewImpairmentResource.json"
-title="New Impairment Resource"
-type="json" %}
-### 2.5 New List Resource - xml example ###
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-NewListResource.xml"
-title="New List Resource"
-type="xml" %}
-### 2.6 New List Resource - json example ###
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-NewListResource.json"
-title="New List Resource"
-type="json" %}
-
-## 3 Interaction Examples ##
+## 2 Interaction Examples ##
 
 Examples of http requests, responses and payloads
 
-### 3.1 Create Consent Request - xml example ###
+### 2.1 Create Consent Request - xml example ###
 #### http request & headers ####
 ```
 POST https://clinicals.spineservices.nhs.uk/STU3/Consent HTTP/1.1
@@ -110,7 +75,7 @@ title="Create Consent Request"
 type="xml" %}
 
 
-### 3.2 Create Consent Request - json example ###
+### 2.2 Create Consent Request - json example ###
 #### http request & headers ####
 ```
 POST https://clinicals.spineservices.nhs.uk/STU3/Consent HTTP/1.1
@@ -130,7 +95,7 @@ title="Create Consent Request"
 type="json" %}
 
 
-### 3.3 Create Consent Response - xml example ###
+### 2.3 Create Consent Response - xml example ###
 #### http response & headers ####
 ```
 HTTP/1.1 201 Created
@@ -149,7 +114,7 @@ title="Create Consent Response"
 type="xml" %}
 
 
-### 3.4 Create Consent Response - json example ###
+### 2.4 Create Consent Response - json example ###
 #### http response & headers ####
 ```
 HTTP/1.1 201 Created
@@ -168,7 +133,7 @@ title="Create Consent Response"
 type="json" %}
 
 
-### 3.5 Create Condition Request - xml example ###
+### 2.5 Create Condition Request - xml example ###
 #### http request & headers ####
 ```
 POST https://clinicals.spineservices.nhs.uk/STU3/Condition HTTP/1.1
@@ -188,7 +153,7 @@ title="Create Condition Request"
 type="xml" %}
 
 
-### 3.6 Create Condition Request - json example ###
+### 2.6 Create Condition Request - json example ###
 #### http request & headers ####
 ```
 POST https://clinicals.spineservices.nhs.uk/STU3/Condition HTTP/1.1
@@ -208,7 +173,7 @@ title="Create Condition Request"
 type="json" %}
 
 
-### 3.7 Create Condition Response - xml example ###
+### 2.7 Create Condition Response - xml example ###
 #### http response & headers ####
 ```
 HTTP/1.1 201 Created
@@ -227,7 +192,7 @@ title="Create Condition Response"
 type="xml" %}
 
 
-### 3.8 Create Condition Response - json example ###
+### 2.8 Create Condition Response - json example ###
 #### http response & headers ####
 ```
 HTTP/1.1 201 Created
@@ -246,7 +211,7 @@ title="Create Condition Response"
 type="json" %}
 
 
-### 3.9 Create List Request - xml example ###
+### 2.9 Create List Request - xml example ###
 #### http request & headers ####
 ```
 POST https://clinicals.spineservices.nhs.uk/STU3/List HTTP/1.1
@@ -266,7 +231,7 @@ title="Create List Request"
 type="xml" %}
 
 
-### 3.10 Create List Request - json example ###
+### 2.10 Create List Request - json example ###
 #### http request & headers ####
 ```
 POST https://clinicals.spineservices.nhs.uk/STU3/List HTTP/1.1
@@ -286,7 +251,7 @@ title="Create List Request"
 type="json" %}
 
 
-### 3.11 Create List Response - xml example ###
+### 2.11 Create List Response - xml example ###
 #### http response & headers ####
 ```
 HTTP/1.1 201 Created
@@ -305,7 +270,7 @@ title="Create List Response"
 type="xml" %}
 
 
-### 3.12 Create List Response - json example ###
+### 2.12 Create List Response - json example ###
 #### http response & headers ####
 ```
 HTTP/1.1 201 Created

@@ -34,60 +34,7 @@ POST https://clinicals.spineservices.nhs.uk/STU3/$removerarecord /HTTP1.1
 ### body ###
 The operation request body is a multi-part Parameter resource, containing the NHS Number of the Patient requiring their Reasonable Adjustment Flag removed, and optionally a RemovalReason where given
 
-#### XML parameter example ####
-```
-<Parameters>
-    <parameter>
-        <name value="removerarecord"/>
-        <part>
-            <name value="nhsNumber"/>
-            <valueString value="999999998"/>
-        </part>
-        <part>
-            <name value="removalReason"/>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1"/>
-                        <code value="DoesntApply"/>
-                        <display value="The Reasonable Adjustment Flag no longer applies to the patient"/>
-                    </coding>
-                </valueCodeableConcept>
-            </part>
-    </parameter>
-</Parameters>
-```
-or 
-
-#### JSON parameter example ####
-
-```
-{
-  "resourceType": "Parameters",
-  "parameter": [
-    {
-      "name": "removerarecord",
-      "part": [
-        {
-          "name": "nhsNumber",
-          "valueString": "999999998"
-        },
-        {
-          "name": "removalReason",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1",
-                "code": "DoesntApply",
-                "display": "The Reasonable Adjustment Flag no longer applies to the patient"
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ]
-}
-```
+Examples of this operation interaction are available at [Remove RA Record](/design_usecases_RemoveRARecord.html)
 
 ## Remove RA Record Interaction ##
 
@@ -130,4 +77,4 @@ Foreach Condition on List,
 
 ## OperationDefinition ##
 
-{% include important.html content="**Placeholder:** An OperationDefinition instance _will_ be provided for the $removerarecord operation." %}
+The OperationDefinition of [removerarecord](/explore_removeflag_operation.html) defines the in and out parameters for this operation and their structure and content.

@@ -34,57 +34,23 @@ Practitioner creates new 'Large Print' Adjustment.
 #### Main ####
 
 * Practitioner removes (soft deletes) existing 'Easy Read' Adjustment, records Removal reason 'Entered in error';
-  * ClientSystem updates client-side Flag resource [(xml)](design_usecases_UpdateAdjustment.html#21-updated-flag-resource---xml-example) [(json)](design_usecases_UpdateAdjustment.html#22-updated-flag-resource---json-example)
+  * ClientSystem updates client-side Flag resource
 
 * Practitioner commits RARecord
-  * ClientSystem submits Update Flag request [(xml)](design_usecases_UpdateAdjustment.html#31-update-flag-request---xml-example) [(json)](design_usecases_UpdateAdjustment.html#32-update-flag-request---json-example)
-    * ServerSystem submits Update Flag response [(xml)](design_usecases_UpdateAdjustment.html#33-update-flag-response---xml-example) [(json)](design_usecases_UpdateAdjustment.html#34-update-flag-response---json-example)
+  * ClientSystem submits Update Flag request [(xml)](design_usecases_UpdateAdjustment.html#21-update-flag-request---xml-example) [(json)](design_usecases_UpdateAdjustment.html#22-update-flag-request---json-example)
+    * ServerSystem submits Update Flag response [(xml)](design_usecases_UpdateAdjustment.html#23-update-flag-response---xml-example) [(json)](design_usecases_UpdateAdjustment.html#24-update-flag-response---json-example)
 
 * Practitioner records new 'Large Print' Adjustment
-  * ClientSystem captures and structures Adjustment information as new RARecord-Flag-1 resource [(xml)](design_usecases_UpdateAdjustment.html#23-new-flag-resource---xml-example) [(json)](design_usecases_UpdateAdjustment.html#24-new-flag-resource---json-example)
-
+  * ClientSystem captures and structures Adjustment information as new RARecord-Flag-1 resource 
 * Practitioner commits RARecord
-  * ClientSystem submits Create Flag request [(xml)](design_usecases_UpdateAdjustment.html#35-create-flag-request---xml-example) [(json)](design_usecases_UpdateAdjustment.html#36-create-flag-request---json-example)
-    * ServerSystem submits Create Flag response [(xml)](design_usecases_UpdateAdjustment.html#37-create-flag-response---xml-example) [(json)](design_usecases_UpdateAdjustment.html#38-create-flag-response---json-example)
+  * ClientSystem submits Create Flag request [(xml)](design_usecases_UpdateAdjustment.html#25-create-flag-request---xml-example) [(json)](design_usecases_UpdateAdjustment.html#26-create-flag-request---json-example)
+    * ServerSystem submits Create Flag response [(xml)](design_usecases_UpdateAdjustment.html#27-create-flag-response---xml-example) [(json)](design_usecases_UpdateAdjustment.html#28-create-flag-response---json-example)
 
-
-## 2 New and Updated Resource Examples ##
-
-Examples of client-side resources.
-
-### 2.1 Updated Flag Resource - xml example ###
-
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/UpdateExample-UpdatedFlagResource.xml"
-title="Updated Flag Resource"
-type="xml" %}
-
-### 2.2 Updated Flag Resource - json example ###
-
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/UpdateExample-UpdatedFlagResource.json"
-title="Updated Flag Resource"
-type="json" %}
-
-### 2.3 New Flag Resource - xml example ###
-
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/UpdateExample-NewFlagResource.xml"
-title="New Flag Resource"
-type="xml" %}
-
-### 2.4 New Flag Resource - json example ###
-
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/UpdateExample-NewFlagResource.json"
-title="New Flag Resource"
-type="json" %}
-
-## 3 Interaction Examples ##
+## 2 Interaction Examples ##
 
 Examples of http requests, responses and payloads
 
-### 3.1 Update Flag Request - xml example ###
+### 2.1 Update Flag Request - xml example ###
 
 #### http request & headers ####
 ```
@@ -106,7 +72,7 @@ relfilepath="usecaseexamples/UpdateExample-UpdateFlagRequest.xml"
 title="UpdateFlagRequest.xml"
 type="xml" %}
 
-### 3.2 Update Flag Request - json example ###
+### 2.2 Update Flag Request - json example ###
 
 #### http request & headers ####
 ```
@@ -127,7 +93,7 @@ relfilepath="usecaseexamples/UpdateExample-UpdateFlagRequest.json"
 title="Update Flag Request"
 type="json" %}
 
-### 3.3 Update Flag Response - xml example ###
+### 2.3 Update Flag Response - xml example ###
 
 #### http request & headers ####
 ```
@@ -145,7 +111,7 @@ relfilepath="usecaseexamples/UpdateExample-UpdateFlagResponse.xml"
 title="Update Flag Response"
 type="xml" %}
 
-### 3.4 Update Flag Response - json example ###
+### 2.4 Update Flag Response - json example ###
 
 #### http request & headers ####
 ```
@@ -163,7 +129,7 @@ relfilepath="usecaseexamples/UpdateExample-UpdateFlagResponse.json"
 title="Update Flag Response"
 type="json" %}
 
-### 3.5 Create Flag Request - xml example ###
+### 2.5 Create Flag Request - xml example ###
 
 #### http request & headers ####
 ```
@@ -183,7 +149,7 @@ relfilepath="usecaseexamples/UpdateExample-CreateFlagRequest.xml"
 title="Create Flag Request"
 type="xml" %}
 
-### 3.6 Create Flag Request - json example ###
+### 2.6 Create Flag Request - json example ###
 
 #### http request & headers ####
 ```
@@ -203,7 +169,7 @@ relfilepath="usecaseexamples/UpdateExample-CreateFlagRequest.json"
 title="Create Flag Request"
 type="json" %}
 
-### 3.7 Create Flag Response - xml example ###
+### 2.7 Create Flag Response - xml example ###
 
 #### http request & headers ####
 ```
@@ -222,7 +188,7 @@ relfilepath="usecaseexamples/UpdateExample-CreateFlagResponse.xml"
 title="Create Flag Response"
 type="xml" %}
 
-### 3.8 Create Flag Response - json example ###
+### 2.8 Create Flag Response - json example ###
 
 #### http request & headers ####
 ```
