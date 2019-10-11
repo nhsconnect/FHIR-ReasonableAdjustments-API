@@ -12,7 +12,7 @@ summary: Interaction describes the interactions and operations that exchange Rea
 
 Operations are the set of business activities a user needs to collect, consider and curate Reasonable Adjustments information on behalf of a patient. Users access this functionality through a Reasonable Adjustments client system.  
 
-These aren't technically part of the API. Strictly, they are Client system functional requirements. Here they are used to illustrate/assure that the Interactions (which are part of the API) cover the functional scope of the Reasonable Adjustments system.  
+Operations aren't technically part of the API - they are Client system functional requirements. Here they are used to illustrate/assure that the Interactions (which are part of the API) cover the functional scope of the Reasonable Adjustments system.  
 
 Reasonable Adjustments requires the ability to:
 
@@ -34,39 +34,39 @@ Reasonable Adjustments requires the ability to:
 
 ## Interactions ##
 
-Interactions are the http request-response exchanges between client and server which are used to fulfil the operations above.  
+Interactions are the http request-response exchanges between client and server which are used to fulfil the operations above. These are part of the API.
 
 There isn't a 1 to 1 correspondence to the operations, as for example, 'Add an Impairment' requires 'Create Condition' and either 'Create List' or 'Update List' Interactions, 'Determine Provenance' isn't an http interaction at all.
 
 * _Create Consent_
 * _Create Flag_
-* _Create Condition_
-* _Create List_  
+
+Both use the _Create Resource_ interaction pattern
+
+* _Create Condition_ 
+
+uses a different interaction incorporating the containing List. 
+
 <br>
-All use the _Create Resource_ pattern  
-Condition and List must also consider the _Create Condition_ resources pattern
-<br><br>
 * _Read Consent_
-* _Read Adjustments_
-* _Read Conditions_
-* _Read List_  
-<br>
-Consent and Adjustments use the _Read Resource_ pattern  
-List and then Condition use _Read List_ followed by _Read Conditions_ pattern
+* _Read Flag_
+* _Read List_
+
+All use the _Read Resource_ pattern  
+
+Update is used to soft delete resources - i.e. once written, the only updateable element is .status active => inactive
 <br><br>
-* _Update List_  
-<br>
-_Update List_ is used when Creating or Deleting Conditions from an existing List
+* _Update Consent_
+* _Update Flag_
+
+Both use the _Update Resource_ pattern
+
+* _Update Condition_ 
+
+uses a different interaction incorporating the containing List.
 <br><br>
-* _Delete Consent_
-* _Delete Flag_
-* _Delete Condition_
-* _Delete List_  
-<br>
-All use the _Delete Resource_ pattern  
-Condition and List must also consider the _Delete Condition_ resources pattern
-<br><br>
+
 Interactions are described using Sequence Diagrams in the sections below.  
-The Remove Flag and Determine Provenance Operations are also discussed.  
+The Remove Flag and Determine Provenance Operations are also discussed. 
 <br>
 Interactions and Operations are further illustrated in the _Use Cases & Examples_ section.

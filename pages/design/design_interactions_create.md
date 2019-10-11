@@ -10,15 +10,13 @@ summary: Create operation describes interaction required to record a new Reasona
 
 There are 2 common patterns when working with the various Reasonable Adjustment resources within the Interactions:
 * Consent and Flag resource - single, independent resources
-* Condition resource - which entails maintaining its associated List
+* Condition resource - which entails maintaining its containing List
 
 
 ## Create Resource ##
 
 This pattern applies to creation of a single resource.
-* Consent, Flag, Condition and List always use this pattern for creation.
-* Create Condition triggers Create List if there is no existing List
-* Create Condition triggers Update List if there is an existing List
+* Consent and Flag use this pattern for creation.
 
 <img src="images/sequenceDiagrams/CreateResource.png">
 
@@ -37,24 +35,55 @@ POST https://clinicals.spineservices.nhs.uk/STU3/[resourceType] /HTTP1.1
 
 #### Create Resource Response ####
 
+```
 201 Created http response code and Location header (and mirror POSTed payload)  
 (or operation outcome if failure to find or process)
-
-## Create Condition resources ##
-
-The Condition resource is pointed to by a List.  
-After successful creation of the Condition resource (see the Create Consent and Flag pattern above), the Client must either:
-* create a new List instance
-* update the existing List instance
-
-
-<img src="images/sequenceDiagrams/CreateConditionList.png">
-
-There is no specific http request here.  
-The pattern consists of sequenced _Create Condition_ and _Create List_ or _Update List_ interactions.
+```
 
 ## Create Consent resources ##
 
 Business Rule: Spine Clinicals SHALL NOT allow more than 1 Consent resource to be active for a given NHS Number.
 
 Error response: Spine Clinicals SHALL respond with response code 422 DUPLICATE_REJECTED and an OperationOutcome resource on creation of a duplicate, active Consent resource for an NHS Number.
+
+## Create Condition resources ##
+
+The new Condition resource to be added to the Reaonable Adjustment record is contained in a List.
+After successful client-side construction of the new Condition and Provenance resources, the Client must either:
+* create a new List instance
+* update the existing List instance
+
+
+<img src="images/sequenceDiagrams/CreateListCondition.png">
+
+### Create Condition request - response ###
+
+Given pre-requisites:
+- authenticated, authorized RBACed Spine-User
+- validated NHSNumber
+
+#### Create Condition Request (New List)####
+
+```
+POST https://clinicals.spineservices.nhs.uk/STU3/List /HTTP1.1
+```
+
+#### Create Condition Response (New List)####
+
+```
+201 Created http response code and Location header (and mirror POSTed payload)  
+(or operation outcome if failure to find or process)
+```
+
+#### Create Condition Request (Existing List)####
+
+```
+POST https://clinicals.spineservices.nhs.uk/STU3/List /HTTP1.1
+```
+
+#### Create Condition Response (Existing List)####
+
+```
+200 OK http response code and Location header (and mirror POSTed payload)  
+(or operation outcome if failure to find or process)
+```

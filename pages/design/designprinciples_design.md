@@ -39,4 +39,6 @@ Curation recommended use of a List resource to identify Conditions that are part
 - limit .category valueset to clinical categories, protecting against category proliferation
 - conform to a pattern established in GPConnect and Transfer of Care programmes
 
+Further design constraints recommended an approach where Reasonable Adjustment Condition resources are exchanged as a unit, by containing the Conditions as elements withina single List per patient. This List to be managed client-side, and to contain the relevant Provenance information.
+
 Reasonable Adjustments API has incorporated the recommended changes.

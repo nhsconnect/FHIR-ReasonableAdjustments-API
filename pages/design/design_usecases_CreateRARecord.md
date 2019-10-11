@@ -42,11 +42,13 @@ Patient declines to record a specific Adjustment at this time.
 * Practitioner commits RARecord  
     * ClientSystem submits Create Consent request [(xml)](design_usecases_CreateRARecord.html#21-create-consent-request---xml-example) [(json)](design_usecases_CreateRARecord.html#22-create-consent-request---json-example)
       * ServerSystem submits Create Consent response [(xml)](design_usecases_CreateRARecord.html#23-create-consent-response---xml-example) [(json)](design_usecases_CreateRARecord.html#24-create-consent-response---json-example)
+
+    * ClientSystem captures and structures Provenance information as new Provenance (RARecord-Provenance-1) resource
+    * ClientSystem creates new CareConnect-RARecord-List-1 to contain Impairment resource
+    * ClientSystem contains new Impairment resource within CareConnect-RARecord-List-1 resource
+    * ClientSystem contains new Provenance resource within CareConnect-RARecord-List-1 resource
     * ClientSystem submits Create Condition request [(xml)](design_usecases_CreateRARecord.html#25-create-condition-request---xml-example) [(json)](design_usecases_CreateRARecord.html#26-create-condition-request---json-example)
       * ServerSystem submits Create Condition response [(xml)](design_usecases_CreateRARecord.html#27-create-condition-response---xml-example) [(json)](design_usecases_CreateRARecord.html#28-create-condition-response---json-example)
-        * ClientSystem creates new CareConnect-RARecord-List-1 to reference / identify Impairment resource  
-    * ClientSystem submits Create List request [(xml)](design_usecases_CreateRARecord.html#29-create-list-request---xml-example) [(json)](design_usecases_CreateRARecord.html#210-create-list-request---json-example)
-      * ServerSystem submits Create List response [(xml)](design_usecases_CreateRARecord.html#211-create-list-response---xml-example) [(json)](design_usecases_CreateRARecord.html#212-create-list-response---json-example)
 
 ---
 
@@ -148,7 +150,7 @@ InteractionID: urn:nhs:names:services:raflags:Condition.write:1
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-CreateConditionRequest.xml"
+relfilepath="usecaseexamples/AAXMLPlaceholder.xml"
 title="Create Condition Request"
 type="xml" %}
 
@@ -168,7 +170,7 @@ InteractionID: urn:nhs:names:services:raflags:Condition.write:1
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-CreateConditionRequest.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Create Condition Request"
 type="json" %}
 
@@ -187,7 +189,7 @@ Content-Type: application/fhir+xml
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-CreateConditionResponse.xml"
+relfilepath="usecaseexamples/AAXMLPlaceholder.xml"
 title="Create Condition Response"
 type="xml" %}
 
@@ -206,87 +208,11 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-CreateConditionResponse.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Create Condition Response"
 type="json" %}
 
 
-### 2.9 Create List Request - xml example ###
-#### http request & headers ####
-```
-POST https://clinicals.spineservices.nhs.uk/STU3/List HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-FromASID: 123456123456
-ToASID: 987654456789
-Content-Type: application/fhir+xml
-Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:List.write:1
-
-```
-
-#### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-CreateListRequest.xml"
-title="Create List Request"
-type="xml" %}
-
-
-### 2.10 Create List Request - json example ###
-#### http request & headers ####
-```
-POST https://clinicals.spineservices.nhs.uk/STU3/List HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-FromASID: 123456123456
-ToASID: 987654456789
-Content-Type: application/fhir+json
-Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:List.write:1
-
-```
-
-#### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-CreateListRequest.json"
-title="Create List Request"
-type="json" %}
-
-
-### 2.11 Create List Response - xml example ###
-#### http response & headers ####
-```
-HTTP/1.1 201 Created
-Date: Tue, 23 Jul 2018 11:00:01 GMT
-Last-Modified:2018-07-23T11:00:01+00:00
-Location: https://clinicals.spineservices.nhs.uk/STU3/List/e00c5a85-d34f-4075-96ac-b787deb484b1/_history/5b703b55-cedc-4c19-b2aa-0666384eab1a
-ETag: W/"5b703b55-cedc-4c19-b2aa-0666384eab1a”
-Content-Type: application/fhir+xml
-
-```
-
-#### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-CreateListResponse.xml"
-title="Create List Response"
-type="xml" %}
-
-
-### 2.12 Create List Response - json example ###
-#### http response & headers ####
-```
-HTTP/1.1 201 Created
-Date: Tue, 23 Jul 2018 11:00:01 GMT
-Last-Modified:2018-07-23T11:00:01+00:00
-Location: https://clinicals.spineservices.nhs.uk/STU3/List/e00c5a85-d34f-4075-96ac-b787deb484b1/_history/5b703b55-cedc-4c19-b2aa-0666384eab1a
-ETag: W/"5b703b55-cedc-4c19-b2aa-0666384eab1a”
-Content-Type: application/fhir+json
-
-```
-
-#### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-CreateListResponse.json"
-title="Create List Response"
-type="json" %}
 
 
 ---

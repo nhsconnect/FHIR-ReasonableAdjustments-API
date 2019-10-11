@@ -58,17 +58,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Consent.read:1
-
-
-
-
-
-
-
-
-
-"
+InteractionID: urn:nhs:names:services:raflags:Consent.read:1"
 json="GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  patient=999999998&
  status=active&

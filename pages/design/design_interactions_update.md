@@ -1,5 +1,5 @@
 ---
-title: Interaction | Update
+title: Interaction | Update/Delete
 keywords: usecase, CareConnect-RARecord-Condition-1
 tags: [rest, fhir, identification,development]
 sidebar: accessrecord_rest_sidebar
@@ -8,40 +8,61 @@ summary: Update interaction describes the interaction required to update List re
 ---
 {% include custom/search.warnbanner.html %}
 
-Note: the only update allowed to any part of a Reasonable Adjustment record is an update to status (essentially a soft delete, as status = active > inactive).  
-Any corrections to an already committed Reasonable Adjustment element therefore require removal of the existing item, then creation of a new Flag, Adjustment or Impairment resource.  
-<br>
-This section describes the _Update List_ interaction used when Creating or Deleting Conditions on an existing List
+Note: the only update allowed to any part of a Reasonable Adjustment record is an update to status (essentially a soft delete, as .status active => inactive).  
+Any corrections to an already committed Reasonable Adjustment element therefore require removal of the existing item, then creation of a new Consent, Flag (Adjustment) or Condition (Impairment) resource.  
 
-## Update List ##
 
-The _Update List_ interaction is required in 2 circumstances:
-* when a new Impairment (Condition resource) is added to a Reasonable Adjustments record (after the first Impairment)
-* when an individual Impairment is deleted from a Reasonable Adjustments record
-Once the Condition resource has been created or deleted, the List SHALL be updated accordingly
+## Update Resource ##
 
-### After Create Condition ###
-<img src="images/sequenceDiagrams/UpdateListNew.png">
+This pattern applies to update/deletion of a single resource.
+* Consent and Flag always use this pattern for update/deletion.
 
-### After Delete Condition ###
-<img src="images/sequenceDiagrams/UpdateListDelete.png">
+<img src="images/sequenceDiagrams/UpdateResource.png">
 
-### Update List request - response ###
+### Update Resource request - response ###
 
-#### Update List Request ####
+Given pre-requisites:
+- authenticated, authorized RBACed Spine-User
+- validated NHSNumber
 
+#### Update Resource Request ####
+
+For each resource 
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/List?[List.id] /HTTP1.1
+PUT https://clinicals.spineservices.nhs.uk/STU3/[resourceType]/[id] /HTTP1.1
 ```
 
-#### Update List Response ####
+#### Update Resource Response ####
 
-200 OK http response code and (and mirror PUT payload)  
-(or operation outcome if failure to find or process)  
-<br>
-Updates to List resources SHALL comply with [Resource Versioning](/explore_versioning.html) requirements  
-and include an If-Match header containing the resource version id ETag (see below).
+```
+200 OK http response code (and mirror PUT payload)  
+(or operation outcome if failure to find or process)
+```
 
+## Update Condition ##
+
+This pattern applies to update/deletion of a Condition resource within a List.
+
+<img src="images/sequenceDiagrams/UpdateListConditionRemove.png">
+
+### Update Condition request - response ###
+
+Given pre-requisites:
+- authenticated, authorized RBACed Spine-User
+- validated NHSNumber
+
+#### Update Condition Request ####
+
+```
+PUT https://clinicals.spineservices.nhs.uk/STU3/List/[id] /HTTP1.1
+```
+
+#### Update Condition Response ####
+
+```
+200 OK http response code (and mirror PUT payload)  
+(or operation outcome if failure to find or process)
+```
 
 
 ## Managing Conflicting Updates ##
