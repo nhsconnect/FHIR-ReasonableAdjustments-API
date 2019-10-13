@@ -15,73 +15,82 @@ Although unlikely, Update Contention is possible. This scenario illustrates the 
 * Practitioner A reads Patient's RARecord
 * Practitioner B reads Patient's RARecord
 
-#### Main ####
 * Practitioner A updates Patient's RARecord, Remove an Impairment 'Mental Health Condition' operation
   * Practitioner A commits update
-    * ClientSystem submits Delete Condition (A) request [(xml)](design_usecases_RemoveImpairment.html#21-delete-condition-a-request---xml-example) [(json)](design_usecases_RemoveImpairment.html#22-delete-condition-a-request---json-example)
-      * ServerSystem submits Delete Condition (A) response [(xml)](design_usecases_RemoveImpairment.html#23-delete-condition-a-response---xml-example) [(json)](design_usecases_RemoveImpairment.html#24-delete-condition-a-response---json-example)
-    * ClientSystem submits Update List request [(xml)](design_usecases_RemoveImpairment.html#25-update-list-request---xml-example) [(json)](design_usecases_RemoveImpairment.html#26-update-list-request---json-example)
-      * ServerSystem submits Update List response [(xml)](design_usecases_RemoveImpairment.html#27-update-list-response---xml-example) [(json)](design_usecases_RemoveImpairment.html#28-update-list-response---json-example)
+    * ClientSystem captures and structures Provenance information as new Provenance (RARecord-Provenance-1) resource
+    * ClientSystem contains new Provenance resource within CareConnect-RARecord-List-1 resource
+    * ClientSystem marks Impairment List.entry element in CareConnect-RARecord-List-1 resource as deleted [(xml)](design_usecases_RemoveImpairment.html#21-delete-condition-a-resource---xml-example) [(json)](design_usecases_RemoveImpairment.html#22-delete-condition-a-resource---json-example)
+    * ClientSystem submits Update List (A)request [(xml)](design_usecases_RemoveImpairment.html#23-update-list-request---xml-example) [(json)](design_usecases_RemoveImpairment.html#24-update-list-request---json-example)
+      * ServerSystem submits Update List response [(xml)](design_usecases_RemoveImpairment.html#25-update-list-response---xml-example) [(json)](design_usecases_RemoveImpairment.html#26-update-list-response---json-example)
 * Practitioner B updates Patient's RARecord, Remove an Impairment 'Mental Health Condition' operation
   * Practitioner B commits update
-    * ClientSystem submits Delete Condition (B) request [(xml)](design_usecases_RemoveImpairment.html#29-delete-condition-b-request---xml-example) [(json)](design_usecases_RemoveImpairment.html#210-delete-condition-b-request---json-example)
-      * ServerSystem submits Delete Condition (B) response (failure) [(xml)](design_usecases_RemoveImpairment.html#211-delete-condition-b-response---xml-example) [(json)](design_usecases_RemoveImpairment.html#212-delete-condition-b-response---json-example)
+    * ClientSystem submits Update List (B) request [(xml)](design_usecases_RemoveImpairment.html#27-update-list-b-request---xml-example) [(json)](design_usecases_RemoveImpairment.html#28-update-list-b-request---json-example)
+      * ServerSystem submits Update List (B) response (failure) [(xml)](design_usecases_RemoveImpairment.html#29-update-list-b-response---xml-example) [(json)](design_usecases_RemoveImpairment.html#210-update-list-b-response---json-example)
     * ClientSystem reports failure, aborts.
 
 ## 2 Interaction Examples ##
 
-### 2.1 Delete Condition (A) request - xml example ###
+### 2.1 Delete Condition A Resource - xml example
+#### resource ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/DeleteExample-RemoveConditionListResource.xml"
+title="Delete Condition List Resource A"
+type="xml" %}
 
+### 2.2 Delete Condition A Resource - json example
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+title="Delete Condition List Resource A"
+type="json" %}
+
+### 2.3 Update List Request - xml example
 #### http request & headers ####
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777 HTTP/1.1
+PUT https://clinicals.spineservices.nhs.uk/STU3/List/130f416a-055d-4a5d-a453-2b7c2de3b57b HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
 Content-Type: application/fhir+xml
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Condition.write:1
-If-Match: W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
+InteractionID: urn:nhs:names:services:raflags:List.write:1
+If-Match: W/"9554c538-1661-43b1-921b-efcbd2991c90"
 
 ```
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/DeleteConditionInstance2Request.xml"
-title="Delete Condition request example"
+relfilepath="usecaseexamples/DeleteExample-RemoveConditionListResource.xml"
+title="Update List Request example"
 type="xml" %}
 
-
-### 2.2 Delete Condition (A) request - json example ###
-
+### 2.4 Update List Request - json example
 #### http request & headers ####
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777 HTTP/1.1
+PUT https://clinicals.spineservices.nhs.uk/STU3/List/130f416a-055d-4a5d-a453-2b7c2de3b57b HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
-Content-Type: application/fhir+json
+Content-Type: application/fhir+xml
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Condition.write:1
-If-Match: W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
+InteractionID: urn:nhs:names:services:raflags:List.write:1
+If-Match: W/"9554c538-1661-43b1-921b-efcbd2991c90"
 
 ```
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/DeleteConditionInstance2Request.json"
-title="Delete Condition request example"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+title="Update List Request example"
 type="json" %}
 
 
-### 2.3 Delete Condition (A) response - xml example ###
-
+### 2.5 Update List Response - xml example
 #### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date: Tue, 24 Jul 2018 10:00:01 GMT
-Last-Modified:2018-07-24T10:00:02+00:00
-ETag: W/"0bf0b49c-9dfb-4587-9931-0b4a00819229”
+Date: Tue, 25 Jul 2018 11:00:03 GMT
+Last-Modified:2018-07-25T11:00:02+00:00
+ETag: W/"d65be6d8-128a-40f2-9a1d-b250d6485c6d”
 Content-Type: application/fhir+xml
 
 ```
@@ -89,149 +98,75 @@ Content-Type: application/fhir+xml
 #### http body ####
 {% include custom/fhir.codegrid.html
 relfilepath="usecaseexamples/DeleteConditionInstance2Response.xml"
-title="Delete Condition request example"
+title="Update List Response"
 type="xml" %}
 
-### 2.4 Delete Condition (A) response - json example ###
 
+### 2.6 Update List Response - json example
 #### http response & headers ####
 ```
 HTTP/1.1 200 OK
-Date: Tue, 24 Jul 2018 10:00:01 GMT
-Last-Modified:2018-07-24T10:00:02+00:00
-ETag: W/"0bf0b49c-9dfb-4587-9931-0b4a00819229”
-Content-Type: application/fhir+json
-
-```
-
-#### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/DeleteConditionInstance2Response.json"
-title="Delete Condition request example"
-type="json" %}
-
-### 2.5 Update List request - xml example ###
-
-#### http request & headers ####
-```
-PUT https://clinicals.spineservices.nhs.uk/STU3/List/4c8d19af-7755-4954-93df-93c964ddf349 HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-FromASID: 123456123456
-ToASID: 987654456789
-Content-Type: application/fhir+xml
-Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:List.write:1
-If-Match: W/"bb325b55-e8a0-41df-84bd-3ac2b026ab5b"
-
-```
-
-#### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/ListInstanceUpdateRequest.xml"
-title="Update List request example"
-type="xml" %}
-
-### 2.6 Update List request - json example ###
-
-#### http request & headers ####
-```
-PUT https://clinicals.spineservices.nhs.uk/STU3/List/4c8d19af-7755-4954-93df-93c964ddf349 HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-FromASID: 123456123456
-ToASID: 987654456789
-Content-Type: application/fhir+json
-Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:List.write:1
-If-Match: W/"bb325b55-e8a0-41df-84bd-3ac2b026ab5b"
-
-```
-
-#### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/ListInstanceUpdateRequest.json"
-title="Update List request example"
-type="json" %}
-
-### 2.7 Update List response - xml example ###
-
-#### http response & headers ####
-```
-HTTP/1.1 200 OK
-Date: Tue, 24 Jul 2018 10:00:02 GMT
-Last-Modified:2018-07-24T10:00:02+00:00
-ETag: W/"3de1a085-95f3-43d2-be3c-aa60b6b3da85”
+Date: Tue, 25 Jul 2018 11:00:03 GMT
+Last-Modified:2018-07-25T11:00:02+00:00
+ETag: W/"d65be6d8-128a-40f2-9a1d-b250d6485c6d”
 Content-Type: application/fhir+xml
 
 ```
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/ListInstanceUpdateResponse.xml"
-title="Update List response example"
-type="xml" %}
-
-### 2.8 Update List response - json example ###
-
-#### http response & headers ####
-```
-HTTP/1.1 200 OK
-Date: Tue, 24 Jul 2018 10:00:02 GMT
-Last-Modified:2018-07-24T10:00:02+00:00
-ETag: W/"3de1a085-95f3-43d2-be3c-aa60b6b3da85”
-Content-Type: application/fhir+json
-
-```
-
-#### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/ListInstanceUpdateResponse.json"
-title="Update List response example"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+title="Update List Response"
 type="json" %}
 
-### 2.9 Delete Condition (B) request - xml example ###
 
+### 2.7 Update List B Request - xml example
 #### http request & headers ####
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777 HTTP/1.1
+PUT https://clinicals.spineservices.nhs.uk/STU3/List/130f416a-055d-4a5d-a453-2b7c2de3b57b HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Content-Type: application/fhir+xml
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Condition.write:1
-If-Match: W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
+InteractionID: urn:nhs:names:services:raflags:List.write:1
+If-Match: W/"9554c538-1661-43b1-921b-efcbd2991c90"
 
 ```
-The only material difference between this request and Delete Condition (A) request will be time/order of receipt, and in the JWT payload.  
 
 #### http body ####
-[As example above](/design_usecases_RemoveImpairment.html#21-delete-condition-a-request---xml-example)
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/DeleteExample-RemoveConditionListResourceB.xml"
+title="Update List B Request example"
+type="xml" %}
 
-### 2.10 Delete Condition (B) request - json example ###
 
+### 2.8 Update List B Request - json example
 #### http request & headers ####
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/Condition/13aec731-02c5-42a2-b863-de889479e777 HTTP/1.1
+PUT https://clinicals.spineservices.nhs.uk/STU3/List/130f416a-055d-4a5d-a453-2b7c2de3b57b HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Content-Type: application/fhir+json
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Condition.write:1
-If-Match: W/"cf8e1249-dfa6-4003-9745-d1b213008c95"
+InteractionID: urn:nhs:names:services:raflags:List.write:1
+If-Match: W/"9554c538-1661-43b1-921b-efcbd2991c90"
 
 ```
-The only material difference between this request and Delete Condition (A) request will be time/order of receipt, and in the JWT payload.  
 
 #### http body ####
-[As example above](/design_usecases_RemoveImpairment.html#22-delete-condition-a-request---json-example)
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+title="Update List B Request example"
+type="json" %}
 
-### 2.11 Delete Condition (B) response - xml example ###
 
+### 2.9 Update List B Response - xml example
 #### http response & headers ####
 ```
 HTTP/1.1 409 CONFLICT
-Date: Tue, 24 Jul 2018 10:10:02 GMT
+Date: Tue, 25 Jul 2018 11:02:03 GMT
 Content-Type: application/fhir+xml
 
 ```
@@ -242,12 +177,11 @@ relfilepath="usecaseexamples/DeleteConditionFailOperationOutcome.xml"
 title="Read Fail Operation Outcome"
 type="xml" %}
 
-### 2.12 Delete Condition (B) response - json example ###
-
+### 2.10 Update List B Response - json example
 #### http response & headers ####
 ```
 HTTP/1.1 409 CONFLICT
-Date: Tue, 24 Jul 2018 10:10:02 GMT
+Date: Tue, 25 Jul 2018 11:02:03 GMT
 Content-Type: application/fhir+json
 
 ```
