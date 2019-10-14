@@ -1,5 +1,5 @@
 {
-  "category": "Accessible Information - requires communications professional"
+  "category": "AccessibleInformationCommunicationProfessional"
   "concepts": [
     {
       "conceptId": "204331000000107",
@@ -72,6 +72,12 @@
       "descriptionId": "2440101000000118",
       "preferred": "Preferred",
       "description": "Requires deafblind manual alphabet interpreter"
+    },
+    {
+      "conceptId": "945911000000109",
+      "descriptionId": "2419071000000113",
+      "preferred": "Preferred",
+      "description": "Requires lipspeaker"
     },
     {
       "conceptId": "945891000000106",

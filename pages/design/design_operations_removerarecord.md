@@ -54,7 +54,7 @@ GET Flags WHERE
   status=active
   category=RAFlag
 
-Foreach Flag in searchset, 
+  Foreach Flag in searchset, 
     Update status=>inactive & removalReason=>[RemovalReason]
 
 GET Consent WHERE
@@ -62,7 +62,7 @@ GET Consent WHERE
   status=active
   category=RAFlag
 
-Foreach Consent in searchset, 
+  Foreach Consent in searchset, 
     Update status=>inactive & removalReason=>[RemovalReason]
 
 GET List WHERE
@@ -70,9 +70,11 @@ GET List WHERE
   status=current
   category=[RAFlagCode]
 
-Foreach Condition on List, 
+  Foreach Condition on List, 
     Update Condition.clinicalstatus=>inactive &
     Update List.entry.deleted=>true
+
+  Update List.status=>inactive
 ```
 
 ## OperationDefinition ##

@@ -1,0 +1,77 @@
+{
+  "category": "IndividualCareRequirement"
+  "concepts": [
+    {
+      "conceptId": "105506000",
+      "descriptionId": "169598012",
+      "preferred": "Preferred",
+      "description": "Dependance on seeing eye dog"
+    },
+    {
+      "conceptId": "105506000",
+      "descriptionId": "2693323010",
+      "preferred": "Preferred",
+      "description": "Dependence on seeing eye dog"
+    },
+    {
+      "conceptId": "792871000000101",
+      "descriptionId": "1772571000000111",
+      "preferred": "Preferred",
+      "description": "Has anticipatory care plan"
+    },
+    {
+      "conceptId": "231501003",
+      "descriptionId": "346974017",
+      "preferred": "Preferred",
+      "description": "Needle phobia"
+    },
+    {
+      "conceptId": "829101000000101",
+      "descriptionId": "2155381000000118",
+      "preferred": "Preferred",
+      "description": "Needs assistance with medication regimen adherence"
+    },
+    {
+      "conceptId": "314434008",
+      "descriptionId": "458795017",
+      "preferred": "Preferred",
+      "description": "Preference for female healthcare professional"
+    },
+    {
+      "conceptId": "314435009",
+      "descriptionId": "458796016",
+      "preferred": "Preferred",
+      "description": "Preference for male healthcare professional"
+    },
+    {
+      "conceptId": "285035003",
+      "descriptionId": "423921014",
+      "preferred": "Preferred",
+      "description": "Unable to manage medication"
+    },
+    {
+      "conceptId": "285035003",
+      "descriptionId": "2164293010",
+      "preferred": "Synonym",
+      "description": "Self-care deficit for medication management"
+    },
+    {
+      "conceptId": "285035003",
+      "descriptionId": "1225937010",
+      "preferred": "Synonym",
+      "description": "Self care deficit for medication management"
+    },
+    {
+      "conceptId": "865301000000107",
+      "descriptionId": "2236791000000114",
+      "preferred": "Preferred",
+      "description": "Uses dispensed monitored dosage system"
+    },
+    {
+      "conceptId": "865301000000107",
+      "descriptionId": "2242701000000119",
+      "preferred": "Synonym",
+      "description": "Uses dispensed dosette box"
+    }
+  ]
+}

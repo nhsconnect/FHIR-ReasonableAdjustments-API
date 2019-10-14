@@ -1,5 +1,5 @@
 {
-  "category": "Additional Support"
+  "category": "AdditionalSupport"
   "concepts": [
     {
       "conceptId": "816361000000101",
@@ -30,6 +30,18 @@
       "descriptionId": "390621000000117",
       "preferred": "Preferred",
       "description": "Requires constant supervision"
+    },
+    {
+      "conceptId": "225861007",
+      "descriptionId": "339369015",
+      "preferred": "Preferred",
+      "description": "Unsafe to be left alone"
+    },
+    {
+      "conceptId": "225861007",
+      "descriptionId": "339368011",
+      "preferred": "Synonym",
+      "description": "Not safe to be left alone"
     }
   ]
 }

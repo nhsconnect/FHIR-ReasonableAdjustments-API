@@ -1,11 +1,17 @@
 {
-  "category": "Adjustments for specific clinical risks"
+  "category": "SpecificClinicalRiskAdjustment"
   "concepts": [
     {
       "conceptId": "766561000000109",
       "descriptionId": "1707311000000116",
       "preferred": "Preferred",
       "description": "Adult safeguarding concern"
+    },
+    {
+      "conceptId": "286710008",
+      "descriptionId": "426154017",
+      "preferred": "Preferred",
+      "description": "Anxious character"
     },
     {
       "conceptId": "609403008",
@@ -147,15 +153,15 @@
     },
     {
       "conceptId": "87502001",
-      "descriptionId": "507603014",
-      "preferred": "Synonym",
-      "description": "Po"
-    },
-    {
-      "conceptId": "87502001",
       "descriptionId": "1235243014",
       "preferred": "Synonym",
       "description": "Risk for altered body temperature"
+    },
+    {
+      "conceptId": "87502001",
+      "descriptionId": "507603014",
+      "preferred": "Synonym",
+      "description": "Po"
     },
     {
       "conceptId": "70693003",
@@ -165,9 +171,9 @@
     },
     {
       "conceptId": "70693003",
-      "descriptionId": "501642015",
+      "descriptionId": "2478813012",
       "preferred": "Synonym",
-      "description": "Po"
+      "description": "Vulnerable to skin tissue breakdown"
     },
     {
       "conceptId": "70693003",
@@ -183,15 +189,15 @@
     },
     {
       "conceptId": "70693003",
-      "descriptionId": "1233304010",
+      "descriptionId": "213785013",
       "preferred": "Synonym",
-      "description": "Skin integrity impairment risk"
+      "description": "Potential for skin breakdown"
     },
     {
       "conceptId": "70693003",
-      "descriptionId": "2478813012",
+      "descriptionId": "501642015",
       "preferred": "Synonym",
-      "description": "Vulnerable to skin tissue breakdown"
+      "description": "Po"
     },
     {
       "conceptId": "70693003",
@@ -219,9 +225,9 @@
     },
     {
       "conceptId": "70693003",
-      "descriptionId": "213785013",
+      "descriptionId": "1233304010",
       "preferred": "Synonym",
-      "description": "Potential for skin breakdown"
+      "description": "Skin integrity impairment risk"
     },
     {
       "conceptId": "129689002",
@@ -344,10 +350,28 @@
       "description": "At risk of UTI (urinary tract infection)"
     },
     {
+      "conceptId": "248041005",
+      "descriptionId": "370306012",
+      "preferred": "Preferred",
+      "description": "Challenging behaviour"
+    },
+    {
+      "conceptId": "248041005",
+      "descriptionId": "370307015",
+      "preferred": "Synonym",
+      "description": "Challenging behavior"
+    },
+    {
       "conceptId": "836881000000105",
       "descriptionId": "2172861000000111",
       "preferred": "Preferred",
       "description": "Child is cause for safeguarding concern"
+    },
+    {
+      "conceptId": "286711007",
+      "descriptionId": "426155016",
+      "preferred": "Preferred",
+      "description": "Over-anxious character"
     }
   ]
 }

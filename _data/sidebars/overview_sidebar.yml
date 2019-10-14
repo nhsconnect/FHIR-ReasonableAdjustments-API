@@ -1,7 +1,7 @@
 entries:
 - title: FHIR&reg; Reasonable Adjustments API
   product: FHIR&reg; Reasonable Adjustments API
-  version: 0.2.0-beta
+  version: 0.3.0-beta
   levels: one
   folders:
 
@@ -99,12 +99,12 @@ entries:
     - title: Read
       url: /design_interactions_read.html
       output: web
-    - title: Update
+    - title: Update/Delete
       url: /design_interactions_update.html
       output: web
-    - title: Delete
-      url: /design_interactions_delete.html
-      output: web
+#    - title: Delete
+#      url: /design_interactions_delete.html
+#      output: web
     - title: Remove RA Record
       url: /design_operations_removerarecord.html
       output: web

@@ -1,0 +1,53 @@
+{
+  "category": "AdditionalCommunicationSupport"
+  "concepts": [
+    {
+      "conceptId": "307089001",
+      "descriptionId": "450267015",
+      "preferred": "Preferred",
+      "description": "Difficulty analysing information"
+    },
+    {
+      "conceptId": "307089001",
+      "descriptionId": "3300394016",
+      "preferred": "Synonym",
+      "description": "Difficulty analyzing information"
+    },
+    {
+      "conceptId": "311540003",
+      "descriptionId": "455129011",
+      "preferred": "Preferred",
+      "description": "Difficulty processing information accurately"
+    },
+    {
+      "conceptId": "311543001",
+      "descriptionId": "455132014",
+      "preferred": "Preferred",
+      "description": "Difficulty processing information at normal speed"
+    },
+    {
+      "conceptId": "737350008",
+      "descriptionId": "3527492019",
+      "preferred": "Preferred",
+      "description": "Needs assistance with communication"
+    },
+    {
+      "conceptId": "955771000000100",
+      "descriptionId": "2437361000000115",
+      "preferred": "Preferred",
+      "description": "Uses apps on mobile device to support communication"
+    },
+    {
+      "conceptId": "954871000000106",
+      "descriptionId": "2435441000000117",
+      "preferred": "Preferred",
+      "description": "Uses switches for communication"
+    },
+    {
+      "conceptId": "936561000000105",
+      "descriptionId": "2398641000000111",
+      "preferred": "Preferred",
+      "description": "Uses Tadoma method for communication"
+    }
+  ]
+}

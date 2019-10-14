@@ -1,0 +1,35 @@
+{
+  "category": "EnvironmentAdjustment"
+  "concepts": [
+    {
+      "conceptId": "246622003",
+      "descriptionId": "368401018",
+      "preferred": "Preferred",
+      "description": "Eyes sensitive to light"
+    },
+    {
+      "conceptId": "246622003",
+      "descriptionId": "368400017",
+      "preferred": "Synonym",
+      "description": "Does not like light"
+    },
+    {
+      "conceptId": "246622003",
+      "descriptionId": "368399012",
+      "preferred": "Synonym",
+      "description": "Light affects eyes"
+    },
+    {
+      "conceptId": "247994001",
+      "descriptionId": "370229018",
+      "preferred": "Preferred",
+      "description": "Noise intolerance"
+    },
+    {
+      "conceptId": "409668002",
+      "descriptionId": "2471437014",
+      "preferred": "Preferred",
+      "description": "Photophobia"
+    }
+  ]
+}

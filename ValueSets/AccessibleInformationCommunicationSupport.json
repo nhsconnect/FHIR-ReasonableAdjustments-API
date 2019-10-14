@@ -1,5 +1,5 @@
 {
-  "category": "Accessible Information - communications support"
+  "category": "AccessibleInformationCommunicationSupport"
   "concepts": [
     {
       "conceptId": "441092009",
@@ -56,10 +56,40 @@
       "description": "Uses a legal advocate"
     },
     {
+      "conceptId": "288595009",
+      "descriptionId": "428280015",
+      "preferred": "Preferred",
+      "description": "Does use a non-speech system for communication"
+    },
+    {
+      "conceptId": "288595009",
+      "descriptionId": "428279018",
+      "preferred": "Synonym",
+      "description": "Uses a non-speech system for communication"
+    },
+    {
       "conceptId": "761541000000100",
       "descriptionId": "1687181000000115",
       "preferred": "Preferred",
       "description": "Uses alternative communication skill"
+    },
+    {
+      "conceptId": "716524009",
+      "descriptionId": "3306182012",
+      "preferred": "Preferred",
+      "description": "Uses augmentative and alternative communication"
+    },
+    {
+      "conceptId": "716524009",
+      "descriptionId": "3306183019",
+      "preferred": "Synonym",
+      "description": "Uses alternative and augmentative communication"
+    },
+    {
+      "conceptId": "716524009",
+      "descriptionId": "3306184013",
+      "preferred": "Synonym",
+      "description": "Uses AAC (augmentative and alternative communication)"
     },
     {
       "conceptId": "415803005",
@@ -98,10 +128,46 @@
       "description": "Uses electronic note taker"
     },
     {
+      "conceptId": "1077121000000101",
+      "descriptionId": "2700891000000115",
+      "preferred": "Preferred",
+      "description": "Uses functional communication skills"
+    },
+    {
+      "conceptId": "1082531000000103",
+      "descriptionId": "2712761000000115",
+      "preferred": "Preferred",
+      "description": "Uses gestures for communication"
+    },
+    {
+      "conceptId": "719363002",
+      "descriptionId": "3316095010",
+      "preferred": "Preferred",
+      "description": "Uses high technology communication device"
+    },
+    {
+      "conceptId": "719363002",
+      "descriptionId": "3316099016",
+      "preferred": "Synonym",
+      "description": "Does use high technology communication device"
+    },
+    {
       "conceptId": "445143008",
       "descriptionId": "2871059013",
       "preferred": "Preferred",
       "description": "Uses lipspeaker"
+    },
+    {
+      "conceptId": "719364008",
+      "descriptionId": "3316096011",
+      "preferred": "Preferred",
+      "description": "Uses low technology communication device"
+    },
+    {
+      "conceptId": "719364008",
+      "descriptionId": "3316094014",
+      "preferred": "Synonym",
+      "description": "Does use low technology communication device"
     },
     {
       "conceptId": "415805003",
@@ -122,6 +188,36 @@
       "description": "Uses manual note taker"
     },
     {
+      "conceptId": "719370002",
+      "descriptionId": "3316121012",
+      "preferred": "Preferred",
+      "description": "Uses non-powered communication device"
+    },
+    {
+      "conceptId": "719370002",
+      "descriptionId": "3316115013",
+      "preferred": "Synonym",
+      "description": "Does use non-powered communication device"
+    },
+    {
+      "conceptId": "288583009",
+      "descriptionId": "428265014",
+      "preferred": "Preferred",
+      "description": "Does use non-verbal communication"
+    },
+    {
+      "conceptId": "288583009",
+      "descriptionId": "428266010",
+      "preferred": "Synonym",
+      "description": "Uses non-verbal communication"
+    },
+    {
+      "conceptId": "1082541000000107",
+      "descriptionId": "2712781000000112",
+      "preferred": "Preferred",
+      "description": "Uses objects for communication"
+    },
+    {
       "conceptId": "720462004",
       "descriptionId": "3320918017",
       "preferred": "Preferred",
@@ -132,6 +228,30 @@
       "descriptionId": "2173841000000115",
       "preferred": "Preferred",
       "description": "Uses Personal Communication Passport"
+    },
+    {
+      "conceptId": "719393008",
+      "descriptionId": "3316188015",
+      "preferred": "Preferred",
+      "description": "Uses photographs for communication"
+    },
+    {
+      "conceptId": "719393008",
+      "descriptionId": "3316187013",
+      "preferred": "Synonym",
+      "description": "Does use photographs for communication"
+    },
+    {
+      "conceptId": "719373000",
+      "descriptionId": "3316123010",
+      "preferred": "Preferred",
+      "description": "Uses powered communication device"
+    },
+    {
+      "conceptId": "719373000",
+      "descriptionId": "3316122017",
+      "preferred": "Synonym",
+      "description": "Does use powered communication device"
     },
     {
       "conceptId": "404903008",
@@ -158,6 +278,18 @@
       "description": "Uses STTR (speech to text reporter)"
     },
     {
+      "conceptId": "719754002",
+      "descriptionId": "3317673019",
+      "preferred": "Preferred",
+      "description": "Uses symbols for communication"
+    },
+    {
+      "conceptId": "719754002",
+      "descriptionId": "3317672012",
+      "preferred": "Synonym",
+      "description": "Does use symbols for communication"
+    },
+    {
       "conceptId": "445488003",
       "descriptionId": "2872010011",
       "preferred": "Preferred",
@@ -168,6 +300,30 @@
       "descriptionId": "2872011010",
       "preferred": "Synonym",
       "description": "Uses textphone"
+    },
+    {
+      "conceptId": "288601001",
+      "descriptionId": "428287017",
+      "preferred": "Preferred",
+      "description": "Does use verbal communication"
+    },
+    {
+      "conceptId": "288601001",
+      "descriptionId": "428286014",
+      "preferred": "Synonym",
+      "description": "Uses verbal communication"
+    },
+    {
+      "conceptId": "716537007",
+      "descriptionId": "3306221011",
+      "preferred": "Preferred",
+      "description": "Uses voice amplifier to support communication"
+    },
+    {
+      "conceptId": "762361000000101",
+      "descriptionId": "1693011000000119",
+      "preferred": "Preferred",
+      "description": "Uses voice output communication aid"
     }
   ]
 }

@@ -24,7 +24,7 @@ During appointment Nurse discusses RA Record, Patient requests recording of 'Eas
 
 * Practitioner logged into ClientSystem, traces & verifies demographic info
 * Practitioner opens Patient's RARecord
-  * System retrieves and displays RARecord for Patient's NHS
+  * System retrieves and displays RARecord for Patient's NHS Number
 
 * Practitioner discusses RARecord and RA with Patient
 * Patient agrees to add Adjustment 'Easy Read'
@@ -39,20 +39,37 @@ During appointment Nurse discusses RA Record, Patient requests recording of 'Eas
 * Patient agrees to add Impairment 'Mental Health Disability' with supporting text
   * Practitioner adds Impairment from coded picklist (elaborates w separate freetext)  
     * ClientSystem captures and structures Impairment information as new Impairment (CareConnect-RARecord-Condition-1) resource
+    [(xml)](design_usecases_CreateRARecord.html#21-create-condition-resource---xml-example) [(json)](design_usecases_CreateRARecord.html#22-create-condition-resource---json-example)
 * Practitioner commits RARecord
-  * ClientSystem submits Create Flag request [(xml)](design_usecases_AddAdjustmentAddImpairment.html#21-create-flag-request---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#22-create-flag-request---json-example)
-    * ServerSystem submits Create Flag response [(xml)](design_usecases_AddAdjustmentAddImpairment.html#23-create-flag-response---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#24-create-flag-response---json-example)
-  * ClientSystem submits Create Condition request [(xml)](design_usecases_AddAdjustmentAddImpairment.html#25-create-condition-request---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#26-create-condition-request---json-example)
-    * ServerSystem submits Create Condition response [(xml)](design_usecases_AddAdjustmentAddImpairment.html#27-create-condition-response---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#28-create-condition-response---json-example)
-  * ClientSystem updates existing CareConnect-RARecord-List-1 to reference / identify new Impairment resource
-  * ClientSystem submits Update List request [(xml)](design_usecases_AddAdjustmentAddImpairment.html#29-update-list-request---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#210-update-list-request---json-example)
-    * ServerSystem submits Update List response [(xml)](design_usecases_AddAdjustmentAddImpairment.html#211-update-list-response---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#212-update-list-response---json-example)
+  * ClientSystem submits Create Flag request [(xml)](design_usecases_AddAdjustmentAddImpairment.html#23-create-flag-request---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#24-create-flag-request---json-example)
+    * ServerSystem submits Create Flag response [(xml)](design_usecases_AddAdjustmentAddImpairment.html#25-create-flag-response---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#26-create-flag-response---json-example)
+    
+  * ClientSystem captures and structures Provenance information as new Provenance (RARecord-Provenance-1) resource [(xml)](design_usecases_CreateRARecord.html#27-create-provenance-resource---xml-example) [(json)](design_usecases_CreateRARecord.html#28create-provenance-resource---json-example)
+    * ClientSystem contains new Impairment resource within CareConnect-RARecord-List-1 resource
+    * ClientSystem contains new Provenance resource within CareConnect-RARecord-List-1 resource [(xml)](design_usecases_CreateRARecord.html#29-create-list-condition-resource---xml-example) [(json)](design_usecases_CreateRARecord.html#210-create-list-condition-resource---json-example)
+    * ClientSystem submits Update List Condition request [(xml)](design_usecases_CreateRARecord.html#211-update-list-condition-request---xml-example) [(json)](design_usecases_CreateRARecord.html#212-update-list-condition-request---json-example)
+      * ServerSystem submits Update List Condition response [(xml)](design_usecases_CreateRARecord.html#213-update-list-condition-response---xml-example) [(json)](design_usecases_CreateRARecord.html#214-update-list-condition-response---json-example)
 
 ## 2 Interaction Examples ##
 
-Examples of http requests, responses and payloads
+Examples of resources, http requests, responses and payloads
 
-### 2.1 Create Flag Request - xml example ###
+### 2.1 Create Condition Resource - xml example ###
+#### resource ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-CreateConditionRequest.xml"
+title="Create Condition Resource"
+type="xml" %}
+
+### 2.2 Create Condition Resource - json example ###
+#### resource ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/AddExample-CreateConditionRequest.json"
+title="Create Condition Resource"
+type="json" %}
+
+
+### 2.3 Create Flag Request - xml example ###
 
 #### http request & headers ####
 ```
@@ -72,7 +89,7 @@ relfilepath="usecaseexamples/AddExample-CreateFlagRequest.xml"
 title="Create Flag Request"
 type="xml" %}
 
-### 2.2 Create Flag Request - json example ###
+### 2.4 Create Flag Request - json example ###
 
 #### http request & headers ####
 ```
@@ -92,7 +109,7 @@ relfilepath="usecaseexamples/AddExample-CreateFlagRequest.json"
 title="Create Flag Request"
 type="json" %}
 
-### 2.3 Create Flag Response - xml example ###
+### 2.5 Create Flag Response - xml example ###
 
 #### http request & headers ####
 ```
@@ -111,7 +128,7 @@ relfilepath="usecaseexamples/AddExample-CreateFlagResponse.xml"
 title="Create Flag Response"
 type="xml" %}
 
-### 2.4 Create Flag Response - json example ###
+### 2.6 Create Flag Response - json example ###
 
 #### http request & headers ####
 ```
@@ -130,160 +147,113 @@ relfilepath="usecaseexamples/AddExample-CreateFlagResponse.json"
 title="Create Flag Response"
 type="json" %}
 
-### 2.5 Create Condition Request - xml example ###
 
-#### http request & headers ####
-```
-POST https://clinicals.spineservices.nhs.uk/STU3/Condition HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-FromASID: 654321123456
-ToASID: 987654456789
-Content-Type: application/fhir+xml
-Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Condition.write:1
-
-```
-
-#### http body ####
+### 2.7 Create Provenance Resource - xml example ###
+#### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-CreateConditionRequest.xml"
-title="Create Condition Request"
+relfilepath="usecaseexamples/AddExample-CreateProvenanceResource.xml"
+title="Create Provenance Resource"
 type="xml" %}
 
-### 2.6 Create Condition Request - json example ###
-
-#### http request & headers ####
-```
-POST https://clinicals.spineservices.nhs.uk/STU3/Condition HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-FromASID: 654321123456
-ToASID: 987654456789
-Content-Type: application/fhir+json
-Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Condition.write:1
-
-```
-
-#### http body ####
+### 2.8 Create Provenance Resource - json example ###
+#### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-CreateConditionRequest.json"
-title="Create Condition Request"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+title="Create Provenance Resource"
 type="json" %}
 
-### 2.7 Create Condition Response - xml example ###
-
-#### http request & headers ####
-```
-HTTP/1.1 201 Created
-Date: Wed, 24 Jul 2018 10:01:00 GMT
-Last-Modified: 2018-07-24T10:01:00+00:00
-Location: https://clinicals.spineservices.nhs.uk/STU3/Condition/6be8bee9-e727-4564-a904-49507576f8be/_history/a9b91e41-30ad-43a4-a2da-79b9be622169
-ETag: W/"a9b91e41-30ad-43a4-a2da-79b9be622169”
-Content-Type: application/fhir+xml
-
-```
-
-#### http body ####
+### 2.9 Add to List Condition Resource - xml example ###
+#### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-CreateConditionResponse.xml"
-title="Create Condition Response"
+relfilepath="usecaseexamples/AddExample-ListConditionResource.xml"
+title="Create List Condition Resource"
 type="xml" %}
 
-### 2.8 Create Condition Response - json example ###
-
-#### http request & headers ####
-```
-HTTP/1.1 201 Created
-Date: Wed, 24 Jul 2018 10:01:00 GMT
-Last-Modified: 2018-07-24T10:01:00+00:00
-Location: https://clinicals.spineservices.nhs.uk/STU3/Condition/6be8bee9-e727-4564-a904-49507576f8be/_history/a9b91e41-30ad-43a4-a2da-79b9be622169
-ETag: W/"a9b91e41-30ad-43a4-a2da-79b9be622169”
-Content-Type: application/fhir+json
-
-```
-
-#### http body ####
+### 2.10 Add to List Condition Resource - json example ###
+#### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-CreateConditionResponse.json"
-title="Create Condition Response"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+title="Create List Condition Resource"
 type="json" %}
 
-### 2.9 Update List Request - xml example ###
 
+### 2.11 Update List Condition Request - xml example ###
 #### http request & headers ####
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/List/e00c5a85-d34f-4075-96ac-b787deb484b1 HTTP/1.1
+POST https://clinicals.spineservices.nhs.uk/STU3/List HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-FromASID: 654321123456
+FromASID: 123456123456
 ToASID: 987654456789
+Content-Type: application/fhir+xml
 Prefer: return=representation
 InteractionID: urn:nhs:names:services:raflags:List.write:1
-If-Match: W/"5b703b55-cedc-4c19-b2aa-0666384eab1a"
-
 
 ```
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-UpdateListRequest.xml"
-title="Update List Request"
+relfilepath="usecaseexamples/AddExample-ListConditionResource.xml"
+title="Create List Condition Request"
 type="xml" %}
 
-### 2.10 Update List Request - json example ###
 
+### 2.12 Update List Condition Request - json example ###
 #### http request & headers ####
 ```
-PUT https://clinicals.spineservices.nhs.uk/STU3/List/e00c5a85-d34f-4075-96ac-b787deb484b1 HTTP/1.1
+POST https://clinicals.spineservices.nhs.uk/STU3/List HTTP/1.1
 Authorization: Bearer [jwt_token_string]
-FromASID: 654321123456
+FromASID: 123456123456
 ToASID: 987654456789
+Content-Type: application/fhir+json
 Prefer: return=representation
 InteractionID: urn:nhs:names:services:raflags:List.write:1
-If-Match: W/"5b703b55-cedc-4c19-b2aa-0666384eab1a"
 
 ```
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-UpdateListRequest.json"
-title="Update List Request"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+title="Create List Condition Request"
 type="json" %}
 
-### 2.11 Update List Response - xml example ###
 
-#### http request & headers ####
+### 2.13 Update List Condition Response - xml example ###
+#### http response & headers ####
 ```
-HTTP/1.1 200 OK
-Date: Tue, 24 Jul 2018 10:02:00 GMT
-Last-Modified:2018-07-24T10:02:00+00:00
-ETag: W/"a8cbe427-7195-482e-81ff-b5809db6d08c”
+HTTP/1.1 201 Created
+Date: Tue, 23 Jul 2018 11:00:00 GMT
+Last-Modified:2018-07-23T11:00:00+00:00
+Location: https://clinicals.spineservices.nhs.uk/STU3/List/130f416a-055d-4a5d-a453-2b7c2de3b57b/_history/9554c538-1661-43b1-921b-efcbd2991c90
+ETag: W/"9554c538-1661-43b1-921b-efcbd2991c90”
 Content-Type: application/fhir+xml
 
 ```
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-UpdateListResponse.xml"
-title="Update List Response"
+relfilepath="usecaseexamples/AddExample-ListConditionResponse.xml"
+title="Create List Condition Response"
 type="xml" %}
 
-### 2.12 Update List Response - json example ###
 
-#### http request & headers ####
+### 2.14 Update List Condition Response - json example ###
+#### http response & headers ####
 ```
-HTTP/1.1 200 OK
-Date: Tue, 24 Jul 2018 10:02:00 GMT
-Last-Modified:2018-07-24T10:02:00+00:00
-ETag: W/"a8cbe427-7195-482e-81ff-b5809db6d08c”
+HTTP/1.1 201 Created
+Date: Tue, 23 Jul 2018 11:00:00 GMT
+Last-Modified:2018-07-23T11:00:00+00:00
+Location: https://clinicals.spineservices.nhs.uk/STU3/List/130f416a-055d-4a5d-a453-2b7c2de3b57b/_history/9554c538-1661-43b1-921b-efcbd2991c90
+ETag: W/"9554c538-1661-43b1-921b-efcbd2991c90”
 Content-Type: application/fhir+json
 
 ```
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-UpdateListResponse.json"
-title="Update List Response"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+title="Create List Condition Response"
 type="json" %}
+
 
 ---
 ---

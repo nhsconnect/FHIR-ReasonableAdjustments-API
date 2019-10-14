@@ -38,8 +38,7 @@ Patient has an RA Flag; Practitioner requests record.
       * ServerSystem submits Read Flag response [(xml)](design_usecases_ReadRARecord.html#27-read-flag-response---xml-example) [(json)](design_usecases_ReadRARecord.html#28-read-flag-response---json-example)
     * ClientSystem submits Read List request [(xml)](design_usecases_ReadRARecord.html#29-read-list-request---xml-example) [(json)](design_usecases_ReadRARecord.html#210-read-list-request---json-example)
       * ServerSystem submits Read List response [(xml)](design_usecases_ReadRARecord.html#211-read-list-response---xml-example) [(json)](design_usecases_ReadRARecord.html#212-read-list-response---json-example)
-    * ClientSystem submits Read Conditions request [(xml)](design_usecases_ReadRARecord.html#213-read-conditions-request---xml-example) [(json)](design_usecases_ReadRARecord.html#214-read-conditions-request---json-example)
-      * ServerSystem submits Read Conditions response [(xml)](design_usecases_ReadRARecord.html#215-read-conditions-response---xml-example) [(json)](design_usecases_ReadRARecord.html#216-read-conditions-response---json-example)
+
 
 ---
 ## 2 Interaction Examples ##
@@ -58,17 +57,7 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Consent.read:1
-
-
-
-
-
-
-
-
-
-"
+InteractionID: urn:nhs:names:services:raflags:Consent.read:1"
 json="GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  patient=999999998&
  status=active&
@@ -241,76 +230,9 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/RARecord-ReadListResponseBody-example.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Read List response"
 type="json" %}
-
-### 2.13 Read Conditions request - xml example ###
-#### http request & headers ####
-```
-GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
- _list=e00c5a85-d34f-4075-96ac-b787deb484b1&
- clinical-status=active&
- _format=xml HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-FromASID: 654321123456
-ToASID: 987654456789
-Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Condition.read:1
-
-```
-
-#### http body ####
-**None**
-
-### 2.14 Read Conditions request - json example ###
-#### http request & headers ####
-```
-GET https://clinicals.spineservices.nhs.uk/STU3/Condition?
- _list=e00c5a85-d34f-4075-96ac-b787deb484b1&
- clinical-status=active&
- _format=json HTTP/1.1
-Authorization: Bearer [jwt_token_string]
-FromASID: 654321123456
-ToASID: 987654456789
-Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Condition.read:1
-
-```
-
-#### http body ####
-**None**
-
-### 2.15 Read Conditions response - xml example ###
-#### http response & headers ####
-```
-HTTP/1.1 200 OK
-Date: Tue, 24 Jul 2018 11:00:01 GMT
-Content-Type: application/fhir+xml
-
-```
-
-#### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/RARecord-ReadConditionsResponseBody-example.xml"
-title="Read Conditions response"
-type="xml" %}
-
-### 2.16 Read Conditions response - json example ###
-#### http response & headers ####
-```
-HTTP/1.1 200 OK
-Date: Tue, 24 Jul 2018 11:00:01 GMT
-Content-Type: application/fhir+json
-
-```
-
-#### http body ####
-{% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/RARecord-ReadConditionsResponseBody-example.json"
-title="Read Conditions response"
-type="json" %}
-
 
       
 ---
