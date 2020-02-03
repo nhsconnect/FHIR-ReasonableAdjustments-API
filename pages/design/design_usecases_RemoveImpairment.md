@@ -97,7 +97,7 @@ Content-Type: application/fhir+xml
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/DeleteConditionInstance2Response.xml"
+relfilepath="usecaseexamples/DeleteExample-RemoveConditionListResponse.xml"
 title="Update List Response"
 type="xml" %}
 

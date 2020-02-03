@@ -89,6 +89,15 @@
                     </valueReference>
                 </extension>
             </extension>
+            <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-RemovalReason-1">
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1"/>
+                        <code value="Error"/>
+                        <display value="The Reasonable Adjustment Flag was created in error"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
             <clinicalStatus value="inactive"/>
             <category>
                 <coding>
@@ -197,7 +206,7 @@
         </item>
     </entry>
     <entry>
-        <deleted value="false"/>
+        <deleted value="true"/>
         <date value="2018-07-24T10:01:00+00:00"/>
         <item>
             <reference value="urn:uuid:6be8bee9-e727-4564-a904-49507576f8be"/>

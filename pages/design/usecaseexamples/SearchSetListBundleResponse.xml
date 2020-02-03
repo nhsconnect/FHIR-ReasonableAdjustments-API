@@ -147,7 +147,6 @@
                     </agent>
                 </Provenance>
             </contained>
-            
             <status value="current"/>
             <mode value="changes"/>
             <title value="Reasonable Adjustment List"/>
@@ -180,14 +179,14 @@
                 <deleted value="false"/>
                 <date value="2018-07-24T10:01:00+00:00"/>
                 <item>
-                    <reference value="urn:uuid:557ccfc3-0c78-48bf-aedd-70cc08af2ba1"/>
+                    <reference value="urn:uuid:6be8bee9-e727-4564-a904-49507576f8be"/>
                 </item>
             </entry>
             <entry>
                 <deleted value="false"/>
                 <date value="2018-07-24T10:01:00+00:00"/>
                 <item>
-                    <reference value="urn:uuid:8ce7de6b-1307-432d-8e96-ae6a613ca3e4"/>
+                    <reference value="urn:uuid:fe71140b-3a30-45a3-b492-695b5f5e3717"/>
                 </item>
             </entry>
         </List>

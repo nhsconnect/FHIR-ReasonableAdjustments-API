@@ -54,7 +54,7 @@ After successful client-side construction of the new Condition and Provenance re
 * update the existing List instance
 
 
-<img src="images/sequenceDiagrams/CreateListCondition.png">
+<img src="images/sequenceDiagrams/CreateListCondition.png" style="max-height: 927px">
 
 ### Create Condition request - response ###
 

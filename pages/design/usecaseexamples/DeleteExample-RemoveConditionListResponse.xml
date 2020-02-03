@@ -69,105 +69,6 @@
             </agent>
         </Provenance>
     </contained>
-    <contained>
-        <Condition xmlns="http://hl7.org/fhir">
-            <id value="6be8bee9-e727-4564-a904-49507576f8be"/>
-            <meta>
-                <versionId value="62221f9b-22a0-4dc1-9c1a-c4231b38e819"/>
-                <lastUpdated value="2018-07-25T11:00:00+00:00"/>
-                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1" />
-            </meta>
-            <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1">
-                <extension url="created">
-                    <valueReference>
-                        <reference value="urn:uuid:fe71140b-3a30-45a3-b492-695b5f5e3717"/>
-                    </valueReference>
-                </extension>
-                <extension url="updated">
-                    <valueReference>
-                        <reference value="urn:uuid:a2a5895b-9c52-4921-a0b6-7cdd28e941bf"/>
-                    </valueReference>
-                </extension>
-            </extension>
-            <clinicalStatus value="inactive"/>
-            <category>
-                <coding>
-                    <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1"/>
-                    <code value="issue"/>
-                    <display value="Issue"/>
-                </coding>
-            </category>
-            <code>
-                <coding>
-                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
-                    <code value="720821000000105"/>
-                    <display value="Mental health condition(s)"/>
-                </coding>
-                <text value="Patient diagnosed with Stranger anxiety (disorder). Consider home-visit"/>
-            </code>
-            <subject>
-                <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
-            </subject>
-        </Condition>
-    </contained>
-    <contained>
-        <Provenance>
-            <id value="fe71140b-3a30-45a3-b492-695b5f5e3717"/>
-            <meta>
-                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"/>
-            </meta>
-            <target>
-                <reference value="Condition/6be8bee9-e727-4564-a904-49507576f8be"/>
-            </target>
-            <recorded value="2018-07-24T10:01:00+00:00"/>
-            <agent>
-                <role>
-                    <coding>
-                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"/>
-                        <code value="R1974"/>
-                        <display value="Community Learning Disabilities Nurse"/>
-                    </coding>
-                </role>
-                <whoReference>
-                    <reference value="https://sds.spineservices.nhs.uk/STU3/Practitioner/4tr6ee6a9"/>
-                    <display value="Nurse N"/>
-                </whoReference>
-                <onBehalfOfReference>
-                    <reference value="https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7"/>
-                    <display value="Some Hospital Learning Disability Support Department"/>
-                </onBehalfOfReference>
-            </agent>
-        </Provenance>
-    </contained>
-    <contained>
-        <Provenance>
-            <id value="a2a5895b-9c52-4921-a0b6-7cdd28e941bf"/>
-            <meta>
-                <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"/>
-            </meta>
-            <target>
-                <reference value="Condition/6be8bee9-e727-4564-a904-49507576f8be"/>
-            </target>
-            <recorded value="2018-07-25T11:00:00+00:00"/>
-            <agent>
-                <role>
-                    <coding>
-                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"/>
-                        <code value="R0260"/>
-                        <display value="General Medical Practitioner"/>
-                    </coding>
-                </role>
-                <whoReference>
-                    <reference value="https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9"/>
-                    <display value="Dr.Y"/>
-                </whoReference>
-                <onBehalfOfReference>
-                    <reference value="https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7"/>
-                    <display value="Some GP Clinic"/>
-                </onBehalfOfReference>
-            </agent>
-        </Provenance>
-    </contained>
     <status value="current"/>
     <mode value="changes"/>
     <title value="Reasonable Adjustment List"/>
@@ -194,27 +95,6 @@
         <date value="2018-07-23T11:00:00+00:00"/>
         <item>
             <reference value="urn:uuid:8ce7de6b-1307-432d-8e96-ae6a613ca3e4"/>
-        </item>
-    </entry>
-    <entry>
-        <deleted value="false"/>
-        <date value="2018-07-24T10:01:00+00:00"/>
-        <item>
-            <reference value="urn:uuid:6be8bee9-e727-4564-a904-49507576f8be"/>
-        </item>
-    </entry>
-    <entry>
-        <deleted value="false"/>
-        <date value="2018-07-24T10:01:00+00:00"/>
-        <item>
-            <reference value="urn:uuid:fe71140b-3a30-45a3-b492-695b5f5e3717"/>
-        </item>
-    </entry>
-    <entry>
-        <deleted value="false"/>
-        <date value="2018-07-25T11:00:00+00:00"/>
-        <item>
-            <reference value="urn:uuid:a2a5895b-9c52-4921-a0b6-7cdd28e941bf"/>
         </item>
     </entry>
 </List>

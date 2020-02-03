@@ -39,16 +39,16 @@ During appointment Nurse discusses RA Record, Patient requests recording of 'Eas
 * Patient agrees to add Impairment 'Mental Health Disability' with supporting text
   * Practitioner adds Impairment from coded picklist (elaborates w separate freetext)  
     * ClientSystem captures and structures Impairment information as new Impairment (CareConnect-RARecord-Condition-1) resource
-    [(xml)](design_usecases_CreateRARecord.html#21-create-condition-resource---xml-example) [(json)](design_usecases_CreateRARecord.html#22-create-condition-resource---json-example)
+    [(xml)](design_usecases_AddAdjustmentAddImpairment.html#21-create-condition-resource---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#22-create-condition-resource---json-example)
 * Practitioner commits RARecord
   * ClientSystem submits Create Flag request [(xml)](design_usecases_AddAdjustmentAddImpairment.html#23-create-flag-request---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#24-create-flag-request---json-example)
     * ServerSystem submits Create Flag response [(xml)](design_usecases_AddAdjustmentAddImpairment.html#25-create-flag-response---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#26-create-flag-response---json-example)
     
-  * ClientSystem captures and structures Provenance information as new Provenance (RARecord-Provenance-1) resource [(xml)](design_usecases_CreateRARecord.html#27-create-provenance-resource---xml-example) [(json)](design_usecases_CreateRARecord.html#28create-provenance-resource---json-example)
+  * ClientSystem captures and structures Provenance information as new Provenance (RARecord-Provenance-1) resource [(xml)](design_usecases_AddAdjustmentAddImpairment.html#27-create-provenance-resource---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#28create-provenance-resource---json-example)
     * ClientSystem contains new Impairment resource within CareConnect-RARecord-List-1 resource
-    * ClientSystem contains new Provenance resource within CareConnect-RARecord-List-1 resource [(xml)](design_usecases_CreateRARecord.html#29-create-list-condition-resource---xml-example) [(json)](design_usecases_CreateRARecord.html#210-create-list-condition-resource---json-example)
-    * ClientSystem submits Update List Condition request [(xml)](design_usecases_CreateRARecord.html#211-update-list-condition-request---xml-example) [(json)](design_usecases_CreateRARecord.html#212-update-list-condition-request---json-example)
-      * ServerSystem submits Update List Condition response [(xml)](design_usecases_CreateRARecord.html#213-update-list-condition-response---xml-example) [(json)](design_usecases_CreateRARecord.html#214-update-list-condition-response---json-example)
+    * ClientSystem contains new Provenance resource within CareConnect-RARecord-List-1 resource [(xml)](design_usecases_AddAdjustmentAddImpairment.html#29-create-list-condition-resource---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#210-create-list-condition-resource---json-example)
+    * ClientSystem submits Update List Condition request [(xml)](design_usecases_AddAdjustmentAddImpairment.html#211-update-list-condition-request---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#212-update-list-condition-request---json-example)
+      * ServerSystem submits Update List Condition response [(xml)](design_usecases_AddAdjustmentAddImpairment.html#213-update-list-condition-response---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#214-update-list-condition-response---json-example)
 
 ## 2 Interaction Examples ##
 

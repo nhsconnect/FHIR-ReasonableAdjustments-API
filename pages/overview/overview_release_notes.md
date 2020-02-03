@@ -9,6 +9,10 @@ summary: Summary release notes of the FHIR&reg; Reasonable Adjustments API Imple
 
 {% include important.html content="This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop applications using the FHIR&reg; Reasonable Adjustments API. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." %}
 
+## 0.3.2-beta 
+
+- correction of List-Condition design
+
 ## 0.3.1-beta
 
 - corrections to examples
