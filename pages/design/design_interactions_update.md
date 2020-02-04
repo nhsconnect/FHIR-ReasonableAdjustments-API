@@ -43,7 +43,7 @@ PUT https://clinicals.spineservices.nhs.uk/STU3/[resourceType]/[id] /HTTP1.1
 
 This pattern applies to update/deletion of a Condition resource within a List.
 
-<img src="images/sequenceDiagrams/UpdateListConditionRemove2.png">
+<img style="max-height:1700px" src="images/sequenceDiagrams/UpdateListConditionRemove2.png">
 
 ### Update Condition request - response ###
 

@@ -10,7 +10,9 @@ summary: Description of use case on Spine via the FHIR&reg; Reasonable Adjustmen
 
 ## 1 Remove Impairment ##
 
-Although unlikely, Update Contention is possible. This scenario illustrates the case where Practitioners A and B try to remove a resource 'at the same time'. 'Optimistic locking' is used, so A, who writes first 'wins'.
+This scenario illustrates removal of an Impairment from a Patient's RARecord.  
+
+Although unlikely, Update Contention is possible. This scenario also illustrates the case where Practitioners A and B try to remove a resource 'at the same time'. 'Optimistic locking' is used, so A, who writes first 'wins'.
 #### Pre ####
 * Practitioner A reads Patient's RARecord
 * Practitioner B reads Patient's RARecord

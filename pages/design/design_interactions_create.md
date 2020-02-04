@@ -78,7 +78,7 @@ POST https://clinicals.spineservices.nhs.uk/STU3/List /HTTP1.1
 #### Create Condition Request (Existing List)####
 
 ```
-POST https://clinicals.spineservices.nhs.uk/STU3/List /HTTP1.1
+PUT https://clinicals.spineservices.nhs.uk/STU3/List/[List.id] /HTTP1.1
 ```
 
 #### Create Condition Response (Existing List)####

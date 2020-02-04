@@ -10,9 +10,9 @@ summary: Provenance operation describes the server-side operations required to p
 
 ## Provenance ##
 
-All Reasonable Adjustment resources are to be populated with Provenance details on creation to support clinical safety and audit recording. 
-Consent and Flag resources are populated server-side.
-Due to their different data structure, Condition resource Provenance must be recorded client-side. The Provenance resources are contained within the List.
+All Reasonable Adjustment resources are to be populated with Provenance details on creation to support clinical safety and audit recording.  
+* Consent and Flag resources are populated server-side.  
+* Due to their different data structure, Condition resource Provenance must be recorded client-side. The Provenance resources are contained within the List.  
 **NB:** List resources do **NOT** record Provenance.
 
 To illustrate, on Create of a resource e.g. a Flag resource (i.e. an Adjustment)

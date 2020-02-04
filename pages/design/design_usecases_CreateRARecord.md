@@ -32,7 +32,7 @@ Patient declines to record a specific Adjustment at this time.
 * Patient consents to record RA Flag  
   * Practitioner creates new RARecord for Patient (by recording Consent)  
   * Practitioner records Patient consented to record RA info  
-    * ClientSystem captures and structures Consent information as new RARecord Consent-1 resource [(xml)](design_usecases_CreateRARecord.html#21-create-consent-resource---xml-example) [(json)](design_usecases_CreateRARecord.html#22-create-consent-resource---json-example
+    * ClientSystem captures and structures Consent information as new RARecord Consent-1 resource [(xml)](design_usecases_CreateRARecord.html#21-create-consent-resource---xml-example) [(json)](design_usecases_CreateRARecord.html#22-create-consent-resource---json-example)
 * Patient agrees to record 'Learning Disability' as Impairment  
   * Practitioner adds Impairment from coded picklist (optionally elaborates w separate freetext)  
     * ClientSystem captures and structures Impairment information as new Impairment (CareConnect-RARecord-Condition-1) resource [(xml)](design_usecases_CreateRARecord.html#23-create-condition-resource---xml-example) [(json)](design_usecases_CreateRARecord.html#24-create-condition-resource---json-example)
@@ -204,9 +204,6 @@ relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Create List Condition Resource"
 type="json" %}
 
-====
-====
-
 ### 2.15 Create List Condition Request - xml example ###
 #### http request & headers ####
 ```
@@ -285,5 +282,3 @@ title="Create List Condition Response"
 type="json" %}
 
 
----
----
