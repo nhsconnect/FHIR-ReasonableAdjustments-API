@@ -18,7 +18,7 @@
   "entry": [
     {
       "fhir_comments": [
-        "this exmaple has 2 Flag (adjustment) included",
+        "this example has 2 Flag (adjustment) included",
         "the first flag entry"
       ],
       "fullUrl": "https://clinicals.spineservices.nhs.uk/STU3/Flag/9e63f370-ba72-11e8-96f8-529269fb1459",

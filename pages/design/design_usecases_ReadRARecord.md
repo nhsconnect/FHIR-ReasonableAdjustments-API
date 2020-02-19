@@ -36,19 +36,21 @@ Patient has an RA Flag; Practitioner requests record.
       * ServerSystem submits Read Consent response [(xml)](design_usecases_ReadRARecord.html#23-read-consent-response---xml-example) [(json)](design_usecases_ReadRARecord.html#24-read-consent-response---json-example)
     * ClientSystem submits Read Flag request [(xml)](design_usecases_ReadRARecord.html#25-read-flag-request---xml-example) [(json)](design_usecases_ReadRARecord.html#26-read-flag-request---json-example)
       * ServerSystem submits Read Flag response [(xml)](design_usecases_ReadRARecord.html#27-read-flag-response---xml-example) [(json)](design_usecases_ReadRARecord.html#28-read-flag-response---json-example)
+      examples provided for 0, 1 and 2 Flags found in searchset
     * ClientSystem submits Read List request [(xml)](design_usecases_ReadRARecord.html#29-read-list-request---xml-example) [(json)](design_usecases_ReadRARecord.html#210-read-list-request---json-example)
       * ServerSystem submits Read List response [(xml)](design_usecases_ReadRARecord.html#211-read-list-response---xml-example) [(json)](design_usecases_ReadRARecord.html#212-read-list-response---json-example)
 
 
 ---
+
 ## 2 Interaction Examples ##
 
 Examples of http requests, responses and payloads
 
-### 2.1 Read Consent request ###
+### 2.1 Read Consent Request - xml example ###
 #### http request & headers ####
-{% include codetags.html
-xml="GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
+```
+GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  patient=999999998&
  status=active&
  category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
@@ -57,8 +59,16 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Consent.read:1"
-json="GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
+InteractionID: urn:nhs:names:services:raflags:Consent.read:1
+```
+
+#### http body ####
+**None**
+
+### 2.2 Read Consent Request - json example ###
+#### http request & headers ####
+```
+GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  patient=999999998&
  status=active&
  category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
@@ -67,26 +77,44 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Consent.read:1" %}
+InteractionID: urn:nhs:names:services:raflags:Consent.read:1
+```
 
 #### http body ####
 **None**
 
-### 2.2 Read Consent response ###
+### 2.3 Read Consent Response - xml example ###
 #### http response & headers ####
-{% include codetags.html xml="HTTP/1.1 200 OK
+```
+HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 11:00:00 GMT
-Content-Type: application/fhir+xml"
-json="HTTP/1.1 200 OK
-Date: Tue, 24 Jul 2018 11:00:00 GMT
-Content-Type: application/fhir+json" %}
+Content-Type: application/fhir+xml
+```
 
 #### http body ####
-{% include codetags.html xmlpath="usecaseexamples/RARecord-ReadConsentResponseBody-example.xml" jsonpath="usecaseexamples/RARecord-ReadConsentResponseBody-example.json" title="Read Consent Response" %}
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-ReadConsentResponseBody-example.xml"
+title="Read Consent Response"
+type="xml" %}
 
-### 2.3 Read Flag request ###
+### 2.4 Read Consent Response - json example ###
+#### http response & headers ####
+```
+HTTP/1.1 200 OK
+Date: Tue, 24 Jul 2018 11:00:00 GMT
+Content-Type: application/fhir+json
+```
+
+#### http body ####
+{% include custom/fhir.codegrid.html
+relfilepath="usecaseexamples/RARecord-ReadConsentResponseBody-example.json"
+title="Read Consent Response"
+type="json" %}
+
+### 2.5 Read Flag Request - xml example ###
 #### http request & headers ####
-{% include codetags.html xml="GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
+```
+GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
  patient=999999998&
  status=active&
  category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
@@ -95,8 +123,16 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Flag.read:1"
-json="GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
+InteractionID: urn:nhs:names:services:raflags:Flag.read:1
+```
+
+#### http body ####
+**None**
+
+### 2.6 Read Flag Request - json example ###
+#### http request & headers ####
+```
+GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
  patient=999999998&
  status=active&
  category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
@@ -105,31 +141,24 @@ Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:Flag.read:1" %}
+InteractionID: urn:nhs:names:services:raflags:Flag.read:1
+```
 
 #### http body ####
 **None**
 
-### 2.4 Read Flag response ###
+### 2.7 Read Flag response - xml example ###
 #### http response & headers ####
-{% include codetags.html xml="HTTP/1.1 200 OK
+```
+HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 11:00:01 GMT
-Content-Type: application/fhir+xml" 
-json="HTTP/1.1 200 OK
-Date: Tue, 24 Jul 2018 11:00:01 GMT
-Content-Type: application/fhir+json" %}
+Content-Type: application/fhir+xml
+```
 
 #### http body ####
-{% include codetags.html xmlsrc="https://gist.github.com/IOPS-DEV/e4740ee872d5bc5be5c254ce42c6dc7b.js" 
-jsonsrc="https://gist.github.com/IOPS-DEV/e4740ee872d5bc5be5c254ce42c6dc7b.js" %}
-
-
-#### http body ####
-Old style
-
 {% include custom/fhir.codegrid.html
 relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody-example.xml"
-title="Read Flag response"
+title="Read Flag response (0 Flag)"
 type="xml" %}
 
 {% include custom/fhir.codegrid.html
@@ -142,18 +171,18 @@ relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody2Flags.xml"
 title="Read Flag response (2 Flags)"
 type="xml" %}
 
-
 ### 2.8 Read Flag response - json example ###
 #### http response & headers ####
 ```
-
-
+HTTP/1.1 200 OK
+Date: Tue, 24 Jul 2018 11:00:01 GMT
+Content-Type: application/fhir+json
 ```
 
 #### http body ####
 {% include custom/fhir.codegrid.html
 relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody-example.json"
-title="Read Flag response"
+title="Read Flag response (0 Flag)"
 type="json" %}
 
 {% include custom/fhir.codegrid.html
@@ -236,4 +265,3 @@ type="json" %}
 
       
 ---
----      

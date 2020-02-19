@@ -9,7 +9,7 @@
         <relation value="self"/>
         <url value="https://clinicals.spineservices.nhs.uk/STU3/Flag?patient=999999998&amp;status=active&amp;category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&amp;_format=xml"/>
     </link>
-	<!--this exmaple has 1 Flag (adjustment) included-->
+	<!--this example has 1 Flag (adjustment) included-->
     <entry>
 		<fullUrl value="https://clinicals.spineservices.nhs.uk/STU3/Flag/9e63f370-ba72-11e8-96f8-529269fb1459"/>
         <resource>
