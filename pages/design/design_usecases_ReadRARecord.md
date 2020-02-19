@@ -25,7 +25,7 @@ Patient has an RA Flag; Practitioner requests record.
 #### Pre ####
 * Patient arrives at pre-operation appointment  
 * Practitioner Nrs N. is logged on with SmartCard/National Identity  
-  * Gives User Role Profile Identifier [URPId}  
+  * Gives User Role Profile Identifier (URPId)  
 * Patient Mrs M. has been PDS Traced  
   * Gives verified NHS#, Name, DoB demographic data  
 
@@ -35,8 +35,7 @@ Patient has an RA Flag; Practitioner requests record.
     * ClientSystem submits Read Consent request [(xml)](design_usecases_ReadRARecord.html#21-read-consent-request---xml-example) [(json)](design_usecases_ReadRARecord.html#22-read-consent-request---json-example)
       * ServerSystem submits Read Consent response [(xml)](design_usecases_ReadRARecord.html#23-read-consent-response---xml-example) [(json)](design_usecases_ReadRARecord.html#24-read-consent-response---json-example)
     * ClientSystem submits Read Flag request [(xml)](design_usecases_ReadRARecord.html#25-read-flag-request---xml-example) [(json)](design_usecases_ReadRARecord.html#26-read-flag-request---json-example)
-      * ServerSystem submits Read Flag response [(xml)](design_usecases_ReadRARecord.html#27-read-flag-response---xml-example) [(json)](design_usecases_ReadRARecord.html#28-read-flag-response---json-example)
-      examples provided for 0, 1 and 2 Flags found in searchset
+      * ServerSystem submits Read Flag response [(xml)](design_usecases_ReadRARecord.html#27-read-flag-response---xml-example) [(json)](design_usecases_ReadRARecord.html#28-read-flag-response---json-example) - examples provided for 0, 1 and 2 Flags found in searchset
     * ClientSystem submits Read List request [(xml)](design_usecases_ReadRARecord.html#29-read-list-request---xml-example) [(json)](design_usecases_ReadRARecord.html#210-read-list-request---json-example)
       * ServerSystem submits Read List response [(xml)](design_usecases_ReadRARecord.html#211-read-list-response---xml-example) [(json)](design_usecases_ReadRARecord.html#212-read-list-response---json-example)
 
