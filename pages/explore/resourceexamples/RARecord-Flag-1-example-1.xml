@@ -45,30 +45,28 @@
     <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1">
         <valueCodeableConcept>
             <coding>
-                <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1"/>
-                <code value="comms"/>
-                <display value="Communication"/>
+                <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"/>
+                <code value="001"/>
+                <display value="Accessible Information - communications support"/>
             </coding>
         </valueCodeableConcept>
     </extension>
     <status value="active"/>
     <category>
         <coding>
-            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
-            <code value="reasonable adjustments flag"/>
-            <display value="Reasonable Adjustments Flag"/>
+            <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1"/>
+            <code value="NRAF"/>
+            <display value="National Reasonable Adjustments Flag"/>
         </coding>
     </category>
     <code>
         <coding>
-            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
-            <code value="requiresinformationineasyread"/>
-            <display value="Requires information in Easyread"/>
+            <system value="https://snomed.info/sct"/>
+            <code value="719369003"/>
+            <display value="Does use communication device"/>
         </coding>
     </code>
     <subject>
-        <identifier>
-            <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
-        </identifier>
+        <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
     </subject>
 </Flag>

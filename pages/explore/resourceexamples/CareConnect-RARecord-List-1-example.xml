@@ -31,7 +31,7 @@
             </category>
             <code>
                 <coding>
-                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
+                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1"/>
                     <code value="1855002"/>
                     <display value="Learning Disability(s)"/>
                 </coding>

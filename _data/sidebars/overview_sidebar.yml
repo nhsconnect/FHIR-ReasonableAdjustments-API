@@ -1,7 +1,7 @@
 entries:
 - title: FHIR&reg; Reasonable Adjustments API
   product: FHIR&reg; Reasonable Adjustments API
-  version: 0.3.2-beta
+  version: 0.3.3-beta
   levels: one
   folders:
 

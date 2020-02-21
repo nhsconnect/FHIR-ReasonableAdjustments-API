@@ -7,7 +7,7 @@ AddExample-CreateFlagRequest.xml -->
     <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1">
         <valueCodeableConcept>
             <coding>
-                <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1"/>
+                <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategories-1"/>
                 <code value="comms"/>
                 <display value="Communication"/>
             </coding>
