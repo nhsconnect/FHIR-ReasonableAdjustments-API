@@ -13,6 +13,7 @@ summary: Summary release notes of the FHIR&reg; Reasonable Adjustments API Imple
 
 - WORK IN PROGRESS
 - uplift of examples to reference updated valuesets and codesystems - ongoing
+- [diff vs. 0.3.2-beta](https://github.com/nhsconnect/FHIR-ReasonableAdjustments-API/compare/4d40e7462e2a72bdcf2198166d3d1dc1b4835c50..b38d3b844d7df34a9d5be005bb5fabb103ff619e)
 
 ## 0.3.2-beta 
 
