@@ -31,7 +31,7 @@ title="RARecord-Flag-1"
 type="xml" %}
 
 {% include custom/fhir.codegrid.html
-relfilepath="resourceexamples/RARecord-Flag-1-example-1.json"
+relfilepath="resourceexamples/AAJSONPlaceholder.json"
 title="RARecord-Flag-1"
 type="json" %}
 

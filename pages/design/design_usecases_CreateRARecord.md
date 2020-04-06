@@ -67,7 +67,7 @@ type="xml" %}
 ### 2.2 Create Consent Resource - json example ###
 #### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-CreateConsentRequest.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Create Consent Resource"
 type="json" %}
 
@@ -81,7 +81,7 @@ type="xml" %}
 ### 2.4 Create Condition Resource - json example ###
 #### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-CreateConditionRequest.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Create Condition Resource"
 type="json" %}
 
@@ -120,7 +120,7 @@ InteractionID: urn:nhs:names:services:raflags:Consent.write:1
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-CreateConsentRequest.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Create Consent Request"
 type="json" %}
 
@@ -158,7 +158,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/CreateExample-CreateConsentResponse.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Create Consent Response"
 type="json" %}
 

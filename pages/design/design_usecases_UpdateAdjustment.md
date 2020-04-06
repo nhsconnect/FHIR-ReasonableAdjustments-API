@@ -89,7 +89,7 @@ If-Match: W/"aa755bd6-2be9-4971-972a-6724879c5cb1"
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/UpdateExample-UpdateFlagRequest.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Update Flag Request"
 type="json" %}
 
@@ -125,7 +125,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/UpdateExample-UpdateFlagResponse.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Update Flag Response"
 type="json" %}
 
@@ -165,7 +165,7 @@ InteractionID: urn:nhs:names:services:raflags:Flag.write:1
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/UpdateExample-CreateFlagRequest.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Create Flag Request"
 type="json" %}
 
@@ -203,7 +203,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/UpdateExample-CreateFlagResponse.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Create Flag Response"
 type="json" %}
 

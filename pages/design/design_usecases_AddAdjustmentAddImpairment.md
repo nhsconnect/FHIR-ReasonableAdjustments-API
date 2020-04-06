@@ -64,7 +64,7 @@ type="xml" %}
 ### 2.2 Create Condition Resource - json example ###
 #### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-CreateConditionRequest.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Create Condition Resource"
 type="json" %}
 
@@ -105,7 +105,7 @@ InteractionID: urn:nhs:names:services:raflags:Flag.write:1
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-CreateFlagRequest.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Create Flag Request"
 type="json" %}
 
@@ -143,7 +143,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AddExample-CreateFlagResponse.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Create Flag Response"
 type="json" %}
 

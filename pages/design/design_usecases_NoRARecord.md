@@ -92,6 +92,6 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/ReadFailEmptyBundle.json"
+relfilepath="usecaseexamples/AAJSONPlaceholder.json"
 title="Read Fail Empty Bundle"
 type="json" %}

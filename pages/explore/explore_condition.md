@@ -31,7 +31,7 @@ title="CareConnect-RARecord-Condition-1"
 type="xml" %}
 
 {% include custom/fhir.codegrid.html
-relfilepath="resourceexamples/CareConnect-RARecord-Condition-1-example1.json"
+relfilepath="resourceexamples/AAJSONPlaceholder.json"
 title="CareConnect-RARecord-Condition-1"
 type="json" %}
 
