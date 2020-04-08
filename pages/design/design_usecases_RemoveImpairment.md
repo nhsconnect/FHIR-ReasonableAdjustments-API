@@ -47,7 +47,7 @@ type="json" %}
 
 ### 2.3 Update List Request - xml example
 #### http request & headers ####
-```
+``` http
 PUT https://clinicals.spineservices.nhs.uk/STU3/List/130f416a-055d-4a5d-a453-2b7c2de3b57b HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -67,7 +67,7 @@ type="xml" %}
 
 ### 2.4 Update List Request - json example
 #### http request & headers ####
-```
+``` http
 PUT https://clinicals.spineservices.nhs.uk/STU3/List/130f416a-055d-4a5d-a453-2b7c2de3b57b HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -88,7 +88,7 @@ type="json" %}
 
 ### 2.5 Update List Response - xml example
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Tue, 25 Jul 2018 11:00:03 GMT
 Last-Modified:2018-07-25T11:00:02+00:00
@@ -106,7 +106,7 @@ type="xml" %}
 
 ### 2.6 Update List Response - json example
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Tue, 25 Jul 2018 11:00:03 GMT
 Last-Modified:2018-07-25T11:00:02+00:00
@@ -124,7 +124,7 @@ type="json" %}
 
 ### 2.7 Update List B Request - xml example
 #### http request & headers ####
-```
+``` http
 PUT https://clinicals.spineservices.nhs.uk/STU3/List/130f416a-055d-4a5d-a453-2b7c2de3b57b HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
@@ -145,7 +145,7 @@ type="xml" %}
 
 ### 2.8 Update List B Request - json example
 #### http request & headers ####
-```
+``` http
 PUT https://clinicals.spineservices.nhs.uk/STU3/List/130f416a-055d-4a5d-a453-2b7c2de3b57b HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
@@ -166,7 +166,7 @@ type="json" %}
 
 ### 2.9 Update List B Response - xml example
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 409 CONFLICT
 Date: Tue, 25 Jul 2018 11:02:03 GMT
 Content-Type: application/fhir+xml
@@ -181,7 +181,7 @@ type="xml" %}
 
 ### 2.10 Update List B Response - json example
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 409 CONFLICT
 Date: Tue, 25 Jul 2018 11:02:03 GMT
 Content-Type: application/fhir+json

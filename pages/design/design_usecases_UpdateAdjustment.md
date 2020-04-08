@@ -53,7 +53,7 @@ Examples of http requests, responses and payloads
 ### 2.1 Update Flag Request - xml example ###
 
 #### http request & headers ####
-```
+``` http
 PUT https://clinicals.spineservices.nhs.uk/STU3/Flag/2acb0536-0a8f-48c9-8a2f-6ee82860f186 HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -75,7 +75,7 @@ type="xml" %}
 ### 2.2 Update Flag Request - json example ###
 
 #### http request & headers ####
-```
+``` http
 PUT https://clinicals.spineservices.nhs.uk/STU3/Flag/2acb0536-0a8f-48c9-8a2f-6ee82860f186 HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -96,7 +96,7 @@ type="json" %}
 ### 2.3 Update Flag Response - xml example ###
 
 #### http request & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Thur, 25 Jul 2018 11:00:00 GMT
 Last-Modified: 2018-07-25T11:00:00+00:00
@@ -114,7 +114,7 @@ type="xml" %}
 ### 2.4 Update Flag Response - json example ###
 
 #### http request & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Thur, 25 Jul 2018 11:00:00 GMT
 Last-Modified: 2018-07-25T11:00:00+00:00
@@ -132,7 +132,7 @@ type="json" %}
 ### 2.5 Create Flag Request - xml example ###
 
 #### http request & headers ####
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/Flag HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -152,7 +152,7 @@ type="xml" %}
 ### 2.6 Create Flag Request - json example ###
 
 #### http request & headers ####
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/Flag HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -172,7 +172,7 @@ type="json" %}
 ### 2.7 Create Flag Response - xml example ###
 
 #### http request & headers ####
-```
+``` http
 HTTP/1.1 201 Created
 Date: Thu, 25 Jul 2018 11:03:00 GMT
 Last-Modified:2018-07-25T11:03:00+00:00
@@ -191,7 +191,7 @@ type="xml" %}
 ### 2.8 Create Flag Response - json example ###
 
 #### http request & headers ####
-```
+``` http
 HTTP/1.1 201 Created
 Date: Thu, 25 Jul 2018 11:03:00 GMT
 Last-Modified:2018-07-25T11:03:00+00:00

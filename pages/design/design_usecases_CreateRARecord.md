@@ -87,7 +87,7 @@ type="json" %}
 
 ### 2.5 Create Consent Request - xml example ###
 #### http request & headers ####
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/Consent HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -107,7 +107,7 @@ type="xml" %}
 
 ### 2.6 Create Consent Request - json example ###
 #### http request & headers ####
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/Consent HTTP/1.1
 Authorization:Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -127,7 +127,7 @@ type="json" %}
 
 ### 2.7 Create Consent Response - xml example ###
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 201 Created
 Date: Tue, 23 Jul 2018 11:00:00 GMT
 Last-Modified:2018-07-23T11:00:00+00:00
@@ -146,7 +146,7 @@ type="xml" %}
 
 ### 2.8 Create Consent Response - json example ###
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 201 Created
 Date: Tue, 23 Jul 2018 11:00:00 GMT
 Last-Modified:2018-07-23T11:00:00+00:00
@@ -206,7 +206,7 @@ type="json" %}
 
 ### 2.15 Create List Condition Request - xml example ###
 #### http request & headers ####
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/List HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -226,7 +226,7 @@ type="xml" %}
 
 ### 2.16 Create List Condition Request - json example ###
 #### http request & headers ####
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/List HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -246,7 +246,7 @@ type="json" %}
 
 ### 2.17 Create List Condition Response - xml example ###
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 201 Created
 Date: Tue, 23 Jul 2018 11:00:00 GMT
 Last-Modified:2018-07-23T11:00:00+00:00
@@ -265,7 +265,7 @@ type="xml" %}
 
 ### 2.18 Create List Condition Response - json example ###
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 201 Created
 Date: Tue, 23 Jul 2018 11:00:00 GMT
 Last-Modified:2018-07-23T11:00:00+00:00

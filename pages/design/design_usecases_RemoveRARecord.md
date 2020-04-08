@@ -33,7 +33,7 @@ Practitioner enters Removal Reason. System inactivates all Reasonable Adjustment
 
 ### 2.1 Remove RA Record - xml example ###
 #### http request & headers ####
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/$removerarecord HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -52,7 +52,7 @@ type="xml" %}
 
 ### 2.2 Remove RA Record - json example ###
 #### http request & headers ####
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/$removerarecord HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -71,7 +71,7 @@ type="json" %}
 
 ### 2.3 Remove RA Record outcome - xml example ###
 #### http request & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Tue, 25 Jul 2018 11:00:00 GMT
 Content-Type: application/fhir+xml
@@ -86,7 +86,7 @@ type="xml" %}
 
 ### 2.4 Remove RA Record outcome - json example ###
 #### http request & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Tue, 25 Jul 2018 11:00:00 GMT
 Content-Type: application/fhir+json

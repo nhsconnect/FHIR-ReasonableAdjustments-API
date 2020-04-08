@@ -67,7 +67,7 @@ InteractionID: urn:nhs:names:services:raflags:Consent.read:1
 ### 2.3 Read Consent response - xml example ###
 
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 10:00:00 GMT
 Content-Type: application/fhir+xml
@@ -83,7 +83,7 @@ type="xml" %}
 ### 2.4 Read Consent response - json example ###
 
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 10:00:00 GMT
 Content-Type: application/fhir+json

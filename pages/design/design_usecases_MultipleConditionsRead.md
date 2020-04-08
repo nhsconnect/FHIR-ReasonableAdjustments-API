@@ -33,7 +33,7 @@ _[Read Consent and Read Flag not illustrated_ - these are identical to existing 
 ### 2.1 Read List request - xml example  ###
 
 #### http request & headers ####
-```
+``` http
 GET https://clinicals.spineservices.nhs.uk/STU3/List?
  patient=999999998&
  status=current&
@@ -53,7 +53,7 @@ InteractionID: urn:nhs:names:services:raflags:List.read:1
 ### 2.2 Read List request - json example  ###
 
 #### http request & headers ####
-```
+``` http
 GET https://clinicals.spineservices.nhs.uk/STU3/List?
  patient=999999998&
  status=current&
@@ -73,7 +73,7 @@ InteractionID: urn:nhs:names:services:raflags:List.read:1
 ### 2.3 Read List response - xml example  ###
 
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 12:00:00 GMT
 Content-Type: application/fhir+xml
@@ -89,7 +89,7 @@ type="xml" %}
 ### 2.4 Read List response - json example  ###
 
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 12:00:00 GMT
 Content-Type: application/fhir+json

@@ -48,7 +48,7 @@ Examples of http requests, responses and payloads
 
 ### 2.1 Read Consent Request - xml example ###
 #### http request & headers ####
-```
+``` http
 GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  patient=999999998&
  status=active&
@@ -66,7 +66,7 @@ InteractionID: urn:nhs:names:services:raflags:Consent.read:1
 
 ### 2.2 Read Consent Request - json example ###
 #### http request & headers ####
-```
+``` http
 GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  patient=999999998&
  status=active&
@@ -84,7 +84,7 @@ InteractionID: urn:nhs:names:services:raflags:Consent.read:1
 
 ### 2.3 Read Consent Response - xml example ###
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 11:00:00 GMT
 Content-Type: application/fhir+xml
@@ -98,7 +98,7 @@ type="xml" %}
 
 ### 2.4 Read Consent Response - json example ###
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 11:00:00 GMT
 Content-Type: application/fhir+json
@@ -112,7 +112,7 @@ type="json" %}
 
 ### 2.5 Read Flag Request - xml example ###
 #### http request & headers ####
-```
+``` http
 GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
  patient=999999998&
  status=active&
@@ -130,7 +130,7 @@ InteractionID: urn:nhs:names:services:raflags:Flag.read:1
 
 ### 2.6 Read Flag Request - json example ###
 #### http request & headers ####
-```
+``` http
 GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
  patient=999999998&
  status=active&
@@ -148,7 +148,7 @@ InteractionID: urn:nhs:names:services:raflags:Flag.read:1
 
 ### 2.7 Read Flag response - xml example ###
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 11:00:01 GMT
 Content-Type: application/fhir+xml
@@ -172,7 +172,7 @@ type="xml" %}
 
 ### 2.8 Read Flag response - json example ###
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 11:00:01 GMT
 Content-Type: application/fhir+json
@@ -196,7 +196,7 @@ type="json" %}
 
 ### 2.9 Read List request - xml example ###
 #### http request & headers ####
-```
+``` http
 GET https://clinicals.spineservices.nhs.uk/STU3/List?
  patient=999999998&
  status=current&
@@ -215,7 +215,7 @@ InteractionID: urn:nhs:names:services:raflags:List.read:1
 
 ### 2.10 Read List request - json example ###
 #### http request & headers ####
-```
+``` http
 GET https://clinicals.spineservices.nhs.uk/STU3/List?
  patient=999999998&
  status=current&
@@ -234,7 +234,7 @@ InteractionID: urn:nhs:names:services:raflags:List.read:1
 
 ### 2.11 Read List response - xml example ###
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 11:00:01 GMT
 Content-Type: application/fhir+xml
@@ -249,7 +249,7 @@ type="xml" %}
 
 ### 2.12 Read List response - json example ###
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 200 OK
 Date: Tue, 24 Jul 2018 11:00:01 GMT
 Content-Type: application/fhir+json

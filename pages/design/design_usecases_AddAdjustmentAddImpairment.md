@@ -72,7 +72,7 @@ type="json" %}
 ### 2.3 Create Flag Request - xml example ###
 
 #### http request & headers ####
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/Flag HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
@@ -92,7 +92,7 @@ type="xml" %}
 ### 2.4 Create Flag Request - json example ###
 
 #### http request & headers ####
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/Flag HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
@@ -112,7 +112,7 @@ type="json" %}
 ### 2.5 Create Flag Response - xml example ###
 
 #### http request & headers ####
-```
+``` http
 HTTP/1.1 201 Created
 Date: Wed, 24 Jul 2018 10:01:00 GMT
 Last-Modified:2018-07-24T10:01:00+00:00
@@ -131,7 +131,7 @@ type="xml" %}
 ### 2.6 Create Flag Response - json example ###
 
 #### http request & headers ####
-```
+``` http
 HTTP/1.1 201 Created
 Date: Wed, 24 Jul 2018 10:01:00 GMT
 Last-Modified:2018-07-24T10:01:00+00:00
@@ -179,7 +179,7 @@ type="json" %}
 
 ### 2.11 Update List Condition Request - xml example ###
 #### http request & headers ####
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/List HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -199,7 +199,7 @@ type="xml" %}
 
 ### 2.12 Update List Condition Request - json example ###
 #### http request & headers ####
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/List HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -219,7 +219,7 @@ type="json" %}
 
 ### 2.13 Update List Condition Response - xml example ###
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 201 Created
 Date: Tue, 23 Jul 2018 11:00:00 GMT
 Last-Modified:2018-07-23T11:00:00+00:00
@@ -238,7 +238,7 @@ type="xml" %}
 
 ### 2.14 Update List Condition Response - json example ###
 #### http response & headers ####
-```
+``` http
 HTTP/1.1 201 Created
 Date: Tue, 23 Jul 2018 11:00:00 GMT
 Last-Modified:2018-07-23T11:00:00+00:00
