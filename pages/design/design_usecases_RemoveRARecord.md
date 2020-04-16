@@ -65,7 +65,7 @@ InteractionID: urn:nhs:names:services:raflags:removerarecord.write:1
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/RemoveRARecord-OperationRequest.json"
 title="RemoveRARecord Operation Request"
 type="json" %}
 
@@ -95,6 +95,6 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/RemoveRARecord-OperationOutcome.json"
 title="RemoveRARecord Operation Outcome"
 type="json" %}

@@ -41,7 +41,7 @@ type="xml" %}
 
 ### 2.2 Delete Condition A Resource - json example
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/DeleteExample-RemoveConditionListResource.json"
 title="Delete Condition List Resource A"
 type="json" %}
 
@@ -81,7 +81,7 @@ If-Match: W/"9554c538-1661-43b1-921b-efcbd2991c90"
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/DeleteExample-RemoveConditionListResource.json"
 title="Update List Request example"
 type="json" %}
 
@@ -117,7 +117,7 @@ Content-Type: application/fhir+xml
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/DeleteExample-RemoveConditionListResponse.json"
 title="Update List Response"
 type="json" %}
 
@@ -159,7 +159,7 @@ If-Match: W/"9554c538-1661-43b1-921b-efcbd2991c90"
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/DeleteExample-RemoveConditionListResourceB.json"
 title="Update List B Request example"
 type="json" %}
 
@@ -190,7 +190,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/DeleteConditionFailOperationOutcome.json"
 title="Read Fail Operation Outcome"
 type="json" %}
 

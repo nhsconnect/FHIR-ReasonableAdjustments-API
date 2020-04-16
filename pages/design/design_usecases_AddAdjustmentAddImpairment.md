@@ -64,7 +64,7 @@ type="xml" %}
 ### 2.2 Create Condition Resource - json example ###
 #### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/AddExample-CreateConditionRequest.json"
 title="Create Condition Resource"
 type="json" %}
 
@@ -105,7 +105,7 @@ InteractionID: urn:nhs:names:services:raflags:Flag.write:1
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/AddExample-CreateFlagRequest.json"
 title="Create Flag Request"
 type="json" %}
 
@@ -143,7 +143,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/AddExample-CreateFlagResponse.json"
 title="Create Flag Response"
 type="json" %}
 
@@ -158,7 +158,7 @@ type="xml" %}
 ### 2.8 Create Provenance Resource - json example ###
 #### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/AddExample-CreateProvenanceResource.json"
 title="Create Provenance Resource"
 type="json" %}
 
@@ -172,7 +172,7 @@ type="xml" %}
 ### 2.10 Add to List Condition Resource - json example ###
 #### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/AddExample-ListConditionResource.json"
 title="Create List Condition Resource"
 type="json" %}
 
@@ -212,7 +212,7 @@ InteractionID: urn:nhs:names:services:raflags:List.write:1
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/AddExample-ListConditionResource.json"
 title="Create List Condition Request"
 type="json" %}
 
@@ -250,7 +250,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/AddExample-ListConditionResponse.json"
 title="Create List Condition Response"
 type="json" %}
 

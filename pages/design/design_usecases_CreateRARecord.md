@@ -67,7 +67,7 @@ type="xml" %}
 ### 2.2 Create Consent Resource - json example ###
 #### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/CreateExample-CreateConsentRequest.json"
 title="Create Consent Resource"
 type="json" %}
 
@@ -81,7 +81,7 @@ type="xml" %}
 ### 2.4 Create Condition Resource - json example ###
 #### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/CreateExample-CreateConditionRequest.json"
 title="Create Condition Resource"
 type="json" %}
 
@@ -120,7 +120,7 @@ InteractionID: urn:nhs:names:services:raflags:Consent.write:1
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/CreateExample-CreateConsentRequest.json"
 title="Create Consent Request"
 type="json" %}
 
@@ -158,7 +158,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/CreateExample-CreateConsentResponse.json"
 title="Create Consent Response"
 type="json" %}
 
@@ -172,7 +172,7 @@ type="xml" %}
 ### 2.10 Create Provenance Resource - json example ###
 #### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/CreateExample-CreateProvenanceResource.json"
 title="Create Provenance Resource"
 type="json" %}
 
@@ -186,7 +186,7 @@ type="xml" %}
 ### 2.12 Create List Resource - json example ###
 #### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/CreateExample-CreateListResource.json"
 title="Create List Resource"
 type="json" %}
 
@@ -200,7 +200,7 @@ type="xml" %}
 ### 2.14 Create List Condition Resource - json example ###
 #### resource ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/CreateExample-ListConditionResource.json"
 title="Create List Condition Resource"
 type="json" %}
 
@@ -239,7 +239,7 @@ InteractionID: urn:nhs:names:services:raflags:List.write:1
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/CreateExample-ListConditionResource.json"
 title="Create List Condition Request"
 type="json" %}
 
@@ -277,7 +277,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/CreateExample-ListConditionResponse.json"
 title="Create List Condition Response"
 type="json" %}
 

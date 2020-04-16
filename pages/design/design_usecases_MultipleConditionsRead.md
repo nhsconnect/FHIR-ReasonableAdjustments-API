@@ -98,7 +98,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/SearchSetListBundleResponse.json"
 title="Read List response bundle"
 type="json" %}
 

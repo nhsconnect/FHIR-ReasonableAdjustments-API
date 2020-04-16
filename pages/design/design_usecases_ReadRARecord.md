@@ -106,7 +106,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/RARecord-ReadConsentResponseBody-example.json"
 title="Read Consent Response"
 type="json" %}
 
@@ -180,17 +180,17 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody-example.json"
 title="Read Flag response (0 Flag)"
 type="json" %}
 
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody1Flag.json"
 title="Read Flag response (1 Flag)"
 type="json" %}
 
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/RARecord-ReadFlagResponseBody2Flags.json"
 title="Read Flag response (2 Flags)"
 type="json" %}
 
@@ -258,7 +258,7 @@ Content-Type: application/fhir+json
 
 #### http body ####
 {% include custom/fhir.codegrid.html
-relfilepath="usecaseexamples/AAJSONPlaceholder.json"
+relfilepath="usecaseexamples/RARecord-ReadListResponseBody-example.json"
 title="Read List response"
 type="json" %}
 

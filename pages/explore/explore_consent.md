@@ -33,7 +33,7 @@ title="RARecord-Consent-1"
 type="xml" %}
 
 {% include custom/fhir.codegrid.html
-relfilepath="resourceexamples/AAJSONPlaceholder.json"
+relfilepath="resourceexamples/RARecord-Consent-1-example-1.json"
 title="RARecord-Consent-1"
 type="json" %}
 
