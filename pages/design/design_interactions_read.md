@@ -22,32 +22,32 @@ Given pre-requisites:
 - authenticated, authorized RBACed Spine-User
 - validated NHSNumber
 
-#### Read Resource Request ####
+#### Read Resource Request  ####
 
 For each resource type
-```
+``` http
 GET https://clinicals.spineservices.nhs.uk/STU3/[resourceType]?
   patient=[nhs#]&status=active&category=RAFlag /HTTP1.1
 ```
 
-#### Read Resource Responses ####
+#### Read Resource Responses  ####
 
 ##### Consent resources #####
 
-```
+``` http
   searchset bundle containing 0..1 consent resource  
   (or operation outcome if failure to find or process)  
 ```
 
-##### Flag resources #####
+##### Flag resources # ####
 
-```
+``` http
   searchset of 0..* active RAFlag adjustments for patient  
   (or operation outcome if failure to find or process)
 ```
 
-##### List resource #####
-```
+##### List resource # ####
+``` http
   searchset bundle containing 0..1 list resource  
   (or operation outcome if failure to find or process)  
 ```

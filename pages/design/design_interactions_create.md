@@ -26,16 +26,16 @@ Given pre-requisites:
 - authenticated, authorized RBACed Spine-User
 - validated NHSNumber
 
-#### Create Resource Request ####
+#### Create Resource Request  ####
 
 For each new resource 
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/[resourceType] /HTTP1.1
 ```
 
-#### Create Resource Response ####
+#### Create Resource Response  ####
 
-```
+``` http
 201 Created http response code and Location header (and mirror POSTed payload)  
 (or operation outcome if failure to find or process)
 ```
@@ -62,28 +62,28 @@ Given pre-requisites:
 - authenticated, authorized RBACed Spine-User
 - validated NHSNumber
 
-#### Create Condition Request (New List)####
+#### Create Condition Request (New List) ####
 
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/List /HTTP1.1
 ```
 
-#### Create Condition Response (New List)####
+#### Create Condition Response (New List) ####
 
-```
+``` http
 201 Created http response code and Location header (and mirror POSTed payload)  
 (or operation outcome if failure to find or process)
 ```
 
-#### Create Condition Request (Existing List)####
+#### Create Condition Request (Existing List) ####
 
-```
+``` http
 PUT https://clinicals.spineservices.nhs.uk/STU3/List/[List.id] /HTTP1.1
 ```
 
-#### Create Condition Response (Existing List)####
+#### Create Condition Response (Existing List) ####
 
-```
+``` http
 200 OK http response code and Location header (and mirror POSTed payload)  
 (or operation outcome if failure to find or process)
 ```

@@ -25,16 +25,16 @@ Given pre-requisites:
 - authenticated, authorized RBACed Spine-User
 - validated NHSNumber
 
-#### Update Resource Request ####
+#### Update Resource Request  ####
 
 For each resource 
-```
+``` http
 PUT https://clinicals.spineservices.nhs.uk/STU3/[resourceType]/[id] /HTTP1.1
 ```
 
-#### Update Resource Response ####
+#### Update Resource Response  ####
 
-```
+``` http
 200 OK http response code (and mirror PUT payload)  
 (or operation outcome if failure to find or process)
 ```
@@ -51,15 +51,15 @@ Given pre-requisites:
 - authenticated, authorized RBACed Spine-User
 - validated NHSNumber
 
-#### Update Condition Request ####
+#### Update Condition Request  ####
 
-```
+``` http
 PUT https://clinicals.spineservices.nhs.uk/STU3/List/[id] /HTTP1.1
 ```
 
-#### Update Condition Response ####
+#### Update Condition Response  ####
 
-```
+``` http
 200 OK http response code (and mirror PUT payload)  
 (or operation outcome if failure to find or process)
 ```
@@ -71,7 +71,7 @@ There is a risk in some cases that two clients will try to update the same resou
 
 Updates would include the versionID in the HTTP header as follows:
 
-```
+``` http
 PUT https://clinicals.spineservices.nhs.uk/STU3/List/744eec7d-8951-4722-ad74-dc34e86d4e1a
 If-Match: W/"25777f7d-27bc"
 ```

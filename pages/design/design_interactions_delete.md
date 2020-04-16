@@ -26,14 +26,14 @@ Given pre-requisites:
 - authenticated, authorized RBACed Spine-User
 - validated NHSNumber
 
-#### Delete Resource Request ####
+#### Delete Resource Request  ####
 
 For each resource 
-```
+``` http
 PUT https://clinicals.spineservices.nhs.uk/STU3/[resourceType]/[id] /HTTP1.1
 ```
 
-#### Delete Resource Response ####
+#### Delete Resource Response  ####
 
 200 OK http response code (and mirror PUT payload)  
 (or operation outcome if failure to find or process)
@@ -60,7 +60,7 @@ There is a risk in some cases that two clients will try to update the same resou
 
 Updates would include the versionID in the HTTP header as follows:
 
-```
+``` http
 PUT https://clinicals.spineservices.nhs.uk/STU3/Flag/744eec7d-8951-4722-ad74-dc34e86d4e1a
 If-Match: W/"25777f7d-27bc"
 ```

@@ -28,7 +28,7 @@ Here:
 Remove RA Record operation can be invoked directly or can be triggered by removal of Consent (to record Reasonable Adjustment information).
 
 ### http request ###
-```
+``` http
 POST https://clinicals.spineservices.nhs.uk/STU3/$removerarecord /HTTP1.1
 ```
 ### body ###
