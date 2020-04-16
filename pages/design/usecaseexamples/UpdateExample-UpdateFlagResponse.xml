@@ -80,7 +80,7 @@ UpdateExample-UpdateFlagResponse.xml -->
     <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-RemovalReason-1">
         <valueCodeableConcept>
             <coding>
-                <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1"/>
+                <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-RemovalReason-1"/>
                 <code value="Error"/>
                 <display value="The Reasonable Adjustment Flag was created in error"/>
             </coding>
@@ -89,24 +89,24 @@ UpdateExample-UpdateFlagResponse.xml -->
     <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1">
         <valueCodeableConcept>
             <coding>
-                <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1"/>
-                <code value="comms"/>
-                <display value="Communication"/>
+                <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"/>
+                <code value="004"/>
+                <display value="Accessible Information - requires specific information format"/>
             </coding>
         </valueCodeableConcept>
     </extension>
     <status value="inactive"/>
     <category>
         <coding>
-            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
-            <code value="reasonable adjustments flag"/>
-            <display value="Reasonable Adjustments Flag"/>
+            <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1"/>
+            <code value="NRAF"/>
+            <display value="National Reasonable Adjustments Flag"/>
         </coding>
     </category>
     <code>
         <coding>
-            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
-            <code value="requiresinformationineasyread"/>
+            <system value="http://snomed.info/sct" />
+            <code value="796161000000101" />
             <display value="Requires information in Easyread"/>
         </coding>
     </code>

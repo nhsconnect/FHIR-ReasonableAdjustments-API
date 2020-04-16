@@ -8,9 +8,9 @@
         <code value="forbidden"/>
         <details>
             <coding>
-                <system value="https://fhir.nhs.uk/STU3/ValueSet/Spine-ErrorOrWarningCode-1"/>
-                <code value="CONFLICT"/>
-                <display value="Conflict"/>
+                <system value="https://fhir.nhs.uk/STU3/CodeSystem/Spine-ErrorOrWarningCode-1"/>
+                <code value="INVALID_REQUEST_STATE"/>
+                <display value="The request exists but is not in an appropriate state for the call to succeed"/>
             </coding>
         </details>
     </issue>

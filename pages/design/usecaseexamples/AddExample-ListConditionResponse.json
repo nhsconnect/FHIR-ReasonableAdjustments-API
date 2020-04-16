@@ -1,0 +1,230 @@
+{
+  "resourceType": "List",
+  "id": "130f416a-055d-4a5d-a453-2b7c2de3b57b",
+  "fhir_comments": [
+    " AddExample-ListConditionResponse.xml "
+  ],
+  "meta": {
+    "versionId": "9554c538-1661-43b1-921b-efcbd2991c90",
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-List-1"
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "Provenance",
+      "id": "8ce7de6b-1307-432d-8e96-ae6a613ca3e4",
+      "meta": {
+        "profile": [
+          "https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"
+        ]
+      },
+      "target": [
+        {
+          "reference": "Condition/57f04652-6dd0-4135-a560-f9091b1b26fa"
+        }
+      ],
+      "recorded": "2018-07-23T11:00:00+00:00",
+      "agent": [
+        {
+          "role": [
+            {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+                  "code": "R0260",
+                  "display": "General Medical Practitioner"
+                }
+              ]
+            }
+          ],
+          "whoReference": {
+            "reference": "https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9",
+            "display": "Dr.D"
+          },
+          "onBehalfOfReference": {
+            "reference": "https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7",
+            "display": "Some GP Clinic"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Provenance",
+      "id": "fe71140b-3a30-45a3-b492-695b5f5e3717",
+      "meta": {
+        "profile": [
+          "https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"
+        ]
+      },
+      "target": [
+        {
+          "reference": "Condition/6be8bee9-e727-4564-a904-49507576f8be"
+        }
+      ],
+      "recorded": "2018-07-24T10:01:00+00:00",
+      "agent": [
+        {
+          "role": [
+            {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+                  "code": "R1974",
+                  "display": "Community Learning Disabilities Nurse"
+                }
+              ]
+            }
+          ],
+          "whoReference": {
+            "reference": "https://sds.spineservices.nhs.uk/STU3/Practitioner/4tr6ee6a9",
+            "display": "Nurse N"
+          },
+          "onBehalfOfReference": {
+            "reference": "https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7",
+            "display": "Some Hospital Learning Disability Support Department"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Condition",
+      "id": "57f04652-6dd0-4135-a560-f9091b1b26fa",
+      "meta": {
+        "profile": [
+          "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1"
+        ]
+      },
+      "extension": [
+        {
+          "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1",
+          "extension": [
+            {
+              "url": "created",
+              "valueReference": {
+                "reference": "#8ce7de6b-1307-432d-8e96-ae6a613ca3e4"
+              }
+            }
+          ]
+        }
+      ],
+      "clinicalStatus": "active",
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+              "code": "issue",
+              "display": "Issue"
+            }
+          ]
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1",
+            "code": "1855002",
+            "display": "Learning Disability(s)"
+          }
+        ]
+      },
+      "subject": {
+        "reference": "demographics.spineservices.nhs.uk/STU3/Patient/999999998"
+      }
+    },
+    {
+      "resourceType": "Condition",
+      "id": "6be8bee9-e727-4564-a904-49507576f8be",
+      "meta": {
+        "profile": [
+          "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1"
+        ]
+      },
+      "extension": [
+        {
+          "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1",
+          "extension": [
+            {
+              "url": "created",
+              "valueReference": {
+                "reference": "#fe71140b-3a30-45a3-b492-695b5f5e3717"
+              }
+            }
+          ]
+        }
+      ],
+      "clinicalStatus": "active",
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+              "code": "issue",
+              "display": "Issue"
+            }
+          ]
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1",
+            "code": "720821000000105",
+            "display": "Mental health condition(s)"
+          }
+        ],
+        "text": "Patient diagnosed with Stranger anxiety (disorder). Consider home-visit"
+      },
+      "subject": {
+        "reference": "demographics.spineservices.nhs.uk/STU3/Patient/999999998"
+      }
+    }
+  ],
+  "status": "current",
+  "mode": "changes",
+  "title": "Reasonable Adjustment List",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1094391000000102",
+        "display": "Reasonable adjustments for health and care access"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "demographics.spineservices.nhs.uk/STU3/Patient/999999998"
+  },
+  "date": "2018-07-23T11:00:00+00:00",
+  "entry": [
+    {
+      "deleted": false,
+      "date": "2018-07-23T11:00:00+00:00",
+      "item": {
+        "reference": "#57f04652-6dd0-4135-a560-f9091b1b26fa"
+      }
+    },
+    {
+      "deleted": false,
+      "date": "2018-07-23T11:00:00+00:00",
+      "item": {
+        "reference": "#8ce7de6b-1307-432d-8e96-ae6a613ca3e4"
+      }
+    },
+    {
+      "deleted": false,
+      "date": "2018-07-24T10:01:00+00:00",
+      "item": {
+        "reference": "#6be8bee9-e727-4564-a904-49507576f8be"
+      }
+    },
+    {
+      "deleted": false,
+      "date": "2018-07-24T10:01:00+00:00",
+      "item": {
+        "reference": "#fe71140b-3a30-45a3-b492-695b5f5e3717"
+      }
+    }
+  ]
+}

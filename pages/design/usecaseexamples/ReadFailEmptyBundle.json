@@ -1,0 +1,22 @@
+{
+  "resourceType": "Bundle",
+  "id": "885dda30-e403-470f-956a-366c01d7eace",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Bundle"
+    ]
+  },
+  "type": "searchset",
+  "total": 0,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://clinicals.spineservices.nhs.uk/STU3/Consent?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|reasonable%20adjustments%20flag&_format=xml",
+      "_url": {
+        "fhir_comments": [
+          " note entity encoding in url "
+        ]
+      }
+    }
+  ]
+}

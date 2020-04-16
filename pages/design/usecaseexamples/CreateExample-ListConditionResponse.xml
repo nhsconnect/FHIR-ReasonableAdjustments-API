@@ -9,14 +9,12 @@
         <Condition xmlns="http://hl7.org/fhir">
             <id value="57f04652-6dd0-4135-a560-f9091b1b26fa"/>
             <meta>
-                <versionId value="557ccfc3-0c78-48bf-aedd-70cc08af2ba1"/>
-                <lastUpdated value="2018-07-23T11:00:00+00:00"/>
                 <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1" />
             </meta>
             <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1">
                 <extension url="created">
                     <valueReference>
-                        <reference value="urn:uuid:8ce7de6b-1307-432d-8e96-ae6a613ca3e4"/>
+                        <reference value="#8ce7de6b-1307-432d-8e96-ae6a613ca3e4"/>
                     </valueReference>
                 </extension>
             </extension>
@@ -30,7 +28,7 @@
             </category>
             <code>
                 <coding>
-                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
+                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1"/>
                     <code value="1855002"/>
                     <display value="Learning Disability(s)"/>
                 </coding>
@@ -87,14 +85,14 @@
         <deleted value="false"/>
         <date value="2018-07-23T11:00:00+00:00"/>
         <item>
-            <reference value="urn:uuid:57f04652-6dd0-4135-a560-f9091b1b26fa"/>
+            <reference value="#57f04652-6dd0-4135-a560-f9091b1b26fa"/>
         </item>
     </entry>
     <entry>
         <deleted value="false"/>
         <date value="2018-07-23T11:00:00+00:00"/>
         <item>
-            <reference value="urn:uuid:8ce7de6b-1307-432d-8e96-ae6a613ca3e4"/>
+            <reference value="#8ce7de6b-1307-432d-8e96-ae6a613ca3e4"/>
         </item>
     </entry>
 </List>

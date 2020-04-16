@@ -1,0 +1,41 @@
+{
+  "resourceType": "Provenance",
+  "id": "fe71140b-3a30-45a3-b492-695b5f5e3717",
+  "fhir_comments": [
+    " AddExample-CreateProvenanceResource.xml "
+  ],
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"
+    ]
+  },
+  "target": [
+    {
+      "reference": "Condition/6be8bee9-e727-4564-a904-49507576f8be"
+    }
+  ],
+  "recorded": "2018-07-24T10:05:33+00:00",
+  "agent": [
+    {
+      "role": [
+        {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+              "code": "R1974",
+              "display": "Community Learning Disabilities Nurse"
+            }
+          ]
+        }
+      ],
+      "whoReference": {
+        "reference": "https://sds.spineservices.nhs.uk/STU3/Practitioner/4tr6ee6a9",
+        "display": "Nurse N"
+      },
+      "onBehalfOfReference": {
+        "reference": "https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7",
+        "display": "Some Hospital Learning Disability Support Department"
+      }
+    }
+  ]
+}

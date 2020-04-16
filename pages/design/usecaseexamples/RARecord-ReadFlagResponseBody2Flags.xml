@@ -7,7 +7,7 @@
     <!--  all search sets include the self link - the statement of the query string searched on. -->
     <link>
         <relation value="self"/>
-        <url value="https://clinicals.spineservices.nhs.uk/STU3/Flag?patient=999999998&amp;status=active&amp;category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&amp;_format=xml"/>
+        <url value="https://clinicals.spineservices.nhs.uk/STU3/Flag?patient=999999998&amp;status=active&amp;category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|reasonable%20adjustments%20flag&amp;_format=xml"/>
     </link>
 	<!--this example has 2 Flag (adjustment) included-->
 	<!--the first flag entry-->
@@ -62,24 +62,24 @@
 				<extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1">
 					<valueCodeableConcept>
 						<coding>
-							<system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1"/>
-							<code value="comms"/>
-							<display value="Communication"/>
+							<system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"/>
+							<code value="004"/>
+							<display value="Accessible Information - requires specific information format"/>
 						</coding>
 					</valueCodeableConcept>
 				</extension>
 				<status value="active"/>
 				<category>
 					<coding>
-						<system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
-						<code value="reasonable adjustments flag"/>
-						<display value="Reasonable Adjustments Flag"/>
+						<system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1"/>
+						<code value="NRAF"/>
+						<display value="National Reasonable Adjustments Flag"/>
 					</coding>
 				</category>
 				<code>
 					<coding>
-						<system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
-						<code value="requiresinformationineasyread"/>
+						<system value="http://snomed.info/sct" />
+						<code value="796161000000101" />
 						<display value="Requires information in Easyread"/>
 					</coding>
 				</code>
@@ -147,25 +147,25 @@
 				<extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1">
 					<valueCodeableConcept>
 						<coding>
-							<system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1"/>
-							<code value="addsupport"/>
-							<display value="Provision of Additional Support"/>
+							<system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"/>
+							<code value="007"/>
+							<display value="Additional Support"/>
 						</coding>
 					</valueCodeableConcept>
 				</extension>
 				<status value="active"/>
 				<category>
 					<coding>
-						<system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
-						<code value="reasonable adjustments flag"/>
-						<display value="Reasonable Adjustments Flag"/>
+						<system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1"/>
+						<code value="NRAF"/>
+						<display value="National Reasonable Adjustments Flag"/>
 					</coding>
 				</category>
 				<code>
 					<coding>
-						<system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
-						<code value="patientnottobeleftalone"/>
-						<display value="Patient not to be left alone"/>
+						<system value="https://snomed.info/sct"/>
+						<code value="225861007"/>
+						<display value="Unsafe to be left alone"/>
 					</coding>
 				</code>
 				<subject>

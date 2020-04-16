@@ -1,7 +1,0 @@
-<!-- xml example file 
-AAXMLPlaceholder.xml -->
-<Condition xmlns="http://hl7.org/fhir">
-    <subject>
-        <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
-    </subject>
-</Condition>

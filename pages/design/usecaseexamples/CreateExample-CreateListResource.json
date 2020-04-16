@@ -1,0 +1,27 @@
+{
+  "resourceType": "List",
+  "fhir_comments": [
+    " CreateExample-CreateListResource.xml "
+  ],
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-List-1"
+    ]
+  },
+  "status": "current",
+  "mode": "changes",
+  "title": "Reasonable Adjustment List",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1094391000000102",
+        "display": "Reasonable adjustments for health and care access"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "demographics.spineservices.nhs.uk/STU3/Patient/999999998"
+  },
+  "date": "2018-07-23T11:00:00+00:00"
+}

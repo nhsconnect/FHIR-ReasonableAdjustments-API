@@ -1,0 +1,41 @@
+{
+  "resourceType": "Provenance",
+  "id": "8ce7de6b-1307-432d-8e96-ae6a613ca3e4",
+  "fhir_comments": [
+    " CreateExample-CreateProvenanceResource.xml "
+  ],
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"
+    ]
+  },
+  "target": [
+    {
+      "reference": "Condition/57f04652-6dd0-4135-a560-f9091b1b26fa"
+    }
+  ],
+  "recorded": "2018-07-23T11:00:00+00:00",
+  "agent": [
+    {
+      "role": [
+        {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+              "code": "R0260",
+              "display": "General Medical Practitioner"
+            }
+          ]
+        }
+      ],
+      "whoReference": {
+        "reference": "https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9",
+        "display": "Dr.D"
+      },
+      "onBehalfOfReference": {
+        "reference": "https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7",
+        "display": "Some GP Clinic"
+      }
+    }
+  ]
+}

@@ -8,7 +8,12 @@
     <severity value="information"/>
     <code value="informational"/>
     <details>
-      <text value="OK"/>
+        <coding>
+            <system value="https://fhir.nhs.uk/STU3/CodeSystem/Spine-ErrorOrWarningCode-1"/>
+            <code value="RESOURCE_DELETED"/>
+            <display value="Resource removed"/>
+        </coding>
+        <text value="OK"/>
     </details>
  </issue>
 </OperationOutcome>

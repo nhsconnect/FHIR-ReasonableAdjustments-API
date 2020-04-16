@@ -9,7 +9,7 @@
     <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1">
         <extension url="created">
             <valueReference>
-                <reference value="8add130e-0c04-4dd1-94a0-b3317fb26dfc"/>
+                <reference value="#8add130e-0c04-4dd1-94a0-b3317fb26dfc"/>
             </valueReference>
         </extension>
     </extension>

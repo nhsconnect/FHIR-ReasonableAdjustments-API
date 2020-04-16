@@ -40,8 +40,8 @@
         <valueCodeableConcept>
             <coding>
                 <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ProxyRole-1"/>
-                <code value="lpa"/>
-                <display value="Lasting power of attorney personal welfare"/>
+                <code value="003"/>
+                <display value="Lasting power of attorney for personal welfare or court-appointed deputy or equivalent (Mental Capacity Act 2005)"/>
             </coding>
         </valueCodeableConcept>
     </extension>
@@ -63,7 +63,6 @@
     <patient>
         <reference value="demographics.spineservices.nhs.uk/STU3/Patient/999999998"/>
     </patient>
-    <!-- these are directly lifted from National Data Opt Out. Will need either a general set or specific values for Reasonable Adjustments -->
     <policy>
         <authority value="https://www.gov.uk/"/>
         <uri value="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/535024/data-security-review.pdf"/>

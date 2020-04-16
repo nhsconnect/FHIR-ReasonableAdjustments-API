@@ -1,5 +1,5 @@
 <!-- AddExample-CreateProvenanceResource.xml -->
-<Provenance>
+<Provenance xmlns="http://hl7.org/fhir">
     <id value="fe71140b-3a30-45a3-b492-695b5f5e3717"/>
     <meta>
         <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"/>

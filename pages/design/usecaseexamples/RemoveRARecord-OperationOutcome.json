@@ -1,0 +1,28 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "89842084-66c6-4b3c-9eb2-63d43e5ab074",
+  "fhir_comments": [
+    " RemoveRARecord-OperationOutcome.xml "
+  ],
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/Spine-OperationOutcome-1"
+    ]
+  },
+  "issue": [
+    {
+      "severity": "information",
+      "code": "informational",
+      "details": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/Spine-ErrorOrWarningCode-1",
+            "code": "RESOURCE_DELETED",
+            "display": "Resource removed"
+          }
+        ],
+        "text": "OK"
+      }
+    }
+  ]
+}

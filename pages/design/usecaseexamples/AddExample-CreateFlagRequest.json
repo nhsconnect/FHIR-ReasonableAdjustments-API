@@ -1,0 +1,47 @@
+{
+  "resourceType": "Flag",
+  "fhir_comments": [
+    " xml example fileAddExample-CreateFlagRequest.xml "
+  ],
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1",
+            "code": "004",
+            "display": "Accessible Information - requires specific information format"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "active",
+  "category": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
+        "code": "NRAF",
+        "display": "National Reasonable Adjustments Flag"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "796161000000101",
+        "display": "Requires information in Easyread"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "demographics.spineservices.nhs.uk/STU3/Patient/999999998"
+  }
+}
