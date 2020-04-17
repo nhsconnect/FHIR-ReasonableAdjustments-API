@@ -23,6 +23,7 @@ Although unlikely, Update Contention is possible. This scenario also illustrates
     * ClientSystem contains new Provenance resource within CareConnect-RARecord-List-1 resource
     * ClientSystem marks Impairment List.entry element in CareConnect-RARecord-List-1 resource as deleted [(xml)](design_usecases_RemoveImpairment.html#21-delete-condition-a-resource---xml-example) [(json)](design_usecases_RemoveImpairment.html#22-delete-condition-a-resource---json-example)
     * ClientSystem submits Update List (A)request [(xml)](design_usecases_RemoveImpairment.html#23-update-list-request---xml-example) [(json)](design_usecases_RemoveImpairment.html#24-update-list-request---json-example)
+      * ServerSystem removes deleted  Impairment Condition resource and referencing Provenance resources
       * ServerSystem submits Update List response [(xml)](design_usecases_RemoveImpairment.html#25-update-list-response---xml-example) [(json)](design_usecases_RemoveImpairment.html#26-update-list-response---json-example)
 * Practitioner B updates Patient's RARecord, Remove an Impairment 'Mental Health Condition' operation
   * Practitioner B commits update

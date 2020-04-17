@@ -45,7 +45,7 @@ Interaction diagram outlining:
 
 <img src="images/sequenceDiagrams/RemoveFlag.png">
 
-```
+``` yaml
 $removerarecord
 (In pseudocode:)
 
