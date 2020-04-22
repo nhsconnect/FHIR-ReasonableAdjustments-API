@@ -12,6 +12,7 @@ There are 2 common patterns when working with the various Reasonable Adjustment 
 * Consent and Flag resource - single, independent resources
 * Condition resource - which entails maintaining its containing List
 
+{% include note.html content="It is strongly advised to always perform a `GET` before trying to create anything." %}
 
 ## Create Resource ##
 

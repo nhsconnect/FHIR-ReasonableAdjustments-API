@@ -232,13 +232,13 @@ entries:
     - title: Communication Channels
       url: /support_communications.html
       output: web
-      subfolders:
-      - title: Where Else Can I Look?
-        output: web
-        subfolderitems:
-        - title: Additional Information
-          url: /support_other.html
-          output: web
+#      subfolders:
+#      - title: Where Else Can I Look?
+#        output: web
+#        subfolderitems:
+#        - title: Additional Information
+#          url: /support_other.html
+#          output: web
 
 
   - title: Tags

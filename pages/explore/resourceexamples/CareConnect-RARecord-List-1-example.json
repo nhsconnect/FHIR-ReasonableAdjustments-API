@@ -21,7 +21,7 @@
       },
       "target": [
         {
-          "reference": "#57f04652-6dd0-4135-a560-f9091b1b26fa"
+          "reference": "Condition/57f04652-6dd0-4135-a560-f9091b1b26fa"
         }
       ],
       "recorded": "2018-07-23T11:00:00+00:00",
@@ -64,7 +64,7 @@
             {
               "url": "created",
               "valueReference": {
-                "reference": "#8ce7de6b-1307-432d-8e96-ae6a613ca3e4"
+                "reference": "Provenance/8ce7de6b-1307-432d-8e96-ae6a613ca3e4"
               }
             }
           ]
