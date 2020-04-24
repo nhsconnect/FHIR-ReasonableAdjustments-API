@@ -21,7 +21,7 @@ The Provenance resource, profiled as RARecord-Provenance-1, records details of t
 
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Provenance-1"
-resource="[RARecord-Provenance-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1/_history/0.0.5)"
+resource="[RARecord-Provenance-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1/_history/1.0)"
 ccresource="Not Available"
 fhirresource="[Provenance](https://www.hl7.org/fhir/provenance.html)" %}
 

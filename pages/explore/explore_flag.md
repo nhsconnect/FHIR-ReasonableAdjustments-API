@@ -21,7 +21,7 @@ The Flag resource, profiled as RARecord-Flag-1, will record specific [Adjustment
 
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Flag-1"
-resource="[RARecord-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1/_history/0.0.5)"
+resource="[RARecord-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Flag-1/_history/1.0)"
 ccresource="Not Available"
 fhirresource="[Flag](https://www.hl7.org/fhir/flag.html)" %}
 
