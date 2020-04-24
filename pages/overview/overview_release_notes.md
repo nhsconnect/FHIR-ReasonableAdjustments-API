@@ -18,7 +18,7 @@ summary: Summary release notes of the FHIR&reg; Reasonable Adjustments API Imple
 ## 0.3.2-beta 
 
 - correction of List-Condition design
-- [diff vs. 0.3.1-beta](https://github.com/nhsconnect/FHIR-ReasonableAdjustments-API/compare/a533284c515d0383aa49b1422319229b0d04776d..4d40e7462e2a72bdcf2198166d3d1dc1b4835c50)
+- [diff vs. 0.3.1-beta](https://github.com/nhsconnect/FHIR-ReasonableAdjustments-API/compare/ae42f633707bbb84d5a782b30c21ee11a5a96c58..4d40e7462e2a72bdcf2198166d3d1dc1b4835c50)
 
 ## 0.3.1-beta
 
