@@ -44,4 +44,5 @@ For Condition resources, the Provenance resource is constructed by the client. I
 
 Under this model, there's not going to be a contained Provenance resource on Create of Flag or Consent resources (or for an Update, no Extension.updated provenance), as it's constructed and contained server-side as part of the persist operation. Extension-RARecord-Provenance-1 Extension.created 1..1 cardinality has therefore relaxed to 0..1.
 
+{% include note.html content="see guidance on use of [Identifiers](design_identifiers.html) in the Design & Build section" %}
 ---

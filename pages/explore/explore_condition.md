@@ -37,4 +37,5 @@ relfilepath="resourceexamples/CareConnect-RARecord-Condition-1-example1.json"
 title="CareConnect-RARecord-Condition-1"
 type="json" %}
 
+{% include note.html content="see guidance on use of [Identifiers](design_identifiers.html) in the Design & Build section" %}
 ---

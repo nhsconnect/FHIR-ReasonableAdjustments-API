@@ -184,6 +184,9 @@ entries:
     - title: Security
       url: /design_security.html
       output: web
+    - title: Identifiers
+      url: /design_identifiers.html
+      output: web
     - title: Headers
       url: /design_headers.html
       output: web

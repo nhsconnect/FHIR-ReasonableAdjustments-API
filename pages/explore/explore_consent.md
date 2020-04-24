@@ -37,4 +37,5 @@ relfilepath="resourceexamples/RARecord-Consent-1-example-1.json"
 title="RARecord-Consent-1"
 type="json" %}
 
+{% include note.html content="see guidance on use of [Identifiers](design_identifiers.html) in the Design & Build section" %}
 ---
