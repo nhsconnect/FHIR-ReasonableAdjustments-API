@@ -18,7 +18,7 @@ ClientSystem includes GPSystem client, SCRa, 1-click etc.
 ServerSystem includes Spine, PDS, SDS, FlagServer etc.  
 
 ####  Summary: ####
-During appointment Nurse discusses RA Record, Patient requests recording of 'Easy Read' Adjustment, addition of 'Mental Health Disability w supporting text' Impairment.
+During appointment Nurse discusses RA Record, Patient requests recording of 'Easy Read' Adjustment, addition of 'Mental Health Condition w supporting text' Impairment.
 
 #### Pre ####
 
@@ -28,7 +28,7 @@ During appointment Nurse discusses RA Record, Patient requests recording of 'Eas
 
 * Practitioner discusses RARecord and RA with Patient
 * Patient agrees to add Adjustment 'Easy Read'
-* Patient agrees to add Impairment 'Mental Health Disability w supporting text'
+* Patient agrees to add Impairment 'Mental Health Condition w supporting text'
 
 
 #### Main ####
@@ -36,7 +36,7 @@ During appointment Nurse discusses RA Record, Patient requests recording of 'Eas
 * Patient agrees to add Adjustment 'Easy Read'
   * Practitioner adds Adjustment from coded picklist
     * ClientSystem captures and structures as new RARecord-Flag-1 resource
-* Patient agrees to add Impairment 'Mental Health Disability' with supporting text
+* Patient agrees to add Impairment 'Mental Health Condition' with supporting text
   * Practitioner adds Impairment from coded picklist (elaborates w separate freetext)  
     * ClientSystem captures and structures Impairment information as new Impairment (CareConnect-RARecord-Condition-1) resource
     [(xml)](design_usecases_AddAdjustmentAddImpairment.html#21-create-condition-resource---xml-example) [(json)](design_usecases_AddAdjustmentAddImpairment.html#22-create-condition-resource---json-example)

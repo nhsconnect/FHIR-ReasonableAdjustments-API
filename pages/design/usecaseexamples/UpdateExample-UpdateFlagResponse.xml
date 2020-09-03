@@ -77,14 +77,19 @@ UpdateExample-UpdateFlagResponse.xml -->
             </valueReference>
         </extension>
     </extension>
-    <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-RemovalReason-1">
-        <valueCodeableConcept>
-            <coding>
-                <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1"/>
-                <code value="Error"/>
-                <display value="The Reasonable Adjustment Flag was created in error"/>
-            </coding>
-        </valueCodeableConcept>
+    <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-RemovalReason-1" >
+        <extension url="removalReason" >
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-RemovalReason-1"/>
+                    <code value="Error"/>
+                    <display value="The Reasonable Adjustment Flag was created in error"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <extension url="supportingComment" >
+            <valueString value="Requires Large Print rather than Easy Read" />
+        </extension>
     </extension>
     <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1">
         <valueCodeableConcept>

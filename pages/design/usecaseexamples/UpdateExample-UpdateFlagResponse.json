@@ -109,15 +109,24 @@
     },
     {
       "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-RemovalReason-1",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1",
-            "code": "Error",
-            "display": "The Reasonable Adjustment Flag was created in error"
+      "extension": [
+        {
+          "url": "removalReason",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-RemovalReason-1",
+                "code": "Error",
+                "display": "The Reasonable Adjustment Flag was created in error"
+              }
+            ]
           }
-        ]
-      }
+        },
+        {
+          "url": "supportingComment",
+          "valueString": "Requires Large Print rather than Easy Read"
+        }
+      ]
     },
     {
       "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1",

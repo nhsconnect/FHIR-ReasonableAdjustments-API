@@ -24,7 +24,7 @@ Practitioner enters Removal Reason. System inactivates all Reasonable Adjustment
 * or Practitioner removes Consent
 
 #### Main ####
-* Practitioner enters Removal Reason
+* Practitioner enters Removal Reason and Supporting Comment
   * ClientSystem generates new Parameter resource 
   * ClientSystem submits Remove RA Record [(xml)](design_usecases_RemoveRARecord.html#21-remove-ra-record-operation---xml-example) [(json)](design_usecases_RemoveRARecord.html#21-remove-ra-record-operation---json-example)
     * ServerSystem submits Remove RA Record response[(xml)](design_usecases_RemoveRARecord.html#23-remove-ra-record-operation-outcome---xml-example) [(json)](design_usecases_RemoveRARecord.html#24-remove-ra-record-operation-outcome---json-example)

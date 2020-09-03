@@ -11,6 +11,7 @@ summary: Update interaction describes the interaction required to update List re
 Note: the only update allowed to any part of a Reasonable Adjustment record is an update to status (essentially a soft delete, as .status active => inactive).  
 Any corrections to an already committed Reasonable Adjustment element therefore require removal of the existing item, then creation of a new Consent, Flag (Adjustment) or Condition (Impairment) resource.  
 
+A removal reason and a supporting comment must be recorded when removing a Consent, Flag (Adjustment) or Condition (Impairment) resource.
 
 ## Update Resource ##
 

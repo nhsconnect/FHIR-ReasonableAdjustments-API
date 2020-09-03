@@ -8,13 +8,17 @@
         </part>
         <part>
             <name value="removalReason"/>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1"/>
-                        <code value="DoesntApply"/>
-                        <display value="The Reasonable Adjustment Flag no longer applies to the patient"/>
-                    </coding>
-                </valueCodeableConcept>
-            </part>
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1"/>
+                    <code value="DoesntApply"/>
+                    <display value="The Reasonable Adjustment Flag no longer applies to the patient"/>
+                </coding>
+            </valueCodeableConcept>
+        </part>
+        <part>
+            <name value="supportingComment"/>
+            <valueString value="No longer applies"/>
+        </part>
     </parameter>
 </Parameters>

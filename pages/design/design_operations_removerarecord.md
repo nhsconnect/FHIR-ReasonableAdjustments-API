@@ -19,7 +19,7 @@ Here:
 |---------------:|-----------:|
 | operation name | removerarecord |
 | context        | server     |
-| parameters     | NHSNumber, RemovalReason |
+| parameters     | NHSNumber, RemovalReason, SupportingComment |
 
 'server' context entails operation execution is invoked at the FHIR Server baseURL. Invocation syntax, in this case, specifies POST to the baseURL, the operation called by name with $ suffix
 
@@ -32,7 +32,7 @@ Remove RA Record operation can be invoked directly or can be triggered by remova
 POST https://clinicals.spineservices.nhs.uk/STU3/$removerarecord /HTTP1.1
 ```
 ### body ###
-The operation request body is a multi-part Parameter resource, containing the NHS Number of the Patient requiring their Reasonable Adjustment Flag removed, and optionally a RemovalReason where given
+The operation request body is a multi-part Parameter resource, containing the NHS Number of the Patient requiring their Reasonable Adjustment Flag removed, and a RemovalReason and supporting comment
 
 Examples of this operation interaction are available at [Remove RA Record](/design_usecases_RemoveRARecord.html)
 
@@ -55,7 +55,7 @@ GET Flags WHERE
   category=RAFlag
 
   Foreach Flag in searchset, 
-    Update status=>inactive & removalReason=>[RemovalReason]
+    Update status=>inactive & removalReason=>[RemovalReason & SupportingComment]
 
 GET Consent WHERE
   subject=[NHS#]
@@ -63,7 +63,7 @@ GET Consent WHERE
   category=RAFlag
 
   Foreach Consent in searchset, 
-    Update status=>inactive & removalReason=>[RemovalReason]
+    Update status=>inactive & removalReason=>[RemovalReason & SupportingComment]
 
 GET List WHERE
   subject=[NHS#]

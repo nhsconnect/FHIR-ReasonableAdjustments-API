@@ -33,7 +33,7 @@ Practitioner creates new 'Large Print' Adjustment.
 
 #### Main ####
 
-* Practitioner removes (soft deletes) existing 'Easy Read' Adjustment, records Removal reason 'Entered in error';
+* Practitioner removes (soft deletes) existing 'Easy Read' Adjustment, records Removal reason 'Entered in error' and supporting comment;
   * ClientSystem updates client-side Flag resource
 
 * Practitioner commits RARecord
@@ -69,7 +69,7 @@ If-Match: W/"aa755bd6-2be9-4971-972a-6724879c5cb1"
 #### http body ####
 {% include custom/fhir.codegrid.html
 relfilepath="usecaseexamples/UpdateExample-UpdateFlagRequest.xml"
-title="UpdateFlagRequest.xml"
+title="Update Flag Request"
 type="xml" %}
 
 ### 2.2 Update Flag Request - json example ###
