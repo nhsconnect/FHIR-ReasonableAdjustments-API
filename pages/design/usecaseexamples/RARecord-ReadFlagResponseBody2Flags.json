@@ -49,10 +49,15 @@
             },
             "target": [
               {
-                "reference": "Flag/9e63f370-ba72-11e8-96f8-529269fb1459"
+                "reference": "#"
               }
             ],
             "recorded": "2018-07-24T10:01:00+00:00",
+            "activity": {
+              "system": "http://hl7.org/fhir/v3/DataOperation",
+              "code": "CREATE",
+              "display": "create"
+            },
             "agent": [
               {
                 "role": [
@@ -89,18 +94,6 @@
                 }
               }
             ]
-          },
-          {
-            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1",
-                  "code": "comms",
-                  "display": "Communication"
-                }
-              ]
-            }
           }
         ],
         "status": "active",
@@ -159,10 +152,15 @@
             },
             "target": [
               {
-                "reference": "Flag/fda1e088-ba84-11e8-96f8-529269fb1459"
+                "reference": "#"
               }
             ],
             "recorded": "2018-06-22T10:01:00+00:00",
+            "activity": {
+              "system": "http://hl7.org/fhir/v3/DataOperation",
+              "code": "CREATE",
+              "display": "create"
+            },
             "agent": [
               {
                 "role": [
@@ -189,17 +187,6 @@
           }
         ],
         "extension": [
-          {
-            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1",
-            "extension": [
-              {
-                "url": "created",
-                "valueReference": {
-                  "reference": "#27e7030a-ba85-11e8-96f8-529269fb1459"
-                }
-              }
-            ]
-          },
           {
             "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentNotes-1",
             "valueAnnotation": {

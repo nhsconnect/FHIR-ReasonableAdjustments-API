@@ -22,10 +22,15 @@
       },
       "target": [
         {
-          "reference": "Flag/d82888a3-1584-4e7f-99f1-3e578a1c9d37"
+          "reference": "#"
         }
       ],
       "recorded": "2018-07-25T11:03:00+00:00",
+      "activity": {
+        "system": "http://hl7.org/fhir/v3/DataOperation",
+        "code": "CREATE",
+        "display": "create"
+      },
       "agent": [
         {
           "role": [
@@ -52,17 +57,6 @@
     }
   ],
   "extension": [
-    {
-      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1",
-      "extension": [
-        {
-          "url": "created",
-          "valueReference": {
-            "reference": "#9e6fb1d3-4f10-4087-8782-bff20bf2a07f"
-          }
-        }
-      ]
-    },
     {
       "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1",
       "valueCodeableConcept": {

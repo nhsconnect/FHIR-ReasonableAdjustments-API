@@ -14,9 +14,16 @@
                 <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"/>
             </meta>
             <target>
-                <reference value="Consent/f1dc0ac6-45ff-4d2b-bf91-793971e3e286"/>
+                <reference value="#"/>
             </target>
             <recorded value="2018-07-23T11:00:00+00:00"/>
+            <activity>
+                <coding>
+                    <system value="http://hl7.org/fhir/v3/DataOperation"/>
+                    <code value="CREATE"/>
+                    <display value="create"/>
+                </coding>
+            </activity>
             <agent>
                 <role>
                     <coding>
@@ -44,13 +51,6 @@
                 <display value="Lasting power of attorney personal welfare"/>
             </coding>
         </valueCodeableConcept>
-    </extension>
-    <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1">
-        <extension url="created">
-            <valueReference>
-                <reference value="#e0531fd1-212d-4a97-a7a9-d17cec9a6af2"/>
-            </valueReference>
-        </extension>
     </extension>
     <status value="active"/>
     <category>

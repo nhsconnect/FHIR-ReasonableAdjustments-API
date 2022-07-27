@@ -22,10 +22,15 @@
       },
       "target": [
         {
-          "reference": "Flag/2acb0536-0a8f-48c9-8a2f-6ee82860f186"
+          "reference": "#"
         }
       ],
       "recorded": "2018-07-24T10:05:33+00:00",
+      "activity": {
+          "system": "http://hl7.org/fhir/v3/DataOperation",
+          "code": "CREATE",
+          "display": "create"
+        },
       "agent": [
         {
           "role": [
@@ -60,10 +65,15 @@
       },
       "target": [
         {
-          "reference": "Flag/2acb0536-0a8f-48c9-8a2f-6ee82860f186"
+          "reference": "#"
         }
       ],
       "recorded": "2018-07-25T11:00:00+00:00",
+      "activity": {
+          "system": "http://hl7.org/fhir/v3/DataOperation",
+          "code": "UPDATE",
+          "display": "revise"
+        },
       "agent": [
         {
           "role": [
@@ -90,23 +100,6 @@
     }
   ],
   "extension": [
-    {
-      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1",
-      "extension": [
-        {
-          "url": "created",
-          "valueReference": {
-            "reference": "#43124f67-b09d-453d-b889-a5e2e8780b9e"
-          }
-        },
-        {
-          "url": "updated",
-          "valueReference": {
-            "reference": "#07c0c8fa-4654-42f7-8d6c-e4b4e714cffd"
-          }
-        }
-      ]
-    },
     {
       "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-RemovalReason-1",
       "extension": [

@@ -17,6 +17,13 @@ AddExample-CreateConditionResponse.xml -->
                 <reference value="Condition/6be8bee9-e727-4564-a904-49507576f8be"/>
             </target>
             <recorded value="2018-07-24T10:05:33+00:00"/>
+            <activity>
+                <coding>
+                    <system value="http://hl7.org/fhir/v3/DataOperation"/>
+                    <code value="CREATE"/>
+                    <display value="create"/>
+                </coding>
+            </activity>
             <agent>
                 <role>
                     <coding>
@@ -36,13 +43,6 @@ AddExample-CreateConditionResponse.xml -->
             </agent>
         </Provenance>
     </contained>
-    <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1">
-        <extension url="created">
-            <valueReference>
-                <reference value="#fe71140b-3a30-45a3-b492-695b5f5e3717"/>
-            </valueReference>
-        </extension>
-    </extension>
     <clinicalStatus value="active"/>
     <category>
         <coding>

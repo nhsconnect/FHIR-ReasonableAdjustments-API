@@ -5,9 +5,16 @@
         <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"/>
     </meta>
     <target>
-        <reference value="Condition/6be8bee9-e727-4564-a904-49507576f8be"/>
+        <reference value="#"/>
     </target>
     <recorded value="2018-07-24T10:05:33+00:00"/>
+    <activity>
+        <coding>
+            <system value="http://hl7.org/fhir/v3/DataOperation"/>
+            <code value="CREATE"/>
+            <display value="create"/>
+        </coding>
+    </activity>
     <agent>
         <role>
             <coding>

@@ -13,13 +13,6 @@
                 <lastUpdated value="2018-07-23T11:00:00+00:00"/>
                 <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1" />
             </meta>
-            <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1">
-                <extension url="created">
-                    <valueReference>
-                        <reference value="urn:uuid:8ce7de6b-1307-432d-8e96-ae6a613ca3e4"/>
-                    </valueReference>
-                </extension>
-            </extension>
             <clinicalStatus value="active"/>
             <category>
                 <coding>
@@ -50,6 +43,13 @@
                 <reference value="Condition/57f04652-6dd0-4135-a560-f9091b1b26fa"/>
             </target>
             <recorded value="2018-07-23T11:00:00+00:00"/>
+            <activity>
+                <coding>
+                    <system value="http://hl7.org/fhir/v3/DataOperation"/>
+                    <code value="CREATE"/>
+                    <display value="create"/>
+                </coding>
+            </activity>
             <agent>
                 <role>
                     <coding>

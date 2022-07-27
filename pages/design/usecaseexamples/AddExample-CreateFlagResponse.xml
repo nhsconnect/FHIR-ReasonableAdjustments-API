@@ -14,9 +14,16 @@ AddExample-CreateFlagResponse.xml -->
                 <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"/>
             </meta>
             <target>
-                <reference value="Flag/2acb0536-0a8f-48c9-8a2f-6ee82860f186"/>
+                <reference value="#"/>
             </target>
             <recorded value="2018-07-24T10:05:33+00:00"/>
+            <activity>
+                <coding>
+                    <system value="http://hl7.org/fhir/v3/DataOperation"/>
+                    <code value="CREATE"/>
+                    <display value="create"/>
+                </coding>
+            </activity>
             <agent>
                 <role>
                     <coding>
@@ -36,13 +43,6 @@ AddExample-CreateFlagResponse.xml -->
             </agent>
         </Provenance>
     </contained>
-    <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1">
-        <extension url="created">
-            <valueReference>
-                <reference value="#43124f67-b09d-453d-b889-a5e2e8780b9e"/>
-            </valueReference>
-        </extension>
-    </extension>
     <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1">
         <valueCodeableConcept>
             <coding>
