@@ -6,13 +6,42 @@
         <lastUpdated value="2016-03-01T10:04:33+00:00"/>
         <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1" />
     </meta>
-    <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1">
-        <extension url="created">
-            <valueReference>
-                <reference value="8add130e-0c04-4dd1-94a0-b3317fb26dfc"/>
-            </valueReference>
-        </extension>
-    </extension>
+    <contained>
+            <Provenance>
+                <id value="8add130e-0c04-4dd1-94a0-b3317fb26dfc"/>
+                <meta>
+                    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"/>
+                </meta>
+                <target>
+                    <reference value="#"/>
+                </target>
+                <recorded value="2016-03-01T10:05:33+00:00"/>
+                <activity>
+                    <coding>
+                        <system value="http://hl7.org/fhir/v3/DataOperation"/>
+                        <code value="CREATE"/>
+                        <display value="create"/>
+                    </coding>
+                </activity>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"/>
+                            <code value="R0260"/>
+                            <display value="General Medical Practitioner"/>
+                        </coding>
+                    </role>
+                    <whoReference>
+                        <reference value="https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9"/>
+                        <display value="Dr.D"/>
+                    </whoReference>
+                    <onBehalfOfReference>
+                        <reference value="https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7"/>
+                        <display value="Some GP Clinic"/>
+                    </onBehalfOfReference>
+                </agent>
+            </Provenance>
+    </contained>
     <clinicalStatus value="active"/>
     <category>
         <coding>

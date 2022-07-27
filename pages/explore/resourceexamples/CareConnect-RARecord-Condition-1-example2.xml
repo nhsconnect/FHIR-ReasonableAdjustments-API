@@ -13,9 +13,16 @@
                     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Provenance-1"/>
                 </meta>
                 <target>
-                    <reference value="Condition/6c959805-7af1-445d-9d3e-087e3c2bc107"/>
+                    <reference value="#"/>
                 </target>
                 <recorded value="2016-03-01T10:05:33+00:00"/>
+                <activity>
+                    <coding>
+                        <system value="http://hl7.org/fhir/v3/DataOperation"/>
+                        <code value="CREATE"/>
+                        <display value="create"/>
+                    </coding>
+                </activity>
                 <agent>
                     <role>
                         <coding>
@@ -35,13 +42,6 @@
                 </agent>
             </Provenance>
     </contained>
-    <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1">
-        <extension url="created">
-            <valueReference>
-                <reference value="#d0d311a1-e13b-4c89-a496-1694332471d3"/>
-            </valueReference>
-        </extension>
-    </extension>
     <clinicalStatus value="active"/>
     <category>
         <coding>

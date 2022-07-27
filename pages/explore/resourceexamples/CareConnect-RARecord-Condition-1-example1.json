@@ -19,10 +19,15 @@
       },
       "target": [
         {
-          "reference": "Condition/9cbd3dda-c51a-4e68-af70-f0de60cb8ba7"
+          "reference": "#"
         }
       ],
       "recorded": "2016-03-01T10:05:33+00:00",
+      "activity": {
+          "system": "http://hl7.org/fhir/v3/DataOperation",
+          "code": "CREATE",
+          "display": "create"
+        },
       "agent": [
         {
           "role": [
@@ -43,19 +48,6 @@
           "onBehalfOfReference": {
             "reference": "https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7",
             "display": "Some GP Clinic"
-          }
-        }
-      ]
-    }
-  ],
-  "extension": [
-    {
-      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1",
-      "extension": [
-        {
-          "url": "created",
-          "valueReference": {
-            "reference": "#8add130e-0c04-4dd1-94a0-b3317fb26dfc"
           }
         }
       ]

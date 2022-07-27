@@ -27,10 +27,15 @@
       },
       "target": [
         {
-          "reference": "Consent/9abcd14c-187c-43e4-9cbf-aaf139b17e8a"
+          "reference": "#"
         }
       ],
       "recorded": "2016-03-01T10:05:33+00:00",
+      "activity": {
+          "system": "http://hl7.org/fhir/v3/DataOperation",
+          "code": "CREATE",
+          "display": "create"
+        },
       "agent": [
         {
           "role": [
@@ -68,17 +73,6 @@
           }
         ]
       }
-    },
-    {
-      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-Provenance-1",
-      "extension": [
-        {
-          "url": "created",
-          "valueReference": {
-            "reference": "#e0531fd1-212d-4a97-a7a9-d17cec9a6af2"
-          }
-        }
-      ]
     }
   ],
   "status": "active",
