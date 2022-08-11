@@ -43,7 +43,7 @@
                         <agent>
                             <role>
                                 <coding>
-                                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"/>
+                                    <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"/>
                                     <code value="R1974"/>
                                     <display value="Community Learning Disabilities Nurse"/>
                                 </coding>
@@ -122,7 +122,7 @@
                         <agent>
                             <role>
                                 <coding>
-                                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"/>
+                                    <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"/>
                                     <code value="R0260"/>
                                     <display value="General Medical Practitioner"/>
                                 </coding>
