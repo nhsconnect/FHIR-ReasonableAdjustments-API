@@ -10,7 +10,10 @@ summary: An overview of the security requirements for FHIR API calls into Spine.
 
 ## Headers ##
 
-This page collates and summarises http headers to be included with http requests and responses submitted.  
+This page collates and summarises http headers to be included with http requests and responses submitted.
+
+It is recommended that developers are familiar with and refer to technical documentation [Introduction to Spine Core FHIR API Framework](https://developer.nhs.uk/apis/spine-core/index.html) while integrating with any Spine systems.
+
 Headers listed are cumulative.
 ### Requests ###
 
@@ -18,10 +21,13 @@ Headers listed are cumulative.
 * Authorization: Bearer [jwt_token_string]
 * FromASID: [clientASID]
 * ToASID: [serverASID]
+* TraceID: [cliemt ,message uuid]
 * InteractionID: [serviceName]
 
-[InteractionID](/design_headers.html#interactionid) varies by resource and interaction undertaken.  
-FromASID and ToASID headers, and Accredited System IDs are specified in the [Spine Core FHIR API Framework](https://developer.nhs.uk/apis/spine-core/resources_headers.html#other-headers)  
+[InteractionID](/design_headers.html#interactionid) varies by resource and interaction undertaken.
+
+FromASID and ToASID headers, TraceID and Accredited System IDs are specified in the [Spine Core FHIR API Framework](
+https://developer.nhs.uk/apis/spine-core/ssp_implementation_guide.html#system-responsibilities)
 
 #### Create requests ####
 * Prefer: return=representation

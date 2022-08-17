@@ -9,6 +9,26 @@ summary: Summary release notes of the FHIR&reg; Reasonable Adjustments API Imple
 
 {% include important.html content="This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop applications using the FHIR&reg; Reasonable Adjustments API. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." %}
 
+## 0.3.5-beta
+
+### Updated Technical assets
+
+Terminology
+- valuesets and codesystems updated in line with new valuesets in Reasonable Adjustment Flag
+Local System Integration Requirements Specification v1.1
+- 'PRECONDITION_FAILED' added to Spine-ErrorOrWarningCode-1
+
+Profiles
+- profiles for Consent, Flag, Condition - removed circular extension Extension-RARecord-Provenance-1
+- profile Provenance .activity now 1..1 
+
+https://github.com/nhsconnect/STU3-FHIR-Assets/compare/develop...ed5b6b6f
+
+### Update Implementation Guide
+
+- Design principles expanded to clarify Resource usage. Introduces Equality Act Threshold, Impairments and Underlying Conditions distinction for Conditions.
+- TraceId and clearer call out to Spine added to Headers page
+
 ## 0.3.4-beta
 
 - clarification of requirement that supporting comments are mandatory when removing an RA Flag or a constituent resource
