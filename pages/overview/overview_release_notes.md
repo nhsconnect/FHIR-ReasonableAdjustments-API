@@ -22,7 +22,7 @@ Profiles
 - profiles for Consent, Flag, Condition - removed circular extension Extension-RARecord-Provenance-1
 - profile Provenance .activity now 1..1 
 
-https://github.com/nhsconnect/STU3-FHIR-Assets/compare/develop...ed5b6b6f
+Technical asset changes can be viewed via the relevant git compare page in the [Github repo](https://github.com/nhsconnect/STU3-FHIR-Assets/compare/2bfbb694...develop)
 
 ### Update Implementation Guide
 
