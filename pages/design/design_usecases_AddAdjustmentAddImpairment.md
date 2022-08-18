@@ -77,6 +77,7 @@ POST https://clinicals.spineservices.nhs.uk/STU3/Flag HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
+TraceID: 0fd9c402-3bca-48a4-a5c3-06c5dd064a76
 Content-Type: application/fhir+xml
 Prefer: return=representation
 InteractionID: urn:nhs:names:services:raflags:Flag.write:1
@@ -97,6 +98,7 @@ POST https://clinicals.spineservices.nhs.uk/STU3/Flag HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
 ToASID: 987654456789
+TraceID: 0fd9c402-3bca-48a4-a5c3-06c5dd064a76
 Content-Type: application/fhir+json
 Prefer: return=representation
 InteractionID: urn:nhs:names:services:raflags:Flag.write:1
@@ -184,6 +186,7 @@ POST https://clinicals.spineservices.nhs.uk/STU3/List HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
+TraceID: 0fd9c402-3bca-48a4-a5c3-06c5dd064a76
 Content-Type: application/fhir+xml
 Prefer: return=representation
 InteractionID: urn:nhs:names:services:raflags:List.write:1
@@ -204,6 +207,7 @@ POST https://clinicals.spineservices.nhs.uk/STU3/List HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
+TraceID: 0fd9c402-3bca-48a4-a5c3-06c5dd064a76
 Content-Type: application/fhir+json
 Prefer: return=representation
 InteractionID: urn:nhs:names:services:raflags:List.write:1
