@@ -23,7 +23,7 @@ This information will be available to healthcare professionals and organisations
 
 {% include custom/fhir.resourcegrid.html
 resourcename="RARecord-Consent-1"
-resource="[RARecord-Consent-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Consent-1/_history/0.0.5)"
+resource="[RARecord-Consent-1](https://fhir.nhs.uk/STU3/StructureDefinition/RARecord-Consent-1)"
 ccresource="Not Available"
 fhirresource="[Consent](https://www.hl7.org/fhir/consent.html)" %}
 

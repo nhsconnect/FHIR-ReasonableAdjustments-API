@@ -21,7 +21,7 @@ Headers listed are cumulative.
 * Authorization: Bearer [jwt_token_string]
 * FromASID: [clientASID]
 * ToASID: [serverASID]
-* TraceID: [cliemt ,message uuid]
+* TraceID: [client ,message uuid]
 * InteractionID: [serviceName]
 
 [InteractionID](/design_headers.html#interactionid) varies by resource and interaction undertaken.
