@@ -26,6 +26,7 @@ Technical asset changes can be viewed via the relevant git compare page in the [
 
 ### Update Implementation Guide
 
+- Terminology page describing usage added
 - Design principles expanded to clarify Resource usage. Introduces Equality Act Threshold, Impairments and Underlying Conditions distinction for Conditions.
 - TraceId and clearer call out to Spine added to Headers page
 

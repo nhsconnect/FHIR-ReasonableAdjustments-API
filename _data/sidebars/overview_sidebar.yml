@@ -77,6 +77,9 @@ entries:
         - title: RARecord-Provenance-1
           url: /explore_provenance.html
           output: web
+    - title: Terminology
+      url: /explore_terminology.html
+      output: web
     - title: Remove Flag Operation
       url: /explore_removeflag_operation.html
       output: web
