@@ -24,9 +24,8 @@ Reasonable Adjustments requires the ability to:
 * _View Adjustments_
 * _View Impairments, Threshold Code or Underlying Conditions_ _  
 <br>
-* _Remove Consent_
 * _Remove an Adjustment_
-* _Remove an Impairment, Threshold Code or Underlying Condition_ _  
+* _Remove an Impairment or Underlying Condition_ _  
 <br>
 * _Remove Flag_
 * _Determine Provenance_  
