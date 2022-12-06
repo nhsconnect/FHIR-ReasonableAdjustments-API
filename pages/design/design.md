@@ -18,15 +18,15 @@ Reasonable Adjustments requires the ability to:
 
 * _Add Consent_
 * _Add an Adjustment_
-* _Add an Impairment_  
+* _Add an Impairment, Threshold Code or Underlying Condition_ 
 <br>
 * _View Consent_
 * _View Adjustments_
-* _View Conditions_  
+* _View Impairments, Threshold Code or Underlying Conditions_ _  
 <br>
 * _Remove Consent_
 * _Remove an Adjustment_
-* _Remove an Impairment_  
+* _Remove an Impairment, Threshold Code or Underlying Condition_ _  
 <br>
 * _Remove Flag_
 * _Determine Provenance_  
