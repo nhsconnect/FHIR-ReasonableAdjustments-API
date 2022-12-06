@@ -69,8 +69,8 @@
         <uri value="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/535024/data-security-review.pdf"/>
     </policy>
     <purpose>
-        <system value="https://snomed.info/sct"/>
-        <code value="370856009"/>
-        <display value="Limiting access to confidential patient information"/>
+        <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConsentPurpose-1"/>
+        <code value="RACONSENT"/>
+        <display value="Reasonable Adjustments - Consent to record Reasonable Adjustments"/>
     </purpose>
 </Consent>

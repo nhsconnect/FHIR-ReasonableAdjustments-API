@@ -28,7 +28,7 @@ Flag.category (Required) uses [ValueSet/RARecord-FlagCategory-1](https://fhir.nh
 
 -- Identifies the Flag resource instance as being categorised as part of a Reasonable Adjustment Flag
     
-Flag.code (Extensible) uses [https://fhir.nhs.uk/STU3/](https://fhir.nhs.uk/STU3/ValueSet/RARecord-FlagCode-1)
+Flag.code (Extensible) uses [ValueSet/RARecord-FlagCode-1](https://fhir.nhs.uk/STU3/ValueSet/RARecord-FlagCode-1)
 
 -- Identifies the Reasonable Adjustment required
 

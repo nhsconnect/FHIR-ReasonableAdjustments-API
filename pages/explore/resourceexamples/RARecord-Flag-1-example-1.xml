@@ -62,8 +62,8 @@
     <code>
         <coding>
             <system value="https://snomed.info/sct"/>
-            <code value="719369003"/>
-            <display value="Does use communication device"/>
+            <code value="796161000000101"/>
+            <display value="Requires information in Easyread"/>
         </coding>
     </code>
     <subject>

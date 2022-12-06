@@ -68,7 +68,7 @@
         "coding": [
           {
             "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ProxyRole-1",
-            "code": "patientconsent",
+            "code": "001",
             "display": "Patient consent"
           }
         ]
@@ -81,8 +81,8 @@
       "coding": [
         {
           "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
-          "code": "reasonable adjustments flag",
-          "display": "Reasonable Adjustments Flag"
+          "code": "NRAF",
+          "display": "National Reasonable Adjustments Flag"
         }
       ]
     }
@@ -98,9 +98,9 @@
   ],
   "purpose": [
     {
-      "system": "https://snomed.info/sct",
-      "code": "370856009",
-      "display": "Limiting access to confidential patient information"
+      "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConsentPurpose-1",
+      "code": "RACONSENT",
+      "display": "Reasonable Adjustments - Consent to record Reasonable Adjustments"
     }
   ]
 }

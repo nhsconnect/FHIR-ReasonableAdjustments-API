@@ -60,8 +60,8 @@
         "coding": [
           {
             "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1",
-            "code": "comms",
-            "display": "Communication"
+            "code": "1",
+            "display": "Communication support"
           }
         ]
       }
@@ -72,8 +72,8 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
-        "code": "reasonable adjustments flag",
-        "display": "Reasonable Adjustments Flag"
+        "code": "NRAF",
+        "display": "National Reasonable Adjustments Flag"
       }
     ]
   },
@@ -81,7 +81,7 @@
     "coding": [
       {
         "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1",
-        "code": "requiresinformationineasyread",
+        "code": "796161000000101",
         "display": "Requires information in Easyread"
       }
     ]

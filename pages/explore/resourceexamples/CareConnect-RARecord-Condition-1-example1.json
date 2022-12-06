@@ -68,9 +68,9 @@
   "code": {
     "coding": [
       {
-        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1",
-        "code": "requiresinformationineasyread",
-        "display": "Requires information in Easyread"
+        "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1",
+        "code": "5",
+        "display": "Learning or understanding or concentrating"
       }
     ]
   }
