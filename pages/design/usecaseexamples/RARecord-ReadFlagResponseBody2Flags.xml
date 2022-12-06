@@ -62,9 +62,9 @@
                 <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1">
                     <valueCodeableConcept>
                         <coding>
-                            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1"/>
-                            <code value="comms"/>
-                            <display value="Communication"/>
+                            <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"/>
+                            <code value="1"/>
+                            <display value="Communication support"/>
                         </coding>
                     </valueCodeableConcept>
                 </extension>
@@ -72,14 +72,14 @@
                 <category>
                     <coding>
                         <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
-                        <code value="reasonable adjustments flag"/>
-                        <display value="Reasonable Adjustments Flag"/>
+                        <code value="NRAF"/>
+                        <display value="National Reasonable Adjustments Flag"/>
                     </coding>
                 </category>
                 <code>
                     <coding>
                         <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
-                        <code value="requiresinformationineasyread"/>
+                        <code value="796161000000101"/>
                         <display value="Requires information in Easyread"/>
                     </coding>
                 </code>
@@ -147,9 +147,9 @@
                 <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1">
                     <valueCodeableConcept>
                         <coding>
-                            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1"/>
-                            <code value="addsupport"/>
-                            <display value="Provision of Additional Support"/>
+                            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategory-1"/>
+                            <code value="7"/>
+                            <display value="Adjustments for providing Additional Support to patients"/>
                         </coding>
                     </valueCodeableConcept>
                 </extension>
@@ -157,15 +157,15 @@
                 <category>
                     <coding>
                         <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
-                        <code value="reasonable adjustments flag"/>
-                        <display value="Reasonable Adjustments Flag"/>
+                        <code value="NRAF"/>
+                        <display value="National Reasonable Adjustments Flag"/>
                     </coding>
                 </category>
                 <code>
                     <coding>
                         <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
-                        <code value="patientnottobeleftalone"/>
-                        <display value="Patient not to be left alone"/>
+                        <code value="225861007"/>
+                        <display value="Unsafe to be left alone"/>
                     </coding>
                 </code>
                 <subject>

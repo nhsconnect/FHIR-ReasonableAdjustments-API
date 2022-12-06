@@ -66,8 +66,8 @@
                 <category>
                     <coding>
                         <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
-                        <code value="reasonable adjustments flag"/>
-                        <display value="Reasonable Adjustments Flag"/>
+                        <code value="NRAF"/>
+                        <display value="National Reasonable Adjustments Flag"/>
                     </coding>
                 </category>
                 <patient>

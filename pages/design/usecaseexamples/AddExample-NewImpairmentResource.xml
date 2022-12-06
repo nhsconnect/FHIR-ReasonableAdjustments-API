@@ -15,8 +15,8 @@ AddExample-NewImpairmentResource.xml-->
     <code>
         <coding>
             <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
-            <code value="720821000000105"/>
-            <display value="Mental health condition(s)"/>
+            <code value="7"/>
+            <display value="Mental health"/>
         </coding>
         <text value="Patient diagnosed with Stranger anxiety (disorder). Consider home-visit"/>
     </code>

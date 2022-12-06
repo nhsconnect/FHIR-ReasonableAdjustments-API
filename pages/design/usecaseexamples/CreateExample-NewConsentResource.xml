@@ -7,8 +7,8 @@
         <valueCodeableConcept>
             <coding>
                 <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ProxyRole-1"/>
-                <code value="lpa"/>
-                <display value="Lasting power of attorney personal welfare"/>
+                <code value="003"/>
+                <display value="Lasting power of attorney for health and welfare, or court-appointed deputy, or equivalent"/>
             </coding>
         </valueCodeableConcept>
     </extension>
@@ -16,8 +16,8 @@
     <category>
         <coding>
             <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
-            <code value="reasonable adjustments flag"/>
-            <display value="Reasonable Adjustments Flag"/>
+            <code value="NRAF"/>
+            <display value="National Reasonable Adjustments Flag"/>
         </coding>
     </category>
     <patient>

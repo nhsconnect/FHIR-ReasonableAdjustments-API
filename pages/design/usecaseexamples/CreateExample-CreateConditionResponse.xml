@@ -53,8 +53,8 @@
     <code>
         <coding>
             <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
-            <code value="1855002"/>
-            <display value="Learning Disability(s)"/>
+            <code value="5"/>
+            <display value="Learning or understanding or concentrating"/>
         </coding>
     </code>
     <subject>
