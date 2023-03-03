@@ -18,7 +18,7 @@ Reasonable Adjustments requires the ability to:
 
 * _Add Consent_
 * _Add an Adjustment_
-* _Add an Impairment, Threshold Code or Underlying Condition_
+* _Add an Impairment or Underlying Condition_
 <br>
 * _View Consent_
 * _View Adjustments_
