@@ -13,8 +13,8 @@ summary: Summary release notes of the FHIR&reg; Reasonable Adjustments API Imple
 
 ### Additional Endpoint support
 
-Documentation for additional Endpoints added to Interactions section as Endpoints page.
-Create, Read, Update Interactions pages updated to define behaviour for Underlying Conditions and Threshold Code.
+- Documentation for additional Endpoints added to Interactions section as Endpoints page.
+- Create, Read, Update Interactions pages updated to define behaviour for Underlying Conditions and Threshold Code.
 
 ## 0.3.5-beta
 
