@@ -10,7 +10,7 @@ summary: Create operation describes interaction required to record a new Reasona
 
 There are 2 common patterns when working with the various Reasonable Adjustment resources within the Interactions:
 * Consent and Flag resource - single, independent resources
-* Condition resource - which entails maintaining its containing List
+* Condition resource - used for Impairments and Underlying Conditions - which entails maintaining its containing List
 
 
 ## Create Resource ##
@@ -48,7 +48,8 @@ Error response: Spine Clinicals SHALL respond with response code 422 DUPLICATE_R
 
 ## Create Condition resources ##
 
-The new Condition resource to be added to the Reaonable Adjustment record is contained in a List.
+Impairments and Underlying Conditions are modelled as a list of Condition resources.
+The new Condition resource to be added to the Reasonable Adjustment record is contained in a List.
 After successful client-side construction of the new Condition and Provenance resources, the Client must either:
 * create a new List instance
 * update the existing List instance

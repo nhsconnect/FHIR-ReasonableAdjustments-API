@@ -10,7 +10,7 @@ summary: Read operation describes interaction required to retrieve and view Reas
 
 
 All top-level Reasonable Adjustment resources use the same interaction pattern to read.
-Individual Condition resources are not read/searchable outside their List.
+Individual Condition resources, for Impairments, Threshold Code or Underlying Conditions, are not read/searchable outside their List.
 
 ## Read Resource ##
 

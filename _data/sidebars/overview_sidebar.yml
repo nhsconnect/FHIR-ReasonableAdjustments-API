@@ -96,6 +96,9 @@ entries:
     - title: Overview
       url: /design.html
       output: web
+    - title: Endpoints
+      url: /design_endpoints.html
+      output: web
     - title: Create
       url: /design_interactions_create.html
       output: web
