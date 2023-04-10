@@ -16,6 +16,10 @@ summary: Summary release notes of the FHIR&reg; Reasonable Adjustments API Imple
 - Documentation for additional Endpoints added to Interactions section as Endpoints page.
 - Create, Read, Update Interactions pages updated to define behaviour for Underlying Conditions and Threshold Code.
 
+- Added unit use cases pages showing Create, Read, Update behaviour for each resource type
+- Reorganised complex use case pages to show use scenarios composed from sequential unit use case applications.
+
+
 ## 0.3.5-beta
 
 ### Updated Technical assets

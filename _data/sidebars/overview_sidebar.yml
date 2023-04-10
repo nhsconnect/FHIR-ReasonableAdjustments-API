@@ -156,6 +156,15 @@ entries:
   - title: Use Cases & Examples
     output: web
     folderitems:
+    - title: Read Use Cases
+      url: /design_usecases_Read.html
+      output: web
+    - title: Create Use Cases
+      url: /design_usecases_Create.html
+      output: web    
+    - title: Update Use Cases
+      url: /design_usecases_Update.html
+      output: web    
     - title: No RA Record
       url: /design_usecases_NoRARecord.html
       output: web

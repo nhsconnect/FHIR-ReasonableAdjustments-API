@@ -8,28 +8,6 @@ summary: Interaction describes the interactions and operations that exchange Rea
 ---
 {% include custom/search.warnbanner.html %}
 
-## Operations ##
-
-Operations are the set of business activities a user needs to collect, consider and curate Reasonable Adjustments information on behalf of a patient. Users access this functionality through a Reasonable Adjustments client system.  
-
-Operations aren't technically part of the API - they are Client system functional requirements. Here they are used to illustrate/assure that the Interactions (which are part of the API) cover the functional scope of the Reasonable Adjustments system.  
-
-Reasonable Adjustments requires the ability to:
-
-* _Add Consent_
-* _Add an Adjustment_
-* _Add an Impairment or Underlying Condition_
-<br>
-* _View Consent_
-* _View Adjustments_
-* _View Impairments, Threshold Code or Underlying Conditions_
-<br>
-* _Remove an Adjustment_
-* _Remove an Impairment or Underlying Condition_
-<br>
-* _Remove Flag_
-* _Determine Provenance_
-<br>
 
 ## Interactions ##
 
@@ -69,3 +47,29 @@ Interactions are described using Sequence Diagrams in the sections below.
 The Remove Flag and Determine Provenance Operations are also discussed. 
 <br>
 Interactions and Operations are further illustrated in the _Use Cases & Examples_ section.
+
+<div class="alert alert-warning" role="alert">
+<i class="fa fa-warning"></i> <b>Important:</b> For most Developers, the Endpoints page will be a more familiar entry point to understanding the functionality requiredto integrate with the FHIR&reg; Reasonable Adjustments API.<br></div>
+
+## Operations ##
+
+Operations are the set of business activities a user needs to collect, consider and curate Reasonable Adjustments information on behalf of a patient. Users access this functionality through a Reasonable Adjustments client system.  
+
+Operations aren't technically part of the API - they are Client system functional requirements. Here they are used to illustrate/assure that the Interactions (which are part of the API specification) cover the functional scope of the Reasonable Adjustments system.  
+
+Reasonable Adjustments requires the ability to:
+
+* _Add Consent_
+* _Add an Adjustment_
+* _Add an Impairment or Underlying Condition_
+<br>
+* _View Consent_
+* _View Adjustments_
+* _View Impairments, Threshold Code or Underlying Conditions_
+<br>
+* _Remove an Adjustment_
+* _Remove an Impairment or Underlying Condition_
+<br>
+* _Remove Flag_
+* _Determine Provenance_
+<br>
