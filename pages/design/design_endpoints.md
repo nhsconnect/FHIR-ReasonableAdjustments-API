@@ -51,43 +51,6 @@ PUT [baseUrl]/Consent/[id] /HTTP1.1
 200 OK http response code (and mirror PUT payload)  
 (or operation outcome if failure to find or process)
 
-### /List ###
-
-- Read/GET
-```
-GET [baseUrl]/List?
-      patient=[nhs#]&status=active&category=RAFlag /HTTP1.1
-```
-
-*request payload:*
-    none
-
-*response:*
-     searchset bundle containing 0..1 List resource
-
-- Create/POST
-```
-POST [baseUrl]/List  /HTTP1.1
-```
-
-*request payload:*
-    a CareConnect-RARecord-List-1 resource
-
-*response:*
-    201 Created http response code and Location header (and mirror POSTed payload)  
-(or operation outcome if failure to find or process) 
-
-- Update(Delete)/PUT
-```
-PUT [baseUrl]/List/[id] /HTTP1.1
-```
-
-*request payload:*
-    a CareConnect-RARecord-List-1 resource
-
-*response:*
-200 OK http response code (and mirror PUT payload)  
-(or operation outcome if failure to find or process)
 
 ### /Flag ###
 
@@ -128,7 +91,46 @@ PUT [baseUrl]/Flag/[id] /HTTP1.1
 (or operation outcome if failure to find or process)
 
 The Reasonable Adjustments API also offers the following additional Endpoints and Methods. These do not follow standard FHIR ReST patterns - they are generically standard ReSTful - but are pragmatically offered in order to simplify integration.
-    
+
+
+### /List ###
+
+- Read/GET
+```
+GET [baseUrl]/List?
+      patient=[nhs#]&status=active&category=RAFlag /HTTP1.1
+```
+
+*request payload:*
+    none
+
+*response:*
+     searchset bundle containing 0..1 List resource
+
+- Create/POST
+```
+POST [baseUrl]/List  /HTTP1.1
+```
+
+*request payload:*
+    a CareConnect-RARecord-List-1 resource
+
+*response:*
+    201 Created http response code and Location header (and mirror POSTed payload)  
+(or operation outcome if failure to find or process) 
+
+- Update(Delete)/PUT
+```
+PUT [baseUrl]/List/[id] /HTTP1.1
+```
+
+*request payload:*
+    a CareConnect-RARecord-List-1 resource
+
+*response:*
+200 OK http response code (and mirror PUT payload)  
+(or operation outcome if failure to find or process)
+
 ### /UnderlyingConditions ###
 
 - Read/GET
