@@ -19,6 +19,10 @@ summary: Specification of the CareConnect-RARecord-Condition-1 resource. This re
 
 The Condition resource, profiled as CareConnect-RARecord-Condition-1, will record specific [Impairments - as defined under the Equality Act (2010)](https://www.gov.uk/definition-of-disability-under-equality-act-2010) - that are identified by the patient, or supporting healthcare professionals, to increase access to effective, informed and supportive health care.
 
+## Reasonable Adjustments - UnderlyingConditions ##
+
+The Condition resource, profiled as CareConnect-RARecord-Condition-1, will optionally record specific relevant Conditions - that are identified by the patient, or supporting healthcare professionals, to increase access to effective, informed and supportive health care.
+
 {% include custom/fhir.resourcegrid.html
 resourcename="CareConnect-RARecord-Condition-1"
 resource="[CareConnect-RARecord-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RARecord-Condition-1)"
