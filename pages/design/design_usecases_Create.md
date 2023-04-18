@@ -419,8 +419,8 @@ InteractionID: urn:nhs:names:services:raflags:Flag.write:1
 HTTP/1.1 201 Created
 Date: Tue, 11 Apr 2023 11:00:00 GMT
 Last-Modified:2018-07-23T11:00:00+00:00
-Location: https://clinicals.spineservices.nhs.uk/STU3/[EndpointName]/[id uuid]/_history/[verionId uuid] 
-ETag: W/"[versionId uuid]”
+Location: https://clinicals.spineservices.nhs.uk/STU3/Flag/c939c9b8-2559-499e-99a9-c8b0bdbe1750/_history/1b1770be-64be-4844-bc87-f714b50a2378 
+ETag: W/"1b1770be-64be-4844-bc87-f714b50a2378”
 Content-Type: application/fhir+xml
 ```
 
@@ -649,7 +649,7 @@ POST https://clinicals.spineservices.nhs.uk/STU3/List HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
-TraceID: [traceId uuid]
+TraceID: 47d46a8f-d6b5-4011-aad4-6d198efe2d16
 Content-Type: application/fhir+xml
 Prefer: return=representation
 InteractionID: urn:nhs:names:services:raflags:List.write:1
@@ -720,8 +720,8 @@ InteractionID: urn:nhs:names:services:raflags:List.write:1
 HTTP/1.1 201 Created
 Date: Tue, 11 Apr 2023 11:00:00 GMT
 Last-Modified:2018-07-23T11:00:00+00:00
-Location: https://clinicals.spineservices.nhs.uk/STU3/[EndpointName]/[id uuid]/_history/[verionId uuid] 
-ETag: W/"[versionId uuid]”
+Location: https://clinicals.spineservices.nhs.uk/STU3/List/7c2f6bb4-61e0-4dbb-9ce8-81761a4e6a82/_history/9ab8be87-a98a-498b-a6ce-f1a55a60d1d2 
+ETag: W/"9ab8be87-a98a-498b-a6ce-f1a55a60d1d2”
 Content-Type: application/fhir+xml
 ```
 
@@ -994,14 +994,15 @@ Patient wishes to record Underlying Condition. Practitioner records Underlying C
 ##### Http request
 
 ```
-POST https://clinicals.spineservices.nhs.uk/STU3/[EndpointName] HTTP/1.1
+POST https://clinicals.spineservices.nhs.uk/STU3/UnderlyingConditions HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
 ToASID: 987654456789
-TraceID: [traceId uuid]
+TraceID: 
+770bd026-2093-45bb-a944-10cc9e83a5cb
 Content-Type: application/fhir+xml
 Prefer: return=representation
-InteractionID: urn:nhs:names:services:raflags:[EndpointName].write:1
+InteractionID: urn:nhs:names:services:raflags:UnderlyingConditions.write:1
 ```
 
 
