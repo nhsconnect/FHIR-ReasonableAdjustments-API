@@ -43,7 +43,7 @@ Equality Act Threshold
 
 Impairments
 -  A Reasonable Adjustment Flag record MAY (optionally) contain further Condition resources detailing additional Impairments details
-- These SHALL be recorded as Condition resources with .code set to a code value from CodeSystem CodeSystem -RARecord-ConditionCode-1
+- These SHALL be recorded as Condition resources with .code set to a code value from CodeSystem CodeSystem-RARecord-ConditionCode-1
     
 Underlying Conditions
 - A Reasonable Adjustment Flag record MAY (optionally) also contain further Condition resources detailing Underlying Conditions that are relevant to provision of reasonable adjustments to care
