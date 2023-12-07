@@ -34,7 +34,7 @@ For Condition resources, the Provenance resource is constructed by the client. I
 
 | target | reference | points to resource for which it captures Provenance |
 | recorded | instant | time of create\|update |
-| agent.role | codeableConcept | role SHOULD use a value from [ValueSet-RARecord-ProvenanceRole-1](https://fhir.nhs.uk/STU3/ValueSet/ValueSet-RARecord-ProvenanceRole-1) |
+| agent.role | codeableConcept | role SHOULD use a value from [RARecord-ProvenanceRole-1](https://fhir.nhs.uk/STU3/ValueSet/RARecord-ProvenanceRole-1) |
 | agent.who | reference(Practitioner) |
 | agent.who.reference | URI | points to a (not currently resolvable) SDS FHIR endpoint e.g. https://~spineservices.nhs.uk/STU3/sdsserver/Practioner/[UUID] |
 | agent.who.display | string | holds name of practitioner |
