@@ -33,7 +33,7 @@ Practitioner wishes to view/read Consent information in RA record
 GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  patient=999999998&
  status=active&
- category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&
  _format=xml HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
@@ -261,7 +261,7 @@ Practitioner wishes to view/read Adjustments information in RA record
 GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
  patient=999999998&
  status=active&
- category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&
  _format=xml HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
@@ -506,7 +506,7 @@ Practitioner wishes to view/read Impairments information in RA record
 GET https://clinicals.spineservices.nhs.uk/STU3/List?
  patient=999999998&
  status=active&
- category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&
  _format=xml HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
@@ -799,7 +799,7 @@ Practitioner wishes to view/read Underlying Condition information in RA record
 GET https://clinicals.spineservices.nhs.uk/STU3/UnderlyingConditions?
  patient=999999998&
  status=active&
- category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&
  _format=xml HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
@@ -1092,7 +1092,7 @@ Practitioner wishes to view/read Threshold Code information in RA record
 GET https://clinicals.spineservices.nhs.uk/STU3/ThresholdCode?
  patient=999999998&
  status=active&
- category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&
  _format=xml HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456

@@ -8,6 +8,6 @@
     <link>
         <relation value="self"/>
         <!-- note entity encoding in url -->
-        <url value="https://clinicals.spineservices.nhs.uk/STU3/Consent?patient=999999998&amp;status=active&amp;category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag&amp;_format=xml"/>
+        <url value="https://clinicals.spineservices.nhs.uk/STU3/Consent?patient=999999998&amp;status=active&amp;category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&amp;_format=xml"/>
     </link>
 </Bundle>

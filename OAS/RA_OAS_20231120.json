@@ -439,7 +439,7 @@
                         "name": "category",
                         "required": true,
                         "schema": {
-                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag",
+                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF",
                             "type": "string"
                         }
                     },
@@ -2275,7 +2275,7 @@
                         "name": "category",
                         "required": true,
                         "schema": {
-                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag",
+                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF",
                             "type": "string"
                         }
                     },
@@ -2335,7 +2335,7 @@
                                             "link": [
                                                 {
                                                     "relation": "self",
-                                                    "url": "https://clinicals.spineservices.nhs.uk/STU3/Flag?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag"
+                                                    "url": "https://clinicals.spineservices.nhs.uk/STU3/Flag?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF"
                                                 }
                                             ],
                                             "meta": {
@@ -6141,7 +6141,7 @@
                         "name": "category",
                         "required": true,
                         "schema": {
-                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag",
+                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF",
                             "type": "string"
                         }
                     },
@@ -6201,7 +6201,7 @@
                                             "link": [
                                                 {
                                                     "relation": "self",
-                                                    "url": "https://clinicals.spineservices.nhs.uk/STU3/purest?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag"
+                                                    "url": "https://clinicals.spineservices.nhs.uk/STU3/purest?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF"
                                                 }
                                             ],
                                             "meta": {
@@ -6916,7 +6916,7 @@
                         "name": "category",
                         "required": true,
                         "schema": {
-                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag",
+                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF",
                             "type": "string"
                         }
                     },
@@ -6976,7 +6976,7 @@
                                             "link": [
                                                 {
                                                     "relation": "self",
-                                                    "url": "https://clinicals.spineservices.nhs.uk/STU3/UnderlyingConditionList?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|reasonable%20adjustments%20flag"
+                                                    "url": "https://clinicals.spineservices.nhs.uk/STU3/UnderlyingConditionList?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF"
                                                 }
                                             ],
                                             "meta": {
