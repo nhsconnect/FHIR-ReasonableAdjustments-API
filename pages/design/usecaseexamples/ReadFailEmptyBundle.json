@@ -14,7 +14,7 @@
         "    all search sets include the self link - the statement of the query string searched on. "
       ],
       "relation": "self",
-      "url": "https://clinicals.spineservices.nhs.uk/STU3/Consent?patient=999999998&amp;status=active&amp;category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&amp;_format=json",
+      "url": "https://clinicals.spineservices.nhs.uk/STU3/Consent?patient=999999998&amp;status=active&amp;category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF&amp;_format=json",
       "_url": {
         "fhir_comments": [
           " note entity encoding in url "

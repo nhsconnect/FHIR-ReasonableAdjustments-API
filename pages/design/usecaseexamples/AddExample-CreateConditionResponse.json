@@ -71,7 +71,7 @@
   "code": {
     "coding": [
       {
-        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1",
+        "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1",
         "code": "720821000000105",
         "display": "Mental health condition(s)"
       }

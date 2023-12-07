@@ -65,7 +65,7 @@
             </category>
             <code>
                 <coding>
-                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
+                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1"/>
                     <code value="5"/>
                     <display value="Learning or understanding or concentrating"/>
                 </coding>
@@ -135,7 +135,7 @@
             </category>
             <code>
                 <coding>
-                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
+                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1"/>
                     <code value="7"/>
                     <display value="Mental health"/>
                 </coding>

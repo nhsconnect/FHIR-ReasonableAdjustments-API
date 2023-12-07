@@ -13,7 +13,7 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1",
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-RemovalReason-1",
                 "code": "DoesntApply",
                 "display": "The Reasonable Adjustment Flag no longer applies to the patient"
               }

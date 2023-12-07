@@ -50,7 +50,7 @@ InteractionID: urn:nhs:names:services:raflags:Consent.write:1
     <status value="active"/>
     <category>
         <coding>
-            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
+            <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1"/>
             <code value="NRAF"/>
             <display value="National Reasonable Adjustments Flag"/>
         </coding>
@@ -80,7 +80,7 @@ InteractionID: urn:nhs:names:services:raflags:Consent.write:1
         {
             "coding":  [
                 {
-                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
                     "code": "NRAF",
                     "display": "National Reasonable Adjustments Flag"
                 }
@@ -171,7 +171,7 @@ Content-Type: application/fhir+xml
                 <status value="active"/>
                 <category>
                     <coding>
-                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
+                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1"/>
                         <code value="NRAF"/>
                         <display value="National Reasonable Adjustments Flag"/>
                     </coding>
@@ -267,7 +267,7 @@ Content-Type: application/fhir+xml
                     {
                         "coding":  [
                             {
-                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
                                 "code": "NRAF",
                                 "display": "National Reasonable Adjustments Flag"
                             }
@@ -348,14 +348,14 @@ InteractionID: urn:nhs:names:services:raflags:Flag.write:1
     <status value="active"/>
     <category>
         <coding>
-            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
+            <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1"/>
             <code value="NRAF"/>
             <display value="National Reasonable Adjustments Flag"/>
         </coding>
     </category>
     <code>
         <coding>
-            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
+            <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1"/>
             <code value="796161000000101"/>
             <display value="Requires information in Easyread"/>
         </coding>
@@ -390,7 +390,7 @@ InteractionID: urn:nhs:names:services:raflags:Flag.write:1
         {
             "coding":  [
                 {
-                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
                     "code": "NRAF",
                     "display": "National Reasonable Adjustments Flag"
                 }
@@ -400,7 +400,7 @@ InteractionID: urn:nhs:names:services:raflags:Flag.write:1
     "code": {
         "coding":  [
             {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1",
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
                 "code": "796161000000101",
                 "display": "Requires information in Easyread"
             }
@@ -488,14 +488,14 @@ Content-Type: application/fhir+xml
                 <status value="active"/>
                 <category>
                     <coding>
-                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
+                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1"/>
                         <code value="NRAF"/>
                         <display value="National Reasonable Adjustments Flag"/>
                     </coding>
                 </category>
                 <code>
                     <coding>
-                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
+                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1"/>
                         <code value="796161000000101"/>
                         <display value="Requires information in Easyread"/>
                     </coding>
@@ -595,7 +595,7 @@ Content-Type: application/fhir+xml
                 "category": {
                     "coding":  [
                         {
-                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
                             "code": "NRAF",
                             "display": "National Reasonable Adjustments Flag"
                         }
@@ -604,7 +604,7 @@ Content-Type: application/fhir+xml
                 "code": {
                     "coding":  [
                         {
-                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1",
+                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
                             "code": "796161000000101",
                             "display": "Requires information in Easyread"
                         }
@@ -670,7 +670,7 @@ InteractionID: urn:nhs:names:services:raflags:List.write:1
     </category>
         <code>
             <coding>
-                <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
+                <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1"/>
                 <code value="5"/>
                 <display value="Learning or understanding or concentrating"/>
             </coding>
@@ -701,7 +701,7 @@ InteractionID: urn:nhs:names:services:raflags:List.write:1
     "code": {
         "coding":  [
             {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1",
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1",
                 "code": "5",
                 "display": "Learning or understanding or concentrating"
             }
@@ -758,7 +758,7 @@ Content-Type: application/fhir+xml
                         </category>
                             <code>
                                 <coding>
-                                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
+                                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1"/>
                                     <code value="5"/>
                                     <display value="Learning or understanding or concentrating"/>
                                 </coding>
@@ -882,7 +882,7 @@ Content-Type: application/fhir+xml
                         "code": {
                             "coding":  [
                                 {
-                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1",
+                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1",
                                     "code": "5",
                                     "display": "Learning or understanding or concentrating"
                                 }

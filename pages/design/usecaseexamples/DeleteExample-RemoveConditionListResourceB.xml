@@ -23,7 +23,7 @@
             </category>
             <code>
                 <coding>
-                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
+                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1"/>
                     <code value="5"/>
                     <display value="Learning or understanding or concentrating"/>
                 </coding>
@@ -81,7 +81,7 @@
                 <extension url="removalReason" >
                     <valueCodeableConcept>
                         <coding>
-                            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1"/>
+                            <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-RemovalReason-1"/>
                             <code value="Error"/>
                             <display value="The underlying condition was created in error"/>
                         </coding>
@@ -101,7 +101,7 @@
             </category>
             <code>
                 <coding>
-                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
+                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1"/>
                     <code value="7"/>
                     <display value="Mental health"/>
                 </coding>

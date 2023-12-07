@@ -68,7 +68,7 @@
   "code": {
     "coding": [
       {
-        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-CommunicationAdjustments-1",
+        "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-CommunicationAdjustments-1",
         "code": "carertobepresentforallcommunication",
         "display": "Carer to be present for all communication"
       }

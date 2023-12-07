@@ -12,7 +12,7 @@
     "paths": {
         "/$removerarecord": {
             "post": {
-                "description": "## Overview\nUse this endpoint to remove a [Reasonable Adjustment Flag](https://digital.nhs.uk/services/reasonable-adjustment-flag) from the [NHS Spine](https://digital.nhs.uk/services/spine).  To remove a flag you must provide a reason for it being removed, for example the flag may have been created in error, or the flag may no longer apply to the patient. \n\nFor a patient it is represented as [CodeSystem-RARecord-RemovalReason-1](https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1). This triggers the system to inactivate all Reasonable Adjustment Flag resources contained within the patient record.\n",
+                "description": "## Overview\nUse this endpoint to remove a [Reasonable Adjustment Flag](https://digital.nhs.uk/services/reasonable-adjustment-flag) from the [NHS Spine](https://digital.nhs.uk/services/spine).  To remove a flag you must provide a reason for it being removed, for example the flag may have been created in error, or the flag may no longer apply to the patient. \n\nFor a patient it is represented as [CodeSystem-RARecord-RemovalReason-1](https://fhir.nhs.uk/STU3/CodeSystem/RARecord-RemovalReason-1). This triggers the system to inactivate all Reasonable Adjustment Flag resources contained within the patient record.\n",
                 "operationId": "removeRecord",
                 "parameters": [
                     {
@@ -152,7 +152,7 @@
                                                                                             "type": "string"
                                                                                         },
                                                                                         "system": {
-                                                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1",
+                                                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-RemovalReason-1",
                                                                                             "type": "string"
                                                                                         }
                                                                                     },
@@ -439,7 +439,7 @@
                         "name": "category",
                         "required": true,
                         "schema": {
-                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF",
+                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF",
                             "type": "string"
                         }
                     },
@@ -910,7 +910,7 @@
                                                                 "type": "string"
                                                             },
                                                             "system": {
-                                                                "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+                                                                "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
                                                                 "type": "string"
                                                             }
                                                         },
@@ -944,7 +944,7 @@
                                                                         "type": "string"
                                                                     },
                                                                     "system": {
-                                                                        "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ProxyRole-1",
+                                                                        "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ProxyRole-1",
                                                                         "type": "string"
                                                                     }
                                                                 },
@@ -1554,7 +1554,7 @@
                                                             "type": "string"
                                                         },
                                                         "system": {
-                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConsentCategory-1",
+                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConsentCategory-1",
                                                             "type": "string"
                                                         }
                                                     },
@@ -1579,7 +1579,7 @@
                                                             "type": "string"
                                                         },
                                                         "system": {
-                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1",
+                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
                                                             "type": "string"
                                                         }
                                                     },
@@ -1812,7 +1812,7 @@
                                                                                 "type": "string"
                                                                             },
                                                                             "system": {
-                                                                                "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1",
+                                                                                "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategories-1",
                                                                                 "type": "string"
                                                                             }
                                                                         },
@@ -2275,7 +2275,7 @@
                         "name": "category",
                         "required": true,
                         "schema": {
-                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF",
+                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF",
                             "type": "string"
                         }
                     },
@@ -2335,7 +2335,7 @@
                                             "link": [
                                                 {
                                                     "relation": "self",
-                                                    "url": "https://clinicals.spineservices.nhs.uk/STU3/Flag?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF"
+                                                    "url": "https://clinicals.spineservices.nhs.uk/STU3/Flag?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF"
                                                 }
                                             ],
                                             "meta": {
@@ -3129,7 +3129,7 @@
                                                             "type": "string"
                                                         },
                                                         "system": {
-                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
                                                             "type": "string"
                                                         }
                                                     },
@@ -3154,7 +3154,7 @@
                                                             "type": "string"
                                                         },
                                                         "system": {
-                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1",
+                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
                                                             "type": "string"
                                                         }
                                                     },
@@ -3186,7 +3186,7 @@
                                                                         "type": "string"
                                                                     },
                                                                     "system": {
-                                                                        "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1",
+                                                                        "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategories-1",
                                                                         "type": "string"
                                                                     }
                                                                 },
@@ -3797,7 +3797,7 @@
                                                             "type": "string"
                                                         },
                                                         "system": {
-                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
                                                             "type": "string"
                                                         }
                                                     },
@@ -3822,7 +3822,7 @@
                                                             "type": "string"
                                                         },
                                                         "system": {
-                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1",
+                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
                                                             "type": "string"
                                                         }
                                                     },
@@ -4055,7 +4055,7 @@
                                                                                 "type": "string"
                                                                             },
                                                                             "system": {
-                                                                                "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1",
+                                                                                "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategories-1",
                                                                                 "type": "string"
                                                                             }
                                                                         },
@@ -6141,7 +6141,7 @@
                         "name": "category",
                         "required": true,
                         "schema": {
-                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF",
+                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF",
                             "type": "string"
                         }
                     },
@@ -6201,7 +6201,7 @@
                                             "link": [
                                                 {
                                                     "relation": "self",
-                                                    "url": "https://clinicals.spineservices.nhs.uk/STU3/purest?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF"
+                                                    "url": "https://clinicals.spineservices.nhs.uk/STU3/purest?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF"
                                                 }
                                             ],
                                             "meta": {
@@ -6916,7 +6916,7 @@
                         "name": "category",
                         "required": true,
                         "schema": {
-                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF",
+                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF",
                             "type": "string"
                         }
                     },
@@ -6976,7 +6976,7 @@
                                             "link": [
                                                 {
                                                     "relation": "self",
-                                                    "url": "https://clinicals.spineservices.nhs.uk/STU3/UnderlyingConditionList?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF"
+                                                    "url": "https://clinicals.spineservices.nhs.uk/STU3/UnderlyingConditionList?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF"
                                                 }
                                             ],
                                             "meta": {
@@ -7753,7 +7753,7 @@
                                                             "type": "string"
                                                         },
                                                         "system": {
-                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
                                                             "type": "string"
                                                         }
                                                     },
@@ -7778,7 +7778,7 @@
                                                             "type": "string"
                                                         },
                                                         "system": {
-                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1",
+                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
                                                             "type": "string"
                                                         }
                                                     },
@@ -7810,7 +7810,7 @@
                                                                         "type": "string"
                                                                     },
                                                                     "system": {
-                                                                        "example": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1",
+                                                                        "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategories-1",
                                                                         "type": "string"
                                                                     }
                                                                 },

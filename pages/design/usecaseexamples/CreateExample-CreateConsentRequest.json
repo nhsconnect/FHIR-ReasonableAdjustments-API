@@ -14,7 +14,7 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ProxyRole-1",
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ProxyRole-1",
             "code": "lpa",
             "display": "Lasting power of attorney personal welfare"
           }
@@ -27,7 +27,7 @@
     {
       "coding": [
         {
-          "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+          "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
           "code": "reasonable adjustments flag",
           "display": "Reasonable Adjustments Flag"
         }

@@ -10,7 +10,7 @@
             <name value="removalReason"/>
                 <valueCodeableConcept>
                     <coding>
-                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1"/>
+                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-RemovalReason-1"/>
                         <code value="DoesntApply"/>
                         <display value="The Reasonable Adjustment flag no longer applies to the patient"/>
                     </coding>

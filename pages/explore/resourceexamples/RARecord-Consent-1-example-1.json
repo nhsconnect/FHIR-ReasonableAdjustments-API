@@ -62,7 +62,7 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ProxyRole-1",
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ProxyRole-1",
             "code": "003",
             "display": "Lasting power of attorney for health and welfare, or court-appointed deputy, or equivalent"
           }
@@ -75,7 +75,7 @@
     {
       "coding": [
         {
-          "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+          "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
           "code": "NRAF",
           "display": "National Reasonable Adjustments Flag"
         }

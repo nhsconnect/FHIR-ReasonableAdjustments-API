@@ -10,6 +10,6 @@
     <!--  all search sets include the self link - the statement of the query string searched on. -->
     <link>
         <relation value="self"/>
-        <url value="https://clinicals.spineservices.nhs.uk/STU3/Flag?patient=999999998&amp;status=active&amp;category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&amp;_format=xml"/>
+        <url value="https://clinicals.spineservices.nhs.uk/STU3/Flag?patient=999999998&amp;status=active&amp;category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF&amp;_format=xml"/>
     </link>
 </Bundle>

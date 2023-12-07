@@ -12,7 +12,7 @@
         "  all search sets include the self link - the statement of the query string searched on. "
       ],
       "relation": "self",
-      "url": "https://clinicals.spineservices.nhs.uk/STU3/Flag?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&_format=xml"
+      "url": "https://clinicals.spineservices.nhs.uk/STU3/Flag?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF&_format=xml"
     }
   ],
   "entry": [
@@ -89,7 +89,7 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategories-1",
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategories-1",
                   "code": "comms",
                   "display": "Communication"
                 }
@@ -101,7 +101,7 @@
         "category": {
           "coding": [
             {
-              "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
               "code": "reasonable adjustments flag",
               "display": "Reasonable Adjustments Flag"
             }
@@ -110,7 +110,7 @@
         "code": {
           "coding": [
             {
-              "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1",
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
               "code": "requiresinformationineasyread",
               "display": "Requires information in Easyread"
             }

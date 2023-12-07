@@ -67,7 +67,7 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ProxyRole-1",
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ProxyRole-1",
             "code": "001",
             "display": "Patient consent"
           }
@@ -80,7 +80,7 @@
     {
       "coding": [
         {
-          "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+          "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
           "code": "NRAF",
           "display": "National Reasonable Adjustments Flag"
         }

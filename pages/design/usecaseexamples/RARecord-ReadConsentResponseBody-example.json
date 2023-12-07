@@ -17,7 +17,7 @@
         "    all search sets include the self link - the statement of the query string searched on. "
       ],
       "relation": "self",
-      "url": "https://clinicals.spineservices.nhs.uk/STU3/Consent?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&_format=json",
+      "url": "https://clinicals.spineservices.nhs.uk/STU3/Consent?patient=999999998&status=active&category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF&_format=json",
       "_url": {
         "fhir_comments": [
           " note entity encoding in url "
@@ -96,7 +96,7 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ProxyRole-1",
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ProxyRole-1",
                   "code": "lpa",
                   "display": "Lasting power of attorney personal welfare"
                 }
@@ -109,7 +109,7 @@
           {
             "coding": [
               {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
                 "code": "reasonable adjustments flag",
                 "display": "Reasonable Adjustments Flag"
               }

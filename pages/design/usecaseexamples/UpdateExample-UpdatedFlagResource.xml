@@ -46,7 +46,7 @@ UpdateExample-UpdatedFlagResource.xml -->
     <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-RemovalReason-1">
         <valueCodeableConcept>
             <coding>
-                <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-RemovalReason-1"/>
+                <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-RemovalReason-1"/>
                 <code value="Error"/>
                 <display value="The reasonable adjustment was created in error"/>
             </coding>
@@ -55,7 +55,7 @@ UpdateExample-UpdatedFlagResource.xml -->
     <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-RARecord-AdjustmentCategory-1">
         <valueCodeableConcept>
             <coding>
-                <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AdjustmentCategory-1"/>
+                <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"/>
                 <code value="1"/>
                 <display value="Communication support"/>
             </coding>
@@ -64,14 +64,14 @@ UpdateExample-UpdatedFlagResource.xml -->
     <status value="inactive"/>
     <category>
         <coding>
-            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
+            <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1"/>
             <code value="NRAF"/>
             <display value="National Reasonable Adjustments Flag"/>
         </coding>
     </category>
     <code>
         <coding>
-            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
+            <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1"/>
             <code value="796161000000101"/>
             <display value="Requires information in Easyread"/>
         </coding>

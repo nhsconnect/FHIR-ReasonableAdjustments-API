@@ -33,7 +33,7 @@ Practitioner wishes to view/read Consent information in RA record
 GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  patient=999999998&
  status=active&
- category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF&
  _format=xml HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
@@ -110,7 +110,7 @@ Content-Type: application/fhir+xml
                 <status value="active"/>
                 <category>
                     <coding>
-                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
+                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1"/>
                         <code value="NRAF"/>
                         <display value="National Reasonable Adjustments Flag"/>
                     </coding>
@@ -206,7 +206,7 @@ Content-Type: application/fhir+xml
                     {
                         "coding":  [
                             {
-                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
                                 "code": "NRAF",
                                 "display": "National Reasonable Adjustments Flag"
                             }
@@ -261,7 +261,7 @@ Practitioner wishes to view/read Adjustments information in RA record
 GET https://clinicals.spineservices.nhs.uk/STU3/Flag?
  patient=999999998&
  status=active&
- category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF&
  _format=xml HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
@@ -348,14 +348,14 @@ Content-Type: application/fhir+xml
                 <status value="active"/>
                 <category>
                     <coding>
-                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
+                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1"/>
                         <code value="NRAF"/>
                         <display value="National Reasonable Adjustments Flag"/>
                     </coding>
                 </category>
                 <code>
                     <coding>
-                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
+                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1"/>
                         <code value="796161000000101"/>
                         <display value="Requires information in Easyread"/>
                     </coding>
@@ -455,7 +455,7 @@ Content-Type: application/fhir+xml
                 "category": {
                     "coding":  [
                         {
-                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1",
+                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
                             "code": "NRAF",
                             "display": "National Reasonable Adjustments Flag"
                         }
@@ -464,7 +464,7 @@ Content-Type: application/fhir+xml
                 "code": {
                     "coding":  [
                         {
-                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1",
+                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
                             "code": "796161000000101",
                             "display": "Requires information in Easyread"
                         }
@@ -506,7 +506,7 @@ Practitioner wishes to view/read Impairments information in RA record
 GET https://clinicals.spineservices.nhs.uk/STU3/List?
  patient=999999998&
  status=active&
- category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF&
  _format=xml HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
@@ -563,7 +563,7 @@ Content-Type: application/fhir+xml
                         </category>
                             <code>
                                 <coding>
-                                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1"/>
+                                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1"/>
                                     <code value="5"/>
                                     <display value="Learning or understanding or concentrating"/>
                                 </coding>
@@ -687,7 +687,7 @@ Content-Type: application/fhir+xml
                         "code": {
                             "coding":  [
                                 {
-                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ConditionCode-1",
+                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1",
                                     "code": "5",
                                     "display": "Learning or understanding or concentrating"
                                 }
@@ -799,7 +799,7 @@ Practitioner wishes to view/read Underlying Condition information in RA record
 GET https://clinicals.spineservices.nhs.uk/STU3/UnderlyingConditions?
  patient=999999998&
  status=active&
- category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF&
  _format=xml HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456
@@ -1092,7 +1092,7 @@ Practitioner wishes to view/read Threshold Code information in RA record
 GET https://clinicals.spineservices.nhs.uk/STU3/ThresholdCode?
  patient=999999998&
  status=active&
- category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF&
  _format=xml HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 654321123456

@@ -30,7 +30,7 @@ summary: Description of use case on Spine via the FHIR&reg; Reasonable Adjustmen
 GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  patient=999999998&
  status=active&
- category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF&
  _format=xml HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456
@@ -52,7 +52,7 @@ InteractionID: urn:nhs:names:services:raflags:Consent.read:1
 GET https://clinicals.spineservices.nhs.uk/STU3/Consent?
  patient=999999998&
  status=active&
- category=https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1|NRAF&
+ category=https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1|NRAF&
  _format=json HTTP/1.1
 Authorization: Bearer [jwt_token_string]
 FromASID: 123456123456

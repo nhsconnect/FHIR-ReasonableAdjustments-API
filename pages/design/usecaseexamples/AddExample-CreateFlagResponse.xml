@@ -55,14 +55,14 @@ AddExample-CreateFlagResponse.xml -->
     <status value="active"/>
     <category>
         <coding>
-            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-FlagCategory-1"/>
+            <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1"/>
             <code value="NRAF"/>
             <display value="National Reasonable Adjustments Flag"/>
         </coding>
     </category>
     <code>
         <coding>
-            <system value="https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1"/>
+            <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1"/>
             <code value="796161000000101"/>
             <display value="Requires information in Easyread"/>
         </coding>
