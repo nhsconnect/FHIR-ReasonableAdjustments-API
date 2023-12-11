@@ -27,7 +27,7 @@
                         }
                     },
                     {
-                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
+                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
                         "in": "header",
                         "name": "NHSD-Session-URID",
                         "required": false,
@@ -38,7 +38,7 @@
                         }
                     },
                     {
-                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid . characters.\n",
+                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid characters.\n",
                         "in": "header",
                         "name": "X-Correlation-ID",
                         "required": false,
@@ -455,7 +455,7 @@
                         }
                     },
                     {
-                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
+                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
                         "in": "header",
                         "name": "NHSD-Session-URID",
                         "required": false,
@@ -466,7 +466,7 @@
                         }
                     },
                     {
-                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid . characters.\n",
+                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid characters.\n",
                         "in": "header",
                         "name": "X-Correlation-ID",
                         "required": false,
@@ -808,7 +808,7 @@
                         }
                     },
                     {
-                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
+                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
                         "in": "header",
                         "name": "NHSD-Session-URID",
                         "required": false,
@@ -819,7 +819,7 @@
                         }
                     },
                     {
-                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid . characters.\n",
+                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid characters.\n",
                         "in": "header",
                         "name": "X-Correlation-ID",
                         "required": false,
@@ -1357,7 +1357,7 @@
                         }
                     },
                     {
-                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
+                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
                         "in": "header",
                         "name": "NHSD-Session-URID",
                         "required": false,
@@ -1368,7 +1368,7 @@
                         }
                     },
                     {
-                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid . characters.\n",
+                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid characters.\n",
                         "in": "header",
                         "name": "X-Correlation-ID",
                         "required": false,
@@ -2291,7 +2291,7 @@
                         }
                     },
                     {
-                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
+                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
                         "in": "header",
                         "name": "NHSD-Session-URID",
                         "required": false,
@@ -2302,7 +2302,7 @@
                         }
                     },
                     {
-                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid . characters.\n",
+                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid characters.\n",
                         "in": "header",
                         "name": "X-Correlation-ID",
                         "required": false,
@@ -3034,7 +3034,7 @@
                         }
                     },
                     {
-                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
+                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
                         "in": "header",
                         "name": "NHSD-Session-URID",
                         "required": false,
@@ -3045,7 +3045,7 @@
                         }
                     },
                     {
-                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid . characters.\n",
+                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid characters.\n",
                         "in": "header",
                         "name": "X-Correlation-ID",
                         "required": false,
@@ -3606,7 +3606,7 @@
                         }
                     },
                     {
-                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
+                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
                         "in": "header",
                         "name": "NHSD-Session-URID",
                         "required": false,
@@ -3617,7 +3617,7 @@
                         }
                     },
                     {
-                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid . characters.\n",
+                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid characters.\n",
                         "in": "header",
                         "name": "X-Correlation-ID",
                         "required": false,
@@ -4642,7 +4642,7 @@
                         }
                     },
                     {
-                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
+                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
                         "in": "header",
                         "name": "NHSD-Session-URID",
                         "required": false,
@@ -4653,7 +4653,7 @@
                         }
                     },
                     {
-                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid . characters.\n",
+                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid characters.\n",
                         "in": "header",
                         "name": "X-Correlation-ID",
                         "required": false,
@@ -5024,7 +5024,7 @@
                         }
                     },
                     {
-                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
+                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
                         "in": "header",
                         "name": "NHSD-Session-URID",
                         "required": false,
@@ -5035,7 +5035,7 @@
                         }
                     },
                     {
-                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid . characters.\n",
+                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid characters.\n",
                         "in": "header",
                         "name": "X-Correlation-ID",
                         "required": false,
@@ -5558,7 +5558,7 @@
                         }
                     },
                     {
-                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
+                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
                         "in": "header",
                         "name": "NHSD-Session-URID",
                         "required": false,
@@ -5569,7 +5569,7 @@
                         }
                     },
                     {
-                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid . characters.\n",
+                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid characters.\n",
                         "in": "header",
                         "name": "X-Correlation-ID",
                         "required": false,
@@ -6157,7 +6157,7 @@
                         }
                     },
                     {
-                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
+                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
                         "in": "header",
                         "name": "NHSD-Session-URID",
                         "required": false,
@@ -6168,7 +6168,7 @@
                         }
                     },
                     {
-                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid . characters.\n",
+                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid characters.\n",
                         "in": "header",
                         "name": "X-Correlation-ID",
                         "required": false,
@@ -6932,7 +6932,7 @@
                         }
                     },
                     {
-                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
+                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
                         "in": "header",
                         "name": "NHSD-Session-URID",
                         "required": false,
@@ -6943,7 +6943,7 @@
                         }
                     },
                     {
-                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid . characters.\n",
+                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid characters.\n",
                         "in": "header",
                         "name": "X-Correlation-ID",
                         "required": false,
@@ -7675,7 +7675,7 @@
                         }
                     },
                     {
-                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
+                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
                         "in": "header",
                         "name": "NHSD-Session-URID",
                         "required": false,
@@ -7686,7 +7686,7 @@
                         }
                     },
                     {
-                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid . characters.\n",
+                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid characters.\n",
                         "in": "header",
                         "name": "X-Correlation-ID",
                         "required": false,
@@ -8230,7 +8230,7 @@
                         }
                     },
                     {
-                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determin the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
+                        "description": "The user role ID (URID) for the current session. Also known as a user role profile ID (URPID).\n\nIf you are using User-restricted RESTful APIs - NHS login combined authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-combined-authentication-and-authorisation#step-7-determine-the-user-s-role) guidance.\nIf you are using User-restricted RESTful APIs - NHS login separate authentication and authorisation, See [determine the user's role](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation/user-restricted-restful-apis-nhs-cis2-separate-authentication-and-authorisation#step-9-determine-the-user-s-role) guidance.\n\nThis field is optional.\n",
                         "in": "header",
                         "name": "NHSD-Session-URID",
                         "required": false,
@@ -8241,7 +8241,7 @@
                         }
                     },
                     {
-                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid . characters.\n",
+                        "description": "A globally unique identifier (GUID) for the request, which we use to trace the request if you contact our helpdesk.\nMirrored back in a response header.\nAvoid characters.\n",
                         "in": "header",
                         "name": "X-Correlation-ID",
                         "required": false,
