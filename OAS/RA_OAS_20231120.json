@@ -521,7 +521,7 @@
                                                                             {
                                                                                 "code": "R0050",
                                                                                 "display": "Consultant",
-                                                                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                             }
                                                                         ]
                                                                     }
@@ -862,7 +862,7 @@
                                             "coding": [
                                                 {
                                                     "code": "003",
-                                                    "display": "Lasting power of attorney for personal welfare or court-appointed deputy or equivalent (Mental Capacity Act 2005)",
+                                                    "display": "Lasting power of attorney for health and welfare, or court-appointed deputy, or equivalent",
                                                     "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ProxyRole-1"
                                                 }
                                             ]
@@ -902,11 +902,11 @@
                                                     "items": {
                                                         "properties": {
                                                             "code": {
-                                                                "example": "reasonable adjustment flag",
+                                                                "example": "NRAF",
                                                                 "type": "string"
                                                             },
                                                             "display": {
-                                                                "example": "Reasonable Adjustment Flag",
+                                                                "example": "National Reasonable Adjustments Flag",
                                                                 "type": "string"
                                                             },
                                                             "system": {
@@ -936,11 +936,11 @@
                                                             "items": {
                                                                 "properties": {
                                                                     "code": {
-                                                                        "example": "lpa",
+                                                                        "example": "003",
                                                                         "type": "string"
                                                                     },
                                                                     "display": {
-                                                                        "example": "Lasting power of attorney personal welfare",
+                                                                        "example": "Lasting power of attorney for health and welfare, or court-appointed deputy, or equivalent",
                                                                         "type": "string"
                                                                     },
                                                                     "system": {
@@ -1063,7 +1063,7 @@
                                                                 {
                                                                     "code": "R0050",
                                                                     "display": "Consultant",
-                                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                    "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                 }
                                                             ]
                                                         }
@@ -1439,7 +1439,7 @@
                                                             {
                                                                 "code": "R1974",
                                                                 "display": "Community Learning Disabilities Nurse",
-                                                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                             }
                                                         ]
                                                     }
@@ -1503,9 +1503,9 @@
                                         "valueCodeableConcept": {
                                             "coding": [
                                                 {
-                                                    "code": "comms",
-                                                    "display": "Communication",
-                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategories-1"
+                                                    "code": "001",
+                                                    "display": "Communication support",
+                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                 }
                                             ]
                                         }
@@ -1571,7 +1571,7 @@
                                                 "items": {
                                                     "properties": {
                                                         "code": {
-                                                            "example": "requiresinformationineasyread",
+                                                            "example": "796161000000101",
                                                             "type": "string"
                                                         },
                                                         "display": {
@@ -1579,7 +1579,7 @@
                                                             "type": "string"
                                                         },
                                                         "system": {
-                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
+                                                            "example": "https://snomed.info/sct",
                                                             "type": "string"
                                                         }
                                                     },
@@ -1624,7 +1624,7 @@
                                                                                         "type": "string"
                                                                                     },
                                                                                     "system": {
-                                                                                        "example": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+                                                                                        "example": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
                                                                                         "type": "string"
                                                                                     }
                                                                                 },
@@ -1804,15 +1804,15 @@
                                                                     "items": {
                                                                         "properties": {
                                                                             "code": {
-                                                                                "example": "comms",
+                                                                                "example": "001",
                                                                                 "type": "string"
                                                                             },
                                                                             "display": {
-                                                                                "example": "Communication",
+                                                                                "example": "Communication support",
                                                                                 "type": "string"
                                                                             },
                                                                             "system": {
-                                                                                "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategories-1",
+                                                                                "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1",
                                                                                 "type": "string"
                                                                             }
                                                                         },
@@ -1909,7 +1909,7 @@
                                                                 {
                                                                     "code": "R0050",
                                                                     "display": "Consultant",
-                                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                    "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                 }
                                                             ]
                                                         }
@@ -1947,7 +1947,7 @@
                                                                 {
                                                                     "code": "R0050",
                                                                     "display": "Consultant",
-                                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                    "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                 }
                                                             ]
                                                         }
@@ -2387,7 +2387,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -2425,7 +2425,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -2469,7 +2469,7 @@
                                                                     "coding": [
                                                                         {
                                                                             "code": "003",
-                                                                            "display": "Accessible Information - requires specific contact method",
+                                                                            "display": "Requires specific contact method",
                                                                             "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                                         }
                                                                     ]
@@ -2559,7 +2559,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -2597,7 +2597,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -2641,7 +2641,7 @@
                                                                     "coding": [
                                                                         {
                                                                             "code": "004",
-                                                                            "display": "Accessible Information - requires specific information format",
+                                                                            "display": "Requires specific information format",
                                                                             "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                                         }
                                                                     ]
@@ -2709,7 +2709,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -2747,7 +2747,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -2791,7 +2791,7 @@
                                                                     "coding": [
                                                                         {
                                                                             "code": "003",
-                                                                            "display": "Accessible Information - requires specific contact method",
+                                                                            "display": "Requires specific contact method",
                                                                             "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                                         }
                                                                     ]
@@ -3095,7 +3095,7 @@
                                             "coding": [
                                                 {
                                                     "code": "003",
-                                                    "display": "Accessible Information - requires specific contact method",
+                                                    "display": "Requires specific contact method",
                                                     "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                 }
                                             ]
@@ -3121,11 +3121,11 @@
                                                 "items": {
                                                     "properties": {
                                                         "code": {
-                                                            "example": "reasonable adjustment flag",
+                                                            "example": "NRAF",
                                                             "type": "string"
                                                         },
                                                         "display": {
-                                                            "example": "Reasonable Adjustment Flag",
+                                                            "example": "National Reasonable Adjustments Flag",
                                                             "type": "string"
                                                         },
                                                         "system": {
@@ -3146,7 +3146,7 @@
                                                 "items": {
                                                     "properties": {
                                                         "code": {
-                                                            "example": "requiresinformationineasyread",
+                                                            "example": "796161000000101",
                                                             "type": "string"
                                                         },
                                                         "display": {
@@ -3154,7 +3154,7 @@
                                                             "type": "string"
                                                         },
                                                         "system": {
-                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
+                                                            "example": "https://snomed.info/sct",
                                                             "type": "string"
                                                         }
                                                     },
@@ -3178,15 +3178,15 @@
                                                             "items": {
                                                                 "properties": {
                                                                     "code": {
-                                                                        "example": "comms",
+                                                                        "example": "001",
                                                                         "type": "string"
                                                                     },
                                                                     "display": {
-                                                                        "example": "Communication",
+                                                                        "example": "Communication support",
                                                                         "type": "string"
                                                                     },
                                                                     "system": {
-                                                                        "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategories-1",
+                                                                        "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1",
                                                                         "type": "string"
                                                                     }
                                                                 },
@@ -3276,7 +3276,7 @@
                                                                 {
                                                                     "code": "R0050",
                                                                     "display": "Consultant",
-                                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                    "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                 }
                                                             ]
                                                         }
@@ -3314,7 +3314,7 @@
                                                                 {
                                                                     "code": "R0050",
                                                                     "display": "Consultant",
-                                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                    "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                 }
                                                             ]
                                                         }
@@ -3358,7 +3358,7 @@
                                                 "coding": [
                                                     {
                                                         "code": "003",
-                                                        "display": "Accessible Information - requires specific contact method",
+                                                        "display": "Requires specific contact method",
                                                         "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                     }
                                                 ]
@@ -3695,7 +3695,7 @@
                                                             {
                                                                 "code": "R1974",
                                                                 "display": "Community Learning Disabilities Nurse",
-                                                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                             }
                                                         ]
                                                     }
@@ -3760,7 +3760,7 @@
                                             "coding": [
                                                 {
                                                     "code": "003",
-                                                    "display": "Accessible Information - requires specific contact method",
+                                                    "display": "Requires specific contact method",
                                                     "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                 }
                                             ]
@@ -3789,11 +3789,11 @@
                                                 "items": {
                                                     "properties": {
                                                         "code": {
-                                                            "example": "reasonable adjustment flag",
+                                                            "example": "NRAF",
                                                             "type": "string"
                                                         },
                                                         "display": {
-                                                            "example": "Reasonable Adjustment Flag",
+                                                            "example": "National Reasonable Adjustments Flag",
                                                             "type": "string"
                                                         },
                                                         "system": {
@@ -3814,7 +3814,7 @@
                                                 "items": {
                                                     "properties": {
                                                         "code": {
-                                                            "example": "requiresinformationineasyread",
+                                                            "example": "796161000000101",
                                                             "type": "string"
                                                         },
                                                         "display": {
@@ -3822,7 +3822,7 @@
                                                             "type": "string"
                                                         },
                                                         "system": {
-                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
+                                                            "example": "https://snomed.info/sct",
                                                             "type": "string"
                                                         }
                                                     },
@@ -3867,7 +3867,7 @@
                                                                                         "type": "string"
                                                                                     },
                                                                                     "system": {
-                                                                                        "example": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+                                                                                        "example": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
                                                                                         "type": "string"
                                                                                     }
                                                                                 },
@@ -4047,15 +4047,15 @@
                                                                     "items": {
                                                                         "properties": {
                                                                             "code": {
-                                                                                "example": "comms",
+                                                                                "example": "001",
                                                                                 "type": "string"
                                                                             },
                                                                             "display": {
-                                                                                "example": "Communication",
+                                                                                "example": "Communication support",
                                                                                 "type": "string"
                                                                             },
                                                                             "system": {
-                                                                                "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategories-1",
+                                                                                "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1",
                                                                                 "type": "string"
                                                                             }
                                                                         },
@@ -4159,7 +4159,7 @@
                                                                 {
                                                                     "code": "R0050",
                                                                     "display": "Consultant",
-                                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                    "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                 }
                                                             ]
                                                         }
@@ -4197,7 +4197,7 @@
                                                                 {
                                                                     "code": "R0050",
                                                                     "display": "Consultant",
-                                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                    "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                 }
                                                             ]
                                                         }
@@ -4235,7 +4235,7 @@
                                                                 {
                                                                     "code": "R0050",
                                                                     "display": "Consultant",
-                                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                    "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                 }
                                                             ]
                                                         }
@@ -4273,7 +4273,7 @@
                                                                 {
                                                                     "code": "R0050",
                                                                     "display": "Consultant",
-                                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                    "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                 }
                                                             ]
                                                         }
@@ -4323,7 +4323,7 @@
                                                 "coding": [
                                                     {
                                                         "code": "003",
-                                                        "display": "Accessible Information - requires specific contact method",
+                                                        "display": "Requires specific contact method",
                                                         "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                     }
                                                 ]
@@ -4709,8 +4709,8 @@
                                                         "code": {
                                                             "coding": [
                                                                 {
-                                                                    "code": "01",
-                                                                    "display": "Impairment related to autism (Equality Act 2010)",
+                                                                    "code": "9",
+                                                                    "display": "Social or behavioural (for example associated with autism spectrum disorder (ASD) which includes Asperger’s, or attention deficit hyperactivity disorder (ADHD))",
                                                                     "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1"
                                                                 }
                                                             ]
@@ -4757,7 +4757,7 @@
                                                                             {
                                                                                 "code": "R0050",
                                                                                 "display": "Consultant",
-                                                                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                             }
                                                                         ]
                                                                     }
@@ -5086,8 +5086,8 @@
                                         "code": {
                                             "coding": [
                                                 {
-                                                    "code": "1",
-                                                    "display": "Impairment related to autism (Equality Act 2010)",
+                                                    "code": "9",
+                                                    "display": "Social or behavioural (for example associated with autism spectrum disorder (ASD) which includes Asperger’s, or attention deficit hyperactivity disorder (ADHD))",
                                                     "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1"
                                                 }
                                             ]
@@ -5140,7 +5140,7 @@
                                                             {
                                                                 "code": "R0050",
                                                                 "display": "Consultant",
-                                                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                             }
                                                         ]
                                                     }
@@ -5236,8 +5236,8 @@
                                             "code": {
                                                 "coding": [
                                                     {
-                                                        "code": "01",
-                                                        "display": "Impairment related to autism (Equality Act 2010)",
+                                                        "code": "9",
+                                                        "display": "Social or behavioural (for example associated with autism spectrum disorder (ASD) which includes Asperger’s, or attention deficit hyperactivity disorder (ADHD))",
                                                         "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1"
                                                     }
                                                 ]
@@ -5284,7 +5284,7 @@
                                                                 {
                                                                     "code": "R0050",
                                                                     "display": "Consultant",
-                                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                    "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                 }
                                                             ]
                                                         }
@@ -5641,8 +5641,8 @@
                                         "code": {
                                             "coding": [
                                                 {
-                                                    "code": "1",
-                                                    "display": "Impairment related to autism (Equality Act 2010)",
+                                                    "code": "9",
+                                                    "display": "Social or behavioural (for example associated with autism spectrum disorder (ASD) which includes Asperger’s, or attention deficit hyperactivity disorder (ADHD))",
                                                     "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1"
                                                 }
                                             ]
@@ -5695,7 +5695,7 @@
                                                             {
                                                                 "code": "R0050",
                                                                 "display": "Consultant",
-                                                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                             }
                                                         ]
                                                     }
@@ -5791,8 +5791,8 @@
                                             "code": {
                                                 "coding": [
                                                     {
-                                                        "code": "03",
-                                                        "display": "Impairment related to dementia (Equality Act 2010)",
+                                                        "code": "5",
+                                                        "display": "Learning or understanding or concentrating",
                                                         "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConditionCode-1"
                                                     }
                                                 ]
@@ -5839,7 +5839,7 @@
                                                                 {
                                                                     "code": "R0050",
                                                                     "display": "Consultant",
-                                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                    "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                 }
                                                             ]
                                                         }
@@ -6253,7 +6253,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -6291,7 +6291,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -6335,7 +6335,7 @@
                                                                     "coding": [
                                                                         {
                                                                             "code": "003",
-                                                                            "display": "Accessible Information - requires specific contact method",
+                                                                            "display": "Requires specific contact method",
                                                                             "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                                         }
                                                                     ]
@@ -6425,7 +6425,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -6463,7 +6463,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -6507,7 +6507,7 @@
                                                                     "coding": [
                                                                         {
                                                                             "code": "004",
-                                                                            "display": "Accessible Information - requires specific information format",
+                                                                            "display": "Requires specific information format",
                                                                             "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                                         }
                                                                     ]
@@ -6575,7 +6575,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -6613,7 +6613,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -6657,7 +6657,7 @@
                                                                     "coding": [
                                                                         {
                                                                             "code": "003",
-                                                                            "display": "Accessible Information - requires specific contact method",
+                                                                            "display": "Requires specific contact method",
                                                                             "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                                         }
                                                                     ]
@@ -7028,7 +7028,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -7066,7 +7066,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -7110,7 +7110,7 @@
                                                                     "coding": [
                                                                         {
                                                                             "code": "003",
-                                                                            "display": "Accessible Information - requires specific contact method",
+                                                                            "display": "Requires specific contact method",
                                                                             "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                                         }
                                                                     ]
@@ -7200,7 +7200,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -7238,7 +7238,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -7282,7 +7282,7 @@
                                                                     "coding": [
                                                                         {
                                                                             "code": "004",
-                                                                            "display": "Accessible Information - requires specific information format",
+                                                                            "display": "Requires specific information format",
                                                                             "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                                         }
                                                                     ]
@@ -7350,7 +7350,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -7388,7 +7388,7 @@
                                                                                     {
                                                                                         "code": "R0050",
                                                                                         "display": "Consultant",
-                                                                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                                        "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                                     }
                                                                                 ]
                                                                             }
@@ -7432,7 +7432,7 @@
                                                                     "coding": [
                                                                         {
                                                                             "code": "003",
-                                                                            "display": "Accessible Information - requires specific contact method",
+                                                                            "display": "Requires specific contact method",
                                                                             "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                                         }
                                                                     ]
@@ -7770,7 +7770,7 @@
                                                 "items": {
                                                     "properties": {
                                                         "code": {
-                                                            "example": "requiresinformationineasyread",
+                                                            "example": "796161000000101",
                                                             "type": "string"
                                                         },
                                                         "display": {
@@ -7778,7 +7778,7 @@
                                                             "type": "string"
                                                         },
                                                         "system": {
-                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
+                                                            "example": "https://snomed.info/sct",
                                                             "type": "string"
                                                         }
                                                     },
@@ -7802,15 +7802,15 @@
                                                             "items": {
                                                                 "properties": {
                                                                     "code": {
-                                                                        "example": "comms",
+                                                                        "example": "001",
                                                                         "type": "string"
                                                                     },
                                                                     "display": {
-                                                                        "example": "Communication",
+                                                                        "example": "Communication support",
                                                                         "type": "string"
                                                                     },
                                                                     "system": {
-                                                                        "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategories-1",
+                                                                        "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1",
                                                                         "type": "string"
                                                                     }
                                                                 },
@@ -7900,7 +7900,7 @@
                                                                 {
                                                                     "code": "R0050",
                                                                     "display": "Consultant",
-                                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                    "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                 }
                                                             ]
                                                         }
@@ -7938,7 +7938,7 @@
                                                                 {
                                                                     "code": "R0050",
                                                                     "display": "Consultant",
-                                                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
+                                                                    "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"
                                                                 }
                                                             ]
                                                         }
@@ -7982,7 +7982,7 @@
                                                 "coding": [
                                                     {
                                                         "code": "003",
-                                                        "display": "Accessible Information - requires specific contact method",
+                                                        "display": "Requires specific contact method",
                                                         "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"
                                                     }
                                                 ]
