@@ -1546,15 +1546,15 @@
                                                 "items": {
                                                     "properties": {
                                                         "code": {
-                                                            "example": "reasonable adjustment Consent",
+                                                            "example": "NRAF",
                                                             "type": "string"
                                                         },
                                                         "display": {
-                                                            "example": "Reasonable Adjustment Consent",
+                                                            "example": "National Reasonable Adjustments Flag",
                                                             "type": "string"
                                                         },
                                                         "system": {
-                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ConsentCategory-1",
+                                                            "example": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-FlagCategory-1",
                                                             "type": "string"
                                                         }
                                                     },
