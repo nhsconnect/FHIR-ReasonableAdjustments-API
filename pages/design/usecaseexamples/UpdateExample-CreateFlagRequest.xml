@@ -8,7 +8,7 @@ UpdateExample-CreateFlagRequest.xml -->
         <valueCodeableConcept>
             <coding>
                 <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"/>
-                <code value="4"/>
+                <code value="004"/>
                 <display value="Requires specific information format"/>
             </coding>
         </valueCodeableConcept>
@@ -23,7 +23,7 @@ UpdateExample-CreateFlagRequest.xml -->
     </category>
     <code>
         <coding>
-            <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1"/>
+            <system value="https://snomed.info/sct"/>
             <code value="957371000000106"/>
             <display value="Requires written information in at least 28 point sans serif font"/>
         </coding>

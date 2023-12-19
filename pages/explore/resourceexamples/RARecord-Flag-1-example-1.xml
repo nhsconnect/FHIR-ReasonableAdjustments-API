@@ -46,7 +46,7 @@
         <valueCodeableConcept>
             <coding>
                 <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"/>
-                <code value="1"/>
+                <code value="001"/>
                 <display value="Communication support"/>
             </coding>
         </valueCodeableConcept>

@@ -83,9 +83,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategories-1",
-            "code": "comms",
-            "display": "Communication"
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1",
+            "code": "001",
+            "display": "Communication support"
           }
         ]
       }
@@ -104,8 +104,8 @@
   "code": {
     "coding": [
       {
-        "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
-        "code": "requiresinformationineasyread",
+        "system": "https://snomed.info/sct",
+        "code": "796161000000101",
         "display": "Requires information in Easyread"
       }
     ]

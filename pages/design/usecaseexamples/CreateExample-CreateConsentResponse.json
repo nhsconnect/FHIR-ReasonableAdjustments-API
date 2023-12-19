@@ -66,8 +66,8 @@
         "coding": [
           {
             "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-ProxyRole-1",
-            "code": "lpa",
-            "display": "Lasting power of attorney personal welfare"
+            "code": "003",
+            "display": "Lasting power of attorney for health and welfare, or court-appointed deputy, or equivalent"
           }
         ]
       }

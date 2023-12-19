@@ -63,7 +63,7 @@
                     <valueCodeableConcept>
                         <coding>
                             <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"/>
-                            <code value="1"/>
+                            <code value="001"/>
                             <display value="Communication support"/>
                         </coding>
                     </valueCodeableConcept>
@@ -78,7 +78,7 @@
                 </category>
                 <code>
                     <coding>
-                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1"/>
+                        <system value="https://snomed.info/sct"/>
                         <code value="796161000000101"/>
                         <display value="Requires information in Easyread"/>
                     </coding>
@@ -148,7 +148,7 @@
                     <valueCodeableConcept>
                         <coding>
                             <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"/>
-                            <code value="7"/>
+                            <code value="007"/>
                             <display value="Adjustments for providing Additional Support to patients"/>
                         </coding>
                     </valueCodeableConcept>
@@ -163,7 +163,7 @@
                 </category>
                 <code>
                     <coding>
-                        <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1"/>
+                        <system value="https://snomed.info/sct"/>
                         <code value="225861007"/>
                         <display value="Unsafe to be left alone"/>
                     </coding>

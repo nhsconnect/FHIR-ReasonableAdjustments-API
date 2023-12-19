@@ -109,8 +109,8 @@
         "code": {
           "coding": [
             {
-              "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
-              "code": "requiresinformationineasyread",
+              "system": "https://snomed.info/sct",
+              "code": "796161000000101",
               "display": "Requires information in Easyread"
             }
           ]
@@ -199,9 +199,9 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategories-1",
-                  "code": "addsupport",
-                  "display": "Provision of Additional Support"
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1",
+                  "code": "010",
+                  "display": "Adjustments to support Additional needs"
                 }
               ]
             }
@@ -220,9 +220,9 @@
         "code": {
           "coding": [
             {
-              "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
-              "code": "patientnottobeleftalone",
-              "display": "Patient not to be left alone"
+              "system": "https://snomed.info/sct",
+              "code": "225861007",
+              "display": "Unsafe to be left alone"
             }
           ]
         },

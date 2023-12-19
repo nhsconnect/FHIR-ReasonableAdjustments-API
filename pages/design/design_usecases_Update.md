@@ -569,7 +569,7 @@ If-Match: W/"1b1770be-64be-4844-bc87-f714b50a2378"
     <valueCodeableConcept>
         <coding>
             <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"/>
-            <code value="1"/>
+            <code value="001"/>
             <display value="Communication support"/>
         </coding>
     </valueCodeableConcept>
@@ -584,7 +584,7 @@ If-Match: W/"1b1770be-64be-4844-bc87-f714b50a2378"
 </category>
 <code>
     <coding>
-        <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1"/>
+        <system value="https://snomed.info/sct"/>
         <code value="796161000000101"/>
         <display value="Requires information in Easyread"/>
     </coding>
@@ -675,7 +675,7 @@ If-Match: W/"1b1770be-64be-4844-bc87-f714b50a2378"
                 "coding":  [
                     {
                         "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1",
-                        "code": "1",
+                        "code": "001",
                         "display": "Communication support"
                     }
                 ]
@@ -695,7 +695,7 @@ If-Match: W/"1b1770be-64be-4844-bc87-f714b50a2378"
     "code": {
         "coding":  [
             {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
+                "system": "https://snomed.info/sct",
                 "code": "796161000000101",
                 "display": "Requires information in Easyread"
             }
@@ -807,7 +807,7 @@ Content-Type: application/fhir+xml
     <valueCodeableConcept>
         <coding>
             <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1"/>
-            <code value="1"/>
+            <code value="001"/>
             <display value="Communication support"/>
         </coding>
     </valueCodeableConcept>
@@ -822,7 +822,7 @@ Content-Type: application/fhir+xml
 </category>
 <code>
     <coding>
-        <system value="https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1"/>
+        <system value="https://snomed.info/sct"/>
         <code value="796161000000101"/>
         <display value="Requires information in Easyread"/>
     </coding>
@@ -951,7 +951,7 @@ Content-Type: application/fhir+xml
                 "coding":  [
                     {
                         "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1",
-                        "code": "1",
+                        "code": "001",
                         "display": "Communication support"
                     }
                 ]
@@ -971,7 +971,7 @@ Content-Type: application/fhir+xml
     "code": {
         "coding":  [
             {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
+                "system": "https://snomed.info/sct",
                 "code": "796161000000101",
                 "display": "Requires information in Easyread"
             }
@@ -1682,8 +1682,8 @@ If-Match: W/"616201a0-1364-427b-999f-750691b08989"
                 <code>
                     <coding>
                         <system value="https://snomed.info/sct"/>
-                        <code value="408856003"/>
-                        <display value="Autistic disorder"/>
+                        <code value="73618009"/>
+                        <display value="Autistic spectrum disorder with isolated skills"/>
                     </coding>
                 </code>
             <subject>
@@ -1811,8 +1811,8 @@ If-Match: W/"616201a0-1364-427b-999f-750691b08989"
                 "coding":  [
                     {
                         "system": "https://snomed.info/sct",
-                        "code": "408856003",
-                        "display": "Autistic disorder"
+                        "code": "73618009",
+                        "display": "Autistic spectrum disorder with isolated skills"
                     }
                 ]
             },
@@ -1943,8 +1943,8 @@ Content-Type: application/fhir+xml
                 <code>
                     <coding>
                         <system value="https://snomed.info/sct"/>
-                        <code value="408856003"/>
-                        <display value="Autistic disorder"/>
+                        <code value="73618009"/>
+                        <display value="Autistic spectrum disorder with isolated skills"/>
                     </coding>
                 </code>
             <subject>
@@ -2110,8 +2110,8 @@ Content-Type: application/fhir+xml
                 "coding":  [
                     {
                         "system": "https://snomed.info/sct",
-                        "code": "408856003",
-                        "display": "Autistic disorder"
+                        "code": "73618009",
+                        "display": "Autistic spectrum disorder with isolated skills"
                     }
                 ]
             },

@@ -14,9 +14,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategories-1",
-            "code": "other",
-            "display": "Other reasonable adjustment context and/ or considerations"
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AdjustmentCategory-1",
+            "code": "010",
+            "display": "Adjustments to support Additional needs"
           }
         ]
       }
@@ -35,8 +35,8 @@
   "code": {
     "coding": [
       {
-        "system": "https://fhir.nhs.uk/STU3/CodeSystem/RARecord-AccessibleInformationAdjustments-1",
-        "code": "requireswritteninformationinatleast28pointsansseriffont",
+        "system": "https://snomed.info/sct",
+        "code": "957371000000106",
         "display": "Requires written information in at least 28 point sans serif font"
       }
     ]
