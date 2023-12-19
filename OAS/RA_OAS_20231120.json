@@ -3082,7 +3082,7 @@
                                 "code": {
                                     "coding": [
                                         {
-                                            "code": "945951000000108",
+                                            "code": "7961610000001018",
                                             "display": "Requires information in Easyread",
                                             "system": "https://snomed.info/sct"
                                         }
@@ -3675,7 +3675,7 @@
                                 "code": {
                                     "coding": [
                                         {
-                                            "code": "945951000000108",
+                                            "code": "796161000000101",
                                             "display": "Requires information in Easyread",
                                             "system": "https://snomed.info/sct"
                                         }
@@ -7726,8 +7726,8 @@
                                 "code": {
                                     "coding": [
                                         {
-                                            "code": "408856003",
-                                            "display": "Autistic disorder",
+                                            "code": "73618009",
+                                            "display": "Autistic spectrum disorder with isolated skills",
                                             "system": "https://snomed.info/sct"
                                         }
                                     ]
@@ -8315,8 +8315,8 @@
                                                 "code": {
                                                     "coding": [
                                                         {
-                                                            "code": "408856003",
-                                                            "display": "Autistic disorder",
+                                                            "code": "73618009",
+                                                            "display": "Autistic spectrum disorder with isolated skills",
                                                             "system": "https://snomed.info/sct"
                                                         }
                                                     ]
@@ -8465,8 +8465,8 @@
                                                     "code": {
                                                         "coding": [
                                                             {
-                                                                "code": "408856003",
-                                                                "display": "Autistic disorder",
+                                                                "code": "73618009",
+                                                                "display": "Autistic spectrum disorder with isolated skills",
                                                                 "system": "https://snomed.info/sct"
                                                             }
                                                         ]
